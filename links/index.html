@@ -1,0 +1,12 @@
+---
+layout: default
+title: Links
+---
+<div id="links">
+  <h1>Links</h1>
+  <ul class="posts">
+    {% for link in site.links %}
+      <li><span>{{ link.date | date: "%Y-%b-%d" }}</span> &raquo; <a href="{{ link.url }}">{{ link.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
