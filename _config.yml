@@ -1,3 +1,4 @@
 name: Patater
 markdown: redcarpet
 pygments: true
+encoding: utf-8
