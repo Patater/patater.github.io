@@ -3,3 +3,10 @@ markdown: redcarpet
 pygments: true
 encoding: utf-8
 relative_permalinks: false
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      author: Jaeden Amero
