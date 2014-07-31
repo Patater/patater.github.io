@@ -1,0 +1,13 @@
+---
+layout: link
+id: tag:www.patater.com,2007-11-11:/links/hyperds
+title: HyperDS
+tags: link emulation
+permalink: /links/hyperds
+date: 2007-11-11 23:41:13
+updated: 2010-12-19 03:36:44
+uri: http://www.hyperds.com/
+---
+Firefly was working on this one for a while, but since he can only do one
+project at a time, he decided to dump it and developed WiFiMe and WMB software
+and the like.

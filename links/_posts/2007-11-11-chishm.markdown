@@ -1,0 +1,15 @@
+---
+layout: link
+id: tag:www.patater.com,2007-11-11:/links/chishm
+title: Chishm
+tags: link people-pages
+permalink: /links/chishm
+date: 2007-11-11 23:41:13
+updated: 2010-12-19 03:36:44
+uri: http://chishm.drunkencoders.com/
+---
+Awesome dude. The genius behind the GBA NDS FAT library. He's enabled the
+community with a great universal filesystem. Cheers to Chishm and his continued
+participation in the community. Because of his creation of the FAT library for
+a variety of DS accessories, we are forever in his debt. He has made our dreams
+come true.

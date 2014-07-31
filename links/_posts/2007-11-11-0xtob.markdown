@@ -1,0 +1,11 @@
+---
+layout: link
+id: tag:www.patater.com,2007-11-11:/links/0xtob
+title: _0xtob
+tags: link people-pages
+permalink: /links/0xtob
+date: 2007-11-11 23:41:13
+updated: 2010-12-19 03:36:44
+uri: http://ds.tobw.net/
+---
+A nice fellow. He knows a lot about sound and synthesizer programming. He wrote the DS Sampling Keyboard program.

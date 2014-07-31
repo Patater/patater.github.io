@@ -1,0 +1,15 @@
+---
+layout: link
+id: tag:www.patater.com,2007-11-11:/links/neoflash
+title: NeoFlash
+tags: link flash-carts neoflash
+permalink: /links/neoflash
+date: 2007-11-11 23:41:13
+updated: 2010-12-19 03:36:44
+uri: http://www.neoflash.com/
+---
+The NeoFlash guys were the first ones to put out a flash cart marketed towards
+the Nintendo DS. For some reason, they give these babies away to cutting-edge
+developers and famous web sites. Now, they are working on the MK2 and MK3,
+which are special PassMe like devices that can run homebrew software from CF,
+SD, and MMC.

@@ -1,0 +1,2389 @@
+# TODO mightmax to mightymax
+  id: tag:www.patater.com,2007-11-11:/links/arm-architecture-documentation
+  title: ARM Architecture Documentation
+  description: The website to look up information of the various ARM processors (opcodes, clock and bus speeds, operating temperature, and much more information that you may never need to know, and more).
+  tags: technical-reference
+  url: /links/arm-architecture-documentation
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.set.architecture/index.html
+
+  id: tag:www.patater.com,2007-11-11:/links/cowbite-gba-specifications
+  title: CowBite GBA Specifications
+  description: Game Boy Advance specifications based on experience writing an emulator
+  tags: techincal-reference
+  url: /links/cowbite-gba-specifications
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.cs.rit.edu/~tjh8300/CowBite/CowBiteSpec.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/arm-opcode-map
+  title: ARM Opcode Map
+  description: DSEmu presents us with a beautiful technical reference featuring the many opcodes of the ARM processor (both normal and thumb).
+  tags: technical-reference
+  url: /links/arm-opcode-map
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://dsemu.org/opcode-map.html
+
+  id: tag:www.patater.com,2007-11-11:/links/darkfaders-passme2-game-database
+  title: DarkFader's PassMe2 Game Database
+  description: A huge list of games that can be used with PassMe 2, as well as their acompaning SRAM and CPLD code
+  tags: technical-reference running-programs
+  url: /links/darkfaders-passme2-game-database
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://darkfader.net/ds/games/
+
+  id: tag:www.patater.com,2007-11-11:/links/ds-tek-nintendo-ds-technical-information
+  title: DS Tek - Nintendo DS Technical Information
+  description: Neimod's Technical Reference for Nintendo DS
+  tags: technical-references development-essentials
+  url: /links/ds-tek-nintendo-ds-technical-information
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://neimod.com/dstek-gen/dstek-gen.html
+
+  id: tag:www.patater.com,2007-11-11:/links/dualis-dstechinfo
+  title: Dualis DSTechInfo
+  description: Mic's Technical Reference for Nintendo DS (based on experience in writing Dualis)
+  tags: technical-reference
+  url: /links/dualis-dstechinfo
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://dualis.1emulation.com/dsti.html
+
+  id: tag:www.patater.com,2007-11-11:/links/gbatek
+  title: GBATEK
+  description: Gameboy Advance Technical Info from no$gba
+  tags: technical-reference
+  url: /links/gbatek
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://nocash.emubase.de/gbatek.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/nds-tech-wiki
+  title: NDS Tech Wiki
+  description: The Nintendo DS Technical Reference Wiki
+  tags: technical-reference
+  url: /links/nds-tech-wiki
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.bottledlight.com/ds/index.php
+
+  id: tag:www.patater.com,2007-11-11:/links/ndslib-documentation
+  title: NDS(lib) Documentation
+  description: Dovoto's Nintendo DS Technical Reference (based on writing ndslib)
+  tags: technical-reference
+  url: /links/ndslib-documentation
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.drunkencoders.com/documents/DS/ndslib.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/tobs-nintendo-ds-wiki
+  title: Tob's Nintendo DS Wiki
+  description: Tob (0xtob) has put together a great wiki page regarding a wide range of topics. If a topic here is not present, feel free to research the subject and create a wikipage. This is a great place to give back to the community. Go share the love.
+  tags: technical-reference
+  url: /links/tobs-nintendo-ds-wiki
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://tobw.net/dswiki/index.php?title=Main_Page
+
+  id: tag:www.patater.com,2007-11-11:/links/ds-romz
+  title: DS ROMZ
+  description: Enables you to play commercial NDS roms from your GBAMP. Also supports dumping NDS roms.
+  tags: running-programs
+  url: /links/ds-romz
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.crackrock.org/dsromz/
+
+  id: tag:www.patater.com,2007-11-11:/links/flashme-alternative-nintendo-ds-firmware
+  title: FlashMe - Alternative Nintendo DS Firmware
+  description: The professional way to run homebrew software and unsigned wmb code.
+  tags: running-programs
+  url: /links/flashme-alternative-nintendo-ds-firmware
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://ds.gcdev.com/dsfirmware/
+
+  id: tag:www.patater.com,2007-11-11:/links/flashme-lynxs-tutorial
+  title: FlashMe - Lynx's Tutorial
+  description: The best tutorial I know of on how to install FlashMe on your Nintendo DS.
+  tags: running-programs
+  url: /links/flashme-lynxs-tutorial
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.dspassme.com/FlashMe.shtml
+
+  id: tag:www.patater.com,2007-11-11:/links/mightmaxs-gbamp-multiboot
+  title: MightyMax's GBAMP Multiboot
+  description: A great, fully customizable NDS loader for GBAMP with full support for 3rd party plugins. Be sure to check this one out.
+  tags: running-programs
+  url: /links/mightmaxs-gbamp-multiboot
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://mightymax.org/gbamp_multiboot.html
+
+  id: tag:www.patater.com,2007-11-11:/links/passme-compatible-flash-carts
+  title: PassMe - Compatible Flash Carts
+  description: A list of flash carts compatible with the PassMe. Useful reference if you want to know if your flash cart will work with a PassMe. Most do work, but you'll never know until you read here.
+  tags: running-programs
+  url: /links/passme-compatible-flash-carts
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.dspassme.com/docs/html/pm_07_flashcarts.html
+
+  id: tag:www.patater.com,2007-11-11:/links/passme
+  title: PassMe
+  description: Information about the PassMe presented in Japanese.
+  tags: running-programs
+  url: /links/passme
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://optimize.ath.cx/NDS/passme.html
+
+  id: tag:www.patater.com,2007-11-11:/links/passme-lynxs-dspassme-com
+  title: PassMe - Lynx's dspassme.com
+  description: This is the place where I bought my multiple PassMe devices. Quality service and products. My PassMe still worked great, last time I used it.<br/>Support homebrew! Buy from dspassme!
+  tags: running-programs retailers
+  url: /links/passme-lynxs-dspassme-com
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.dspassme.com/oscommerce/catalog/index.php
+
+  id: tag:www.patater.com,2007-11-11:/links/wifime-aaron-rogerss-tutorial
+  title: WiFiMe - Aaron Rogers's Tutorial
+  description: The best tutorial I know of for setting up WiFiMe. Aaron Rogers is quite the dude.
+  tags: running-programs
+  url: /links/wifime-aaron-rogerss-tutorial
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.aaronrogers.com/nintendods/wifime.php
+
+  id: tag:www.patater.com,2007-11-11:/links/wifime-homepage
+  title: WiFiMe - Homepage
+  description: Yet another method of running homebrew on the DS. May or may not require FlashMe (anybody care to <a href="/contact">enlighten me</a>?).
+  tags: running-programs
+  url: /links/wifime-homepage
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://users.belgacom.net/bn967347/
+
+  id: tag:www.patater.com,2007-11-11:/links/wifime-list-of-compatible-cards
+  title: WiFiMe - List of compatible cards
+  description: Check here to see if your wifi card is compatible with WiFiMe. If its not, consider buying one of these cards if you want to do WiFiMe.
+  tags: running-programs
+  url: /links/wifime-list-of-compatible-cards
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://ralink.rapla.net/
+
+  id: tag:www.patater.com,2007-11-11:/links/wifime-wmbfront
+  title: WiFiMe - WMBFront
+  description: A graphical front end to wmb.exe. Useful to those people who don't care to use the commandline much, are scared to use the commandline, or are otherwise impaired.
+  tags: running-programs
+  url: /links/wifime-wmbfront
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://headkaze.webpal.info/
+
+  id: tag:www.patater.com,2007-11-11:/links/devkitarm-sourceforge-packages
+  title: devkitARM - Sourceforge Packages
+  description: The devkitARM packages listed on Sourceforge.
+  tags: development-essentials
+  url: /links/devkitarm-sourceforge-packages
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://sourceforge.net/project/showfiles.php?group_id=114505&package_id=124207
+
+  id: tag:www.patater.com,2007-11-11:/links/devkitpro-files
+  title: devkitPro - Files
+  description: All the files in the devkitPro project all in one convenient place.
+  tags: development-essentials
+  url: /links/devkitpro-files
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://sourceforge.net/project/showfiles.php?group_id=114505
+
+  id: tag:www.patater.com,2007-11-11:/links/devkitpro-homepage
+  title: devkitPro - Homepage
+  description: devkitPro is the best tool chain for developing on the Nintendo DS. It includes devkitARM, devkitPPC, and devkitPSP.
+  tags: development-essentials
+  url: /links/devkitpro-homepage
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.devkitpro.org/
+
+  id: tag:www.patater.com,2007-11-11:/links/devkitpro-sourceforge-project-page
+  title: devkitPro - Sourceforge Project Page
+  description: The Souceforge project page for devkitPro
+  tags: development-essentials
+  url: /links/devkitpro-sourceforge-project-page
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://sourceforge.net/projects/devkitpro
+    ),
+
+  id: tag:www.patater.com,2007-11-11:/links/libnds-files
+  title: libnds - Files
+  description: All the latest libnds releases in one convenient place.
+  tags: development-essentials
+  url: /links/libnds-files
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://sourceforge.net/project/showfiles.php?group_id=114505&package_id=151608
+
+  id: tag:www.patater.com,2007-11-11:/links/libnds-sourceforge-page
+  title: libnds - SourceForge Page
+  description: The main page on SourceForge for the latest libnds releases.
+  tags: development-essentials
+  url: /links/libnds-sourceforge-page
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://sourceforge.net/project/showfiles.php?group_id=114505&package_id=151608
+
+  id: tag:www.patater.com,2007-11-11:/links/libnds-examples
+  title: libnds Examples
+  description: The latest collection of examples. A great place to learn how to do certain things on the DS. Great for learn by example learners.
+  tags: development-essentials nds-tutorials
+  url: /links/libnds-examples
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://sourceforge.net/project/showfiles.php?group_id=114505&package_id=159894
+
+  id: tag:www.patater.com,2007-11-11:/links/ndslib-sourceforge-project-page
+  title: ndslib - Sourceforge Project Page
+  description: The Sourceforge project page for the now defunct ndslib.
+  tags: development-essentials
+  url: /links/ndslib-sourceforge-project-page
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://sourceforge.net/projects/ndslib/
+
+  id: tag:www.patater.com,2007-11-11:/links/palib-homepage
+  title: PAlib Homepage
+  description: PAlib simplifies programming on the DS at the expense of freedom and functionality that most beginning programs could care less about. Similar to HAM of GBA Lore, the Nintendo DS has PAlib.
+  tags: development-essentials
+  url: /links/palib-homepage
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.palib.tk/
+
+  id: tag:www.patater.com,2007-11-11:/links/aaron-rogerss-development-tutorial
+  title: Aaron Rogers's Development Tutorial
+  description: Good old Aaron Rogers is getting in on the development tutorials too. He has come up with this tutorial to help newbies get their development environment set up. Hopefully you aren't so much of a newbie that you can't follow this tutorial.
+  tags: nds-tutorials
+  url: /links/aaron-rogerss-development-tutorial
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.aaronrogers.com/nintendods/
+
+  id: tag:www.patater.com,2007-11-11:/links/devkitpro-setup-guide
+  title: DevkitPro Setup Guide
+  description: This guide is an excellent resource to view after you have downloaded devkitPro and can't figure out how to set up your path or just plain install it. Good for noobs.
+  tags: nds-tutorials
+  url: /links/devkitpro-setup-guide
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.devkitpro.org/setup.shtml
+
+  id: tag:www.patater.com,2007-11-11:/links/devkitpro-users-guide
+  title: DevkitPro User's Guide
+  description: The handy dandy user's guide for the wonderful DevkitPro.
+  tags: nds-tutorials
+  url: /links/devkitpro-users-guide
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.devkitpro.org/faq.shtml
+
+  id: tag:www.patater.com,2007-11-11:/links/doublecs-awesome-nintendo-ds-development-tutorials
+  title: Doublec's Awesome Nintendo DS Development Tutorials
+  description: In addition to maintaining and upgrading DSEmu, Doublec has created these awesome tutorials for Nintendo DS development. Check them out if you are a n00b, n3wb, noob, nub, or just plain new to the homebrew scene and want to get your foot in.
+  tags: nds-tutorials
+  url: /links/doublecs-awesome-nintendo-ds-development-tutorials
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.double.co.nz/nintendo_ds/
+
+  id: tag:www.patater.com,2007-11-11:/links/ds-programming-101
+  title: DS Programming 101
+  description: Very basic, text console programming on the Nintendo DS. Super simple, don't expect to learn anything too wonderful about the Nintendo DS hardware.
+  tags: nds-tutorials
+  url: /links/ds-programming-101
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.dsprogramming101.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/gambits-supercard-and-flashme-tutorial
+  title: Gambit's Supercard and Flashme Tutorial
+  description: Learn how to use your supercard and flashme.
+  tags: nds-tutorials
+  url: /links/gambits-supercard-and-flashme-tutorial
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.magitech.org/2006/05/01/firmware-upgrade-on-nds/
+
+  id: tag:www.patater.com,2007-11-11:/links/guide-to-converting-a-passme-into-a-passme2
+  title: Guide to Converting a PassMe into a PassMe2
+  description: Jakel presents to us a useful guide if you want to convert a regular PassMe into a PassMe2.
+  tags: nds-tutorials
+  url: /links/guide-to-converting-a-passme-into-a-passme2
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://m3wiki.emuparadise.org/index.php/Jakel_passkey2
+
+  id: tag:www.patater.com,2007-11-11:/links/learn2d
+  title: Learn2D
+  description: Straight out of Efnet's #learn2d, many lessons on 2D DS Programming. A very interesting and useful resource.
+  tags: nds-tutorials interesting
+  url: /links/learn2d
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://sharriso.gotadsl.co.uk/nds/index.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/libnds-and-other-devkitpro-examples
+  title: libnds (and other devkitpro) examples
+  description: Examples for libnds. Very useful if you like to learn by example.
+  tags: nds-tutorials
+  url: /links/libnds-and-other-devkitpro-examples
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://sourceforge.net/project/showfiles.php?group_id=114505&package_id=159894
+
+  id: tag:www.patater.com,2007-11-11:/links/mrshlees-begineers-guide-to-ds
+  title: MrShlee's Beginner's Guide to DS
+  description: MrShlee has put together a wiki to act as a guide to help beginners to the Nintendo DS.
+  tags: nds-tutorials
+  url: /links/mrshlees-begineers-guide-to-ds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://ds.whatalicefound.net/ds/index.php?n=Main.HomePage
+
+  id: tag:www.patater.com,2007-11-11:/links/nehe-tutorial-for-nintendo-ds-opengl-not-really-opengl-by-dovoto
+  title: NeHe Tutorial for Nintendo DS OpenGL (not really OpenGL) by Dovoto
+  description: This tutorial by Dovoto covers how to use the fake OpenGL support on the Nintendo DS.
+  tags: nds-tutorials
+  url: /links/nehe-tutorial-for-nintendo-ds-opengl-not-really-opengl-by-dovoto
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.drunkencoders.com/index.php?system_id=1&page=Examples
+
+  id: tag:www.patater.com,2007-11-11:/links/nehe-tutorial-for-nintendo-ds-opengl-not-really-opengl-by-ethos
+  title: NeHe Tutorial for Nintendo DS OpenGL (not really OpenGL) by Ethos
+  description: This tutorial by Ethos covers how to use the fake OpenGL support on the Nintendo DS.
+  tags: nds-tutorials
+  url: /links/nehe-tutorial-for-nintendo-ds-opengl-not-really-opengl-by-ethos
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://ethos.oddigytitanium.com/tutorials.html
+
+  id: tag:www.patater.com,2007-11-11:/links/palib-tutorial-wiki
+  title: PALib Tutorial Wiki
+  description: This page will help you learn how to get started programming with PALib. Not recommended at all, but if you want to learn about PALib you can do so here.
+  tags: nds-tutorials
+  url: /links/palib-tutorial-wiki
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.palib.info/wiki/doku.php
+
+  id: tag:www.patater.com,2007-11-11:/links/pataters-intro-to-nintendo-ds-programming-manual
+  title: Patater's Intro to Nintendo DS Programming Manual
+  description: An excellent manual for beginning Nintendo DS programmers. Covers the legality of homebrew, the basics of sprites, 16-bit extended rotation backgrounds (exrot bgs), and basic game mechanics. Highly recommended. YARLY!
+  tags: nds-tutorials patater
+  url: /links/pataters-intro-to-nintendo-ds-programming-manual
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.patater.com/manual
+
+  id: tag:www.patater.com,2007-11-11:/links/phoenixrisings-programmers-guide-to-the-nintendo-ds
+  title: PhoenixRising's Programmers Guide to the Nintendo DS
+  description: PhoenixRising has created what he refers to as a Programmers Guide to the Nintendo DS. His operating system of choice is Linux, so many of the techniques and tools he uses can be used on most all platforms.
+  tags: nds-tutorials
+  url: /links/phoenixrisings-programmers-guide-to-the-nintendo-ds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.dspassme.com/programmers_guide/tutorial/
+
+  id: tag:www.patater.com,2007-11-11:/links/smealums-palib-tutorials
+  title: Smealum's PALib Tutorials
+  description: These tutorials are for French people. If you are French and if you like PALib, you'll love these tutorials.
+  tags: nds-tutorials
+  url: /links/smealums-palib-tutorials
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://jvteamds.free.fr/index.php?p=1.tut
+
+  id: tag:www.patater.com,2007-11-11:/links/tobs-how-to-start-coding
+  title: Tob's How to Start Coding
+  description: Tob (0xtob) has put together a great wiki page regarding the Nintendo DS. This page is a prime example of the potential on his wiki. It covers how to get your DS prepared for homebrew development.
+  tags: nds-tutorials
+  url: /links/tobs-how-to-start-coding
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://tobw.net/dswiki/index.php?title=How_to_start_coding
+
+  id: tag:www.patater.com,2007-11-11:/links/dekutrees-sound-on-the-gba-tutorial
+  title: DekuTree's Sound on the GBA Tutorial
+  description: An excellent resource for learning how sound works on the Game Boy Advance and the Nintendo DS. You'll be making your GBA or NDS speak in no time.
+  tags: gba-tutorials
+  url: /links/dekutrees-sound-on-the-gba-tutorial
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://deku.gbadev.org/program/sound1.html
+
+  id: tag:www.patater.com,2007-11-11:/links/drunken-coders-gba-tutorials
+  title: Drunken Coders' GBA Tutorials
+  description: Formerly known as The Pern project (Nintendo Reverse Engineering Project spelled backwards, so it ends up being "Project Engineering Reverse Nintendo Project". Notice the two Project words? Odd isn't it. I'm guessing that's why they renamed it. Enough of this talking within parenthesis. I'm out.).
+  tags: gba-tutorials
+  url: /links/drunken-coders-gba-tutorials
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.drunkencoders.com/index.php?system_id=2&page=Tutorials
+
+  id: tag:www.patater.com,2007-11-11:/links/gba-asm-tutorials
+  title: GBA ASM Tutorials
+  description: I heard that gbaguy was shutting down his site soon, just <a href="/contact">contact me</a> whenever this happens or you find a mirror. I could mirror it myself too (as I snagged myself a copy before he disappeared).
+  tags: gba-tutorials
+  url: /links/gba-asm-tutorials
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://k2pts.home.comcast.net/gbaguy/gbaasm.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/gba-asm-tutorials-ye-olde-version
+  title: GBA ASM Tutorials - Ye Olde Version
+  description: An older version of the above tutorial.
+  tags: gba-tutorials
+  url: /links/gba-asm-tutorials-ye-olde-version
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://k2pts.home.comcast.net/gbaguy/oldgba/gbaasm.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/tonc-gba-hardware
+  title: "TONC: GBA Hardware"
+  description: The classic Game Boy Advance tutorial. Covers a wide range of topics and techniques. Good for both newbies and intermediate programmers. This is an absolute must read.
+  tags: gba-tutorials
+  url: /links/tonc-gba-hardware
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.coranac.com/tonc/text/
+
+  id: tag:www.patater.com,2007-11-11:/links/dual-soft-com
+  title: Dual-Soft.com
+  description: A new website striving to be a home base for Macintosh using Nintendo DS developers.
+  tags: development-on-macintosh homebrew
+  url: /links/dual-soft-com
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://dual-soft.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/jstarts-mac-os-x-nintendo-ds-development-page
+  title: jstart's Mac OS X Nintendo DS Development Page
+  description: jstart is an ambitious little dude who is working on a real-time strategy game engine. I've been helping him out for some time. He is currently alpha testing the Patater GUI Kit. He uses a Macintosh and has made some Xcode templates and mac specific tutorials.
+  tags: development-on-macintosh
+  url: /links/jstarts-mac-os-x-nintendo-ds-development-page
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://users.rcn.com/n8mobiles/extras/Demos.html
+
+  id: tag:www.patater.com,2007-11-11:/links/mr-spivs-nintendo-ds-development-page
+  title: Mr.Spiv's Nintendo DS Development Page
+  description: Mr.Spiv is a guy who saw the need for more Mac support in the GBA and NDS dev communities and took it on himself to provide a few solutions. He compiles devkitPro and libnds for Mac kiddies as well as making linker software. He is currently working of some NeoFlash linker software for the Macintosh.
+  tags: development-on-macintosh neoflash
+  url: /links/mr-spivs-nintendo-ds-development-page
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://deadcoderssociety.org/www/dev/nds/
+
+  id: tag:www.patater.com,2007-11-11:/links/dual-soft-forums
+  title: Dual-Soft Forums
+  description: These forums are for dudes who want to discuss various projects at Dual-Soft or need help with their Macintoshes.
+  tags: development-on-macintosh forums
+  url: /links/dual-soft-forums
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.dual-soft.com/forum/
+
+  id: tag:www.patater.com,2007-11-11:/links/gbadev-forum
+  title: gbadev Forum
+  description: The number one forum for both GBA and NDS developers. If you have some crazy questions or what to know of the latest breakthroughs, check it out here.
+  tags: forums
+  url: /links/gbadev-forum
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://forum.gbadev.org/
+
+  id: tag:www.patater.com,2007-11-11:/links/ndsupdates-forum
+  title: NDSUpdates Forum
+  description: A forum to discuss the latest Nintendo DS news.
+  tags: forums
+  url: /links/ndsupdates-forum
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.ndsupdates.com/forum/index.php
+
+  id: tag:www.patater.com,2007-11-11:/links/neoflash-forums
+  title: NeoFlash Forums
+  description: Another very active forum for Nintendo DS. Ran by the jolly fellows at NeoFlash.
+  tags: forums neoflash
+  url: /links/neoflash-forums
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.neoflash.com/forum/
+
+  id: tag:www.patater.com,2007-11-11:/links/player-advance-forum
+  title: Player Advance Forum
+  description: A French forum for French NDS dudes. Read it to practice your 1337 French skills or some such.
+  tags: forums
+  url: /links/player-advance-forum
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.playeradvance.org/index.php?s=5d28a0198dec6bef1209ac034ca1278e&act=idx
+
+  id: tag:www.patater.com,2007-11-11:/links/bigredpimp-no-dsdev
+  title: BigRedPimp no DSDev
+  description: BigRedPimp is a super cool big red headed guy from Ohio, USA. Go check out what his current DS projects are.
+  tags: homebrew people-pages
+  url: /links/bigredpimp-no-dsdev
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://dsdev.bigredpimp.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/darkain-com-nintendo-ds
+  title: Darkain.com - Nintendo DS
+  description: Some dude from Tacoma, Washington, USA attempts to get into DS Dev. Does he succeed? Did he manage his time well? Check it out to find out!
+  tags: homebrew people-pages
+  url: /links/darkain-com-nintendo-ds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.darkain.com/nintendo_ds/
+
+  id: tag:www.patater.com,2007-11-11:/links/david-rorexs-nintendo-ds-development-pages
+  title: David Rorex's Nintendo DS Development Pages
+  description: This dude puts his projects here.
+  tags: homebrew people-pages
+  url: /links/david-rorexs-nintendo-ds-development-pages
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://ds.rorexrobots.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/drunken-coders
+  title: Drunken Coders
+  description: Run by Dovoto. A good source to find out the latest Nintendo DS homebrew community news.
+  tags: homebrew
+  url: /links/drunken-coders
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.drunkencoders.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/ds-ninjaskillz
+  title: DS @ NiNJASKiLLZ
+  description: It is what is sounds like. Just a run of the mill homebrew site, with ninja skills.
+  tags: homebrew
+  url: /links/ds-ninjaskillz
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://ds.ninjaskillz.org/index.html
+
+  id: tag:www.patater.com,2007-11-11:/links/dsdev-ds-development
+  title: dsdev - DS development
+  description: Ran by the same guy who runs gbadev. A nice place for homebrew news and forums and such. But currently, there is more DS related activity on the gbadev forums relating to DS development. Perhaps the web master will combine the two forums eventually, so that you can participate in the gbadev forums relating to NDS on the dsdev forums.
+  tags: homebrew
+  url: /links/dsdev-ds-development
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://dsdev.org/
+
+  id: tag:www.patater.com,2007-11-11:/links/gx-mods
+  title: GX-Mods
+  description: This is probably the best French homebrew news site I've come across. It has RSS feeds to both news items and to homebrew software downloads. Very nice.
+  tags: homebrew ds-news-sites
+  url: /links/gx-mods
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://mobiles.gx-mod.com/modules/news/index.php
+
+  id: tag:www.patater.com,2007-11-11:/links/hamyteths-blog
+  title: Hamyteth's Blog
+  description: HAY MY TEETH. Interesting happenings in homebrew presented in Japanese.
+  tags: homebrew people-pages
+  url: /links/hamyteths-blog
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://hamyteth.exblog.jp/
+
+  id: tag:www.patater.com,2007-11-11:/links/mymateo-the-ds-resource
+  title: Mymateo - The DS Resource
+  description: The self-proclaimed DS resource. Time will tell. A nice listing of homebrew projects and downloads, if you are into that sort of thing.
+  tags: homebrew
+  url: /links/mymateo-the-ds-resource
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.mymateo.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/nds-development
+  title: NDS Development
+  description: Nice place for Japanese speakers to read about Nintendo DS homebrew. A few forums, tutorials, and links.
+  tags: homebrew
+  url: /links/nds-development
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://j-gbadev.hp.infoseek.co.jp/ds/index.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/nds-homebre
+  title: NDS Homebrew
+  description: Another good place to check out all things relating to the homebrew community. Downloads available too.
+  tags: homebrew
+  url: /links/nds-homebre
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.ndshb.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/pdroms-nintendo-ds
+  title: PDRoms - Nintendo DS
+  description: A pretty popular place for public domain roms. This link will take you to the Nintendo DS section of the website.
+  tags: homebrew
+  url: /links/pdroms-nintendo-ds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.pdroms.de/typ.php?system=Nintendo+DS
+
+  id: tag:www.patater.com,2007-11-11:/links/pouet-nds-public-domain-roms
+  title: Pouet - NDS Public Domain ROMs
+  description: The Nintendo DS section of this site's collection of public domain ROMs.
+  tags: homebrew
+  url: /links/pouet-nds-public-domain-roms
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://pouet.net/prodlist.php?type=&platform=Nintendo+DS&type2=&platform2=&type3=&platform3=&x=36&y=3
+
+  id: tag:www.patater.com,2007-11-11:/links/public-ds-wifi-demos-presented-by-stephen-stair
+  title: Public DS Wifi Demos presented by Stephen Stair
+  description: The famous sgstair of DS wifi fame presents the public DS Wifi Demos for your inquizical mind.
+  tags: homebrew
+  url: /links/public-ds-wifi-demos-presented-by-stephen-stair
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://akkit.org/DS/E3/
+
+  id: tag:www.patater.com,2007-11-11:/links/sixtyfourscener
+  title: SIXTYFOURSCENER
+  description: NeoFlash tools and homebrew links.
+  tags: homebrew neoflash
+  url: /links/sixtyfourscener
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://64scener.com/ds/index.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/bloom
+  title: Bloom
+  description: Amazing 3D bloom affect. It takes up pretty much all your VRAM, but looks pretty.
+  tags: projects interesting
+  url: /links/bloom
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://forum.gbadev.org/viewtopic.php?t=7983
+
+  id: tag:www.patater.com,2007-11-11:/links/chinese-engish-dictionary
+  title: Chinese English Dictionary
+  description: Yay, finally a nice dictionary for the DS.  Thanks hulihutu. Here's to further development! Cheers!
+  tags: projects
+  url: /links/chinese-engish-dictionary
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://teamnnc.free.fr/phpBB2/viewtopic.php?p=5403#5403
+
+  id: tag:www.patater.com,2007-11-11:/links/czcs-bright-star-catalogue
+  title: czc's Bright Star Catalogue
+  description: Quite the quality project. A complete catalog of stars, viewable in 3d, with zooming action. It's a 3D telescope for your DS. Incredible.
+  tags: projects
+  url: /links/czcs-bright-star-catalogue
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://czc.free.fr/ds/
+
+  id: tag:www.patater.com,2007-11-11:/links/darkains-multi-nds-loader
+  title: Darkain's Multi-NDS Loader
+  description: This one's a gem. Put all of your homebrew software into one nds file for loads of fun on the go. A lot nicer than having to continually flash or wmb a piece of homebrew software over every time you want to try something new. In all of my games or demos, press start and select to exit back to this loader.
+  tags: projects
+  url: /links/darkains-multi-nds-loader
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://ds.darkain.com/hack/
+
+  id: tag:www.patater.com,2007-11-11:/links/dragonmindeds-drugwars-ds
+  title: DragonMinded's DrugWars DS
+  description: DragonMinded created this simple port of a well renowned game in which you are a drug dealer of sorts. Ewww, mosaic cityscapes...
+  tags: projects
+  url: /links/dragonmindeds-drugwars-ds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.youngmx.com/ndsdev/
+
+  id: tag:www.patater.com,2007-11-11:/links/dsheretic
+  title: dsHeretic
+  description: A decent port of Heretic for the DS. It works nice. It's Heretic on the Nintendo DS.
+  tags: projects
+  url: /links/dsheretic
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://heretic.drunkencoders.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/dsquake
+  title: DSQuake
+  description: A port of Quake for the DS.
+  tags: projects
+  url: /links/dsquake
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://dsquake.blogspot.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/liranunas-sgolfds
+  title: LiraNuna's SGolfDS
+  description: Want to know what the first S stands for in this golf game?  Play it to find out.
+  tags: projects
+  url: /links/liranunas-sgolfds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://liranuna.drunkencoders.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/loopys-nesds
+  title: Loopy's nesDS
+  description: It's the Nintendo Entertainment System Emulator for the Nintendo DS. I'm excited to play all my <a href="http://users.ign.com/collection/Patater">NES Games</a> on my Nintendo DS.
+  tags: projects
+  url: /links/loopys-nesds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.cs.utah.edu/~tew/nesDS/
+
+  id: tag:www.patater.com,2007-11-11:/links/loopys-snesds
+  title: Loopy's snesDS
+  description: It's the Super Nintendo Entertainment System Emulator for the Nintendo DS. If this babe ever gets transparency support, <a href="/contact">let me know</a>.
+  tags: projects
+  url: /links/loopys-snesds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.cs.utah.edu/~tew/snesDS/
+
+  id: tag:www.patater.com,2007-11-11:/links/megaetk
+  title: MegaETK
+  description: It's a side scrolling game. This is probably the best you'll ever see out of a PALib project. Decent work indeed.
+  tags: projects
+  url: /links/megaetk
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://etk.scener.org/
+
+  id: tag:www.patater.com,2007-11-11:/links/moonshell
+  title: MoonShell
+  description: NSF and MP3 player, png and jpeg viewer. Last time I checked, they were working on some kind of movie support.
+  tags: projects
+  url: /links/moonshell
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://mdxonline.dyndns.org/archives/nds/
+
+  id: tag:www.patater.com,2007-11-11:/links/nds-wave-machine
+  title: NDS Wave Machine
+  description: Ben presents us with a wave machine. Makes pretty waves on your DS.
+  tags: projects
+  url: /links/nds-wave-machine
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://masscat.afraid.org/ninds/wave_machine.php
+
+  id: tag:www.patater.com,2007-11-11:/links/ndsmail
+  title: NDSMail
+  description: Get your email from the DS.
+  tags: projects
+  url: /links/ndsmail
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://bronto-online.de/ndsmail_prev.zip
+
+  id: tag:www.patater.com,2007-11-11:/links/nintendo-ds-wireless-demos
+  title: Nintendo DS Wireless Demos
+  description: They are all here, presented in a nice CSS form with descriptions and titles pulled straight from the nds file. Very nice (thanks to BigRedPimp).
+  tags: projects
+  url: /links/nintendo-ds-wireless-demos
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://gbadev.tri-bit.com/nds/
+
+  id: tag:www.patater.com,2007-11-11:/links/nitrotracker
+  title: NitroTracker
+  description: Tob's amazing Fasttracker II style tracker for the Nintendo DS. Create amazing beats melodies on your DS with this wonderful app.
+  tags: projects
+  url: /links/nitrotracker
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://nitrotracker.tobw.net/
+
+  id: tag:www.patater.com,2007-11-11:/links/patater-gui-kit
+  title: Patater GUI Kit
+  description: The Patater GUI Kit. Designed to be completely separate from graphics, it can run on the Nintendo DS in any gfx mode, including console mode with any size text. The widgets are in an early stage, but the building blocks are all there to create some amazing user interfaces and custom widgets.
+  tags: projects patater
+  url: /links/patater-gui-kit
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.patater.com/gui-kit
+
+  id: tag:www.patater.com,2007-11-11:/links/pixelfixer-from-ufos85
+  title: PixelFixer from Ufos85
+  description: Attempt to get rid of your dead pixels with this magic app.
+  tags: projects
+  url: /links/pixelfixer-from-ufos85
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://ufos85.mine.nu/nds/
+
+  id: tag:www.patater.com,2007-11-11:/links/pogoshell
+  title: PogoShell
+  description: Yet another shell. This one is for GBA only, last I checked. Perhaps somebody decided to port it.
+  tags: projects
+  url: /links/pogoshell
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.nightmode.org/pocket/index.orig.html
+
+  id: tag:www.patater.com,2007-11-11:/links/python-on-ds
+  title: Python on DS
+  description: The homepage for running Python on the Nintendo DS. Python is beautiful.
+  tags: projects
+  url: /links/python-on-ds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.disinterest.org/NDS/Python24.html
+
+  id: tag:www.patater.com,2007-11-11:/links/sausageboys-airstrike
+  title: SausageBoy's AirStrike
+  description: AirStrike for the DS? Preposterous!
+  tags: projects
+  url: /links/sausageboys-airstrike
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.gasp3.l2p.net/
+
+  id: tag:www.patater.com,2007-11-11:/links/scummvm-ds
+  title: SCUMMVM DS
+  description: SCUMMVM for the DS. Maniac Mansion, Day of the Testicle, all those great Lucas Arts games on the DS. Yay.
+  tags: projects
+  url: /links/scummvm-ds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://scummvm.drunkencoders.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/sintaxs-flipbook
+  title: Sintax's FlipBook
+  description: This is a flipbook for the Nintendo DS.
+  tags: projects
+  url: /links/sintaxs-flipbook
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://nintendo-ds.dcemu.co.uk/flipbook.shtml%22
+
+  id: tag:www.patater.com,2007-11-11:/links/snesds-compatibility-list
+  title: snesDS - Compatibility List
+  description: With this list, you'll have the power to see what games in your SNES collection will be playable on the Nintendo DS.
+  tags: projects
+  url: /links/snesds-compatibility-list
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://luffy.free.fr/nds/snesds_compat/index.php
+
+  id: tag:www.patater.com,2007-11-11:/links/sylphirc-from-ficedula
+  title: SylphIRC from Ficedula
+  description: YAY! Rejoice ye people of this world. IRC on DS is here. Finally here! Much thanks and 10 kudos to Ficedula. <a href="http://forum.gbadev.org/viewtopic.php?p=81720#81720">How to use it</a>
+  tags: projects
+  url: /links/sylphirc-from-ficedula
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.sylphds.net/ev2/contentview.php?id=401
+
+  id: tag:www.patater.com,2007-11-11:/links/thechucksters-stellads
+  title: TheChuckster's StellaDS
+  description: TheChuckster returns with what might turn into an incredible project. This time around, he brings us an Atari 2600 emulator, complete with a 6502 core written in C++ ported from <a href="http://stella.sourceforge.net/">Stella</a>. He promises that this project may spawn an Apple II emulator. We'll see what comes of that. If you have any news regarding an Apple II emulator, please <a href="/contact">contact me</a>
+  tags: projects
+  url: /links/thechucksters-stellads
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://thechuckster.homelinux.com/stellads/
+    ),
+
+  id: tag:www.patater.com,2007-11-11:/links/virtual-game-maker
+  title: Virtual Game Maker
+  description: Yay, make virtual games.
+  tags: projects
+  url: /links/virtual-game-maker
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://perso.wanadoo.fr/Globoeil/VGMDS/VGMDS.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/win2ds
+  title: Win2DS
+  description: An interesting little app that lets you control your Windows computer remotely from the DS. Kinda buggy, but kinda works.
+  tags: projects
+  url: /links/win2ds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://win2ds.1emulation.com/Win2DS0.5.zip
+
+  id: tag:www.patater.com,2007-11-11:/links/winds
+  title: WinDS
+  description: WinDS is a port of GBA Wins. LiraNuna wrote it before he even had a Nintendo DS. What a crazy Israeli genius.
+  tags: projects
+  url: /links/winds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://liranuna.drunkencoders.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/building-a-cheat-tool
+  title: Building a Cheat Tool
+  description: Similar to the hacks with Mario Kart DS (enabling extra tracks, changing ROB's arm color), a group of forum participators attempts to create a universal cheat device for the DS.
+  tags: hacking interesting
+  url: /links/building-a-cheat-tool
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://forum.gbadev.org/viewtopic.php?t=8662
+
+  id: tag:www.patater.com,2007-11-11:/links/ds-download-station
+  title: DS Download Station
+  description: The DS Download Station has been dumped. Will this allow us to share our homebrew programs over wifi with those who have not flashed their DS systems with FlashMe? The hacking has already begun and it seems very promising.
+  tags: hacking
+  url: /links/ds-download-station
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://forum.gbadev.org/viewtopic.php?t=9150
+
+  id: tag:www.patater.com,2007-11-11:/links/gameboy-hackaday-com
+  title: gameboy.hackaday.com - Featuring Nintendo DS and Gameboy Hacks
+  description: This is a decent news site for general hacking news. It's a nice resource to see what sort of hacking has been going on lately. I believe that you can also post your latest hacks here too, though <a href="/contact">correct me if I'm wrong</a>.
+  tags: hacking ds-news-sites
+  url: /links/gameboy-hackaday-com
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://gameboy.hackaday.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/lik-sangs-nintendo-ds-take-apart
+  title: Lik-sang's Nintendo DS Take Apart
+  description: This is collection of images taken by those crazy chinese dudes at Lik-sang when they dissected a Nintendo DS.
+  tags: hacking
+  url: /links/lik-sangs-nintendo-ds-take-apart
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.lik-sang.com/news.php?artc=3530&
+
+  id: tag:www.patater.com,2007-11-11:/links/loops-iqueds-exposed
+  title: Loopy's iQueDS Exposed
+  description: Here, loopy publishes images of his iQueDS as he takes it apart to show you what's inside. He proves that there is no extra RAM inside, despite StoneCypher's persistence that it exists. Maybe it does exist, maybe it doesn't. Find out for yourself.
+  tags: hacking
+  url: /links/loops-iqueds-exposed
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://home.utah.edu/~u0422123/iQue/
+
+  id: tag:www.patater.com,2007-11-11:/links/natrium42s-serial-interface-for-passme
+  title: Natrium42's Serial Interface for PassMe
+  description: Natrium42 has proven himself a genius once again with this little hack. It's a serial interface for the Nintendo DS via PassMe. It seems he has already created some GPS software, as well as establishing bluetooth communication to his computer.
+  tags: hacking
+  url: /links/natrium42s-serial-interface-for-passme
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://natrium42.com/projects/serial.html
+
+  id: tag:www.patater.com,2007-11-11:/links/nikkei
+  title: Nikkei
+  description: "Electronics' Nintendo DS: The Secrets Within"
+  tags: hacking
+  url: /links/nikkei
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://neasia.nikkeibp.com/neasia/000260
+
+  id: tag:www.patater.com,2007-11-11:/links/nintendo-ds-firmware-dumper
+  title: Nintendo DS Firmware Dumper
+  description: Natrium's classic firmware dumper.
+  tags: hacking
+  url: /links/nintendo-ds-firmware-dumper
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.natrium42.com/blog/?p=20
+
+  id: tag:www.patater.com,2007-11-11:/links/nintendo-ds-spinner-ad-convertor
+  title: Nintendo DS Spinner/AD Convertor
+  description: This little device is absolutely incredible. I won't even attempt to describe how amazing it is. It's more amazing than the fact that Snape killed Dumbledore.
+  tags: hacking
+  url: /links/nintendo-ds-spinner-ad-convertor
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.kako.com/neta/2005-010/2005-010.html
+
+  id: tag:www.patater.com,2007-11-11:/links/nintendo-save-game-reader
+  title: Nintendo Save Game Reader
+  description: Ever wanted to manage multiple saves for a game, see what it was like to get all 150 stars in Super Mario 64 DS without actually earning them? This little hardware device is the tool for you. Now you won't have to worry about your little sibling erasing your save games ever again. This device is a Nintendo DS save game reader. And if you know Japanese, you can build one too.
+  tags: hacking
+  url: /links/nintendo-save-game-reader
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.kako.com/neta/2005-007/2005-007.html
+
+  id: tag:www.patater.com,2007-11-11:/links/tbbles-nintendo-ds-wmb-host-association-documentation
+  title: TBBle's Nintendo DS WMB Host Association Documentation
+  description: TBBle is currently hacking up the WMB protocols and is documenting his progress and experiments here. Proof of concept code included.
+  tags: hacking
+  url: /links/tbbles-nintendo-ds-wmb-host-association-documentation
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://wiki.tbble.net/pmwiki.php/NintendoDS/WirelessMultiBootHostAssociation
+
+  id: tag:www.patater.com,2007-11-11:/links/miyamoto-gets-down
+  title: Miyamoto Gets Down
+  tags: fun-with-ds
+  url: /links/miyamoto-gets-down
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://miyamoto.ytmnd.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/ndsart
+  title: NDSart
+  description: This place is quite unique. For the longest time it has been the only link in the Fun with the Nintendo DS section of this links page. This site provides a place for you to submit PictoChat art and holds frequent contests. It's fun.
+  tags: fun-with-ds
+  url: /links/ndsart
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://ndsart.net/
+
+  id: tag:www.patater.com,2007-11-11:/links/hconvert
+  title: hConvert
+  description: Never use .h or .c files for binary data again! With this utility you can convert a C-style representation of binary data into <em>REAL ACTUAL</em> binary data.
+  tags: software-tools patater
+  url: /links/hconvert
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.patater.com/hconvert
+
+  id: tag:www.patater.com,2007-11-11:/links/maped
+  title: MapEd
+  description: A nice map and tile editor for GBA. Doesn't take much to make it work with the NDS.
+  tags: software-tools
+  url: /links/maped
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://nessie.gbadev.org/
+
+  id: tag:www.patater.com,2007-11-11:/links/mirach
+  title: Mirach
+  description: The world reknowned tile and map editor. Quite delicious.
+  tags: software-tools
+  url: /links/mirach
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://user.chem.tue.nl/jakvijn/downloads.htm#mirach
+
+  id: tag:www.patater.com,2007-11-11:/links/nds-disassembler
+  title: NDS Disassembler
+  description: The website may be in Japanese, but what this software does will be important to all your English speakers out there. It takes an nds file and spits out assembly code, which shouldn't be so foreign to you.
+  tags: software-tools
+  url: /links/nds-disassembler
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://hp.vector.co.jp/authors/VA018359/
+
+  id: tag:www.patater.com,2007-11-11:/links/nds-header-viewer
+  title: NDS Header Viewer
+  description: This software allows you to view the header of an nds file and see what little treasures await you.
+  tags: software-tools
+  url: /links/nds-header-viewer
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.nintenren.com/ndshv/
+
+  id: tag:www.patater.com,2007-11-11:/links/nds-model-viewer
+  title: NDS Model Viewer
+  description: Ever wanted to view all those cool models in a Nintendo DS game? Well, with this tool, you can! I know this works with Metroid Prime Hunters&colon; First Hunt, <a href="/contact">let me know</a> if it works with other games as well.
+  tags: software-tools
+  url: /links/nds-model-viewer
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.n-philes.com/forums/showthread.php?t=10327
+
+  id: tag:www.patater.com,2007-11-11:/links/nds-top-system
+  title: NDS Top System
+  description: I forgot what this piece of software did, and I currently don't have an internet connection. <a href="/contact">Remind me</a> to look this stuff up and fix this link description. Thanks.
+  tags: software-tools
+  url: /links/nds-top-system
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://ndsts.handholder.net/
+
+  id: tag:www.patater.com,2007-11-11:/links/nintenren
+  title: Nintenren - Nintendo ROM Renamer with NDS support
+  description: I also forgot what this software does. I'm thinking it lets you rename and change the icon of an nds file, but I'm unsure. Make sure to <a href="/contact">let me know</a> to fix this.
+  tags: software-tools
+  url: /links/nintenren
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.nintenren.com/nintenren/
+
+  id: tag:www.patater.com,2007-11-11:/links/pictosniff
+  title: PictoSniff
+  description: I'm not sure this is the project's homepage, but will keep the link there until somebody <a href="/contact">tells me otherwise</a>. This program sniffs PictoChat traffic and displays it in a relatively easy to view fashion.
+  tags: software-tools
+  url: /links/pictosniff
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://freshmeat.net/projects/pictosniff/
+
+  id: tag:www.patater.com,2007-11-11:/links/desmume
+  title: DeSmuME
+  description: The first emulator to support 3D.
+  tags: emulation
+  url: /links/desmume
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://yopyop156.ifrance.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/dsemu
+  title: DSEmu
+  description: I believe this is the premiere emulator at the current time. You Macintosh users may be happy to hear that this one runs in Virtual PC, unlike some other emulators. Let's all hope Doublec and the crew make this baby last. Open source forever!
+  tags: emulation
+  url: /links/dsemu
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.double.co.nz/nintendo_ds/dsemu.html
+
+  id: tag:www.patater.com,2007-11-11:/links/dualis
+  title: Dualis
+  description: This emulator is still in use too. Quite popular. The thing with current development on the DS is that if it doesn't work in one emulator, it might work in another. SO its nice to have a collection of Nintendo DS emulators. This one is a good add to that collection.
+  tags: emulation
+  url: /links/dualis
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://dualis.1emulation.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/hyperds
+  title: HyperDS
+  description: Firefly was working on this one for a while, but since he can only do one project at a time, he decided to dump it and developed WiFiMe and WMB software and the like.
+  tags: emulation
+  url: /links/hyperds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.hyperds.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/ideas
+  title: iDeaS
+  description: Yet another emulator for the Nintendo DS. This emulator also works under Virtual PC (for those Mac heads).
+  tags: emulation
+  url: /links/ideas
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://ideasemu.altervista.org/
+
+  id: tag:www.patater.com,2007-11-11:/links/nintendo-ds-emulator
+  title: Nintendo DS Emulator
+  description: A site deticated to covering the status of many Nintendo DS emulators.
+  tags: emulation
+  url: /links/nintendo-ds-emulator
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.ndsemulator.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/nocashgba
+  title: no$gba
+  description: Despite the name (making you think it can only work on gba and that it is free), this baby can help developers debug their Nintendo DS programs like no other for only 15 USD. <a href="http://nocash.emubase.de/gba.htm">Actually no$ Non-Debugging Version</a>
+  tags: emulation
+  url: /links/nocashgba
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://nocash.emubase.de/gba-dev.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/penis
+  title: PENIS
+  description: This is a penis emulator. It's fun.
+  tags: emulation
+  url: /links/penis
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.4chan.org/
+
+  id: tag:www.patater.com,2007-11-11:/links/nintendo-ds-japan
+  title: ニンテンドーＤＳ ダウンロードサービス
+  description: 『ニンテンドーＤＳ ダウンロードサービス』
+  tags: ds-news-sites
+  url: /links/nintendo-ds-japan
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.nintendo.co.jp/ds/download/index.html
+
+  id: tag:www.patater.com,2007-11-11:/links/4colorrebellion
+  title: 4colorrebellion - 4cr
+  description: This place is fairly new. It's becoming pretty popular and publishes interesting news, fairly quickly. All the news items are available in an rss feed and each item can be commented on. A nice set up. Enjoyable.
+  tags: ds-news-sites
+  url: /links/4colorrebellion
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.4colorrebellion.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/advanced-media-network-nintendo-ds-advanced
+  title: Advanced Media Network - Nintendo DS Advanced
+  description: More news for everybody. What do you get when you cross a Nintendo DS and a Game Boy Advance? Nintendo DS Advanced news, that's what.
+  tags: ds-news-sites
+  url: /links/advanced-media-network-nintendo-ds-advanced
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://ds.advancedmn.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/dcemu-nintendo-ds-news
+  title: DCEmu - Nintendo DS News
+  description: Odd that a website called Dreamcast Emulator would be publishing Nintendo DS news, but its true. This place is another one of my favorites, but not the most reliable source of news.
+  tags: ds-news-sites
+  url: /links/dcemu-nintendo-ds-news
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://nintendo-ds.dcemu.co.uk/
+
+  id: tag:www.patater.com,2007-11-11:/links/ds-gaming
+  title: DS Gaming
+  description: It's time to get BRITISH. YARRR!!!!
+  tags: ds-news-sites
+  url: /links/ds-gaming
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://dsgaming.co.uk/html/modules/news/
+
+  id: tag:www.patater.com,2007-11-11:/links/ds-homebrew-news
+  title: DS Homebrew News
+  description: MrShlee's homebrew blog. A great place to keep up on the latest news in the homebrew scene and all the latest homebrew releases.
+  tags: ds-news-sites homebrew
+  url: /links/ds-homebrew-news
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://ds.whatalicefound.net/news/
+
+  id: tag:www.patater.com,2007-11-11:/links/ds-party
+  title: DS Party
+  description: It's a DS party in the Netherlands. Dutch Nintendo DS news.
+  tags: ds-news-sites
+  url: /links/ds-party
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.dsparty.nl/
+
+  id: tag:www.patater.com,2007-11-11:/links/ds-update
+  title: DS Update
+  description: Another site with a nice presentation. I'm thinking it has RSS feed, but i haven't check this place out in a while. <a href="/contact">Let me know what's up</a>.
+  tags: ds-news-sites
+  url: /links/ds-update
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.dsupdate.net/
+
+  id: tag:www.patater.com,2007-11-11:/links/dsnews
+  title: DSNews
+  description: Are you ready for some British news? No? Well, too bad. Here it is anyway.
+  tags: ds-news-sites
+  url: /links/dsnews
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.dsnews.co.uk/
+
+  id: tag:www.patater.com,2007-11-11:/links/emuholic
+  title: Emuholic
+  description: Emuholic news. Just what you've always wanted. It is in English.
+  tags: ds-news-sites
+  url: /links/emuholic
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://emuholic.emuboards.com/modules.php?name=News&new_topic=4&tbid=4
+
+  id: tag:www.patater.com,2007-11-11:/links/gamecube-mods-handheld-news
+  title: Gamecube Mods - Handheld News
+  description: This is another oddly named news site, but hey, it's not that bad of a place to get some news.
+  tags: ds-news-sites
+  url: /links/gamecube-mods-handheld-news
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.gcmods.org/modules/news/index.php?storytopic=9
+    ),
+
+  id: tag:www.patater.com,2007-11-11:/links/ign-ds
+  title: IGN DS
+  description: One of my favorite places for DS news. Sometimes a bit slow, because they don't like to publish rumors, but nonetheless good.
+  tags: ds-news-sites
+  url: /links/ign-ds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://ds.ign.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/liveds
+  title: LiveDS
+  description: A nice site for DS news. It's in French. Fairly up to date too.
+  tags: ds-news-sites
+  url: /links/liveds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.liveds.fr/
+
+  id: tag:www.patater.com,2007-11-11:/links/maxconsole
+  title: MAXCONSOLE
+  description: Console gaming news, which also includes the Nintendo DS.
+  tags: ds-news-sites
+  url: /links/maxconsole
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.maxconsole.net/
+
+  id: tag:www.patater.com,2007-11-11:/links/nintelligent
+  title: Nintelligent
+  description: I guess intelligent people read their news from this place. They must be smart or something.
+  tags: ds-news-sites
+  url: /links/nintelligent
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.nintelligent.net/
+
+  id: tag:www.patater.com,2007-11-11:/links/nintendev
+  title: Nintendev
+  description: RSS enabled news feeds, tutorials, homebrew downloads, reviews, AvantGo (for your palm), and more. A nice site.
+  tags: ds-news-sites homebrew
+  url: /links/nintendev
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.nintendev.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/nintendo-central-canadian
+  title: Nintendo Central - Canadian
+  description: A decent Canadian news source for all things Nintendo. Often has news covering the Nintendo DS.
+  tags: ds-news-sites
+  url: /links/nintendo-central-canadian
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://n-central.com/modules/news/
+
+  id: tag:www.patater.com,2007-11-11:/links/nintendo-ds-spain
+  title: Nintendo DS Spain
+  description: This site is for all those Spanish speakers. It's a nice place to get some news.<br/><br/>Tu madre es muy bueno.
+  tags: ds-news-sites
+  url: /links/nintendo-ds-spain
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.ndsspain.com/index.php
+
+  id: tag:www.patater.com,2007-11-11:/links/nintendo-inside
+  title: Nintendo Inside
+  description: A great Japanese news site dedicated to bringing all news Nintendo. They have many interesting articles and are fast to the press.
+  tags: ds-news-sites
+  url: /links/nintendo-inside
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.nintendo-inside.jp/
+
+  id: tag:www.patater.com,2007-11-11:/links/nintendo-max
+  title: Nintendo Max
+  description: A nice place to keep up on the latest homebrew releases, if you're French...
+  tags: ds-news-sites homebrew
+  url: /links/nintendo-max
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.nintendomax.com/phpBB2/portal.php
+
+  id: tag:www.patater.com,2007-11-11:/links/nintendo-now
+  title: Nintendo Now
+  description: A decent Nintendo news site. Be sure to drink lots of water, it's important.
+  tags: ds-news-sites
+  url: /links/nintendo-now
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.nintendonow.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/nintendo-wifi-connection-slide-show
+  title: Nintendo WiFi Connection - Slide Show
+  description: Some interesting information about the Nintendo WiFi Connection. The first screenshots I've seen of the configuration screens.
+  tags: ds-news-sites
+  url: /links/nintendo-wifi-connection-slide-show
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.flickr.com/photos/apreche/sets/1139761/show/
+
+  id: tag:www.patater.com,2007-11-11:/links/nintendo-next
+  title: Nintendo-Next
+  description: Yes, Nintendo is always in the next item of news on this website.
+  tags: ds-news-sites
+  url: /links/nintendo-next
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.n-next.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/planet-gamecube
+  title: Planet Gamecube
+  description: General gaming news, but includes news about the Nintendo DS too.
+  tags: ds-news-sites
+  url: /links/planet-gamecube
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.planetgamecube.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/portable-nint
+  title: Portable Nint - French
+  description: Nint rhymes with lint. This is another French news site. Yay.
+  tags: ds-news-sites
+  url: /links/portable-nint
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://portablenint.free.fr/
+
+  id: tag:www.patater.com,2007-11-11:/links/programming-for-nintendo-ds-news
+  title: Programming for Nintendo DS News
+  description: This is a place covering programming news for Nintendo DS of all things. It is in Spanish.<br/><br/>El gato en me pantalones es muy gordo.
+  tags: ds-news-sites
+  url: /links/programming-for-nintendo-ds-news
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://dsprograming.blogspot.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/puissance-nintendo
+  title: Puissance-Nintendo
+  description: It's another one of those French sites, this time bringing you news. This place has quite nice articles and is ahead of many other sites in getting out the news. A reliable news source.
+  tags: ds-news-sites
+  url: /links/puissance-nintendo
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.p-nintendo.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/sales-in-japan
+  title: Sales In Japan
+  description: Presented by Nintendo Gal, the latest Japanese sales figures. Go DS go!
+  tags: ds-news-sites miscellaneous
+  url: /links/sales-in-japan
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.nintendogal.com/index.php?/categories/5-Japanese-Sales
+
+  id: tag:www.patater.com,2007-11-11:/links/touchds
+  title: TouchDS
+  description: News is here. Click it.
+  tags: ds-news-sites
+  url: /links/touchds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.touchds.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/toudy
+  title: Toudy
+  description: Another French news site. I'm haven't been following this place much at all, so if you can give me some information of how reliable the news from here is, <a href="/contact">let me know</a>.
+  tags: ds-news-sites
+  url: /links/toudy
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.toudy.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/whacko-nl
+  title: Whacko.nl
+  description: My good buddy Whacko runs this place. He calls it a plog, whatever that means. It has some nice news. Sometimes commercial, sometimes homebrew. A good mix.
+  tags: ds-news-sites people-pages
+  url: /links/whacko-nl
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.whacko.nl/plog/index.php
+
+  id: tag:www.patater.com,2007-11-11:/links/0xtob
+  title: _0xtob
+  description: A nice fellow. He knows a lot about sound and synthesizer programming. He wrote the DS Sampling Keyboard program.
+  tags: people-pages
+  url: /links/0xtob
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://ds.tobw.net/
+
+  id: tag:www.patater.com,2007-11-11:/links/angrycat
+  title: angrycat
+  tags: people-pages
+  url: /links/angrycat
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://angrycat.typepad.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/arog-aaron-rogers
+  title: arog - Aaron Rogers
+  tags: people-pages
+  url: /links/arog-aaron-rogers
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.aaronrogers.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/badname
+  title: BadName
+  tags: people-pages
+  url: /links/badname
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.apollostudio.nl/ds/
+
+  id: tag:www.patater.com,2007-11-11:/links/bafio
+  title: Bafio
+  tags: people-pages
+  url: /links/bafio
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://bafio.drunkencoders.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/bigredpimp
+  title: BigRedPimp
+  description: He's big. He's red. He's not a pimp. Excellent web designer. Very deep into web standards.
+  tags: people-pages
+  url: /links/bigredpimp
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.bigredpimp.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/brontoblog
+  title: Brontoblog
+  description: Bronto's Blog. Email on the DS was done here first! Bravo Bronto.
+  tags: people-pages
+  url: /links/brontoblog
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://blog.bronto-online.de/
+
+  id: tag:www.patater.com,2007-11-11:/links/chishm
+  title: Chishm
+  description: Awesome dude. The genius behind the GBA NDS FAT library. He's enabled the community with a great universal filesystem. Cheers to Chishm and his continued participation in the community. Because of his creation of the FAT library for a variety of DS accessories, we are forever in his debt. He has made our dreams come true.
+  tags: people-pages
+  url: /links/chishm
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://chishm.drunkencoders.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/cybereality
+  title: cybereality
+  description: The infamous creator of ticklegirl. Check out his other projects.
+  tags: people-pages
+  url: /links/cybereality
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.cybereality.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/darkfader-rafael-vuijk
+  title: DarkFader - Rafael Vuijk
+  description: The infamous creator of many cool things. He was ostracized from the dsdev community for writing a trojan DS program that bricked your DS.
+  tags: people-pages
+  url: /links/darkfader-rafael-vuijk
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://darkfader.net/ds/
+
+  id: tag:www.patater.com,2007-11-11:/links/darkkiller
+  title: DarkKiller
+  tags: people-pages
+  url: /links/darkkiller
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.ndsdumper.cjb.net/
+
+  id: tag:www.patater.com,2007-11-11:/links/davr-david-rorex
+  title: davr - David Rorex
+  tags: people-pages
+  url: /links/davr-david-rorex
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://davr.drunkencoders.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/davrs-blog
+  title: Davr's Blog
+  tags: people-pages
+  url: /links/davrs-blog
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://blog.davr.org/
+
+  id: tag:www.patater.com,2007-11-11:/links/desktopman
+  title: DesktopMan
+  tags: people-pages
+  url: /links/desktopman
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.auby.no/
+
+  id: tag:www.patater.com,2007-11-11:/links/dragonminded
+  title: DragonMinded
+  description: TI-86 ASM and VisualBasic Kiddie who adapted to Nintendo DS development very quickly
+  tags: people-pages
+  url: /links/dragonminded
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.youngmx.com/ndsdev/
+
+  id: tag:www.patater.com,2007-11-11:/links/duo
+  title: Duo
+  tags: people-pages
+  url: /links/duo
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://duo.gbadev.org/
+
+  id: tag:www.patater.com,2007-11-11:/links/dynamicstabilitys-l337h4x0mg
+  title: DynamicStability's l337h4×0mg!
+  description: l337h4× wut?<br>He just has a cool gecko is all.
+  tags: people-pages
+  url: /links/dynamicstabilitys-l337h4x0mg
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://dynastab.drunkencoders.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/dynastabs-cs-course-work
+  title: DynaStab's CS Course Work
+  description: Cool stuff from DynaStab's course work.
+  tags: people-pages
+  url: /links/dynastabs-cs-course-work
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://satan.is-a-geek.net/Projects/School/
+
+  id: tag:www.patater.com,2007-11-11:/links/eponick
+  title: Eponick
+  tags: people-pages
+  url: /links/eponick
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://members.gamedev.net/eponick/
+
+  id: tag:www.patater.com,2007-11-11:/links/ethos-space
+  title: Ethos' Space
+  tags: people-pages
+  url: /links/ethos-space
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://ethos.oddigytitanium.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/ficedula
+  title: Ficedula
+  description: Some interesting projects going on here. Final Fantasy VII graphics are on the DS, amazing special effects, and more. The URL sounds like Syphillis, but oh well; my web browser is virus proof.
+  tags: people-pages
+  url: /links/ficedula
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.sylphds.net/ev2/contentview.php?id=268
+
+  id: tag:www.patater.com,2007-11-11:/links/gary-linscott
+  title: Gary Linscott
+  tags: people-pages
+  url: /links/gary-linscott
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://members.fortunecity.com/infinityhq/dsdev/dsdev.html
+
+  id: tag:www.patater.com,2007-11-11:/links/gpf-troy-davis
+  title: GPF - Troy Davis
+  tags: people-pages
+  url: /links/gpf-troy-davis
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://gpf.dcemu.co.uk/
+
+  id: tag:www.patater.com,2007-11-11:/links/guybrush
+  title: Guybrush
+  tags: people-pages
+  url: /links/guybrush
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://folk.uio.no/kjetisve/
+
+  id: tag:www.patater.com,2007-11-11:/links/headspin
+  title: HeadSpin
+  tags: people-pages
+  url: /links/headspin
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://headkaze.webpal.info/
+
+  id: tag:www.patater.com,2007-11-11:/links/honkeykong-capnglass
+  title: HonkeyKong - CapnGlass
+  description: The blog of HonkeyKong.
+  tags: people-pages
+  url: /links/honkeykong-capnglass
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.honkeykong.org/
+
+  id: tag:www.patater.com,2007-11-11:/links/infantile-paralysiser
+  title: Infantile Paralysiser
+  tags: people-pages
+  url: /links/infantile-paralysiser
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://mdxonline.dyndns.org/archives/nds/
+
+  id: tag:www.patater.com,2007-11-11:/links/irregular-child
+  title: IrregularChild
+  tags: people-pages
+  url: /links/irregular-child
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  language: jp
+  uri: http://hp.vector.co.jp/authors/VA018359/
+
+  id: tag:www.patater.com,2007-11-11:/links/jajas-blog
+  title: JaJa's Blog
+  tags: people-pages
+  url: /links/jajas-blog
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://pageofrandom.wordpress.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/jakel
+  title: Jakel
+  tags: people-pages
+  url: /links/jakel
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://jakelshark.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/joat
+  title: Joat
+  description: This is joat's page. Joatse and Joatmeal to the rescue.
+  tags: people-pages
+  url: /links/joat
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.auia.net/
+
+  id: tag:www.patater.com,2007-11-11:/links/jstarts-blog
+  title: jstart's blog
+  description: Aspiring developer
+  tags: people-pages
+  url: /links/jstarts-blog
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://dsosx.blogspot.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/kraln
+  title: Kraln's Blog
+  description: Kraln is a super cool cat from Brooklyn.
+  tags: people-pages
+  url: /links/kraln
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.kraln.com/blogcms/
+
+  id: tag:www.patater.com,2007-11-11:/links/liranuna-liran-nuna
+  title: LiraNuna - Liran Nuna
+  description: The only console programmer in Israel
+  tags: people-pages
+  url: /links/liranuna-liran-nuna
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://liranuna.drunkencoders.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/locke
+  title: Locke
+  tags: people-pages
+  url: /links/locke
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://lockeds.blogspot.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/mightmax
+  title: MightyMax
+  description: A cool dude with lots of fun ideas. Author of an DLDI, GBAMP Multiboot and an mpeg player for DS. Check out his current projects.
+  tags: people-pages
+  url: /links/mightmax
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://mightymax.org/
+
+  id: tag:www.patater.com,2007-11-11:/links/miqualke
+  title: Miqualke
+  tags: people-pages
+  url: /links/miqualke
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://miqds.free.fr/
+
+  id: tag:www.patater.com,2007-11-11:/links/mollusk
+  title: Mollusk
+  tags: people-pages
+  url: /links/mollusk
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://teamnnc.free.fr/html/index.php
+
+  id: tag:www.patater.com,2007-11-11:/links/mollusk-ds
+  title: Mollusk DS
+  tags: people-pages
+  url: /links/mollusk-ds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://teamnnc.free.fr/phpBB2/portal.php
+
+  id: tag:www.patater.com,2007-11-11:/links/nikolas
+  title: Nikolas
+  tags: people-pages
+  url: /links/nikolas
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://koti.welho.com/plahtin6/
+
+  id: tag:www.patater.com,2007-11-11:/links/oddigy
+  title: Oddigy
+  description: He made some cool stuff out of beads. He arrange a bunch of beads into the shape of various sprites from games and then ironed them to melt them together.
+  tags: people-pages
+  url: /links/oddigy
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://oddigy.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/panyawos-blog
+  title: Panyawo's Blog
+  description: A collector of flash carts (just ask to see his collection; it's so huge). He has a white cat and a white Nintendo DS (and maybe a white car). A very nice guy.
+  tags: people-pages
+  url: /links/panyawos-blog
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://blog.goo.ne.jp/panyawo/
+
+  id: tag:www.patater.com,2007-11-11:/links/pepsimans-blog
+  title: Pepsiman's blog
+  tags: people-pages
+  url: /links/pepsimans-blog
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.dslinux.org/blogs/pepsiman
+
+  id: tag:www.patater.com,2007-11-11:/links/poffy-shirt
+  title: Poffy Shirt
+  description: Support poffy and natrium42 by purchasing this wonderful, stylish, Poffy Shirt.
+  tags: people-pages
+  url: /links/poffy-shirt
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.zazzle.com/natrium42
+
+  id: tag:www.patater.com,2007-11-11:/links/poffys-blog
+  title: Poffy's Blog
+  description: Poffy, an up and coming developer, presents us with his blog.
+  tags: people-pages
+  url: /links/poffys-blog
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://orbis.drunkencoders.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/rich-whitehouse
+  title: Rich Whitehouse
+  tags: people-pages
+  url: /links/rich-whitehouse
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.telefragged.com/thefatal/index.php?content=inc_si_ds.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/robm
+  title: RobM
+  description: It features an interlaced background that when scrolled will drive your eyeballs crazy!
+  tags: people-pages
+  url: /links/robm
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://robm.drunkencoders.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/sata
+  title: Sata
+  description: Genius
+  tags: people-pages
+  url: /links/sata
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.pat.hi-ho.ne.jp/sata68/nds.shtml
+
+  id: tag:www.patater.com,2007-11-11:/links/sausage-boy
+  title: Sausage Boy
+  description: Aspiring sausage man.
+  tags: people-pages
+  url: /links/sausage-boy
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.gasp3.l2p.net/
+
+  id: tag:www.patater.com,2007-11-11:/links/sgstair
+  title: Sgstair
+  description: Sgstair is my hero.
+  tags: people-pages
+  url: /links/sgstair
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.akkit.org/
+
+  id: tag:www.patater.com,2007-11-11:/links/smealum
+  title: Smealum
+  description: He's French.
+  tags: people-pages
+  url: /links/smealum
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://jvteamds.free.fr/
+
+  id: tag:www.patater.com,2007-11-11:/links/stonecypher
+  title: StoneCypher
+  description: Excellent game designer. Not to be mistaken for a bad guy.
+  tags: people-pages
+  url: /links/stonecypher
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://sc.tri-bit.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/tbble
+  title: TBBle
+  tags: people-pages
+  url: /links/tbble
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://wiki.tbble.net/NintendoDS
+
+  id: tag:www.patater.com,2007-11-11:/links/flash2advance
+  title: Flash2Advance
+  tags: flash-carts
+  url: /links/flash2advance
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.flash2advance.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/flashmp
+  title: FlashMP
+  description: This is my preffered way of development and running homebrew software on the Nintendo DS. It allows running of Nintendo DS code from a GBA Movie Player version 2.
+  tags: flash-carts running-programs
+  url: /links/flashmp
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.ndshb.com/modules.php?name=Content&pa=showpage&pid=26
+
+  id: tag:www.patater.com,2007-11-11:/links/flashmp-cvs
+  title: FlashMP - CVS
+  tags: flash-carts
+  url: /links/flashmp-cvs
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://cvs.sourceforge.net/viewcvs.py/devkitpro/projects/nds/bootstrap/flashmp/
+
+  id: tag:www.patater.com,2007-11-11:/links/flashmp-development-forum-1
+  title: FlashMP - Development Forum 1
+  description: Some background info on how FlashMP came to be. Part 1 of 2.
+  tags: flash-carts
+  url: /links/flashmp-development-forum-1
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://forum.gbadev.org/viewtopic.php?t=5921
+
+  id: tag:www.patater.com,2007-11-11:/links/flashmp-development-forum-2
+  title: FlashMP - Development Forum 2
+  description: Some background info on how FlashMP came to be. Part 2 of 2.
+  tags: flash-carts
+  url: /links/flashmp-development-forum-2
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://forum.gbadev.org/viewtopic.php?t=6172
+
+  id: tag:www.patater.com,2007-11-11:/links/g6s-m3-adapter
+  title: G6's M3 Adapter
+  tags: flash-carts
+  url: /links/g6s-m3-adapter
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.gbalpha.com/gbalpha/GBAmedia3/M3.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/g6flash
+  title: G6Flash
+  tags: flash-carts
+  url: /links/g6flash
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.g6flash.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/gba-movie-player
+  title: GBA Movie Player
+  tags: flash-carts
+  url: /links/gba-movie-player
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.movieadvance.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/m3-adapter
+  title: M3 Adapter
+  tags: flash-carts
+  url: /links/m3-adapter
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.m3adapter.com/main.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/nds-converter
+  title: NDS Converter
+  tags: flash-carts
+  url: /links/nds-converter
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.firstsing.com/products/GS/GS029.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/supercard
+  title: SuperCard
+  description: Now Compatible with Nintendo DS Homebrew. Comes in both CF and SD versions.
+  tags: flash-carts
+  url: /links/supercard
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.supercard.cn/eng/index.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/neoflash
+  title: NeoFlash
+  description: The NeoFlash guys were the first ones to put out a flash cart marketed towards the Nintendo DS. For some reason, they give these babies away to cutting-edge developers and famous web sites. Now, they are working on the MK2 and MK3, which are special PassMe like devices that can run homebrew software from CF, SD, and MMC.
+  tags: flash-carts neoflash
+  url: /links/neoflash
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.neoflash.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/neoflash-korea
+  title: NeoFlash Korea
+  tags: neoflash
+  url: /links/neoflash-korea
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://neoflash.co.kr/products2.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/neoflash-competition-2005
+  title: NeoFlash Competition 2005
+  description: All the results from the NeoFlash 2005 Competition. See how well all the entries fared and download them to try out for yourself.
+  tags: neoflash homebrew
+  url: /links/neoflash-competition-2005
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.neoflash.com/compos/compo-05-08.html
+
+  id: tag:www.patater.com,2007-11-11:/links/neoflash-competition-2005-another-view
+  title: NeoFlash Competition 2005 - Another View
+  description: This is another, unofficial, review of the NeoFlash 2005 Competition written by Brakken. More in depth ratings are given in this review than in the official one.
+  tags: neoflash
+  url: /links/neoflash-competition-2005-another-view
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://iso420.pxn-os.com/nds/nf2005/index.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/consolesource-com
+  title: ConsoleSource.com
+  description: Another nice online store.
+  tags: retailers
+  url: /links/consolesource-com
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://consolesource.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/divineo
+  title: Divineo
+  description: The only place I know of to buy an M3. Kinda expensive, but they got 100% of the  M3 market, so this is the place to go.
+  tags: retailers
+  url: /links/divineo
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.divineo.com/cgi-bin/div-us/index.html
+
+  id: tag:www.patater.com,2007-11-11:/links/easybuy2000-com
+  title: Easybuy2000.com
+  description: Plenty of interesting gizmos to mess around with.
+  tags: retailers
+  url: /links/easybuy2000-com
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.easybuy2000.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/ecost-com
+  title: eCOST.com
+  description: Decent online store.
+  tags: retailers
+  url: /links/ecost-com
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.ecost.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/gdex-online-game-store
+  title: GDEX Online Game Store
+  description: A Japanese online game store. Wide selection of all sorts of goodies.
+  tags: retailers
+  url: /links/gdex-online-game-store
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.rakuten.ne.jp/gold/gdex/
+
+  id: tag:www.patater.com,2007-11-11:/links/ic2005-it-shop
+  title: IC2005 IT Shop
+  description: Sells a lot of NeoFlash stuff (MK2 and MK3, etc.) and also deals in NGC Phantom Modhips. Not too expensive either. A nice shop.
+  tags: retailers
+  url: /links/ic2005-it-shop
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.ic2005.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/kick-trading-canadian
+  title: Kick Trading - Canadian
+  description: These guys sell affordable flash carts and the Supercard, which may end up being a nice commercial cart. Suggested if you are in North America looking to buy a flash cart.
+  tags: retailers
+  url: /links/kick-trading-canadian
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.kicktrading.ca/index.php
+
+  id: tag:www.patater.com,2007-11-11:/links/lik-sang-com
+  title: Lik-Sang.com
+  description: One of my favorite Hong Kong import shops.
+  tags: retailers
+  url: /links/lik-sang-com
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.lik-sang.com/default.php?lsaid=470191
+
+  id: tag:www.patater.com,2007-11-11:/links/linker4u
+  title: linker4u
+  description: They have linkers for you, among other things.
+  tags: retailers
+  url: /links/linker4u
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.linker4u.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/play-asia
+  title: Play Asia
+  description: Another one of my favorite Hong Kong import shops.
+  tags: retailers
+  url: /links/play-asia
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.play-asia.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/success-hk
+  title: Success-HK
+  description: A nice Hong Kong import shop.
+  tags: retailers
+  url: /links/success-hk
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.success-hk.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/tampabaymods
+  title: TampaBayMods
+  description: A company out of Las Vegas, Nevada, USA, that will mod your game console for a variety of purposes. They mod Nintendo DS systems too.
+  tags: retailers
+  url: /links/tampabaymods
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.tampabaymods.com/
+
+  id: tag:www.patater.com,2007-11-11:/links/totalgba
+  title: TotalGBA
+  description: You could buy a flash cart from these guys. Last I checked, they only sold those hokey XG carts that I'm not much of a fan of.
+  tags: retailers
+  url: /links/totalgba
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://totalgba.com/index.php
+
+  id: tag:www.patater.com,2007-11-11:/links/video-games-plus-online
+  title: Video Games Plus Online - Canadian
+  description: A Canadian store to buy flash carts and other fun stuff.
+  tags: retailers
+  url: /links/video-games-plus-online
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.videogamesplus.ca/
+
+  id: tag:www.patater.com,2007-11-11:/links/winsunx-production
+  title: Winsunx Production
+  description: It almost sounds like Winsux, which would mean that Windows sucks, which is true. So I put the link here. Plus they sell stuff related to game development.
+  tags: retailers
+  url: /links/winsunx-production
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.winsunx.com/index.php
+
+  id: tag:www.patater.com,2007-11-11:/links/zuiderpark-computers-games
+  title: Zuiderpark Computers & Games
+  description: A dutch retailer dealing in games and all sorts of other electronic goodies.
+  tags: retailers
+  url: /links/zuiderpark-computers-games
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://zuiderpark-computers.nl/index.php?cPath=976_980
+
+  id: tag:www.patater.com,2007-11-11:/links/compiling-dslinux-from-cvs
+  title: Compiling DSlinux from CVS
+  description: Directions on how to compile DSLinux and perhaps how to make your own software for DSLinux.
+  tags: dslinux
+  url: /links/compiling-dslinux-from-cvs
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.dslinux.org/index.php?showtopic=381
+
+  id: tag:www.patater.com,2007-11-11:/links/dslinux-homepage
+  title: DSLinux Homepage
+  description: DS Linux is a quainty little program that you can use to run text based adventure games. It really is Linux for the DS. Yay.
+  tags: dslinux
+  url: /links/dslinux-homepage
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.dslinux.org/
+
+  id: tag:www.patater.com,2007-11-11:/links/guide-to-compiling-dslinux-apps
+  title: Guide to Compiling DSLinux Apps
+  description: This the only guide I know of covering how to compile your own programs for use with DSLinux. Hopefully something more formal will arise in the future. <a href="/contact">Let me know when it does.</a>
+  tags: dslinux
+  url: /links/guide-to-compiling-dslinux-apps
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.dslinux.org/index.php?showtopic=817
+
+  id: tag:www.patater.com,2007-11-11:/links/dslinux-nightly-builds
+  title: DSlinux Nightly Builds
+  description: Nightly builds of DSLinux
+  tags: dslinux
+  url: /links/dslinux-nightly-builds
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://kineox.free.fr/DS/
+
+  id: tag:www.patater.com,2007-11-11:/links/tinyirc
+  title: TinyIRC
+  description: IRC for DSLinux. Finally we can visit Efnet's \#dsdev wirelessly from our Nintendo DS Systems. Yay.
+  tags: dslinux
+  url: /links/tinyirc
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.patatersoft.info/DSLinux_tinyirc.zip
+
+  id: tag:www.patater.com,2007-11-11:/links/wireless-networking-setup
+  title: Wireless Networking Setup
+  description: This article covers how to set up wireless networking from within DSLinux.
+  tags: dslinux
+  url: /links/wireless-networking-setup
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.dslinux.org/wiki/index.php/Using_DSLinux#Wireless_Networking
+
+  id: tag:www.patater.com,2007-11-11:/links/pataters-game-collection
+  title: Patater's Game Collection
+  description: Check out my games collection and watch it grow (as I slowly find my lost Game Boy games).
+  tags: patater
+  url: /links/pataters-game-collection
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://users.ign.com/collection/Patater
+
+  id: tag:www.patater.com,2007-11-11:/links/rgb-compare
+  title: RGBCompare
+  description: A decent little utility that allows you to compare color inconsistencies between Nintendo DS color and computer color. Also outputs useful color snippets for coding with.
+  tags: patater software-tools
+  url: /links/rgb-compare
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.patater.com/rgb-compare
+
+  id: tag:www.patater.com,2007-11-11:/links/bigredpimps-apa
+  title: BigRedPimp's APA
+  description: BigRedPimp has created an APA (all points addressable) graphics library. Go read up on it, if you are curious as to how it works and what it is.
+  tags: interesting
+  url: /links/bigredpimps-apa
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://dsdev.bigredpimp.com/apa/
+
+  id: tag:www.patater.com,2007-11-11:/links/m3-and-g6-homebrew-incompatibility-fix
+  title: M3 and G6 Homebrew Incompatibility Fix
+  description: See what can be done to fix your homebrew app if it fails to run on an M3 or G6.
+  tags: interesting
+  url: /links/m3-and-g6-homebrew-incompatibility-fix
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://forum.gbadev.org/viewtopic.php?p=67001#67001
+
+  id: tag:www.patater.com,2007-11-11:/links/touch-screen-accuracy
+  title: Touch Screen Accuracy
+  description: A discussion about various techniques for reading more accurate values from the touch screen.
+  tags: interesting
+  url: /links/touch-screen-accuracy
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://forum.gbadev.org/viewtopic.php?p=69434
+
+  id: tag:www.patater.com,2007-11-11:/links/ds-wifi-hardware-reference
+  title: DS Wifi hardware Reference
+  description: Sgstair's DS Wifi reference. The wait is over. The WiFi bounty, set up to encourage the reverse engineering of the Nintendo DS WiFi hardware, has been claimed.
+  tags: ds-wifi technical-reference
+  url: /links/ds-wifi-hardware-reference
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.akkit.org/info/dswifi.htm
+
+  id: tag:www.patater.com,2007-11-11:/links/official-ds-wifi-forum
+  title: Official DS WiFi Forum
+  description: Check up on sgstair's progress and ask questions about the up and coming DS WiFi library.
+  tags: ds-wifi forums
+  url: /links/official-ds-wifi-forum
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.1emulation.com/forums/index.php?showforum=81
+
+  id: tag:www.patater.com,2007-11-11:/links/sgstairs-wifi-lib-checklist-wiki
+  title: Sgstair's WiFi Lib Checklist Wiki
+  description: Check up on what issues and bugs have been reported to Sgstair here. Report more bugs as you find them. Don't be shy.
+  tags: ds-wifi
+  url: /links/sgstairs-wifi-lib-checklist-wiki
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://wiki.akkit.org/SgstairChecklist
+
+  id: tag:www.patater.com,2007-11-11:/links/wifi-documentation
+  title: WiFi Documentation
+  description: The beginnings of Nintendo DS WiFi documentation. Not by Sgstair.
+  tags: ds-wifi technical-reference
+  url: /links/wifi-documentation
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://700km.com.br/mundobizarro/nds.html
+
+  id: tag:www.patater.com,2007-11-11:/links/stoncyphers-book-recommendations
+  title: StoneCypher's Book Recommendations
+  description: StoneCyph recommends a few nice books. Excellent reads. Buy through Stoney's links and I'll mail you a cookie. Doesn't cost anything to you, and is surprisingly actually cheaper.
+  tags: general-programming books
+  url: /links/stoncyphers-book-recommendations
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://sc.tri-bit.com/Meyers
+
+  id: tag:www.patater.com,2007-11-11:/links/ds-tracker
+  title: DS Tracker
+  description: Lynx maintains a database of Nintendo DS systems, their colors, and their origins. Check to see if your Nintendo DS needs a special kind of PassMe to run homebrew apps. Submit your Nintendo DS and help make the tracker a more useful tool. This database also has a cool side effect&colon; you can see just how many people are running homebrew, and the list is HUEG!
+  tags: miscellaneous
+  url: /links/ds-tracker
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://www.dspassme.com/dstrackerlist.shtml
+
+  id: tag:www.patater.com,2007-11-11:/links/dsdev-stats
+  title: DSDev Stats
+  description: Davr has a nice stats page up for \#dsdev on Efnet. Exciting. Old. \#dsdev is now on irc.blitzed.org instead.
+  tags: miscellaneous
+  url: /links/dsdev-stats
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://davr.org/dsdev.html
+
+  id: tag:www.patater.com,2007-11-11:/links/nintendo-ds-bios-dumper
+  title: Nintendo DS BIOS Dumper
+  description: Pepsiman's little BIOS dumper majigger.
+  tags: miscellaneous
+  url: /links/nintendo-ds-bios-dumper
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://pepsiman.pwp.blueyonder.co.uk/bios_dumper.nds
+
+  id: tag:www.patater.com,2007-11-11:/links/official-gbamp-firmware
+  title: Official GBAMP Firmware
+  description: This is a link to the official GBAMP firmware, not the one that let's you boot NDS software, but just the plain old vanilla firmware. Useful in case you get bricked.
+  tags: miscellaneous
+  url: /links/official-gbamp-firmware
+  date: 2007-11-11 23:41:13
+  updated: 2010-12-19 03:36:44
+  uri: http://movieadvance.com/Download.htm

@@ -1,0 +1,14 @@
+---
+layout: link
+id: tag:www.patater.com,2007-11-11:/links/dualis
+title: Dualis
+tags: link emulation
+permalink: /links/dualis
+date: 2007-11-11 23:41:13
+updated: 2010-12-19 03:36:44
+uri: http://dualis.1emulation.com/
+---
+This emulator is still in use too. Quite popular. The thing with current
+development on the DS is that if it doesn't work in one emulator, it might work
+in another. SO its nice to have a collection of Nintendo DS emulators. This one
+is a good add to that collection.

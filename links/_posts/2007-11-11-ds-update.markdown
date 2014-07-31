@@ -1,0 +1,13 @@
+---
+layout: link
+id: tag:www.patater.com,2007-11-11:/links/ds-update
+title: DS Update
+tags: link ds-news-sites
+permalink: /links/ds-update
+date: 2007-11-11 23:41:13
+updated: 2010-12-19 03:36:44
+uri: http://www.dsupdate.net/
+---
+Another site with a nice presentation. I'm thinking it has RSS feed, but i
+haven't check this place out in a while. <a href="/contact">Let me know what's
+up</a>.

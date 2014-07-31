@@ -1,0 +1,12 @@
+---
+layout: link
+id: tag:www.patater.com,2007-11-11:/links/divineo
+title: Divineo
+tags: link retailers
+permalink: /links/divineo
+date: 2007-11-11 23:41:13
+updated: 2010-12-19 03:36:44
+uri: http://www.divineo.com/cgi-bin/div-us/index.html
+---
+The only place I know of to buy an M3. Kinda expensive, but they got 100% of
+the  M3 market, so this is the place to go.

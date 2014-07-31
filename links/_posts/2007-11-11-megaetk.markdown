@@ -1,0 +1,12 @@
+---
+layout: link
+id: tag:www.patater.com,2007-11-11:/links/megaetk
+title: MegaETK
+tags: link projects
+permalink: /links/megaetk
+date: 2007-11-11 23:41:13
+updated: 2010-12-19 03:36:44
+uri: http://etk.scener.org/
+---
+It's a side scrolling game. This is probably the best you'll ever see out of a
+PALib project. Decent work indeed.

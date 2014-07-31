@@ -1,0 +1,12 @@
+---
+layout: link
+id: tag:www.patater.com,2007-11-11:/links/mightmax
+title: MightyMax
+tags: link people-pages
+permalink: /links/mightmax
+date: 2007-11-11 23:41:13
+updated: 2010-12-19 03:36:44
+uri: http://mightymax.org/
+---
+A cool dude with lots of fun ideas. Author of an DLDI, GBAMP Multiboot and an
+mpeg player for DS. Check out his current projects.

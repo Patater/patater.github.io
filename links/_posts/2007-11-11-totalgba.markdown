@@ -1,0 +1,12 @@
+---
+layout: link
+id: tag:www.patater.com,2007-11-11:/links/totalgba
+title: TotalGBA
+tags: link retailers
+permalink: /links/totalgba
+date: 2007-11-11 23:41:13
+updated: 2010-12-19 03:36:44
+uri: http://totalgba.com/index.php
+---
+You could buy a flash cart from these guys. Last I checked, they only sold
+those hokey XG carts that I'm not much of a fan of.

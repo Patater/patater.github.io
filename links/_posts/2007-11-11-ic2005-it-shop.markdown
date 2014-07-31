@@ -1,0 +1,12 @@
+---
+layout: link
+id: tag:www.patater.com,2007-11-11:/links/ic2005-it-shop
+title: IC2005 IT Shop
+tags: link retailers
+permalink: /links/ic2005-it-shop
+date: 2007-11-11 23:41:13
+updated: 2010-12-19 03:36:44
+uri: http://www.ic2005.com/
+---
+Sells a lot of NeoFlash stuff (MK2 and MK3, etc.) and also deals in NGC Phantom
+Modhips. Not too expensive either. A nice shop.

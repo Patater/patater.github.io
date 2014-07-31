@@ -1,0 +1,12 @@
+---
+layout: link
+id: tag:www.patater.com,2007-11-11:/links/win2ds
+title: Win2DS
+tags: link projects
+permalink: /links/win2ds
+date: 2007-11-11 23:41:13
+updated: 2010-12-19 03:36:44
+uri: http://win2ds.1emulation.com/Win2DS0.5.zip
+---
+An interesting little app that lets you control your Windows computer remotely
+from the DS. Kinda buggy, but kinda works.

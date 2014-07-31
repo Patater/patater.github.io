@@ -1,0 +1,14 @@
+---
+layout: link
+id: tag:www.patater.com,2007-11-11:/links/dsemu
+title: DSEmu
+tags: link emulation
+permalink: /links/dsemu
+date: 2007-11-11 23:41:13
+updated: 2010-12-19 03:36:44
+uri: http://www.double.co.nz/nintendo_ds/dsemu.html
+---
+I believe this is the premiere emulator at the current time. You Macintosh
+users may be happy to hear that this one runs in Virtual PC, unlike some other
+emulators. Let's all hope Doublec and the crew make this baby last. Open source
+forever!

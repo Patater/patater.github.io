@@ -1,0 +1,12 @@
+---
+layout: link
+id: tag:www.patater.com,2007-11-11:/links/bloom
+title: Bloom
+tags: link projects interesting
+permalink: /links/bloom
+date: 2007-11-11 23:41:13
+updated: 2010-12-19 03:36:44
+uri: http://forum.gbadev.org/viewtopic.php?t=7983
+---
+Amazing 3D bloom affect. It takes up pretty much all your VRAM, but looks
+pretty.
