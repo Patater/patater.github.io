@@ -1,0 +1,13 @@
+---
+layout: book
+title: Fahrenheit 451
+permalink: /books/fahrenheit-451
+date: 2011-01-28 03:14:32
+updated: 2011-01-28 03:14:32
+isbn: 9780345342966
+asin: 0345342968
+tags: book
+---
+This is a nice book that often gets censored for some reason. I had to read it
+in junior high. Probably the teachers wanted me to read it before it got
+banned. I liked it quite a bit.

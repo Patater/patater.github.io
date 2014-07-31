@@ -1,0 +1,15 @@
+---
+layout: book
+title: Silence
+permalink: /books/silence
+date: 2011-02-02 01:30:55
+updated: 2011-02-02 01:30:55
+isbn: 9780800871864
+asin: 0800871863
+tags: book
+---
+Before Japan was closed to foreigners, Christian missionaries secretly taught
+the dangerous ideas of Christianity against the laws of Japan. This was
+assuredly a factor in why Japan closed up & pesky foreigners couldn't obey
+the laws of the land. This was required reading in my modern Japanese
+literature course in college.

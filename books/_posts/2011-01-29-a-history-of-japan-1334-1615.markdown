@@ -1,0 +1,12 @@
+---
+layout: book
+title: A History of Japan, 1334-1615
+permalink: /books/a-history-of-japan-1334-1615
+date: 2011-01-29 21:06:19
+updated: 2011-01-29 21:06:19
+isbn: 9780804705257
+asin: 0804705259
+tags: book japan history
+---
+This is the second book in the Sansom trilogy on the history of Japan. These
+books are the best English books on Japanese history that I know of.

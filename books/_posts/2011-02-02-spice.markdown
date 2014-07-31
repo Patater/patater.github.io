@@ -1,0 +1,12 @@
+---
+layout: book
+title: SPICE
+permalink: /books/spice
+date: 2011-02-02 01:43:22
+updated: 2011-02-02 01:43:22
+isbn: 9780195108422
+asin: 0195108426
+tags: book
+---
+SPICE must flow. I picked this book up and out from the trash in college. SPICE
+is a domain-specific language useful in simulating electronic circuits.

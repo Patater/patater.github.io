@@ -1,0 +1,14 @@
+---
+layout: book
+title: PSP
+permalink: /books/psp
+date: 2011-02-02 01:06:57
+updated: 2011-02-02 01:06:57
+isbn: 9780321305497
+asin: 0321305493
+tags: book
+---
+This book should come with a stopwatch. You'll be using one a lot as you
+measure how long it takes you to do various programming tasks. With this
+knowledge, you can better predict how long things will take you to do in the
+future.

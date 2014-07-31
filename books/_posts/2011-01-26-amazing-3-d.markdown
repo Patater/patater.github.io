@@ -1,0 +1,14 @@
+---
+layout: book
+title: Amazing 3-D
+permalink: /books/amazing-3-d
+date: 2011-01-26 03:50:24
+updated: 2011-01-26 03:50:24
+isbn: 9780316582834
+asin: 0316582832
+tags: book
+---
+I needed some 3D glasses to look at <a
+href="http://marsrover.nasa.gov/gallery/3d/">some awesome 3D images from NASA's
+Mars exploration rover</a>. This book came with a few of the glasses I needed,
+at a good price. It has a gallery of old 3D images too, both photos and comics.

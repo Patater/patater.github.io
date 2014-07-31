@@ -1,0 +1,12 @@
+---
+layout: book
+title: A History of Japan, 1615-1867
+permalink: /books/a-history-of-japan-1615-1867
+date: 2011-01-29 21:08:00
+updated: 2011-01-29 21:08:00
+isbn: 9780804705271
+asin: 0804705275
+tags: book japan history
+---
+This is the last book in the Sansom trilogy on the history of Japan. These
+books are the best English books on Japanese history that I know of.

@@ -1,0 +1,12 @@
+---
+layout: book
+title: Naomi
+permalink: /books/naomi
+date: 2011-02-01 01:45:25
+updated: 2011-02-01 01:45:25
+isbn: 9780375724749
+asin: 0375724745
+tags: book
+---
+I hope you never have to deal with this type of woman. This book was assigned
+reading in my college course on modern Japanese literature.
