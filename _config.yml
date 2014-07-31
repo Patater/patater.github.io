@@ -11,3 +11,4 @@ defaults:
     values:
       author: Jaeden Amero
       language: en
+      site_map_priority: 0.5
