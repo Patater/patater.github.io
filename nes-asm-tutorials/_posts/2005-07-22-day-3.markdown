@@ -1,0 +1,162 @@
+---
+layout: post
+published: true
+id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-3
+permalink: /nes-asm-tutorials/day-3
+title: Day 3 - About NES Programming
+author: Mike Huber
+date: 2005-07-22 00:02:00
+updated: 2010-12-19 03:36:44
+sitemappriority: 0.5
+categories: nes-asm-tutorials
+tags: nes-asm-tutorials nes assembly tutorial
+language: en
+---
+<h2>The PPU</h2>
+<p>To get anything at all to happen on the NES in terms of graphical output, we
+need to program the PPU (Picture Processing Unit). To program the PPU, we store values
+into certain memory addresses that when set will cause the NES to setup the PPU with
+those values. All programming on the NES is done using what's called "Memory Mapped
+Registers", you may know about this if you've programmed for the GBA. For you Intel
+knowledgable people, this is totally foriegn.</p>
+
+<h3>Binary Notation</h3>
+
+<p>Just to be absolutely clear, we will give the bits of a memory register in the
+following order:
+<pre>
+    Here's a random binary number (1 byte), and how we number it's bits:
+    0 1 1 0 0 0 1 1
+
+    7 6 5 4 3 2 1 0
+</pre>
+So the 7th bit is on the left and 0 bit on the right.
+</p>
+
+<h3>Setting Up The PPU</h3>
+
+<p> Note that one of the first things we need to do is set-up the PPU. We do
+this by storing values into $2000 and $2001 which are the 2 PPU control
+registers in memory. Here's the excerpt from <a
+href="http://tuxnes.sourceforge.net/nestech100.txt">YOSHi's doc</a> to explain
+$2000 and $2001:
+<pre>
+    0 = Always zero              1 = Always 1
+    - = Not used                 ? = Unknown
+
+    +---------+----------------------------------------------------------+
+    | Address | Description                                              |
+    +---------+----------------------------------------------------------+
+    |  $2000  | PPU Control Register #1 (W)                   [PPUCNT0]  |
+    |         |   %vMsbpiNN                                              |
+    |         |               v = Execute NMI on VBlank                  |
+    |         |                      1 = Enabled                         |
+    |         |               M = PPU Selection (unused)                 |
+    |         |                      0 = Master                          |
+    |         |                      1 = Slave                           |
+    |         |               s = Sprite Size                            |
+    |         |                      0 = 8x8                             |
+    |         |                      1 = 8x16                            |
+    |         |               b = Background Pattern Table Address       |
+    |         |                      0 = $0000 (VRAM)                    |
+    |         |                      1 = $1000 (VRAM)                    |
+    |         |               p = Sprite Pattern Table Address           |
+    |         |                      0 = $0000 (VRAM)                    |
+    |         |                      1 = $1000 (VRAM)                    |
+    |         |               i = PPU Address Increment                  |
+    |         |                      0 = Increment by 1                  |
+    |         |                      1 = Increment by 32                 |
+    |         |              NN = Name Table Address                     |
+    |         |                     00 = $2000 (VRAM)                    |
+    |         |                     01 = $2400 (VRAM)                    |
+    |         |                     10 = $2800 (VRAM)                    |
+    |         |                     11 = $2C00 (VRAM)                    |
+    |         |                                                          |
+    |         | NOTE: Bit #6 (M) has no use, as there is only one (1)    |
+    |         |       PPU installed in all forms of the NES and Famicom. |
+    +---------+----------------------------------------------------------+
+    |  $2001  | PPU Control Register #2 (W)                   [PPUCNT1]  |
+    |         |   %fffpcsit                                              |
+    |         |             fff = Full Background Colour                 |
+    |         |                    000 = Black                           |
+    |         |                    001 = Red                             |
+    |         |                    010 = Blue                            |
+    |         |                    100 = Green                           |
+    |         |               p = Sprite Visibility                      |
+    |         |                      1 = Display                         |
+    |         |               c = Background Visibility                  |
+    |         |                      1 = Display                         |
+    |         |               s = Sprite Clipping                        |
+    |         |                      0 = Sprites not displayed in left   |
+    |         |                          8-pixel column                  |
+    |         |                      1 = No clipping                     |
+    |         |               i = Background Clipping                    |
+    |         |                      0 = Background not displayed in     |
+    |         |                          left 8-pixel column             |
+    |         |                      1 = No clipping                     |
+    |         |               t = Display Type                           |
+    |         |                      0 = Colour display                  |
+    |         |                      1 = Mono-type (B&W) display         |
+    +---------+----------------------------------------------------------+
+</pre>
+</p>
+
+<p>To set-up the PPU we do 2 stores into memory. The code is:</p>
+<code class="block">
+    lda #%00001000
+    sta $2000
+    lda #%00011110
+    sta $2001
+</code>
+
+
+<p>The value we put into $2000 tells the PPU that the 2 NMIs are disabled,
+sprite size is 8x8, we use Screen pattern table $0000 and sprite pattern table
+$1000, increment addresses by 1, and we'll be using Name Table at $2000. These
+2 memory registers are probably the two most complicated, but still easy, mem.
+registers to use.</p>
+
+<p>The store into $2001 tells the PPU to not influence the palette toward any certain color,
+show sprites, turn the screen on, show sprites everywhere, show left 8 pixels, color display.</p>
+
+<p>You should be able to figure all that out by looking at the binary number
+and using the notation I already showed you to figure out what the bits mean
+when we load registers.</p>
+
+<h3>What Else Do We Do To Get Output?</h3>
+
+<p>If you are talking about backgrounds, we need to do a couple of things:</p>
+<ol><u>Making A Background:</u>
+<li>Draw some tiles in Tile Layer Pro.</li>
+<li>Include that file as the first file in bank 2.</li>
+<li>Create and Load a palette.</li>
+<li>Set tile numbers in Name Table.</li>
+</ol>
+<p>Voilà! The background appears!</p>
+
+
+<p>For sprites, the steps are slightly different:</p>
+<ol><u>Making A Sprite:</u>
+<li>Draw the sprites in Tile Layer Pro.</li>
+<li>Include that file as the second file in bank 2.</li>
+<li>Create and Load a palette.</li>
+<li>Set sprite attributes in Sprite data memory (like OAM on GBA).</li></ol>
+<p>Ka boom! Sprite appears!</p>
+
+
+<p>We'll learn how to load the palette tomorrow! Note that loading the palette
+is important as half is the background palette and half is the sprite palette.</p>
+
+<h3>This Day In Review</h3>
+
+<p>Wow! We're really movin' along here, aren't we? As I said, tomorrow we load
+the palette. Until then, good-night (I'm sleepy :) ).</p>
+
+<p>
+    Until Tomorrow,<br/>
+        -Mike H a.k.a GbaGuy
+</p>
+
+<div class="series-navigation">
+<a href="/nes-asm-tutorials">Intro</a> - <a href="/nes-asm-tutorials/day-4">Day 4</a>
+</div>

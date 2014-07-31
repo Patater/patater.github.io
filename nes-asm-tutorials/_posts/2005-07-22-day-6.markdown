@@ -1,0 +1,155 @@
+---
+layout: post
+published: true
+id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-6
+permalink: /nes-asm-tutorials/day-6
+title: Day 6 - Jumps and Key Presses
+author: Mike Huber
+date: 2005-07-22 00:06:00
+updated: 2010-12-19 03:36:44
+sitemappriority: 0.5
+categories: nes-asm-tutorials
+tags: nes-asm-tutorials nes assembly tutorial
+language: en
+---
+<h2>Reading Keys</h2>
+<p>We will assume that it is a normal rectangle NES pad you want to read and
+not anything funky. To read to see if a key is down, you read $4016 (Pad 1) or
+$4017 (Pad 2) once per key. If the key is down, Bit #0 (from right) will be set
+(1). And with 1 and jump if Not Equal. Before you read anything, however, you
+need to reset the pad (strobe).</p>
+
+<h3>Strobe/Reset</h3>
+
+<p>To strobe/reset the pad, we write a 1 then a 0 to $4016 or $4017 (for pad 2).
+This is done like so:</p>
+<code class="block">
+    lda #$01
+    sta $4016
+    lda #$00
+    sta $4016
+</code>
+
+
+<p>That's it! Onto actually reading the pad.</p>
+
+<h3>Order of Reads</h3>
+
+<p>On every read of $4016 or $4017, you get the status of a different key.
+The order of keys read is: Read # | Corresponding Key</p>
+<ol>
+    <li>A</li>
+    <li>B</li>
+    <li>SELECT</li>
+    <li>START</li>
+    <li>UP</li>
+    <li>DOWN</li>
+    <li>LEFT</li>
+    <li>RIGHT</li>
+</ol>
+
+<p>So how 'bout we learn some about conditions and jumps before we do any more?</p>
+
+<h3>Conditions And Jumps</h3>
+
+<p>There are certain "conditions" that are set by most instructions, some, however,
+can only be set by a compare instruction which'll be discussed later. These conditions are
+<u>Conditions</u>
+</p>
+
+<dl>
+        <dt>EQ</dt><dd>- EQual - Zero</dd>
+        <dt>NE</dt><dd>- Not EQual - Not Zero</dd>
+        <dt>LT</dt><dd>- Less Than</dd>
+        <dt>GT</dt><dd>- Greater Than</dd>
+        <dt>PL</dt><dd>- Positive</dd>
+        <dt>MI</dt><dd>- Negative</dd>
+        <dt>CC</dt><dd>- Carry Clear</dd>
+        <dt>CS</dt><dd>- Carry Set</dd>
+        <dt>VC</dt><dd>- oVerflow Clear</dd>
+        <dt>VS</dt><dd>- oVerflow Set</dd>
+</dl>
+
+<p>These conditions are set by most instructions, including loads. All of these
+have a branch instruction. Put a 'B' in front of one of those abbreviations and you'll
+have your branch (Conditional Jump) instruction, examples:</p>
+<code class="block">
+    ; assume that there is a label called Loopto .
+    beq Loopto  ; branch to Loopto if last compare was EQual or last instruction
+    ; resulted in a zero.
+
+    bpl Loopto  ; branch if Bit #7 (always counted from right->left) is set.
+    bmi Loopto  ; branch if Bit #7 is clear.
+</code>
+
+<p>I hope you get the idea. I believe that only the Not Equal and Equal
+conditions can be set by a non-compare instruction.</p>
+
+<p>Incase you don't know, a label is just a name/word followed by a colon ':'. Examples:</p>
+<code class=block>
+    Loopto:
+    aslkdfj:
+    Hello_a:
+</code>
+
+
+<p>I hope you get the idea. <sup>Just remember:</sup><sub>Labels are FUN!</sub></p>
+
+<h3>A Small Example of Reading Keys</h3>
+<p>Enough talk, here's the code:</p>
+<code class="block">
+    lda #$01    ; |
+    sta $4016   ;      lda #$00    ;   - Setup Pad for reading.
+    sta $4016   ; _/
+
+    lda $4016  ; read for A key.
+    and #1     ; check to see if down.
+    bne WasDown  ; branch if it was down.
+    ; I'm not sure why it's a BNE for a bit AND, it just is, SO USE IT! :)
+
+    lda $4016  ; read for B key.
+    lda $4016  ; read for SELECT
+    lda $4016  ; read START status
+    and #1     ; see if down.
+    bne StartDown  ; branch if down.
+
+    lda $4016  ; UP
+    lda $4016  ; DOWN
+    lda $4016  ; LEFT
+    lda $4016  ; RIGHT
+
+    jmp NothingDown  ; the JMP instruction jumps no matter what.
+
+StartDown:
+    ; Do stuff if START is pressed.
+
+WasDown:
+    ; Do stuff if A is pressed.
+
+NothingDown:
+    ; Nothing was down
+</code>
+
+
+<p>Hope you didn't think that was too hard! :) Personally, I find the GBA easier
+(a little) to program, so for me, NES programs take a little more studying to
+figure out.</p>
+
+<h3>This Day In Review</h3>
+
+<p>First, I'd like to mention that you probably know about my GBA ASM series
+and maybe you also know about my x86 (DOS) ASM tutorial? Switching between 3
+ASM languages DOES sometimes screw me up, so if you see a something rather
+wierd or any mistake feel free to let me know. Thank you.</p>
+
+<p>Also, I know Key Press Detecting isn't exactly all that exciting by itself,
+but things WILL GET MORE INTERESTING! I promise. ;)</p>
+
+<p>
+    Happy coding :),<br/>
+        -Mike H a.k.a GbaGuy
+</p>
+
+<div class="series-navigation">
+<a href="/nes-asm-tutorials">Intro</a> - <a href="/nes-asm-tutorials/day-7">Day 7</a>
+</div>

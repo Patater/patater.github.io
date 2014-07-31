@@ -1,0 +1,106 @@
+---
+layout: post
+published: true
+id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-7
+permalink: /nes-asm-tutorials/day-7
+title: Day 7 - Using Memory
+author: Mike Huber
+date: 2005-07-22 00:06:00
+updated: 2010-12-19 03:36:44
+sitemappriority: 0.5
+categories: nes-asm-tutorials
+tags: nes-asm-tutorials nes assembly tutorial
+language: en
+---
+<h2>Where?</h2>
+<p>Before we do anything else it would probably be best to show how to use
+memory for our own data. This data could be anything from just a number you
+need to store or X/Y values for sprites. For this data we'll use free memory at
+$0000 (CPU).</p>
+
+<h3>How?</h3>
+
+<p>We'll ORG at $0000 in our Code Bank 0 and label some memory before ORGing to
+$8000 where our code starts. To label some memory (a.k.a making a variable) we use the
+assembler operation .db like so:</p>
+<code class="block">
+; note this is only a small code piece to demonstrate memory labeling syntax.
+
+    .bank 0
+    .org $0000
+
+label1:    .db   0
+byte1:     .db   $A5   ; notice that with Define Byte (.db) we don't need the '#' .
+
+    .org $8000
+
+Start:     ; from here on would be code as usual
+</code>
+
+
+<p>Since label1 and byte1 are infact labels, they do need to start at the first
+colon (not tabbed in).</p>
+
+<h3>Loading Value of Our "Variables"</h3>
+
+<p>To load the value of one of our "Variables", just use a regular Load instruction
+with the label's name. Like so:</p>
+<code class="block">
+    ;assume label1 and byte1 have been declared like shown above.
+
+    lda label1  ; load A with label1's value
+    ldx label1  ; load X with label1's value
+    ldy label1  ; I hope you get the idea now
+
+    lda byte1  ; load A with byte1's value
+</code>
+
+<p>That's it for getting the value. Storing is just as easy. Even though you
+can figure it out yourself, I'll go through the same steps with storing.</p>
+
+<h3>Storing Into Our Variables</h3>
+
+<p>Storing is just like loading except the other way around (putting, not getting).
+It's done like this:</p>
+<code class="block">
+    ;again assume label1 was declared like shown before
+
+    sta label1  ; store A's value into label1
+    stx label1  ; store X's value into label1
+    sty label1 ; store Y's value into label1
+
+    stx byte1  ; you should get it by now, I hope.
+</code>
+
+
+<p>Simple, isn't it?</p>
+
+<h3>Some Important Facts</h3>
+<h4 class="subtitle">That I Waited Until the End to Mention</h4>
+
+<p>The main thing I want to mention here is that we can define more than just
+bytes. We can also define words, but since the NES's CPU works in only 8bits,
+this is a little more than I want to talk about right now.</p>
+
+<p>Also, I haven't tried it, but if you want to increment or decrement (Add or Sub 1
+respectfully), you could probably go something like this:</p>
+<code class="block">
+    inc label1  ; add 1 to label1
+
+    dec label1  ; sub 1 from label1
+</code>
+
+<h3>This Day In Review</h3>
+
+<p>I have no idea what's in store for tomorrow, since I need to complete Day 13
+of the GBA tutorial. I hope you had fun today. Why don't you try moving a
+sprite with the keypad?</p>
+
+<p>
+    Until Next Time,<br/>
+        -Mike H a.k.a GbaGuy
+</p>
+
+<div class="series-navigation">
+<a href="/nes-asm-tutorials">Intro</a> - <a href="/nes-asm-tutorials/day-8">Day 8</a>
+</div>

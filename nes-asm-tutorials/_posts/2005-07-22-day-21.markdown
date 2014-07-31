@@ -1,0 +1,75 @@
+---
+layout: post
+published: true
+id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-21
+permalink: /nes-asm-tutorials/day-21
+title: Day 21 - The Stack
+author: Mike Huber
+date: 2005-07-22 00:20:00
+updated: 2010-12-19 03:36:44
+sitemappriority: 0.5
+categories: nes-asm-tutorials
+tags: nes-asm-tutorials nes assembly tutorial
+language: en
+---
+<h2>The Stack</h2>
+<p>I hope you know what a stack is. It's exactly what it sounds like, you put
+things on top (push) and then you take things off the top (pop). The stack in
+the NES starts at $01FF and grows down in memory. To handle where the next item
+pushed or poped from the stack comes from, there a register called S which is
+an index in page 1 ($0100 to $01FF). The S register can modified by a TSX or
+TXS instruction (Transfer S to X and transfer X to S respectively). The current
+location on the stack always is $0100+S.</p>
+
+<h2>Push Instructions</h2>
+<p>There are 2 instructions that explicitly push things on the stack, they are
+PHA and PHP. PHA pushes the A register onto the stack and then decrements the S
+register. PHP pushes the flag register (that stores Zero,Carry,Overflow, etc..)
+onto the stack (and S-=1;). Note that there are no instructions to push the X
+or Y registers, to accomplish that. You'll have to do something like:</p>
+<code class="block">
+; assuming you don't care about A's value
+    txa ; transfer X to A
+    pha ; push A
+; or
+    tya ; transfer Y to A
+    pha ; push A
+</code>
+
+
+<h3>Pop Instructions</h3>
+<p>The counter-parts to the push instructions are PLA and PLP. PLA pops A from
+the stack and PLP pops the flags from the stack (both do S+=1; afterwards).</p>
+<code class="block">
+; example:
+    lda #3
+    pha
+    lda #4
+    pha
+    lda #5
+    pla ; note that this is a POP
+    pla
+</code>
+
+
+<p>After that is finished A's value will be 3.</p>
+
+<p>NOTE: PHP and PLP would be usefull in preserving flag status across subroutine calls (JSR).</p>
+
+<p>NOTE2: I don't think JSR saves the flags, does it?</p>
+
+<h3>This Day In Review</h3>
+
+<p>The stack is a good thing to know and is probably something I should have
+mentioned earlier.</p>
+
+<p>
+    Greetings and Salutations!,<br/>
+        - GbaGuy
+</p>
+
+<p>P.S. Could someone email me to tell me if this works or not, please?</p>
+
+<div class="series-navigation">
+<a href="/nes-asm-tutorials">Intro</a> - <a href="/nes-asm-tutorials/day-22">Day 22</a>
+</div>

@@ -1,0 +1,119 @@
+---
+layout: post
+published: true
+id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-2
+permalink: /nes-asm-tutorials/day-2
+title: Day 2 - A Source Code File's Structure
+author: Mike Huber
+date: 2005-07-22 00:01:00
+updated: 2010-12-19 03:36:44
+sitemappriority: 0.5
+categories: nes-asm-tutorials
+tags: nes-asm-tutorials nes assembly tutorial
+language: en
+---
+<h2>What's Happening?</h2>
+<p>Well, you white-belt NES programer you, today we're going to learn the
+structure a NESASM code file. Unfortunately, our assembler is very finicky
+about the indentation of our code. All labels start right at the begining of a
+line and everything else gets tabbed in once. Even though this may sound bad,
+it really helps with readability and understanding of the code, especially in
+big programs.</p>
+
+<h3>About Banks</h3>
+<p>No, banks don't hold your money for you. They hold your program and all it's
+data. There are 3 banks that we will typically use, they are:</p>
+<dl>
+    <dt>Bank 0</dt><dd>- We're our code goes starting at $8000.</dd>
+    <dt>Bank 1</dt><dd>- An Interrupt Table. Important. Starts at $FFFA for us.</dd>
+    <dt>Bank 2</dt><dd>- Where we will be putting our sprite and background data. Starting at $0000.</dd>
+</dl>
+
+
+<p>I'm not sure how many banks there are, but it's obvious there's atleast 3.
+We will use the .bank instruction to move banks. And we'll use .org to tell the
+assembler where we are starting from in that bank.</p>
+
+<h3>The INES Header</h3>
+
+<p>The INES header comes at the beginning of every ROM file and tells the
+emulator several things. The header pieces are:</p>
+<dl>
+    <dt>.inesprg</dt><dd>- tells how many program code banks there are.</dd>
+    <dt>.ineschr</dt><dd>- tells how many picture data banks there are.</dd>
+    <dt>.inesmir</dt><dd>- tells something I don't remember, but will be always 1.</dd>
+    <dt>.inesmap</dt><dd>- We always use Mapper 0.</dd>
+</dl>
+
+
+<p>Our typical settings for these are:</p>
+<code class="block">
+    .inesprg 1   ; one (1) bank of program code
+    .ineschr 1   ; one (1) bank of picture data
+    .inesmap 0   ; we use mapper 0
+    .inesmir 1   ; Mirror setting always 1.
+</code>
+
+
+<p>Those four (4) lines will be at the (almost) very beginning of EVERY code
+file.</p>
+
+<h3>Bank 0 and .ORGing</h3>
+
+<p>We will use Bank 0 to hold our code and start it at location $8000.  Here's
+how we'll do it:</p>
+<code class="block">
+    .bank 0   ; bank 0.
+    .org $8000  ; goto location $8000.
+
+    ; program's code would go here.
+</code>
+
+<p>That's all there is to that. Note that a semi-colon (;) means comment and
+the assembler ignores anything past the semi-colon on the line.</p>
+
+<h3>Bank 1 And The 3 Interrupts</h3>
+
+<p>Instead of a long paragraph, how 'bout some yummy code:</p>
+<code class="block">
+    .bank 1     ; change to bank 1
+    .org $FFFA  ; start at $FFFA
+
+    .dw 0        ; location of NMI Interrupt
+    .dw Start    ; code to run at reset, we give address of Start label that
+    ; we will eventually put in bank 0
+    .dw 0        ; location of VBlank Interrupt I think. either way, we don't need
+    ; it right now.
+</code>
+
+
+<p>Wasn't that easy, that's ALL that goes in bank 1, simple!</p>
+
+<h3>Bank 2 And Our Picture Data</h3>
+
+<p>Bank 2, we will be starting at $0000 and in it we will include our picture data
+for backgrounds and sprites. Here goes:</p>
+<code class="block">
+    .bank 2        ; change to bank 2
+    .org $0000    ; start at $0000
+
+    .incbin "our.bkg"  ; INClude BINary file that will contain our background pic
+    ; data.
+    .incbin "our.spr"  ; INClude BINary file that will contain our sprite pic data
+</code>
+
+
+<h3>This Day In Review</h3>
+
+<p>That's really all for today. I gotta go slow, as the NES is slightly more a
+pain in the @$$ to program for than the GBA. Tomorrow, we will find out
+somemore stuff.</p>
+
+<p>
+    See ya tomorrow!,<br/>
+        -Mike H a.k.a GbaGuy
+</p>
+
+<div class="series-navigation">
+<a href="/nes-asm-tutorials">Intro</a> - <a href="/nes-asm-tutorials/day-3">Day 3</a>
+</div>
