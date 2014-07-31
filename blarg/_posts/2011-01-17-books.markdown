@@ -1,0 +1,20 @@
+---
+layout: post
+published: true
+permalink: /blarg/books
+id: tag:www.patater.com,2008-11-16:/blarg/apologies-and-the-future
+title: Books
+author: Jaeden Amero
+date: 2011-01-27 04:49:16
+updated: 2011-01-27 04:49:16
+sitemappriority: 0.5
+description: My books, let me show you them.
+language: en
+---
+<p>I have added <a href="/books">a new section to my site, called books</a>. The books page will detail my collection of books. For every book there, I'll also describe why I got that book or why I like it. I hope that you'll be able to learn a bit about who I am through exploring this internet manifestation of my bookshelf.</p>
+
+<p>Each book page links to the book on Amazon, using my referral code. If you find a book you like on my shelf, or if you were already planning to buy one of the books in my collection, please use those links. At no cost to you, you can help a buddy out and grant him more free time to work on the projects that benefit you most.</p>
+
+<p>The book collection isn't complete yet, but I think it is far enough along to launch anyway. I'll slowly be adding books to the page as I have time. I can add around 15 books per day, including writing up my recommendation or condemnation of the book.</p>
+
+<p>Please enjoy!</p>
