@@ -3,7 +3,7 @@ layout: default
 ---
 <h2>{{ page.title }}</h2>
 <span class="meta">{{ page.author }}</span>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<p class="meta">Published: {{ page.date | date: "%Y-%b-%d" }}{% if page.date != page.updated %}; Updated: {{ page.updated | date: "%Y-%b-%d" }}{% endif %}</p>
 
 <div class="post">
 {{ content }}
