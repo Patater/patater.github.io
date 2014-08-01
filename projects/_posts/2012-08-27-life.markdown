@@ -1,0 +1,89 @@
+---
+layout: post
+published: true
+permalink: /life
+id: tag:www.patater.com,2012-08-27:/life
+title: Conway's Game of Life on the GPU
+shorttitle: GPU Life
+author: Jaeden Amero
+date: 2012-08-27 02:21:30
+updated: 2012-08-27 02:21:30
+sitemappriority: 0.65
+tags: project blarg life gpu webgl web gpgpu conway
+description: John Horton Conway devised this game in 1970. He played with it using chalkboards, checkers, or poker chips. Little did he know that we'd now be playing with it on our GPUs inside of hypertext browsers.
+graphic: http://static.patater.com/images/life.png
+graphicalt: Conway's Game of Life Rendered with the GPU
+thumb: http://static.patater.com/images/thumb-life.png
+featured: true
+language: en
+---
+<h2>Play</h2>
+<p><a href="http://static.patater.com/life.html">Conway's Game of Life with WebGL</a></p>
+
+<image src="http://static.patater.com/images/life-2up.png" alt="A squiggle
+and some life drawn in Conway's Game of Life"/>
+
+<h3>Motivation</h3>
+<p>I am very interested in simple systems that exhibit complexity, and Conway's
+Game of Life has some very simple rules. If a living cell has two or three
+neighbors, it keeps on living. If a dead cell has three neighbors, it becomes
+alive. The rules are that simple, yet its world is capable of great
+complexity.</p>
+
+<p>The GPU is a wonderful resource for performing parallel tasks, and Life is
+very parallel. Every cell is changed at once in parallel based on how many
+neighboring cells it has. I set out to use the GPU to implement the Game of
+Life</p>
+
+<p>I first implemented it using OpenCL on Mac OS X. I thought OpenCL would be
+cross platform enough. However, I was disappointed by the runtimes available on
+Windows and Linux. The skeleton code required for each platform was different.
+Some runtimes only ran code on the CPU and not the GPU, and some not on their
+creator's competitor's GPUs. I got fed up with the mess and decided not to
+publish anything.</p>
+
+<p>Then, a few weeks ago, I heard about WebCL. It sounded nice, but it
+unfortunately isn't very well supported in browsers, currently. It requires
+plugins from Nokia or Samsung. Nokia's plugin only works with Firefox and
+Samsung's only works with Safari. Again, I was disappointed.</p>
+
+<p>I had just seen <a
+href="http://www.chromeexperiments.com/detail/arms-globe/?f=webgl">a cool,
+interactive infographic that displays global small arms imports and exports</a>
+when I thought that I could do Life in WebGL. I did some learning and found
+WebGL to be very well suited for what I wanted to make: it provides access to
+the GPU in a platform agnostic way.</a>
+
+<p>I grabbed <a href="http://ricardocabello.com/blog/post/714">a WebGL example
+from mr.doob</a>.  Thank you, mr.doob. His example contained a bit of
+boilerplate to get me started. I then set out to write my first GLSL compute 
+shader.</p>
+
+
+<h3>How it Works</h3>
+<p>Here's how it works. <a
+href="http://mrdoob.com/lab/javascript/webgl/glsl/04/">mr.doob's example</a> is
+of a single texture on a single quad. We would like to do some computation
+before rendering, though. We create two textures for use as frame buffers (so
+we can render to them). We also need a new fragment shader to perform the
+computation. This shader will alternatively read from one, previous state, texture (to count
+neighbors of all the cells) and write to the other, current state, texture; the game world is
+double buffered. Our rendering fragment shader will take whatever texture is
+ready and sample it in order to generate pretty pictures.</p>
+
+<iframe width="480" height="360" src="http://www.youtube.com/embed/hTaAgUB7i44" frameborder="0" allowfullscreen></iframe>
+
+<h3>How to Play</h3>
+<p>How you play is up to you. I've given you the game world and a 2x2 mouse
+cursor.  You can draw stuff in the box. That is all. Enjoy!</p>
+
+<p>I've also given you the source code, so you can hack around with it and make
+something interesting. Use it for whatever you want, but be nice.</p>
+
+<h2>Play</h2>
+<p><a href="http://static.patater.com/life.html">Conway's Game of Life with WebGL</a></p>
+
+<div>
+<h2>Download</h2>
+<a href="http://static.patater.com/projects/life.bz2">Life's Source Code</a>
+</div>
