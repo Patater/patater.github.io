@@ -11,10 +11,14 @@ sitemappriority: 0.5
 
 There are a few ways to contact me, but by far the best way is by email.
 
-<a href="mailto:jaeden@patater.com">Email me at jaeden@patater.com</a>. I
-occasionally use AOL Instant Messenger (AIM), where I am CaptPatater. You may
-also be able to catch me on <a href="/irc">Blitzed IRC at irc.blitzed.org
-\#dsdev</a>, where I am Patater.
+E-Mail: <a href="mailto:jaeden@patater.com">jaeden@patater.com</a>
 
+IRC: Patater on <a href="/irc">Blitzed IRC at irc.blitzed.org #dsdev</a>
+
+GitHub: <a href="https://github.com/Patater">github.com/Patater</a>
+
+Twitter: <a href="https://twitter.com/Patater">twitter.com/Patater</a>
+
+<br />
 To contact Mike Huber, a.k.a. GBAGuy, <a
 href="mailto:vbnetprogramer@hotmail.com">use vbnetprogramer@hotmail.com</a>.
