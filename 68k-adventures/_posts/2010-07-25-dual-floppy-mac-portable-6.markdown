@@ -8,7 +8,7 @@ date: 2010-07-25 20:40:43
 updated: 2011-02-04 04:54:43
 sitemappriority: 0.5
 categories: 68k-adventures
-tags: 68k 68000 mac macintosh macintosh-portable dual floppy
+tags: 68k-adventures blarg 68k 68000 mac macintosh macintosh-portable dual floppy
 description: Have you ever seen a dual floppy Macintosh Portable? I haven't. Let's make one, part 6.
 language: en
 ---

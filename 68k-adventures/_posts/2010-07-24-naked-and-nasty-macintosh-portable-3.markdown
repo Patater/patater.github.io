@@ -8,7 +8,7 @@ date: 2010-07-24 15:01:19
 updated: 2011-02-04 03:55:19
 sitemappriority: 0.5
 categories: 68k-adventures
-tags: 68k 68000 mac macintosh macintosh-portable capacitors
+tags: 68k-adventures blarg 68k 68000 mac macintosh macintosh-portable capacitors
 description: As I stripped down this old girl, she's shown herself to be very nasty, part 3.
 language: en
 ---

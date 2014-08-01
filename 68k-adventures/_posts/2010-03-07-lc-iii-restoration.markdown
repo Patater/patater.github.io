@@ -8,7 +8,7 @@ date: 2010-03-07 00:29:51
 updated: 2011-02-02 04:48:24
 sitemappriority: 0.5
 categories: 68k-adventures
-tags: 68k 68000 mac macintosh lc
+tags: 68k-adventures blarg 68k 68000 mac macintosh lc
 description: This was the first Macintosh I restored since high school.
 language: en
 ---
