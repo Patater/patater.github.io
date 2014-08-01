@@ -8,6 +8,7 @@ author: Jaeden Amero
 date: 2011-01-27 04:49:16
 updated: 2011-01-27 04:49:16
 sitemappriority: 0.5
+tags: blarg patater
 description: My books, let me show you them.
 language: en
 ---

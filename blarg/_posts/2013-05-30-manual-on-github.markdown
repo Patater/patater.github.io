@@ -8,7 +8,7 @@ author: Jaeden Amero
 date: 2013-05-30 12:54:21
 updated: 2013-05-30 12:54:21
 sitemappriority: 0.5
-tags: nintendo-ds manual programming github source code
+tags: blarg nintendo-ds manual programming github source code
 description: After all these years, I finally got around to releasing the manuscript.
 featured: true
 graphic: /images/rocket-code.png

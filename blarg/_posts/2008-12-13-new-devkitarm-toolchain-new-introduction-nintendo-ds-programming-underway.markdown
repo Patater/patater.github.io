@@ -8,6 +8,7 @@ author: Jaeden Amero
 date: 2008-12-13 02:35:10
 updated: 2010-12-19 03:36:44
 sitemappriority: 0.5
+tags: blarg nds manual devkitarm
 language: en
 ---
 The new version (r24) of <a href="http://www.devkitpro.org/">devkitARM</a> is

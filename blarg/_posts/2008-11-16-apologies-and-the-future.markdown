@@ -8,6 +8,7 @@ author: Jaeden Amero
 date: 2008-11-16 17:33:30
 updated: 2010-12-19 03:36:44
 sitemappriority: 0.5
+tags: blarg patater downtime security hacked nsa manual
 language: en
 ---
 

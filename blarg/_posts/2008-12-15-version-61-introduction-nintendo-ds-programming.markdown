@@ -8,6 +8,7 @@ author: Jaeden Amero
 date: 2008-12-15 02:20:16
 updated: 2010-12-19 03:36:44
 sitemappriority: 0.5
+tags: blarg nds manual libnds
 language: en
 ---
 After a four day wait lag time, <a href="/manual">the manual is back</a> and

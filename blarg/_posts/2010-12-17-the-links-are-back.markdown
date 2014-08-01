@@ -8,6 +8,7 @@ author: Jaeden Amero
 date: 2010-12-17 18:21:42
 updated: 2010-12-19 03:36:44
 sitemappriority: 0.5
+tags: blarg nds links
 description: The world's best Nintendo DS links are back and they are the same as ever!
 language: en
 ---
