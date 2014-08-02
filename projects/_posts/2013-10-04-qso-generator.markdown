@@ -23,7 +23,9 @@ language: en
 <p>Using functions from this program, we can generate random callsigns; word-level similar texts; letter-level similar texts; texts that resemble the original, but are created with a subset of the original alphabet; and random QSOs given partial alphabets.</p>
 
 <h3>Motivation</h3>
-<p>I was reading <a href="http://lambda-the-ultimate.org/">Lambda the Ultimate</a> one evening and found out about a programming competition called <a href="">Lisp in Summer Projects</a>. They were giving a free t-shirt to all participants, so I thought, "Why not?" I decided to give the ancient language Lisp a try.</p>
+<p>I was reading <a href="http://lambda-the-ultimate.org/">Lambda the
+Ultimate</a> one evening and found out about a programming competition called
+<a href="http://lispinsummerprojects.org/">Lisp in Summer Projects</a>. They were giving a free t-shirt to all participants, so I thought, "Why not?" I decided to give the ancient language Lisp a try.</p>
 
 <p>I heard Lisp was good at natural language processing (NLP) tasks, so I decided to do a project that involves NLP. <i>A Random QSO Generator</i> is my one and only entry into the competition.</p>
 
