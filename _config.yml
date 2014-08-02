@@ -2,6 +2,7 @@ name: Patater
 markdown: redcarpet
 pygments: true
 encoding: utf-8
+permalink: pretty
 relative_permalinks: false
 
 defaults:
