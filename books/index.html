@@ -4,10 +4,11 @@ title: Books
 ---
 
 <div id="books">
+{% assign sorted = (site.tags.book | sort: 'title') %}
   <h1>Books</h1>
   <ul class="posts">
-    {% for book in site.tags.book %}
-      <li><span>{{ book.date | date: "%Y-%b-%d" }}</span> &raquo; <a href="{{ book.url }}">{{ book.title }}</a></li>
+    {% for book in sorted %}
+      <li><a href="{{ book.url }}">{{ book.title }}</a></li>
     {% endfor %}
   </ul>
 </div>
