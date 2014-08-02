@@ -1,5 +1,8 @@
 name: Patater
 description: Patater is my outlet for my free and open works.
+url: "https://patater.com"
+baseurl: ""
+
 markdown: kramdown
 highlighter: pygments
 encoding: utf-8
