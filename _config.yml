@@ -5,6 +5,7 @@ highlighter: pygments
 encoding: utf-8
 permalink: pretty
 relative_permalinks: false
+safe: true
 
 defaults:
   -
