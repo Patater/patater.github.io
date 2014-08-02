@@ -11,5 +11,3 @@ uri: http://movieadvance.com/Download.htm
 This is a link to the official GBAMP firmware, not the one that let's you boot
 NDS software, but just the plain old vanilla firmware. Useful in case you get
 bricked.
-
-# TODO mightmax to mightymax
