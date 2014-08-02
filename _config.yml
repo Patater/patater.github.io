@@ -1,4 +1,5 @@
 name: Patater
+description: Patater is my outlet for my free and open works.
 markdown: redcarpet
 pygments: true
 encoding: utf-8
