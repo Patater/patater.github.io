@@ -23,11 +23,3 @@ defaults:
       author: Jaeden Amero
       language: en
       site_map_priority: 0.5
-
-collections:
-  projects:
-    output: true
-  books:
-    output: true
-  links:
-    output: true
