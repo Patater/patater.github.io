@@ -6,7 +6,7 @@ tags: link projects patater
 permalink: /links/patater-gui-kit
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
-uri: http://www.patater.com/gui-kit
+uri: http://patater.com/gui-kit
 ---
 The Patater GUI Kit. Designed to be completely separate from graphics, it can
 run on the Nintendo DS in any gfx mode, including console mode with any size
