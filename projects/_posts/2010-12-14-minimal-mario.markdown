@@ -48,7 +48,7 @@ This is exactly the same as the normal Super Mario Bros. game.</p>
 
 <h2>Watch a Playthrough</h2>
 <iframe class="youtube-player" type="text/html" width="640" height="385"
-src="http://www.youtube.com/embed/VSlL4n1dlJA" frameborder="0"> </iframe>
+src="https://www.youtube.com/embed/VSlL4n1dlJA" frameborder="0"> </iframe>
 <p>A fellow named Billy, who found that the springboard wasn't very minimal in
 my original patch, has uploaded a video of a play-through to YouTube. Be sure
 to watch it in all its glory in super low resolution 240p!</p>
