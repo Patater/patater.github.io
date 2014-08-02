@@ -1,12 +1,79 @@
 ---
 layout: default
 title: Links
+possibletags:
+  - tag: ds-news-sites
+    name: DS News Sites
+  - tag: ds-wifi
+    name: DS WiFi
+  - tag: dslinux
+    name: DSLinux
+  - tag: development-essentials
+    name: Development Essentials (More or Less)
+  - tag: development-on-macintosh
+    name: Development on the Macintosh
+  - tag: emulation
+    name: Emulation
+  - tag: flash-carts
+    name: Flash Carts, etc.
+  - tag: forums
+    name: Forums
+  - tag: fun-with-ds
+    name: Fun with the Nintendo DS
+  - tag: gba-tutorials
+    name: GBA Tutorials (still very applicable to Nintendo DS programming)
+  - tag: general-programming
+    name: General Programming
+  - tag: hacking
+    name: Hacking
+  - tag: homebrew
+    name: Homebrew
+  - tag: interesting
+    name: Interesting Topics
+  - tag: miscellaneous
+    name: Miscellaneous
+  - tag: neoflash
+    name: NeoFlash
+  - tag: nds-tutorials
+    name: Nintendo DS Tutorials
+  - tag: patater
+    name: Patater
+  - tag: people-pages
+    name: People Pages
+  - tag: projects
+    name: Projects
+  - tag: retailers
+    name: Retailers
+  - tag: running-programs
+    name: Running Programs
+  - tag: software-tools
+    name: Software Tools
+  - tag: technical-reference
+    name: Technical References
 ---
+{% assign sorted = (site.tags.link | sort: 'title') %}
 <div id="links">
   <h1>Links</h1>
-  <ul class="posts">
-    {% for link in site.tags.link %}
-      <li><span>{{ link.date | date: "%Y-%b-%d" }}</span> &raquo; <a href="{{ link.url }}">{{ link.title }}</a></li>
+  <ul class="link-categories">
+  {% for tag in page.possibletags %}
+  <li><a href="#{{ tag.tag }}">{{ tag.name }}</a></li>
+  {% endfor %}
+  </ul>
+  <br />
+  <br />
+  <br />
+  <ul class="links">
+    {% for tag in page.possibletags %}
+    <a name="{{ tag.tag }}"></a><ul class="link-category">
+    <h2>{{ tag.name }}</h2>
+    {% for link in sorted %}{% if link.tags contains tag.tag %}
+      <li>
+        <a href="{{ link.uri }}">{{ link.title }}</a>
+        {{ link.content }}
+      </li>{% endif %}{% endfor %}
+    </ul>
+    <br />
+    <br />
     {% endfor %}
   </ul>
 </div>
