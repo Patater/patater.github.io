@@ -16,7 +16,7 @@ language: en
 <p>Today, we will use a new loading loop that utilizes <em>indirect addressing</em>
 to load a lot of data at a time. The data we will load will be the Zelda title
 screen, and yes, today will include all of the code. I've included the 3 necessary
-data files in <a href="http://static.patater.com/gbaguy/nesasm.zip">nesasm.zip</a>. Please redownload it, I could
+data files in <a href="/gbaguy/nesasm.zip">nesasm.zip</a>. Please redownload it, I could
 have sworn that I already had them in there... sorry for any inconveniece.</p>
 
 <h2>Indirect Addressing?</h2>

@@ -54,7 +54,7 @@ href="http://forum.gbadev.org/viewforum.php?f=24">Visit the forum.</a>
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Introduction to Nintendo DS Programming</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.patater.com/contact" property="cc:attributionName" rel="cc:attributionURL">Jaeden Amero</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://www.patater.com/manual" rel="dct:source">http://www.patater.com/manual</a>.</p>
 
 <h2>Read Online</h2>
-<p>Read <a href="http://static.patater.com/files/projects/manual/manual.html">Introduction to Nintendo DS Programming</a> online.
+<p>Read <a href="/files/projects/manual/manual.html">Introduction to Nintendo DS Programming</a> online.
 </p>
 
 <h2>Visit Us on GitHub</h2>
@@ -62,6 +62,6 @@ href="http://forum.gbadev.org/viewforum.php?f=24">Visit the forum.</a>
 
 <div>
 <h2>Download</h2>
-<a href="http://static.patater.com/projects/manual.zip">Download the Manual
+<a href="/projects/manual.zip">Download the Manual
 with Source Code</a>
 </div>

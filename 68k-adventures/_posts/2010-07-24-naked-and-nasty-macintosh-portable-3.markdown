@@ -14,6 +14,6 @@ language: en
 ---
 <p>I finished capacitor replacement a few nights ago. Here are some pictures.</p>
 
-<a href="http://static.patater.com/files/pictures/macportable-all_about_the_tantalums.jpg"><img src="http://static.patater.com/files/pictures/thumb/macportable-all_about_the_tantalums.jpg" alt="Macintosh Portable - All About the Tantalums" /></a>
+<a href="/files/pictures/macportable-all_about_the_tantalums.jpg"><img src="/files/pictures/thumb/macportable-all_about_the_tantalums.jpg" alt="Macintosh Portable - All About the Tantalums" /></a>
 
-<a href="http://static.patater.com/files/pictures/macportable-all_new_caps.jpg"><img src="http://static.patater.com/files/pictures/thumb/macportable-all_new_caps.jpg" alt="Macintosh Portable - All New Caps" /></a>
+<a href="/files/pictures/macportable-all_new_caps.jpg"><img src="/files/pictures/thumb/macportable-all_new_caps.jpg" alt="Macintosh Portable - All New Caps" /></a>

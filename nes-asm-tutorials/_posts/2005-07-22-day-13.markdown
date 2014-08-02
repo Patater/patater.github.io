@@ -46,7 +46,7 @@ that you can load it to PPU memory like you did with the palette.</p>
 make it into a binary file for the above purpose. You don't need all 32 lines, unless
 you want them.</p>
 
-<p>Download it <a href="http://static.patater.com/gbaguy/nesasm.zip">here</a>
+<p>Download it <a href="/gbaguy/nesasm.zip">here</a>
 just run it and type the name of the map file (text) in the first box and the
 name (not extension) of the file you want it to create in the second box. If
 the map file contains alot of map data, the program may make more than 1

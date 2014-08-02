@@ -19,10 +19,10 @@ language: en
 
 <p>I've specified the license as <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>. It's my hope that the manual will provide a good starting point for anyone in the community to use to document homebrew Nintendo DS programming.</p>
 
-<img src="//static.patater.com/images/reposturgeon.png" alt="The reposurgeon" />
+<img src="/images/reposturgeon.png" alt="The reposurgeon" />
 
 <p>The conversion from Subversion to git went very well. I'm thankful to Eric S. Raymond (esr) and his <a href="http://www.catb.org/esr/reposurgeon/reposurgeon.html">reposurgeon</a> tool. With it, I was able to convert the entire history of the manual (with all its dirty warts) to git in just a few hours. This was my first time using <a href="http://www.catb.org/esr/reposurgeon/reposurgeon.html">reposurgeon</a>, and I found it to have a bit of a learning curve. It all clicked when I figured out that the arguments to <a href="http://www.catb.org/esr/reposurgeon/reposurgeon.html">reposurgeon</a> are just a list of commands to execute, and that changes are kept in memory until written with the "write" command.</p>
 
-<p>If you are curious how the conversion was done, please have a look at my <a href="//static.patater.com/projects/manual-conversion.xz">manual conversion archive</a>. I basically followed <a hre="http://www.catb.org/esr/dvcs-migration-guide.html">esr's guide</a>. I modified his <a href="http://catb.org/~esr/reposurgeon/conversion.mk">conversion.mk</a> file to suit my needs (setting some options and renaming it to Makefile) and wrote a script called "manual.lift" to massage the Subversion history into beauty. All the details are in the <a href="//static.patater.com/projects/manual-conversion.xz">manual conversion archive</a>.</p>
+<p>If you are curious how the conversion was done, please have a look at my <a href="/projects/manual-conversion.xz">manual conversion archive</a>. I basically followed <a hre="http://www.catb.org/esr/dvcs-migration-guide.html">esr's guide</a>. I modified his <a href="http://catb.org/~esr/reposurgeon/conversion.mk">conversion.mk</a> file to suit my needs (setting some options and renaming it to Makefile) and wrote a script called "manual.lift" to massage the Subversion history into beauty. All the details are in the <a href="//static.patater.com/projects/manual-conversion.xz">manual conversion archive</a>.</p>
 
 <p>Share and enjoy!</p>

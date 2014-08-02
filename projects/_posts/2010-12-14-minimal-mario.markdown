@@ -32,7 +32,7 @@ href="http://www.retrousb.com/product_info.php?cPath=24&products_id=36">You can
 buy a newer USB version of the CopyNES from Retrozone.</a> Refer to the <a
 href="http://kevtris.org/Projects/copynes/copyware.html">CopyNES software
 documentation</a> on how to make a clean dump of the game.</p> <p>The next step
-is to apply <a href="http://static.patater.com/projects/minimal-mario.ips">my
+is to apply <a href="/projects/minimal-mario.ips">my
 IPS patch</a> to your freshly dumped game. To do this, you'll need an IPS
 patcher; <a href="http://www.zophar.net/utilities/patchutil.html">pick your
 favorite one.</a> (Hint: For Windows XP, I like Lunar IPS. For Mac OS X, I like
@@ -54,6 +54,6 @@ to watch it in all its glory in super low resolution 240p!</p>
 
 <div>
 <h2>Download</h2>
-<a href="http://static.patater.com/projects/minimal-mario.ips">Minimal Mario
+<a href="/projects/minimal-mario.ips">Minimal Mario
 IPS Patch</a>
 </div>

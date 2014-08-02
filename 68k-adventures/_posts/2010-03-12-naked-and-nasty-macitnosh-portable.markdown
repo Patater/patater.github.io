@@ -16,14 +16,14 @@ language: en
 
 <h4>Naked Pics</h4>
 
-<a href="http://static.patater.com/files/pictures/macportable_logicboard.jpg"><img src="http://patater.com/files/pictures/thumb/macportable_logicboard.jpg" alt="Macintosh Portable Logic Board" /></a>
+<a href="/files/pictures/macportable_logicboard.jpg"><img src="/files/pictures/thumb/macportable_logicboard.jpg" alt="Macintosh Portable Logic Board" /></a>
 
-<a href="http://static.patater.com/files/pictures/macportable_logicboard_2.jpg"><img src="http://static.patater.com/files/pictures/thumb/macportable_logicboard_2.jpg" alt="Macintosh Portable Logic Board 2" /></a>
+<a href="/files/pictures/macportable_logicboard_2.jpg"><img src="/files/pictures/thumb/macportable_logicboard_2.jpg" alt="Macintosh Portable Logic Board 2" /></a>
 
 <h4>Nasty Pics</h4>
 
-<a href="http://static.patater.com/files/pictures/macportable_capcorrosion_1.jpg"><img src="http://static.patater.com/files/pictures/thumb/macportable_capcorrosion_1.jpg" alt="Macintosh Portable Capacitor Corrosion 1" /></a>
+<a href="/files/pictures/macportable_capcorrosion_1.jpg"><img src="/files/pictures/thumb/macportable_capcorrosion_1.jpg" alt="Macintosh Portable Capacitor Corrosion 1" /></a>
 
-<a href="http://static.patater.com/files/pictures/macportable_capcorrosion_2.jpg"><img src="http://static.patater.com/files/pictures/thumb/macportable_capcorrosion_2.jpg" alt="Macintosh Portable Capacitor Corrosion 2" /></a>
+<a href="/files/pictures/macportable_capcorrosion_2.jpg"><img src="/files/pictures/thumb/macportable_capcorrosion_2.jpg" alt="Macintosh Portable Capacitor Corrosion 2" /></a>
 
-<a href="http://static.patater.com/files/pictures/macportable_capcorrosion_3.jpg"><img src="http://static.patater.com/files/pictures/thumb/macportable_capcorrosion_3.jpg" alt="Macintosh Portable Capacitor Corrosion 3" /></a>
+<a href="/files/pictures/macportable_capcorrosion_3.jpg"><img src="/files/pictures/thumb/macportable_capcorrosion_3.jpg" alt="Macintosh Portable Capacitor Corrosion 3" /></a>

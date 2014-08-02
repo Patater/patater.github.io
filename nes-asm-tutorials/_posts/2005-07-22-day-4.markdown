@@ -24,7 +24,7 @@ funky results when we make backgrounds and sprites.</p>
 <p>Save the palette as our.pal, to save click the only menu and click the
 option with the word save in it. Good. If you didn't do all that and got pissed
 that I made you run a program that wasn't the assembler itself, click <a
-href="http://static.patater.com/gbaguy/our.pal">here</a> to download my palette that I made for you. :)</p>
+href="/gbaguy/our.pal">here</a> to download my palette that I made for you. :)</p>
 
 <div class="note">
 <h4>What a palette is, plain and simple</h4>
@@ -82,7 +82,7 @@ here's some code to illustrate:</p>
 <p>Please remember that unless I say otherwise, examples that just load A with
 something are just as applicable to loading X or Y. You should already know how
 label's work, if you don't you shouldn't be reading this. Go read my <a
-href="http://static.patater.com/gbaguy/x86asm.htm">Intel ASM Tutor</a> or other
+href="/gbaguy/x86asm.htm">Intel ASM Tutor</a> or other
 basic assembly book/article. Like I said before, you should already know some
 kind of assembly language and label's are basic to ALL of them. So there.</p>
 

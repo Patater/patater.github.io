@@ -22,8 +22,8 @@ etc.).  Well I guess we need to draw the sprite's picture first. So let's go!
 <h3>Tile Layer Pro</h3>
 
 <p>You might be asking how much space we have for sprites. Answer: 4 KiloBytes.
-Alright, download Tile Layer <a href="http://static.patater.com/gbaguy/tilelp.zip">here</a>. Download an empty
-4kb file <a href="http://static.patater.com/gbaguy/MT.spr">here</a>. Run TLP.exe and open MT.spr . Now click the
+Alright, download Tile Layer <a href="/gbaguy/tilelp.zip">here</a>. Download an empty
+4kb file <a href="/gbaguy/MT.spr">here</a>. Run TLP.exe and open MT.spr . Now click the
 View menu and set the "Format" to NES by hovering the mouse over "Format" and
 clicking "NES". Click the first square in the upper-left of the large
 grid-window. Now click the farthest right rectangle in the "Pallete Editor
@@ -33,13 +33,13 @@ smiley face or something in the "Tile Editor Window". Save the file as
 
 <p>If you haven't noticed, spr means SPRite and bkg means BacKGround.</p>
 
-<p>If you couldn't do that, click <a href="http://static.patater.com/gbaguy/our.spr">here</a> to download mine!
+<p>If you couldn't do that, click <a href="/gbaguy/our.spr">here</a> to download mine!
 (UPDATE: I think I may have put the sprite in tile zero, the sprite should be
 in tile 1. If this isn't done the rest of the sprites will all have data
 X=0,Y=0,Tile num=0, so will all show up in top-left corner. Updating the source
 and editing the sprite file is left to you.)</p>
 
-<p>Also, download <a href="http://static.patater.com/gbaguy/MT.spr">again</a> and name it "our.bkg" we won't use
+<p>Also, download <a href="/gbaguy/MT.spr">again</a> and name it "our.bkg" we won't use
 our.bkg today, but we do need it right now. Just put our.bkg and our.spr in the
 same folder that you are going to use for you code file.</p>
 

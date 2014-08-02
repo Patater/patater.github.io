@@ -14,7 +14,7 @@ language: en
 ---
 <p>After I finished replacing the capacitors in this guy, I assembled it with the second floppy drive in place, connected with a self-made ribbon cable. The drives stack very well and are firmly in place. The upper drive could slide around if I forced it hard enough, but it is held in place with significant amount of metal squeezing metal friction.</p>
 
-<a href="http://static.patater.com/files/pictures/macportable-dual_floppies.jpg"><img src="http://static.patater.com/files/pictures/thumb/macportable-dual_floppies.jpg" alt="Dual Floppies" /></a>
+<a href="/files/pictures/macportable-dual_floppies.jpg"><img src="/files/pictures/thumb/macportable-dual_floppies.jpg" alt="Dual Floppies" /></a>
 
 <p>Unfortunately, I am currently experiencing some undocumented sad mac action; this may be due to attempting to boot from a 9V battery by not having the battery cover on. My PowerBook 100 power adapter is dead, so I'll need to explore alternate powering methods. I have a replacement battery I'll be wiring up to try out tomorrow, but I don't have a charger for it yet.</p>
 

@@ -11,16 +11,16 @@ updated: 2012-08-27 02:21:30
 sitemappriority: 0.65
 tags: project blarg life gpu webgl web gpgpu conway
 description: John Horton Conway devised this game in 1970. He played with it using chalkboards, checkers, or poker chips. Little did he know that we'd now be playing with it on our GPUs inside of hypertext browsers.
-graphic: http://static.patater.com/images/life.png
+graphic: /images/life.png
 graphicalt: Conway's Game of Life Rendered with the GPU
-thumb: http://static.patater.com/images/thumb-life.png
+thumb: /images/thumb-life.png
 featured: true
 language: en
 ---
 <h2>Play</h2>
-<p><a href="http://static.patater.com/life.html">Conway's Game of Life with WebGL</a></p>
+<p><a href="/life.html">Conway's Game of Life with WebGL</a></p>
 
-<image src="http://static.patater.com/images/life-2up.png" alt="A squiggle
+<image src="/images/life-2up.png" alt="A squiggle
 and some life drawn in Conway's Game of Life"/>
 
 <h3>Motivation</h3>
@@ -81,9 +81,9 @@ cursor.  You can draw stuff in the box. That is all. Enjoy!</p>
 something interesting. Use it for whatever you want, but be nice.</p>
 
 <h2>Play</h2>
-<p><a href="http://static.patater.com/life.html">Conway's Game of Life with WebGL</a></p>
+<p><a href="/life.html">Conway's Game of Life with WebGL</a></p>
 
 <div>
 <h2>Download</h2>
-<a href="http://static.patater.com/projects/life.bz2">Life's Source Code</a>
+<a href="/projects/life.bz2">Life's Source Code</a>
 </div>

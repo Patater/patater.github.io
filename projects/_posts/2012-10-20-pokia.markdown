@@ -9,15 +9,15 @@ updated: 2012-10-20 03:38:13
 sitemappriority: 0.5
 tags: project nokia music composer pokia ringtones
 description: Ever spend like 10 minutes entering a ring tone into your phone just to press play and hear it sound like garbage? I've got just the tool for you, baby.
-graphic: http://static.patater.com/images/pokia.png
+graphic: /images/pokia.png
 graphicalt: Composing music with Pokia
-thumb: http://static.patater.com/images/pokia-thumb.png
+thumb: /images/pokia-thumb.png
 language: en
 ---
-<a href="http://static.patater.com/pokia/pokia.html"><img src="http://static.patater.com/images/pokia-sideways.png" alt="A sideways Pokia" width="100%"/></a>
+<a href="/pokia/pokia.html"><img src="/images/pokia-sideways.png" alt="A sideways Pokia" width="100%"/></a>
 
 <h2>Play with the Pokia</a>
-<p>First off, <a href="http://static.patater.com/pokia/pokia.html">go play with it</a>. You'll need <a href="http://www.google.com/chrome">Google Chrome</a>. I think you might enjoy composing a song or two.</p>
+<p>First off, <a href="/pokia/pokia.html">go play with it</a>. You'll need <a href="http://www.google.com/chrome">Google Chrome</a>. I think you might enjoy composing a song or two.</p>
 
 <p>Now that you are back, I can tell you a story all about how I made this thing.</p>
 
@@ -35,7 +35,7 @@ language: en
 <h3>How does it sound like a real Nokia?</h3>
 <p>Short answer: by using Web Audio's wave table synthesizer. A longer answer is to follow.</p>
 
-<img src="http://static.patater.com/images/pokia-spectrogram.png" width="100%"/>
+<img src="/images/pokia-spectrogram.png" width="100%"/>
 
 <p>I looked at a spectrogram of some recordings I made of my Nokia 1100b playing back the chromatic scale. I didn't see much of interest in the frequency domain, so I had a look in the time domain. Each note looked like a damped sine wave. After trying to take the Fourier transform of an equation for a damped sine wave and failing (as I've been away from math for too long), I just used <a href="http://www.spectraplus.com/">SpectraPLUS</a> to take an FFT of a single note. I then popped those coefficients into a <a href="http://www.w3.org/TR/webaudio/#dfn-setWaveTable">Web Audio oscillator's wave table</a> and bam, a nice Nokia sound.</p>
 
@@ -48,6 +48,6 @@ language: en
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TAT9bC4YIWs" frameborder="0" allowfullscreen></iframe>
 
 <h2>Play</h2>
-<a href="http://static.patater.com/pokia/pokia.html">Play with the Pokia</a>
+<a href="/pokia/pokia.html">Play with the Pokia</a>
 <h2>Source Code</h2>
 <a href="https://github.com/Patater/Pokia">Pokia is on GitHub</a>

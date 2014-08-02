@@ -89,5 +89,5 @@ exciting! Happy Thanksgiving to you too.</p>
 
 <div>
 <h2>Download</h2>
-<a href="http://static.patater.com/projects/harvest2006.zip">Thanksgiving Harvest Homebrew Competition 2006 Collection</a>
+<a href="/projects/harvest2006.zip">Thanksgiving Harvest Homebrew Competition 2006 Collection</a>
 </div>

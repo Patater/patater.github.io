@@ -24,7 +24,7 @@ the NES as coding for the NES is a little more difficult than either of the
 others mentioned.</p>
 
 <p>We will be using NESASM.exe as our assembler. Get it <a
-href="http://static.patater.com/gbaguy/nesasm.zip">here!</a> and unzip it to C:
+href="/gbaguy/nesasm.zip">here!</a> and unzip it to C:
 esasm or whereever you want.
 Good. It also contains serveral other programs we will be using. But before we
 get coding, we need to know about our little old (REALLY old) friend the

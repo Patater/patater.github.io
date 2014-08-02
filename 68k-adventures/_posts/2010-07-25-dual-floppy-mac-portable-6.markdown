@@ -18,10 +18,10 @@ language: en
 
 <p>I had this 6V battery laying around, so I decided to hook it up. The cables for the Macintosh Portable battery didn't give me much slack, but I was able to hook it up and run the machine without the case on. This experiment should validate whether or not the sad mac is due to flaky power.</p>
 
-<a href="http://static.patater.com/files/pictures/macportable-battery_connection_1.jpg"><img src="http://static.patater.com/files/pictures/thumb/macportable-battery_connection_1.jpg" alt="Battery Connection 1" /></a>
+<a href="/files/pictures/macportable-battery_connection_1.jpg"><img src="/files/pictures/thumb/macportable-battery_connection_1.jpg" alt="Battery Connection 1" /></a>
 
-<a href="http://static.patater.com/files/pictures/macportable-battery_connection_2.jpg"><img src="http://static.patater.com/files/pictures/thumb/macportable-battery_connection_2.jpg" alt="Battery Connection 2" /></a>
+<a href="/files/pictures/macportable-battery_connection_2.jpg"><img src="/files/pictures/thumb/macportable-battery_connection_2.jpg" alt="Battery Connection 2" /></a>
 
-<a href="http://static.patater.com/files/pictures/macportable-without_case.jpg" class="postlink"><img src="http://static.patater.com/files/pictures/thumb/macportable-without_case.jpg" alt="Without Case" /></a>
+<a href="/files/pictures/macportable-without_case.jpg" class="postlink"><img src="/files/pictures/thumb/macportable-without_case.jpg" alt="Without Case" /></a>
 
 <p>Unfortunately, I still get the sad mac. However, the code is pretty consistently 03001300:00001FFA. This $1300 code might be a CPU exception code, indicating that I'm receiving an interrupt too early in the boot process (<a href="http://myoldmac.net/FAQ/SADerror-portable.htm">as per myoldmac</a>). That in turn might mean that an interrupt line is being permanently asserted. As I'm not sure which caps are in the interrupt path (if any). I'll just look over all my work again carefully and hopefully I'll find something.</p>

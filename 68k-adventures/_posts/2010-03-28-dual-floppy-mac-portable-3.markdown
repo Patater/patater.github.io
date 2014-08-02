@@ -16,11 +16,11 @@ language: en
 
 <p>I had taken off the floppy drive cover, but I didn't need to. I just needed to unscrew it so that I could fit it into the hard drive bracket with the floppy drive cover on (without the screw heads getting in the way). You just place the floppy drive with cover (but without the screws) into the hard drive bracket. The floppy drive cover has some bent metal on the side, so it keeps things snug. There are no places to put screws to secure the floppy drive into the bracket, but it seems to be enough snug as is.</p>
 
-<a href="http://static.patater.com/files/pictures/macportable_df-dual_bracketed_floppy.jpg"><img src="http://static.patater.com/files/pictures/thumb/macportable_df-dual_bracketed_floppy.jpg" alt="Dual Bracketed Floppy" /></a>
+<a href="/files/pictures/macportable_df-dual_bracketed_floppy.jpg"><img src="/files/pictures/thumb/macportable_df-dual_bracketed_floppy.jpg" alt="Dual Bracketed Floppy" /></a>
 
 <br />
 
-<a href="http://static.patater.com/files/pictures/macportable_df-dual_bracketed_floppy_side.jpg" class="postlink"><img src="http://static.patater.com/files/pictures/thumb/macportable_df-dual_bracketed_floppy_side.jpg" alt="Dual Bracketed Floppy Site" /></a>
+<a href="/files/pictures/macportable_df-dual_bracketed_floppy_side.jpg" class="postlink"><img src="/files/pictures/thumb/macportable_df-dual_bracketed_floppy_side.jpg" alt="Dual Bracketed Floppy Site" /></a>
 
 <p>So most of my problems were solved by this guy. There are some amazing people out there that the English speaking world just doesn't know about due to all of our search queries being in English. All we ever see of the Internet is the English stuff, but the Internet is truly global. I need to send this guy a big thank you after the project is done (so that I can send him pictures of it completed).</p>
 

@@ -74,5 +74,5 @@ concerns.
 
 <div>
 <h2>Download</h2>
-<a href="http://static.patater.com/projects/guikit-20070919.tgz">Download the GUI Kit</a>
+<a href="/projects/guikit-20070919.tgz">Download the GUI Kit</a>
 </div>

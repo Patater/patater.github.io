@@ -26,6 +26,6 @@ bug reports. Enjoy!</p>
 
 <div>
 <h2>Download</h2>
-<a href="http://static.patater.com/projects/rgb-compare.zip">Download
+<a href="/projects/rgb-compare.zip">Download
 RGBCompare</a>
 </div>

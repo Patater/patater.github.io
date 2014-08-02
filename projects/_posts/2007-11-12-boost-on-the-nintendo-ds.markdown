@@ -70,5 +70,5 @@ different for you.</p>
 
 <div>
 <h2>Download</h2>
-<a href="http://static.patater.com/projects/boost-1.45.0_devkitarm-r32.zip">Boost for Nintendo DS Precompiled</a>
+<a href="/projects/boost-1.45.0_devkitarm-r32.zip">Boost for Nintendo DS Precompiled</a>
 </div>
