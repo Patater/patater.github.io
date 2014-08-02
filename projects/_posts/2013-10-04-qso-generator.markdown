@@ -11,11 +11,12 @@ updated: 2013-10-04 23:43:51
 sitemappriority: 0.5
 tags: project blarg lisp programming qso morse-code markov-chains
 description: Existing Koch-method Morse code training software waits until all symbols are learned before giving a Morse code student practice with Morse code conversations (known QSOs in amateur radio parlance). The point of this program is to generate random QSOs given a subset of symbols, so that the student can gain practice with the QSO format even before they know all the Morse code symbols.
-graphic: /projects/qso-generator.png",
-graphicalt: A screenshot of qso-generator.rkt running the sample programs
 featured: true
 language: en
 ---
+![A screenshot of qso-generator.rkt running the sample
+programs](/projects/qso-generator.png)
+
 <h3>Purpose</h3>
 <p>Existing Koch-method Morse code training software waits until all symbols are learned before giving a Morse code student practice with Morse code conversations (known QSOs in amateur radio parlance). The point of this program is to generate random QSOs given a subset of symbols, so that the student can gain practice with the QSO format even before they know all the Morse code symbols.</p>
 

@@ -10,11 +10,12 @@ updated: 2011-04-03 03:39:44
 sitemappriority: 0.7
 tags: project nes mario demake
 description: A simple color profiler for PC designed to help create Nintendo DS programs with colors consistent on both PC and Nintendo DS.
-graphic: /images/minimal-mario-2up.png
-graphicalt: A screen capture of Mario standing next to a Goomba in World 1-1, rendered minimalistically
 thumb: /images/thumb-minimal.png
 language: en
 ---
+![A screen capture of Mario standing next to a Goomba in World 1-1, rendered
+minimalistically](/images/minimal-mario-2up.png)
+
 <p>Inspired by the work of Calen Henry, I set out to do my first NES ROM hack:
 a playable version of Minimal Mario. The end result is awesome, and
 playable.</p>

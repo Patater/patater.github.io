@@ -10,11 +10,11 @@ updated: 2010-12-19 03:36:44
 sitemappriority: 0.6
 tags: project nds nintendo nintendo-ds gui
 description: A simple GUI kit for streamlining the creation of menus and making simple games
-graphic: /images/gui-kit-orchid.png
-graphicalt: GUI Kit
 thumb: /images/thumb-guikit.png
 language: en
 ---
+![GUI Kit](/images/gui-kit-orchid.png)
+
 <h2>About</h2>
 <p>
 The Patater GUI Kit is an open source (released under MIT license) GUI

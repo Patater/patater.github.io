@@ -10,12 +10,12 @@ updated: 2012-04-22 20:54:23
 sitemappriority: 0.5
 tags: project 68k-adventures blarg 68k macintosh mac macplus
 description: Are you sick of the cache included with your old Macintosh? Probably not, but if so, you can disable it with this nice utility.
-graphic: /images/cache-control-icon.png
-graphicalt: Cache Control Icon
 thumb: /images/cache-control-icon.png
 featured: true
 language: en
 ---
+![Cache Control Icon](/images/cache-control-icon.png)
+
 <p>Are you sick of the cache included with your old Macintosh? Probably not, but if so, you can disable it with this nice utility.</p>
 
 <img src="/images/cache-control-ui.png" alt="A Screenshot of Cache Control Running on a Macintosh" />

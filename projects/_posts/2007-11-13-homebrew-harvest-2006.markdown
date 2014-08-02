@@ -11,10 +11,11 @@ updated: 2010-12-19 03:36:44
 sitemappriority: 0.7
 tags: project nds nintendo nintendo-ds gba compo homebrew
 description: A harvest season themed competition
-graphic: /images/turkey.png
 featured: true
 language: en
 ---
+![A hand turkey](/images/turkey.png)
+
 <h2>The Theme</h2>
 <p>The theme of the Thanksgiving Harvest Homebrew Competition is
 simple: Harvest Season and Thanksgiving. Any game or demo that has a

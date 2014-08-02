@@ -10,10 +10,10 @@ updated: 2010-12-19 03:36:44
 sitemappriority: 0.5
 tags: project pc nds nintendo nintendo-ds gba graphics color
 description: A simple color profiler for PC designed to help create Nintendo DS programs with colors consistent on both PC and Nintendo DS.
-graphic: /images/rgb-compare.png
-graphicalt: RGBCompare Logo
 language: en
 ---
+![RGBCompare Logo](/images/rgb-compare.png)
+
 <h2>About</h2>
 <p>RGBCompare is a nifty little application for X86 Linux, Macintosh OS X, and
 Windows. It allows you to compare how colors look on your PC and the Nintendo

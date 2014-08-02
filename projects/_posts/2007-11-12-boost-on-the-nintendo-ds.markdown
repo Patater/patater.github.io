@@ -10,9 +10,10 @@ updated: 2010-12-19 03:36:44
 sitemappriority: 0.5
 tags: project blarg nds nintendo-ds howto boost c++
 description: Ever wonder how to get boost working on your Nintendo DS? Here's how.
-graphic: /images/boost-nds.png
 language: en
 ---
+![A rocket boosting](/images/boost-nds.png)
+
 <h2>About</h2>
 <p>The following guide will help you to compile Boost for the Nintendo DS using
 devkitARM on Linux or Mac OS X (using the bash shell).  Many Boost libraries

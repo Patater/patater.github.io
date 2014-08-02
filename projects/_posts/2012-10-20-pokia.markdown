@@ -9,11 +9,11 @@ updated: 2012-10-20 03:38:13
 sitemappriority: 0.5
 tags: project nokia music composer pokia ringtones
 description: Ever spend like 10 minutes entering a ring tone into your phone just to press play and hear it sound like garbage? I've got just the tool for you, baby.
-graphic: /images/pokia.png
-graphicalt: Composing music with Pokia
 thumb: /images/pokia-thumb.png
 language: en
 ---
+![Composing music with Pokia](/images/pokia.png)
+
 <a href="/pokia/pokia.html"><img src="/images/pokia-sideways.png" alt="A sideways Pokia" width="100%"/></a>
 
 <h2>Play with the Pokia</a>

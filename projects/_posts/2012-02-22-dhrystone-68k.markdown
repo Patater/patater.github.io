@@ -10,12 +10,12 @@ updated: 2012-02-22 05:22:05
 sitemappriority: 0.5
 tags: project 68k-adventures blarg 68k macintosh mac macplus
 description: Benchmark the integer performance of your amazingly powerful Macintosh Plus.
-graphic: /images/dhrystone-68k-icon.png
-graphicalt: Dhrystone 68k Icon
 thumb: /images/dhrystone-68k-icon.png
 featured: true
 language: en
 ---
+![Dhrystone 68k Icon](/images/dhrystone-68k-icon.png)
+
 <p>Some guy named Landon Rodgers asked me to build the Dhrystone benchmarker for 68k Macintosh, so I did. I built it with THINK C 5, using 4-byte ints (instead of the default 2-byte ones), and without global optimizations. I had to modify the source a little bit to get it to build and run properly. (The source code and project file is included in the download.)</p>
 
 <img src="/images/dhrystone-68k-runs.png" alt="Dhrystone running on a 68k Macintosh with 40000 runs entered" />

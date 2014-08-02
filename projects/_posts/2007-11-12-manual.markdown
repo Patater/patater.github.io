@@ -11,11 +11,11 @@ updated: 2010-12-19 03:36:44
 sitemappriority: 0.7
 tags: project nds nintendo nintendo-ds tutorial manual
 description: An up and coming manual produced by yours truly, Patater
-graphic: /images/rocket-code.png
-graphicalt: Orange Spaceship flying over code
 featured: true
 language: en
 ---
+![Orange Spaceship flying over code](/images/rocket-code.png)
+
 <p>This is the modest and lowly Introduction to Nintendo DS manual, the
 supreme source for beginner knowledge on programming the Nintendo
 DS.</p>
