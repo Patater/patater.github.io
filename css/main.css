@@ -166,3 +166,32 @@ a:visited { color: #a0a; }
 code {
     white-space: pre-wrap;
 }
+
+/*****************************************************************************/
+/*
+/* QR Code Table
+/*
+/*****************************************************************************/
+
+.qr-code .black {
+    border-top-color: #000;
+    background: #000 none repeat scroll 0% 0%;
+}
+
+.qr-code {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.qr-code td {
+    border-width: 0px;
+    border-style: solid;
+    border-color: #00F;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+}
+
+.qr-code-wrapper {
+    text-align: center;
+}
