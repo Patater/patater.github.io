@@ -3,6 +3,9 @@ description: Patater is my outlet for my free and open works.
 url: "https://patater.com"
 baseurl: ""
 
+liquid:
+  error_mode: strict
+
 markdown: kramdown
 highlighter: pygments
 encoding: utf-8
