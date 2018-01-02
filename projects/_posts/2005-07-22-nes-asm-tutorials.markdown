@@ -27,7 +27,7 @@ understanding the basics.</p>
 <p>NOTE: Info on my age WAS accurate at time of writting in 2002.</p>
 
 <ul class="posts">
-{% assign sorted = (site.tags.nes-asm-tutorials | sort: 'date', 'last') %}
+{% assign sorted = site.tags.nes-asm-tutorials | sort: 'date', 'last' %}
 {% for post in sorted %}
   <li><span>{{ post.date | date: "%Y-%b-%d" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}

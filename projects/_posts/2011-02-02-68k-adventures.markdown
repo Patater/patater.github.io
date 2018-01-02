@@ -17,7 +17,8 @@ resurrect a dead mac, or upgrade one to be super awesome, I'll document the
 project in this series. I'll document some of my past projects, too.</p>
 
 <ul class="posts">
-{% for post in (site.tags.68k-adventures | sort: 'title') %}
+{% assign sorted = site.tags['68k-adventures'] | sort: 'title' %}
+{% for post in sorted %}
   <li><span>{{ post.date | date: "%Y-%b-%d" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>

@@ -4,7 +4,7 @@ title: Books
 ---
 
 <div id="books">
-{% assign sorted = (site.tags.book | sort: 'title') %}
+{% assign sorted = site.tags.book | sort: 'title' %}
   <h1>Books</h1>
   <ul class="posts">
     {% for book in sorted %}
