@@ -1,14 +1,14 @@
 ---
 layout: post
 published: true
-permalink: /dual-floppy-mac-portable
+permalink: /dual-floppy-mac-portable/
 title: Building a Dual Floppy Mac Portable - Part 1
 author: Jaeden Amero
 date: 2010-03-28 02:46:41
 updated: 2011-02-04 04:06:41
 sitemappriority: 0.5
 categories: 68k-adventures
-tags: 68k-adventures blarg 68k 68000 mac macintosh macintosh-portable dual floppy
+tags: 68k-adventures 68k 68000 mac macintosh macintosh-portable dual floppy
 description: Have you ever seen a dual floppy Macintosh Portable? I haven't. Let's make one.
 language: en
 ---

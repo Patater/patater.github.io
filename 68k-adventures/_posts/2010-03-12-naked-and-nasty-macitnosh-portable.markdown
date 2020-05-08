@@ -1,14 +1,14 @@
 ---
 layout: post
 published: true
-permalink: /naked-and-nasty-macintosh-portable
+permalink: /naked-and-nasty-macintosh-portable/
 title: A Naked and Nasty Macintosh Portable - Part 1
 author: Jaeden Amero
 date: 2010-03-12 06:37:10
 updated: 2011-02-04 02:56:10
 sitemappriority: 0.5
 categories: 68k-adventures
-tags: 68k-adventures blarg 68k 68000 mac macintosh macintosh-portable capacitors
+tags: 68k-adventures 68k 68000 mac macintosh macintosh-portable capacitors
 description: As I stripped down this old girl, she's shown herself to be very nasty.
 language: en
 ---
