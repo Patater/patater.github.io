@@ -1,0 +1,425 @@
+/*This is the overworld theme to Patater dot com*/
+
+
+/* ALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL */
+html, body { height: 100%; }
+
+body {
+    font-size: 100%;
+    min-width: 780px;
+    background-color: #F4F4F4;
+    background-image: url('/images/patater-head.png');
+    background-repeat: no-repeat;
+    }
+.header {
+    display: block;
+    width: 460px;
+    height: 140px;
+    cursor: pointer;
+    /* background-color: rgba(255, 0, 0, 0.5); */
+    }
+
+.clear { clear: both; }
+
+.page-wrapper {
+    height: auto;
+    min-height: 100%;
+    width: 820px;
+    /* background-color: rgba(255, 0, 0, 0.3); */
+    }
+.content-wrapper {
+    float: left;
+    width: 560px;
+    padding: 0 0 140px 40px;
+    /* background-color: rgba(0, 200, 254, 0.5); */
+    }
+
+html body p {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 11px;
+    line-height: 18px;
+    color: #777;
+    padding: 0 0 20px 0;
+    }
+
+html body {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 11px;
+    line-height: 18px;
+    color: #777;
+    padding: 0 0 20px 0;
+    }
+
+
+h1, h2 { font: 22px 'BlenderMedium'; }
+
+h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #444;
+    }
+
+h2 {
+    color: ;
+    }
+h3 {
+    color: #888;
+    font: 22px 'BlenderMedium';
+    }
+
+h4 {
+    font: 19px 'BlenderBold';
+    text-transform: uppercase;
+    }
+    .subtitle { font-family: 'BlenderThin'; font-size: 18px; margin: 2px 0 2px 0; }
+
+h5 {
+    font: 19px 'BlenderBook', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    padding: 10px 0 60px 0;
+    color: #14140A;
+    }
+h5 a {
+    color: inherit;
+    text-decoration: none;
+    }
+li h5 {
+    float: left;
+    margin: -20px 24px 0 0;
+    }
+
+h6 {
+    font: 352px 'BlenderHeavy';
+    color: #FF9966;
+    position: absolute;
+    left: 40px;
+    top: 170px;
+    }
+
+pre {
+    font-family: monospace;
+    font-size: 12px;
+    font: 'monaco';
+    color: #8480EB;
+    }
+
+code {
+    font-family: monospace;
+    font-size: 12px; /* XXX This seems to be relative to the containing tag's
+    font size. See http://localhost:8081/nes-asm-tutorials/day-9 for an example
+    of 1.2em being not the same size as it normally is. This is because this
+    code block is not inside a <p>. It we use 10px here, everything is fine,
+    always. I don't think we should be using em for font-size for this reason.
+    */
+    font: 'monaco';
+    color: #8480EB;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+    }
+code.block {
+    border-top: 1px dotted;
+    border-bottom: 1px dotted;
+    background: #FFF;
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+    }
+
+div.note {
+    background: #EDEDED;
+    margin: 20px 0 30px 0;
+    padding: 15px 15px 0 15px;
+    border: 1px solid #8480EB;
+    }
+
+div.warning {
+    color: black;
+    border: 4px solid red;
+    background: white;
+    margin: 15px 0 15px 0;
+    padding: 10px 15px 10px 15px;
+    }
+div.warning p { padding: 0px;}
+
+.series-navigation {
+    font-family: 'BlenderThin';
+    font-size: 22px;
+    text-transform: uppercase;
+    }
+
+ul li { margin: 5px 0 20px 0; }
+ul { margin-bottom: 20px; }
+ol li { color: #BB3077; list-style-type: decimal-leading-zero; padding-bottom: 5px; }
+ol { margin-left: 40px; margin-bottom: 20px; }
+
+    ul, ol, dt, dl, dd { font-size: 22px; font-family: 'BlenderThin'; }
+
+    dl { color: #02BCDC; margin-left: 30px; }
+    dt { font-family: 'BlenderMedium'; margin-bottom: 10px; }
+    dd { margin-bottom: 20px; line-height: 20px; }
+
+
+a:link    { color: inherit; }
+a:hover   { background-color: #DEF3A8; }
+a:visited { color: inherit; }
+
+
+
+.entryfield, .button {
+    border: 1px solid #D2D3D4;
+    padding: 4px 8px 4px 8px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    }
+.entryfield { }
+.button { background-color: #DEF3A8; }
+.button:hover { color: #DEF3A8;  cursor: pointer; }
+
+.project img { margin: 10px 0 10px 0; }
+
+
+/* Text & Highlight Color */
+::-moz-selection { background: #222; color: inherit; text-shadow: none; }
+::selection { background: #222; color: inherit; text-shadow: none; }
+
+/* ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR ERROR */
+
+.error-page {}
+.error-page img {
+    position: absolute;
+    display: block;
+    top: 300px;
+    left: 140px;
+    }
+.error {
+    color: #FF9966;
+    margin-left: -120px;
+    text-align: center;
+    position: relative;
+    top: 350px;
+    }
+
+
+/* BLARG BLARG BLARG BLARG BLARG BLARG BLARG BLARG BLARG */
+
+.blarg img { margin: 10px 0 10px 0; }
+.blarg .minimeta { text-transform: none; }
+.blarg h4 { padding-top: 15px; }
+
+/* COMMENTS COMMENTS COMMENTS COMMENTS COMMENTS COMMENTS */
+
+.comment-divider { padding: 20px 0 40px 0; }
+.twitter-share-button { padding: 0 6px 0 0; }
+.comments h2 { display: inline; text-transform: uppercase; }
+.comment img { float: left; padding-right: 15px; }
+.comment { min-height: 80px; }
+
+/* BOOKS BOOKS BOOKS BOOKS BOOKS BOOKS BOOKS BOOKS BOOKS */
+
+.books a { text-decoration: none; margin-top: 10px; }
+.books .underline { text-decoration: underline; }
+
+/* HOT SHIT HOT SHIT HOT SHIT HOT SHIT HOT SHIT HOT SHIT */
+.entry-first {
+    padding: 10px;
+    margin-bottom: 30px;
+    border-bottom: 4px solid #BADB3B;
+    }
+
+.entry-subsequent {
+    padding: 0 0 0 10px;
+    }
+
+.entry-proper {
+    font: 34px 'BlenderThin';
+    color: #888;
+    text-decoration: underline;
+    padding: 0 10px 10px 0px;
+    }
+
+.section {
+    font: 19px 'BlenderBold';
+    color: #BADB3B;
+    text-transform: uppercase;
+    float: left;
+    }
+.date {
+    float: left;
+    color: #777;
+    padding-left: 10px;
+    }
+
+.minimeta {
+    font: 16px 'BlenderThin';
+    color: #888;
+    }
+
+.FL {
+    float: left;
+    }
+.FL-40 {
+    float: left;
+    padding-left: 40px;
+    }
+
+.entrysub-meta {
+    width: 110px;
+    padding-bottom: 21px;
+    }
+.entrysub-title {
+    width: 430px;
+    margin-top: -6px;
+    }
+
+.sprout-block {
+    left: -40px;
+    top: -0px;
+    width: 610px;
+    height: 387px;
+    position: absolute;
+    background-image: url('/images/sprouts.png');
+    background-repeat: no-repeat;
+    z-index: 0;
+    }
+
+/* POPULAR STUFFS POPULAR STUFFS POPULAR STUFFS POPULAR STUFFS */
+.popular-projects {
+    padding: 24px 0 190px 0;
+    /*background-color: purple; */
+    }
+
+.popular-slot {
+    /*background-color: black;*/
+    display: inline;
+    float: left;
+    width: 180px;
+    height: auto;
+    }
+.middle-slot {
+    padding: 0 10px 0 10px;
+    }
+.title-slot {
+    display: table;
+    width: 180px;
+    height: 56px;
+    background-color: #E0DA82;
+    background-image: url('/images/freckles1.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    border-bottom: 1px solid #F4F4F4;
+    }
+.title-text {
+    font: 18px 'BlenderBold';
+    color: #9E8C3D;
+    text-transform: uppercase;
+    text-align: center;
+    display: table-cell; vertical-align: middle;
+    padding: 0 8px 0 8px;
+    }
+
+.popular-projects .section {
+    padding: 10px;
+    }
+
+/* LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS */
+
+
+
+.projectors a {
+    text-decoration: none;
+    }
+
+.projectors .odd {
+    background-color: none;
+    margin-bottom: 15px;
+    padding: 0 20px 0 20px;
+    }
+.projectors .even {
+    background-color: white;
+    margin-bottom: 8px;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid #D2D3D4;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    }
+.projectors .odd h3 { margin-bottom: 3px; color: #777; }
+.projectors .even h3 { margin-bottom: 3px; color: #BCBEC0; }
+
+.projectors tr .PL30 { padding-left: 30px; }
+
+
+
+.linkzors .odd {
+    background-color: none;
+    padding: 10px 20px 0px 20px;
+    }
+.linkzors .even {
+    background-color: white;
+    padding: 10px 20px 0px 20px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    }
+
+
+/* Footer Footer Footer Footer Footer Footer Footer Footer Footer */
+.mash-footer {
+    clear: left;
+    bottom: 0px;
+    margin-top: -100px;
+    margin-bottom: 0;
+    margin-left: 40px;
+    margin-right: 0;
+    width: 560px;
+    height: 100px;
+    background-image: url('/images/patater-mash.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    }
+.mash-text {
+    float: left;
+    text-transform: uppercase;
+    margin-left: 340px;
+    }
+.mash-text li {
+    float: left;
+    margin: 70px 24px 0 0;
+    }
+
+/*****************************************************************************/
+/*
+/* QR Code Table
+/*
+/*****************************************************************************/
+
+.qr-code .black {
+    border-top-color: #000;
+    background: #000 none repeat scroll 0% 0%;
+}
+
+.qr-code {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.qr-code td {
+    border-width: 0px;
+    border-style: solid;
+    border-color: #00F;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+}
+
+.qr-code-wrapper {
+    text-align: center;
+}
+
+.qr-code tr {
+  height: 5px;
+}
+
+.qr-code td {
+  border-top-width: 0;
+  width: 5px;
+  height: 5px;
+}
