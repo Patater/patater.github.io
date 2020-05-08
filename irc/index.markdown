@@ -10,9 +10,9 @@ sitemappriority: 0.5
 language: en
 ---
 <div class="chat">
-<script src="http://static.blitzed.org/cgiirc.js"></script><form
+<script src="https://static.blitzed.org/cgiirc.js"></script><form
 name="cgiirclogin" method="post" onsubmit="return openCgiIrc(this)"
-action="http://cgiirc.blitzed.org/"><input type="hidden" name="interface"
+action="https://cgiirc.blitzed.org/"><input type="hidden" name="interface"
 value="nonjs" /><input type="hidden" name="Channel" value="#dsdev"
 /><label>Nickname: </label><input class="entryfield" type="text"
 name="Nickname" value="PataterTot-???" /><input class="button" type="submit"
