@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/gameboy-hackaday-com
 title: gameboy.hackaday.com - Featuring Nintendo DS and Gameboy Hacks
 tags: link hacking ds-news-sites
-permalink: /links/gameboy-hackaday-com
+permalink: /links/gameboy-hackaday-com/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://gameboy.hackaday.com/

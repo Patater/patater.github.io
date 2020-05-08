@@ -1,7 +1,7 @@
 ---
 layout: book
 title: The Sound of Waves
-permalink: /books/the-sound-of-waves
+permalink: /books/the-sound-of-waves/
 date: 2011-02-02 01:41:34
 updated: 2011-02-02 01:41:34
 isbn: 9780679752684

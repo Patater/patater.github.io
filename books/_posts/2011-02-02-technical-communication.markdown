@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Technical Communication
-permalink: /books/technical-communication
+permalink: /books/technical-communication/
 date: 2011-02-02 02:08:13
 updated: 2011-02-02 02:08:13
 isbn: 9780321270764

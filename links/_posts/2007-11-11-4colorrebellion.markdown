@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/4colorrebellion
 title: 4colorrebellion - 4cr
 tags: link ds-news-sites
-permalink: /links/4colorrebellion
+permalink: /links/4colorrebellion/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://www.4colorrebellion.com/

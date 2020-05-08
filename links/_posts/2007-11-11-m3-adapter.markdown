@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/m3-adapter
 title: M3 Adapter
 tags: link flash-carts
-permalink: /links/m3-adapter
+permalink: /links/m3-adapter/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://www.m3adapter.com/main.htm

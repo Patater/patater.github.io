@@ -1,7 +1,7 @@
 ---
 layout: book
 title: The Bunco Book
-permalink: /books/the-bunco-book
+permalink: /books/the-bunco-book/
 date: 2011-01-26 05:02:09
 updated: 2011-01-26 05:02:09
 isbn: 9780806509907

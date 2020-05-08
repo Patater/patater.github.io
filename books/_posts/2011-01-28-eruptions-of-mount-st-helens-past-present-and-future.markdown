@@ -1,7 +1,7 @@
 ---
 layout: book
 title: "Eruptions of Mount St. Helens: Past, Present, and Future"
-permalink: /books/eruptions-of-mount-st-helens-past-present-and-future
+permalink: /books/eruptions-of-mount-st-helens-past-present-and-future/
 date: 2011-01-28 02:50:54
 updated: 2011-01-28 02:50:54
 isbn: 9780160218521

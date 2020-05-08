@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Test-Driven Development By Example
-permalink: /books/test-driven-development-by-example
+permalink: /books/test-driven-development-by-example/
 date: 2011-02-02 02:09:42
 updated: 2011-02-02 02:09:42
 isbn: 9780321146533

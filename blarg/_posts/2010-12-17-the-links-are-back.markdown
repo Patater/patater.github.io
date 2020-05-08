@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-permalink: /blarg/the-links-are-back
-id: tag:www.patater.com,2010-12-17:/blarg/the-links-are-back
+permalink: /blarg/the-links-are-back/
+id: tag:www.patater.com,2010-12-17:/blarg/the-links-are-back/
 title: The Links are Back
 author: Jaeden Amero
 date: 2010-12-17 18:21:42

@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Under Pressure and on Time
-permalink: /books/under-pressure-and-on-time
+permalink: /books/under-pressure-and-on-time/
 date: 2011-02-02 02:24:39
 updated: 2011-02-02 02:24:39
 isbn: 9780735611849

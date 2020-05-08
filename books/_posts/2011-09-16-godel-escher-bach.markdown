@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Gödel, Escher, Bach
-permalink: /books/godel-escher-bach
+permalink: /books/godel-escher-bach/
 date: 2011-09-16 02:45:11
 updated: 2011-09-16 02:45:11
 isbn: 9780465026562

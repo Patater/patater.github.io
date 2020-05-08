@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Narrative of the Life of Frederick Douglass
-permalink: /books/narrative-of-the-life-of-frederick-douglass
+permalink: /books/narrative-of-the-life-of-frederick-douglass/
 date: 2011-02-01 01:46:42
 updated: 2011-02-01 01:46:42
 isbn: 9780486284996

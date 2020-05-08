@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Learning Carbon
-permalink: /books/learning-carbon
+permalink: /books/learning-carbon/
 date: 2011-02-01 00:31:22
 updated: 2011-02-01 00:31:22
 isbn: 9780596001612

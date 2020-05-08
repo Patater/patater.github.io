@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-permalink: /blarg/patater-forums
-id: tag:www.patater.com,2008-11-27:/blarg/patater-forums
+permalink: /blarg/patater-forums/
+id: tag:www.patater.com,2008-11-27:/blarg/patater-forums/
 title: Patater Forums
 author: Jaeden Amero
 date: 2008-11-27 02:34:11

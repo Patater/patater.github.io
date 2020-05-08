@@ -1,7 +1,7 @@
 ---
 layout: book
 title: C++ Template Metaprogramming
-permalink: /books/cpp-template-metaprogramming
+permalink: /books/cpp-template-metaprogramming/
 date: 2011-01-27 03:50:52
 updated: 2011-01-27 03:50:52
 isbn: 9780321227256

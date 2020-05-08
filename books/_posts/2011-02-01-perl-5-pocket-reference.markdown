@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Perl 5 Pocket Reference
-permalink: /books/perl-5-pocket-reference
+permalink: /books/perl-5-pocket-reference/
 date: 2011-02-01 02:04:03
 updated: 2011-02-01 02:04:03
 isbn: 9780596000325

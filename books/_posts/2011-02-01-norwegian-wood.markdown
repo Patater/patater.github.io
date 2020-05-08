@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Norwegian Wood
-permalink: /books/norwegian-wood
+permalink: /books/norwegian-wood/
 date: 2011-02-01 01:50:21
 updated: 2011-02-01 01:50:21
 isbn: 9780375704024

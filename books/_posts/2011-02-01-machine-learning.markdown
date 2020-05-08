@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Machine Learning
-permalink: /books/machine-learning
+permalink: /books/machine-learning/
 date: 2011-02-01 00:45:02
 updated: 2011-02-01 00:45:02
 isbn: 9780071154673

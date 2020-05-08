@@ -1,7 +1,7 @@
 ---
 layout: book
 title: After the Quake
-permalink: /books/after-the-quake
+permalink: /books/after-the-quake/
 date: 2011-01-26 03:40:20
 updated: 2011-01-26 03:40:20
 isbn: 9780375713279

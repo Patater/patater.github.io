@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Learning to Program in C
-permalink: /books/learning-to-program-in-c
+permalink: /books/learning-to-program-in-c/
 date: 2011-02-01 00:36:42
 updated: 2011-02-01 00:36:42
 isbn: 9780135278475

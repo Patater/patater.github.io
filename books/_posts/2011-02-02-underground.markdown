@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Underground
-permalink: /books/underground
+permalink: /books/underground/
 date: 2011-02-02 02:19:46
 updated: 2011-02-02 02:19:46
 isbn: 9780375725807

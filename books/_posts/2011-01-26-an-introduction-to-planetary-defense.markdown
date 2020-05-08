@@ -1,7 +1,7 @@
 ---
 layout: book
 title: An Introduction to Planetary Defense
-permalink: /books/an-introduction-to-planetary-defense
+permalink: /books/an-introduction-to-planetary-defense/
 date: 2011-01-26 04:16:34
 updated: 2011-01-26 04:16:34
 isbn: 9781581124477

@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Menoetius
-permalink: /books/menoetius
+permalink: /books/menoetius/
 date: 2011-02-01 01:35:13
 updated: 2011-02-01 01:35:13
 isbn: 9780980901115

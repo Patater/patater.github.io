@@ -1,7 +1,7 @@
 ---
 layout: book
 title: All About Particles
-permalink: /books/all-about-particles
+permalink: /books/all-about-particles/
 date: 2011-01-26 03:46:23
 updated: 2011-01-26 03:46:23
 isbn: 9784770027818

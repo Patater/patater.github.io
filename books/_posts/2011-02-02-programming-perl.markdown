@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Programming Perl
-permalink: /books/programming-perl
+permalink: /books/programming-perl/
 date: 2011-02-02 00:58:50
 updated: 2011-02-02 00:58:50
 isbn: 9780937175644

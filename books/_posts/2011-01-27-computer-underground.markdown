@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Computer Underground
-permalink: /books/computer-underground
+permalink: /books/computer-underground/
 date: 2011-01-27 03:08:31
 updated: 2011-01-27 03:08:31
 isbn: 9780915179312

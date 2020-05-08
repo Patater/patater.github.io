@@ -1,7 +1,7 @@
 ---
 layout: book
 title: In Praise of Shadows
-permalink: /books/in-praise-of-shadows
+permalink: /books/in-praise-of-shadows/
 date: 2011-01-29 21:33:05
 updated: 2011-01-29 21:33:05
 isbn: 9780918172020

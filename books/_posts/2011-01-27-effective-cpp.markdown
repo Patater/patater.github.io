@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Effective C++
-permalink: /books/effective-cpp
+permalink: /books/effective-cpp/
 date: 2011-01-27 04:17:07
 updated: 2011-01-27 04:17:07
 isbn: 9780321334879

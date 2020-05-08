@@ -1,7 +1,7 @@
 ---
 layout: book
 title: The C Programming Language
-permalink: /books/the-c-programming-language
+permalink: /books/the-c-programming-language/
 date: 2011-01-27 03:44:19
 updated: 2011-01-27 03:44:19
 isbn: 9780131103627

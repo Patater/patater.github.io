@@ -1,10 +1,10 @@
 ---
 layout: book
 title: C++ Coding Standards
-permalink: /books/cpp-coding-standards
+permalink: /books/cpp-coding-standards/
 date: 2011-01-26 05:06:55
 updated: 2011-01-26 05:06:55
-isbn: 0076092018117
+isbn: 9780321113580
 asin: 0321113586
 tags: book
 ---

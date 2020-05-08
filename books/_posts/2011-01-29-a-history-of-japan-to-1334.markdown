@@ -1,7 +1,7 @@
 ---
 layout: book
 title: A History of Japan to 1334
-permalink: /books/a-history-of-japan-to-1334
+permalink: /books/a-history-of-japan-to-1334/
 date: 2011-01-29 21:08:48
 updated: 2011-01-29 21:08:48
 isbn: 9780804705233

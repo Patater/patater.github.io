@@ -1,7 +1,7 @@
 ---
 layout: book
 title: The Starflight Handbook
-permalink: /books/the-starflight-handbook
+permalink: /books/the-starflight-handbook/
 date: 2011-02-02 02:00:08
 updated: 2011-02-02 02:00:08
 isbn: 9780471619123

@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Physics
-permalink: /books/physics-walker
+permalink: /books/physics-walker/
 date: 2011-02-01 02:56:26
 updated: 2011-02-01 02:56:26
 isbn: 9780131014169

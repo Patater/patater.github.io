@@ -1,10 +1,10 @@
 ---
 layout: book
 title: An Embedded Software Primer
-permalink: /books/an-embedded-software-primer
+permalink: /books/an-embedded-software-primer/
 date: 2011-01-26 04:11:04
 updated: 2011-01-26 04:11:04
-isbn: 0785342615692
+isbn: 9780201615692
 asin: 020161569X
 tags: book
 ---

@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Programming Erlang
-permalink: /books/programming-erlang
+permalink: /books/programming-erlang/
 date: 2011-02-02 00:55:59
 updated: 2011-02-02 00:55:59
 isbn: 9781934356005

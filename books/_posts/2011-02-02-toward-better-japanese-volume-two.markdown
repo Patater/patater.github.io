@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Toward Better Japanese Volume Two
-permalink: /books/toward-better-japanese-volume-two
+permalink: /books/toward-better-japanese-volume-two/
 date: 2011-02-02 02:15:27
 updated: 2011-02-02 02:15:27
 asin: B001L4JEJC

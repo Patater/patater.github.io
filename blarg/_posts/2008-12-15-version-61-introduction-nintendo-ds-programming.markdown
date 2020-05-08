@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-permalink: /blarg/version-61-introduction-nintendo-ds-programming
-id: tag:www.patater.com,2008-12-15:/blarg/version-61-introduction-nintendo-ds-programming
+permalink: /blarg/version-61-introduction-nintendo-ds-programming/
+id: tag:www.patater.com,2008-12-15:/blarg/version-61-introduction-nintendo-ds-programming/
 title: Version 6.1 of Introduction to Nintendo DS Programming
 author: Jaeden Amero
 date: 2008-12-15 02:20:16

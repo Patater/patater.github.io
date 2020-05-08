@@ -1,7 +1,7 @@
 ---
 layout: book
 title: MC68040 32-bit Microprocessor User's Manual
-permalink: /books/mc68040-32-bit-microprocessor-users-manual
+permalink: /books/mc68040-32-bit-microprocessor-users-manual/
 date: 2011-02-01 01:31:40
 updated: 2011-02-01 01:31:40
 asin: B00163MWVA

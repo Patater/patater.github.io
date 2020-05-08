@@ -1,7 +1,7 @@
 ---
 layout: book
 title: GURPS Basic Set
-permalink: /books/gurps-basic-set
+permalink: /books/gurps-basic-set/
 date: 2011-01-28 04:11:35
 updated: 2011-01-28 04:11:35
 tags: book

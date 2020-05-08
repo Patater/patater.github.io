@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Pidgin to da Max
-permalink: /books/pidgin-to-da-max
+permalink: /books/pidgin-to-da-max/
 date: 2011-02-01 01:59:59
 updated: 2011-02-01 01:59:59
 isbn: 9780935848410

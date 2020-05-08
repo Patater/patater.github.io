@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-permalink: /blarg/apologies-and-the-future
-id: tag:www.patater.com,2008-11-16:/blarg/apologies-and-the-future
+permalink: /blarg/apologies-and-the-future/
+id: tag:www.patater.com,2008-11-16:/blarg/apologies-and-the-future/
 title: Apologies and the Future
 author: Jaeden Amero
 date: 2008-11-16 17:33:30
@@ -11,7 +11,6 @@ sitemappriority: 0.5
 tags: blarg patater downtime security hacked nsa manual
 language: en
 ---
-
 This downtime has been the longest that this site has experienced. For that, I
 apologize.
 

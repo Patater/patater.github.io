@@ -1,7 +1,7 @@
 ---
 layout: book
 title: The Code Book
-permalink: /books/the-code-book
+permalink: /books/the-code-book/
 date: 2011-01-27 02:45:42
 updated: 2011-01-27 02:45:42
 isbn: 9780385495325

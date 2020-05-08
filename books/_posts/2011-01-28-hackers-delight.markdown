@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Hacker's Delight
-permalink: /books/hackers-delight
+permalink: /books/hackers-delight/
 date: 2011-01-28 04:18:44
 updated: 2011-01-28 04:18:44
 isbn: 9780201914658

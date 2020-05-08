@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Core Techniques and Algorithms in Game Programming
-permalink: /books/core-techniques-and-algorithms-in-game-programming
+permalink: /books/core-techniques-and-algorithms-in-game-programming/
 date: 2011-01-27 03:17:28
 updated: 2011-01-27 03:17:28
 isbn: 0076092022503

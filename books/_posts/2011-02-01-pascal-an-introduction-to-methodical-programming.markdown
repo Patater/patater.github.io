@@ -1,7 +1,7 @@
 ---
 layout: book
 title: "Pascal: An Introduction to Methodical Programming"
-permalink: /books/pascal-an-introduction-to-methodical-programming
+permalink: /books/pascal-an-introduction-to-methodical-programming/
 date: 2011-02-01 01:55:58
 updated: 2011-02-01 01:55:58
 isbn: 9780395389867

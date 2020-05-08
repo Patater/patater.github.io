@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Down to Earth Sociology
-permalink: /books/down-to-earth-sociology
+permalink: /books/down-to-earth-sociology/
 date: 2011-01-27 04:10:24
 updated: 2011-01-27 04:10:24
 isbn: 9780743247160

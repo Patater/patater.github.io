@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Probability and Probabilistic Reasoning for Electrical Engineering
-permalink: /books/probability-and-probabilistic-reasoning-for-electrical-engineering
+permalink: /books/probability-and-probabilistic-reasoning-for-electrical-engineering/
 date: 2011-02-01 03:19:26
 updated: 2011-02-01 03:19:26
 isbn: 9780130205919

@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Assembly Cookbook for Apple II/IIe
-permalink: /books/assembly-cookbook-for-the-apple-ii-iie
+permalink: /books/assembly-cookbook-for-the-apple-ii-iie/
 date: 2011-01-26 04:22:39
 updated: 2011-01-26 04:22:39
 isbn: 9780672223310

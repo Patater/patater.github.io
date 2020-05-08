@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Digital Design with CPLD Applications and VHDL
-permalink: /books/digital-design-with-cpld-applications-and-vhdl
+permalink: /books/digital-design-with-cpld-applications-and-vhdl/
 date: 2011-01-27 04:04:29
 updated: 2011-01-27 04:04:29
 isbn: 9780766811607

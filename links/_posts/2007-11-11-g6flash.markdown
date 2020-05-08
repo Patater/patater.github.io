@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/g6flash
 title: G6Flash
 tags: link flash-carts
-permalink: /links/g6flash
+permalink: /links/g6flash/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://www.g6flash.com/

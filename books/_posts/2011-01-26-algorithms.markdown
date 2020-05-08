@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Algorithms
-permalink: /books/algorithms
+permalink: /books/algorithms/
 date: 2011-01-26 03:42:30
 updated: 2011-01-26 03:42:30
 isbn: 9780073523408

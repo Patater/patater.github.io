@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/flashmp-cvs
 title: FlashMP - CVS
 tags: link flash-carts
-permalink: /links/flashmp-cvs
+permalink: /links/flashmp-cvs/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri:

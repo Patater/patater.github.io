@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Mario Paint Nintendo Player's Guide
-permalink: /books/mario-paint-nintendo-players-guide
+permalink: /books/mario-paint-nintendo-players-guide/
 date: 2011-02-01 00:58:15
 updated: 2011-02-01 00:58:15
 asin: B000FEHTA0

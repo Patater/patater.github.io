@@ -1,7 +1,7 @@
 ---
 layout: book
 title: "Master of Orion: The Official Strategy Guide"
-permalink: /books/master-of-orion-the-official-strategy-guide
+permalink: /books/master-of-orion-the-official-strategy-guide/
 date: 2011-02-01 01:26:55
 updated: 2011-02-01 01:26:55
 isbn: 9781559585071

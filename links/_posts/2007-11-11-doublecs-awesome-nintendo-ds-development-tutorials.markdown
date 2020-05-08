@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/doublecs-awesome-nintendo-ds-development-tutorials
 title: Doublec's Awesome Nintendo DS Development Tutorials
 tags: link nds-tutorials
-permalink: /links/doublecs-awesome-nintendo-ds-development-tutorials
+permalink: /links/doublecs-awesome-nintendo-ds-development-tutorials/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://www.double.co.nz/nintendo_ds/

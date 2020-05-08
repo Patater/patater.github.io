@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/aaron-rogerss-development-tutorial
 title: Aaron Rogers's Development Tutorial
 tags: link nds-tutorials
-permalink: /links/aaron-rogerss-development-tutorial
+permalink: /links/aaron-rogerss-development-tutorial/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://www.aaronrogers.com/nintendods/

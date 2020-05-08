@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Basic Programming for Personal Computers
-permalink: /books/basic-programming-for-personal-computers
+permalink: /books/basic-programming-for-personal-computers/
 date: 2011-01-26 05:00:21
 updated: 2011-01-26 05:00:21
 isbn: 9780256060713

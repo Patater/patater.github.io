@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Practical C Programming
-permalink: /books/practical-c-programming
+permalink: /books/practical-c-programming/
 date: 2011-02-01 03:03:57
 updated: 2011-02-01 03:03:57
 isbn: 9781565923065

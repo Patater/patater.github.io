@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Programming the 6502
-permalink: /books/programming-the-6502
+permalink: /books/programming-the-6502/
 date: 2011-02-02 00:59:31
 updated: 2011-02-02 00:59:31
 isbn: 9780895880468

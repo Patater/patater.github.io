@@ -1,7 +1,7 @@
 ---
 layout: book
 title: The Apple Macintosh Book
-permalink: /books/the-apple-macintosh-book
+permalink: /books/the-apple-macintosh-book/
 date: 2011-01-26 04:19:53
 updated: 2011-01-26 04:19:53
 isbn: 9781556151101

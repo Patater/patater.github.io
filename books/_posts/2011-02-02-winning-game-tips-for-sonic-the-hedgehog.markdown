@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Winning Game Tips for Sonic the Hedgehog
-permalink: /books/winning-game-tips-for-sonic-the-hedgehog
+permalink: /books/winning-game-tips-for-sonic-the-hedgehog/
 date: 2011-02-02 02:40:28
 updated: 2011-02-02 02:40:28
 isbn: 9780785307839

@@ -1,7 +1,7 @@
 ---
 layout: book
 title: The Scarlet Letter
-permalink: /books/the-scarlet-letter
+permalink: /books/the-scarlet-letter/
 date: 2011-02-02 01:22:01
 updated: 2011-02-02 01:22:01
 isbn: 9780486280486

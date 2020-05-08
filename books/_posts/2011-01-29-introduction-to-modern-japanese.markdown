@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Introduction to Modern Japanese
-permalink: /books/introduction-to-modern-japanese
+permalink: /books/introduction-to-modern-japanese/
 date: 2011-01-29 21:38:08
 updated: 2011-01-29 21:38:08
 isbn: 9784789000581

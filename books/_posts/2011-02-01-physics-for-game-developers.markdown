@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Physics for Game Developers
-permalink: /books/physics-for-game-developers
+permalink: /books/physics-for-game-developers/
 date: 2011-02-01 02:07:19
 updated: 2011-02-01 02:07:19
 isbn: 9780596000066

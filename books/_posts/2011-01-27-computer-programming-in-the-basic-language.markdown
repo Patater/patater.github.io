@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Computer Programming in the BASIC Language
-permalink: /books/computer-programming-in-the-basic-language
+permalink: /books/computer-programming-in-the-basic-language/
 date: 2011-01-27 03:00:38
 updated: 2011-01-27 03:00:38
 isbn: 9780153590900

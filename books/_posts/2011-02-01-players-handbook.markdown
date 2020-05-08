@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Player's Handbook
-permalink: /books/players-handbook
+permalink: /books/players-handbook/
 date: 2011-02-01 03:00:13
 updated: 2011-02-01 03:00:13
 isbn: 9780786915507

@@ -1,7 +1,7 @@
 ---
 layout: book
 title: What's Where in the Apple
-permalink: /books/whats-where-in-the-apple
+permalink: /books/whats-where-in-the-apple/
 date: 2011-02-02 02:32:55
 updated: 2011-02-02 02:32:55
 isbn: 9780938222095

@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Powered Ultralight Aircraft
-permalink: /books/powered-ultralight-aircraft
+permalink: /books/powered-ultralight-aircraft/
 date: 2011-02-01 03:01:19
 updated: 2011-02-01 03:01:19
 isbn: 9780936310008

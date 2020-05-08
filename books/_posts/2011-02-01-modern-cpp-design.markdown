@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Modern C++ Design
-permalink: /books/modern-cpp-design
+permalink: /books/modern-cpp-design/
 date: 2011-02-01 01:41:50
 updated: 2011-02-01 01:41:50
 isbn: 9780201704310

@@ -1,7 +1,7 @@
 ---
 layout: book
 title: 3D Game Engine Architecture
-permalink: /books/3d-game-engine-architecture
+permalink: /books/3d-game-engine-architecture/
 date: 2011-01-26 02:28:55
 updated: 2011-01-26 02:28:55
 tags: book

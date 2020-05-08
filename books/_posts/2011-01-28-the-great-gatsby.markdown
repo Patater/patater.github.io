@@ -1,7 +1,7 @@
 ---
 layout: book
 title: The Great Gatsby
-permalink: /books/the-great-gatsby
+permalink: /books/the-great-gatsby/
 date: 2011-01-28 03:50:04
 updated: 2011-01-28 03:50:04
 isbn: 9780684801520

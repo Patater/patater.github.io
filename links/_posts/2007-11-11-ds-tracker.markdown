@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/ds-tracker
 title: DS Tracker
 tags: link miscellaneous
-permalink: /links/ds-tracker
+permalink: /links/ds-tracker/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://www.dspassme.com/dstrackerlist.shtml

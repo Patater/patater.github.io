@@ -1,7 +1,7 @@
 ---
 layout: book
 title: The Anarchist Cookbook
-permalink: /books/the-anarchist-cookbook
+permalink: /books/the-anarchist-cookbook/
 date: 2011-01-26 04:06:17
 updated: 2011-01-26 04:06:17
 isbn: 9780974458908

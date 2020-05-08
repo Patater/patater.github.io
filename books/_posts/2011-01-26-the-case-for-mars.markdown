@@ -1,7 +1,7 @@
 ---
 layout: book
 title: The Case for Mars
-permalink: /books/the-case-for-mars
+permalink: /books/the-case-for-mars/
 date: 2011-01-26 05:04:30
 updated: 2011-01-26 05:04:30
 isbn: 9780684835501

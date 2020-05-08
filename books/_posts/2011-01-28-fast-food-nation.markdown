@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Fast Food Nation
-permalink: /books/fast-food-nation
+permalink: /books/fast-food-nation/
 date: 2011-01-28 03:41:24
 updated: 2011-01-28 03:41:24
 isbn: 9780060938451

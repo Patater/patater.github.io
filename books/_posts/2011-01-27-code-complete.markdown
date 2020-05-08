@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Code Complete
-permalink: /books/code-complete
+permalink: /books/code-complete/
 date: 2011-01-27 02:51:20
 updated: 2011-01-27 02:51:20
 isbn: 9780735619678

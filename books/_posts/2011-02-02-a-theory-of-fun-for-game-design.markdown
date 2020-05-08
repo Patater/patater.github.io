@@ -1,7 +1,7 @@
 ---
 layout: book
 title: A Theory of Fun for Game Design
-permalink: /books/a-theory-of-fun-for-game-design
+permalink: /books/a-theory-of-fun-for-game-design/
 date: 2011-02-02 02:11:32
 updated: 2011-02-02 02:11:32
 isbn: 9781932111972

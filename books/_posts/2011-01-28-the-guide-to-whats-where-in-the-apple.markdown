@@ -1,7 +1,7 @@
 ---
 layout: book
 title: The Guide to What's Where in the Apple
-permalink: /books/the-guide-to-whats-where-in-the-apple
+permalink: /books/the-guide-to-whats-where-in-the-apple/
 date: 2011-01-28 04:07:07
 updated: 2011-01-28 04:07:07
 isbn: 9780938222101

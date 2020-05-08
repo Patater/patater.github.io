@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-permalink: /blarg/manual-on-github
+permalink: /blarg/manual-on-github/
 title: Introduction to Nintendo DS Programming is Now on GitHub
 shorttitle: The Manual is Now on GitHub
 author: Jaeden Amero
@@ -12,11 +12,11 @@ tags: blarg nintendo-ds manual programming github source code
 description: After all these years, I finally got around to releasing the manuscript.
 featured: true
 language: en
+graphic: /images/rocket-code.png
+graphicalt: Orange Spaceship flying over code
 ---
-![Orange Spaceship flying over code](/images/rocket-code.png)
-
 <p>After all these years, I finally got around to releasing the manuscript for the Introduction to Nintendo DS Programming. I converted the manual from Subversion to git and <a href="https://github.com/Patater/manual">placed it up on GitHub</a>. I hope that it brings some more life to the document, as I haven't updated it in years. It's been a good resource for the Nintendo DS homebrew community, but it wasn't fair for me to be a bottleneck on all change and updates to the manual; that's a recipe for going out of date.</p>
-
+<!--break-->
 <p>I've specified the license as <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>. It's my hope that the manual will provide a good starting point for anyone in the community to use to document homebrew Nintendo DS programming.</p>
 
 <img src="/images/reposturgeon.png" alt="The reposurgeon" />

@@ -1,7 +1,7 @@
 ---
 layout: book
 title: The Wind-Up Bird Chronicle
-permalink: /books/the-wind-up-bird-chronicle
+permalink: /books/the-wind-up-bird-chronicle/
 date: 2011-02-02 02:36:02
 updated: 2011-02-02 02:36:02
 isbn: 9780679775430

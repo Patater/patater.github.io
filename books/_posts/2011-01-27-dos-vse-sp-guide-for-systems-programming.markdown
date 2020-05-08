@@ -1,7 +1,7 @@
 ---
 layout: book
 title: DOS/VSE/SP Guide for Systems programming
-permalink: /books/dos-vse-sp-guide-for-systems-programming
+permalink: /books/dos-vse-sp-guide-for-systems-programming/
 date: 2011-01-27 04:08:27
 updated: 2011-01-27 04:08:27
 isbn: 9780894352997

@@ -1,7 +1,7 @@
 ---
 layout: book
 title: A Guided Tour of Computer Programming in BASIC
-permalink: /books/a-guided-tour-of-computer-programming-in-basic
+permalink: /books/a-guided-tour-of-computer-programming-in-basic/
 date: 2011-01-28 03:56:05
 updated: 2011-01-28 03:56:05
 isbn: 9780245534065

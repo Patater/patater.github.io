@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Islands in the Sky
-permalink: /books/islands-in-the-sky
+permalink: /books/islands-in-the-sky/
 date: 2011-01-29 21:39:15
 updated: 2011-01-29 21:39:15
 isbn: 9780471135616

@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Interactive Computer Graphics
-permalink: /books/interactive-computer-graphics
+permalink: /books/interactive-computer-graphics/
 date: 2011-01-29 21:34:01
 updated: 2011-01-29 21:34:01
 isbn: 9780321321374

@@ -1,7 +1,7 @@
 ---
 layout: book
 title: The World Record Paper Airplane Book
-permalink: /books/the-world-record-paper-airplane-book
+permalink: /books/the-world-record-paper-airplane-book/
 date: 2011-02-02 02:45:48
 updated: 2011-02-02 02:45:48
 isbn: 9781563056314

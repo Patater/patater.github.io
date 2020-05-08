@@ -1,12 +1,38 @@
 ---
 layout: default
-title: Patater
+title: Blarg
 ---
-<div id="home">
-  <h1>Blarg</h1>
-  <ul class="posts">
-    {% for post in site.tags.blarg %}
-      <li><span>{{ post.date | date: "%Y-%b-%d" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+{% assign sorted = site.tags.blarg | sort: 'date' | reverse %}
+{% for post in sorted %}
+<div class="blarg">
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="minimeta">
+  Published: {{ post.date | date:"%Y-%m-%d" }}, Updated: {{ post.updated | date:"%Y-%m-%d" }}<br/>
+  {% if post.author %}Author: {{ post.author }}{% endif %}
+  </p>
+  <div>
+  {% if post.thumb %}
+  <img src="{{ post.thumb }}" alt="{{ post.thumbalt }}" />
+  {% elsif post.graphic %}
+  <img src="{{ post.graphic }}" alt="{{ post.graphicalt }}" width="160" />
+  {% endif %}
+
+  {% assign body = post.content | markdownify | split:'<!--break-->' | first %}
+
+  {% if body %}
+  {{ body }}
+  {% elsif post.description %}
+  <p>{{ post.description }}</p>
+  {% endif %}
+
+  {% if post.download %}
+      <h4>Download</h4>
+      <a href="{{ post.download }}">{{ post.downloadstring }}</a>
+  {% endif %}
+  {% if post.uri %}
+  Link: <a href="{{ post.uri }}">{{ post.title }}</a>
+  {% endif %}
+  </div>
+  <hr/>
 </div>
+{% endfor %}

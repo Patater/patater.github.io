@@ -32,3 +32,9 @@ defaults:
       author: Jaeden Amero
       language: en
       site_map_priority: 0.5
+defaults:
+  -
+    scope:
+      path: "images"
+    values:
+      image: true

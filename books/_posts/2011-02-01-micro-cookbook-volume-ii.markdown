@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Micro Cookbook Volume II
-permalink: /books/micro-cookbook-volume-ii
+permalink: /books/micro-cookbook-volume-ii/
 date: 2011-02-01 01:39:22
 updated: 2011-02-01 01:39:22
 isbn: 9780672218293

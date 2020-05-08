@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Amazing 3-D
-permalink: /books/amazing-3-d
+permalink: /books/amazing-3-d/
 date: 2011-01-26 03:50:24
 updated: 2011-01-26 03:50:24
 isbn: 9780316582834

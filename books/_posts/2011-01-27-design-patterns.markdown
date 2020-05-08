@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Design Patterns
-permalink: /books/design-patterns
+permalink: /books/design-patterns/
 date: 2011-01-27 03:59:37
 updated: 2011-01-27 03:59:37
 isbn: 9780201633610

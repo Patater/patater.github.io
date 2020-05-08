@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/kick-trading-canadian
 title: Kick Trading - Canadian
 tags: link retailers
-permalink: /links/kick-trading-canadian
+permalink: /links/kick-trading-canadian/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://www.kicktrading.ca/index.php

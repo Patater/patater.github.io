@@ -1,7 +1,7 @@
 ---
 layout: book
 title: 501 Japanese Verbs
-permalink: /books/501-japanese-verbs
+permalink: /books/501-japanese-verbs/
 date: 2011-01-26 02:33:15
 updated: 2011-01-26 02:33:15
 isbn: 9780764102851

@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Silence
-permalink: /books/silence
+permalink: /books/silence/
 date: 2011-02-02 01:30:55
 updated: 2011-02-02 01:30:55
 isbn: 9780800871864

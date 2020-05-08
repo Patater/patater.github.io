@@ -1,7 +1,7 @@
 ---
 layout: book
 title: "PASCAL: An Introduction to the Art and Science of Programming"
-permalink: /books/pascal-an-introduction-to-the-art-and-science-of-programming
+permalink: /books/pascal-an-introduction-to-the-art-and-science-of-programming/
 date: 2011-02-01 01:57:53
 updated: 2011-02-01 01:57:53
 isbn: 9780805383881

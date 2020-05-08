@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/linker4u
 title: linker4u
 tags: link retailers
-permalink: /links/linker4u
+permalink: /links/linker4u/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://www.linker4u.com/

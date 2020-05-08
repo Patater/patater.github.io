@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/devkitpro-setup-guide
 title: DevkitPro Setup Guide
 tags: link nds-tutorials
-permalink: /links/devkitpro-setup-guide
+permalink: /links/devkitpro-setup-guide/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://www.devkitpro.org/setup.shtml

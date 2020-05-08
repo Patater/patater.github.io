@@ -1,7 +1,7 @@
 ---
 layout: book
 title: A History of Japan, 1334-1615
-permalink: /books/a-history-of-japan-1334-1615
+permalink: /books/a-history-of-japan-1334-1615/
 date: 2011-01-29 21:06:19
 updated: 2011-01-29 21:06:19
 isbn: 9780804705257

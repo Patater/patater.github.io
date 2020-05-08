@@ -1,10 +1,24 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<span class="meta">{{ page.author }}</span>
-<p class="meta">Published: {{ page.date | date: "%Y-%b-%d" }}{% if page.date != page.updated %}; Updated: {{ page.updated | date: "%Y-%b-%d" }}{% endif %}</p>
+<div>
+<h1>{{ page.title}}</h1>
+<p class="minimeta">
+Published: {{ page.date | date: "%Y-%m-%d" }}, Updated: {{ page.updated | date:"%Y-%m-%d" }}<br/>
+{% if page.author %}Author: {{ page.author }}{% endif %}
+</p>
+</div>
 
 <div class="post">
+{% if page.graphic %}
+<p><img src="{{ page.graphic }}" alt="{{ page.graphicalt }}" /></p>
+{% endif %}
 {{ content }}
 </div>
+
+{% if page.download %}
+<div>
+    <h2>Download</h2>
+    <a href="{{ page.download }}">{{ page.downloadstring }}</a>
+</div>
+{% endif %}

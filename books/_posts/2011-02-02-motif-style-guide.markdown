@@ -1,7 +1,7 @@
 ---
 layout: book
 title: "Style Guide: Release 1.1"
-permalink: /books/motif-style-guide
+permalink: /books/motif-style-guide/
 date: 2011-02-02 02:01:54
 updated: 2011-02-02 02:01:54
 isbn: 9780136406167

@@ -1,7 +1,7 @@
 ---
 layout: book
 title: A Dictionary of Basic Japanese Grammar
-permalink: /books/a-dictionary-of-basic-japanese-grammar
+permalink: /books/a-dictionary-of-basic-japanese-grammar/
 date: 2011-01-27 04:02:02
 updated: 2011-01-27 04:02:02
 isbn: 9784789004541

@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Visual Encyclopedia of Space
-permalink: /books/visual-encyclopedia-of-space
+permalink: /books/visual-encyclopedia-of-space/
 date: 2011-02-02 02:30:18
 updated: 2011-02-02 02:30:18
 isbn: 9780756614744

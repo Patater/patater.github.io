@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Dead Mac Scrolls
-permalink: /books/dead-mac-scrolls
+permalink: /books/dead-mac-scrolls/
 date: 2011-01-27 03:57:26
 updated: 2011-01-27 03:57:26
 isbn: 9780940235250

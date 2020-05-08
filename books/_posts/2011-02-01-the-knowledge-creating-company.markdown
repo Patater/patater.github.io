@@ -1,7 +1,7 @@
 ---
 layout: book
 title: The Knowledge-Creating Company
-permalink: /books/the-knowledge-creating-company
+permalink: /books/the-knowledge-creating-company/
 date: 2011-02-01 00:18:38
 updated: 2011-02-01 00:18:38
 isbn: 9780195092691

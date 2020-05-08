@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Mario Mania
-permalink: /books/mario-mania
+permalink: /books/mario-mania/
 date: 2011-02-01 00:53:27
 updated: 2011-02-01 00:53:27
 asin: B000BPL42C

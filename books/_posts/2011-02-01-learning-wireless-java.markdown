@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Learning Wireless Java
-permalink: /books/learning-wireless-java
+permalink: /books/learning-wireless-java/
 date: 2011-02-01 00:39:45
 updated: 2011-02-01 00:39:45
 isbn: 9780596002435

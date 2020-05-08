@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Linear Algebra with Applications
-permalink: /books/linear-algebra-with-applications
+permalink: /books/linear-algebra-with-applications/
 date: 2011-02-01 00:42:42
 updated: 2011-02-01 00:42:42
 isbn: 9780131857858

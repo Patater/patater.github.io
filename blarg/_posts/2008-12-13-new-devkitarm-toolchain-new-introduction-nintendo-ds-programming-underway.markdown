@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-permalink: /blarg/new-devkitarm-toolchain-new-introduction-nintendo-ds-programming-underway
-id: tag:www.patater.com,2008-12-13:/blarg/new-devkitarm-toolchain-new-introduction-nintendo-ds-programming-underway
+permalink: /blarg/new-devkitarm-toolchain-new-introduction-nintendo-ds-programming-underway/
+id: tag:www.patater.com,2008-12-13:/blarg/new-devkitarm-toolchain-new-introduction-nintendo-ds-programming-underway/
 title: New devkitARM toolchain. New Introduction to Nintendo DS Programming underway.
 author: Jaeden Amero
 date: 2008-12-13 02:35:10

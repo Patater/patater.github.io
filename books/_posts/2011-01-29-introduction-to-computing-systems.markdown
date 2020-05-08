@@ -1,7 +1,7 @@
 ---
 layout: book
 title: "Introduction to Computing Systems: From Bits and Gates to C and Beyond"
-permalink: /books/introduction-to-computing-systems
+permalink: /books/introduction-to-computing-systems/
 date: 2011-01-29 21:35:18
 updated: 2011-01-29 21:35:18
 isbn: 9780071245012

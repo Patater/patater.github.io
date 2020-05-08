@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Complete Hypercard 2.2 Handbook
-permalink: /books/complete-hypercard-2-2-handbook
+permalink: /books/complete-hypercard-2-2-handbook/
 date: 2011-01-26 03:16:09
 updated: 2011-01-26 03:16:09
 isbn: 9780679791225

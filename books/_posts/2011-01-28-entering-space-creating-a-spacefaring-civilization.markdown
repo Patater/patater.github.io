@@ -1,7 +1,7 @@
 ---
 layout: book
 title: "Entering Space: Creating a Spacefaring Civilization"
-permalink: /books/entering-space-creating-a-spacefaring-civilization
+permalink: /books/entering-space-creating-a-spacefaring-civilization/
 date: 2011-01-28 01:32:49
 updated: 2011-01-28 01:32:49
 isbn: 9781585420360

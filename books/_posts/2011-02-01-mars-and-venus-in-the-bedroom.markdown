@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Mars and Venus in the Bedroom
-permalink: /books/mars-and-venus-in-the-bedroom
+permalink: /books/mars-and-venus-in-the-bedroom/
 date: 2011-02-01 01:06:08
 updated: 2011-02-01 01:06:08
 isbn: 9780060172121

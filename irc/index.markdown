@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-id: tag:www.patater.com,2010-12-13:/irc
+id: tag:www.patater.com,2010-12-13:/irc/
 title: "IRC"
 author: Jaeden Amero
 date: 2010-12-13 06:22:26

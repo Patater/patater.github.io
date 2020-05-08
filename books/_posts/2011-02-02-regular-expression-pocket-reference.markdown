@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Regular Expression Pocket Reference
-permalink: /books/regular-expression-pocket-reference
+permalink: /books/regular-expression-pocket-reference/
 date: 2011-02-02 01:17:15
 updated: 2011-02-02 01:17:15
 isbn: 9780596514273

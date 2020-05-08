@@ -1,14 +1,27 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<span>{{ page.author }}</span>
-<p class="meta">{{ page.date | date_to_string }}</p>
-<p class="meta">ISBN: {{ page.isbn }}</p>
-<p class="meta">ASIN: {{ page.asin }}</p>
-<a href="https://www.amazon.com/dp/{{ page.asin }}?tag=patater-20">Browse on
-Amazon.com</a>
+<div>
+<h1>{{ page.title}}</h1>
+<p>{{ content }}</p>
+</div>
 
-<div class="post">
-{{ content }}
+<div class="book">
+<a href="http://openlibrary.org/isbn/{{ page.isbn }}">
+{% assign image_found = false %}
+{% if page.isbn %}{% for file in site.static_files %}{% if file.name contains page.isbn and file.name contains '-L' %}{% assign image_found = true %}
+  <img src="{{ file.path }}" alt="Book Cover - {{ page.title }}"/>
+{% endif %}{% endfor %}{% else %}{% assign image_found = false %}{% endif %}
+{% if image_found == false %}
+  <img src="/images/cover-na.png" alt="Book Cover - {{ page.title }}">
+{% endif %}
+  <br/>
+  Browse on OpenLibrary
+</a>
+<br/>
+{% if page.isbn %}
+<h3>ISBN: {{ page.isbn }}</h3>
+{% elsif page.asin %}
+<h3>ASIN: {{ page.asin }}</h3>
+{% endif %}
 </div>

@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-id: tag:www.patater.com,2010-11-19:/donate
+id: tag:www.patater.com,2010-11-19:/donate/
 title: Donate
 author: Jaeden Amero
 date: 2010-11-19 18:33:42
@@ -13,904 +13,904 @@ language: en
 <div class="qr-code-wrapper">
 <div class="qrcode" data-size="3" data-level="l" data-css-size="170">
 <table class="qr-code"><tbody>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
+<tr>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
+<tr>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
+<tr>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
+<tr>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
+<tr>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
+<tr>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
+<tr>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
+<tr>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
+<tr>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
+<tr>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
+<tr>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
+<tr>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
+<tr>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
+<tr>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
+<tr>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
+<tr>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
+<tr>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
+<tr>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
+<tr>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
+<tr>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
+<tr>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
+<tr>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
+<tr>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
+<tr>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
+<tr>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
+<tr>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
+<tr>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
+<tr>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
 </tr>
-<tr style="height:5px">
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="black"></td>
-<td style="border-top-width:0;width:5px;height:5px" class="white"></td>
+<tr>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
+<td class="white"></td>
+<td class="black"></td>
+<td class="white"></td>
 </tr>
 </tbody></table>
 </div>

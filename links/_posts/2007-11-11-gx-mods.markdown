@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/gx-mods
 title: GX-Mods
 tags: link homebrew ds-news-sites
-permalink: /links/gx-mods
+permalink: /links/gx-mods/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://mobiles.gx-mod.com/modules/news/index.php

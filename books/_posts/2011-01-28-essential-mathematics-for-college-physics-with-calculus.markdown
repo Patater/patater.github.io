@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Essential Mathematics for College Physics with Calculus
-permalink: /books/essential-mathematics-for-college-physics-with-calculus
+permalink: /books/essential-mathematics-for-college-physics-with-calculus/
 date: 2011-01-28 03:13:12
 updated: 2011-01-28 03:13:12
 isbn: 9780471808763

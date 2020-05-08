@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Effective STL
-permalink: /books/effective-stl
+permalink: /books/effective-stl/
 date: 2011-01-27 04:18:44
 updated: 2011-01-27 04:18:44
 isbn: 9780201749625

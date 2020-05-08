@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-permalink: /blarg/books
-id: tag:www.patater.com,2008-11-16:/blarg/apologies-and-the-future
+permalink: /blarg/books/
+id: tag:www.patater.com,2008-11-16:/blarg/books/
 title: Books
 author: Jaeden Amero
 date: 2011-01-27 04:49:16

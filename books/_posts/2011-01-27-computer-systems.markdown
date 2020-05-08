@@ -1,7 +1,7 @@
 ---
 layout: book
 title: Computer Systems
-permalink: /books/computer-systems
+permalink: /books/computer-systems/
 date: 2011-01-27 03:04:55
 updated: 2011-01-27 03:04:55
 isbn: 9780130340740
