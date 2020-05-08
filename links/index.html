@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Links
+description: World's Best Nintendo DS Links
 possibletags:
   - tag: ds-news-sites
     name: DS News Sites
@@ -51,29 +52,34 @@ possibletags:
   - tag: technical-reference
     name: Technical References
 ---
+<div>
+<h1>World's Best Nintendo DS Links</h1>
+<p>These used to be the best links relating to Nintendo DS development. If you
+have any suggestions, dead links to report, additions or whatnot, feel free to
+<a href="/contact">contact me</a>.</p>
+</div>
+
 {% assign sorted = site.tags.link | sort: 'title' %}
-<div id="links">
-  <h1>Links</h1>
-  <ul class="link-categories">
-  {% for tag in page.possibletags %}
-  <li><a href="#{{ tag.tag }}">{{ tag.name }}</a></li>
-  {% endfor %}
-  </ul>
-  <br />
-  <br />
-  <br />
-  <ul class="links">
-    {% for tag in page.possibletags %}
-    <a name="{{ tag.tag }}"></a><ul class="link-category">
-    <h2>{{ tag.name }}</h2>
-    {% for link in sorted %}{% if link.tags contains tag.tag %}
-      <li>
-        <a href="{{ link.uri }}">{{ link.title }}</a>
-        {{ link.content }}
-      </li>{% endif %}{% endfor %}
-    </ul>
-    <br />
-    <br />
-    {% endfor %}
-  </ul>
+
+<div>
+<ul class="link-categories">
+{% for tag in page.possibletags %}
+<li><a href="#{{ tag.tag }}">{{ tag.name }}</a></li>
+{% endfor %}
+</ul>
+</div>
+
+<div>
+{% for tag in page.possibletags %}
+<a name="{{ tag.tag }}"></a>
+<h3>{{ tag.name }}</h3>
+<div class="linkzors">
+{% for link in sorted %}{% if link.tags contains tag.tag %}
+<div class="{% cycle 'odd', 'even' %}">
+<h1 class="entry-proper"><a href="{{ link.uri }}">{{ link.title }}</a></h1>
+{{ link.content }}
+</div>
+{% endif %}{% endfor %}
+</div>
+{% endfor %}
 </div>

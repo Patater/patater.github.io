@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/nintendo-save-game-reader
 title: Nintendo Save Game Reader
 tags: link hacking
-permalink: /links/nintendo-save-game-reader
+permalink: /links/nintendo-save-game-reader/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://www.kako.com/neta/2005-007/2005-007.html

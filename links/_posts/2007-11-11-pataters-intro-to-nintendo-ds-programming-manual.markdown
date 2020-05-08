@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/pataters-intro-to-nintendo-ds-programming-manual
 title: Patater's Intro to Nintendo DS Programming Manual
 tags: link nds-tutorials patater
-permalink: /links/pataters-intro-to-nintendo-ds-programming-manual
+permalink: /links/pataters-intro-to-nintendo-ds-programming-manual/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://patater.com/manual

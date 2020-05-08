@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/nds-model-viewer
 title: NDS Model Viewer
 tags: link software-tools
-permalink: /links/nds-model-viewer
+permalink: /links/nds-model-viewer/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://www.n-philes.com/forums/showthread.php?t=10327

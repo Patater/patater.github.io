@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/tobs-how-to-start-coding
 title: Tob's How to Start Coding
 tags: link nds-tutorials
-permalink: /links/tobs-how-to-start-coding
+permalink: /links/tobs-how-to-start-coding/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://tobw.net/dswiki/index.php?title=How_to_start_coding

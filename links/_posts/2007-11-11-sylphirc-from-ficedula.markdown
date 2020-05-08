@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/sylphirc-from-ficedula
 title: SylphIRC from Ficedula
 tags: link projects
-permalink: /links/sylphirc-from-ficedula
+permalink: /links/sylphirc-from-ficedula/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://www.sylphds.net/ev2/contentview.php?id=401

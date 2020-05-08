@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/patater-gui-kit
 title: Patater GUI Kit
 tags: link projects patater
-permalink: /links/patater-gui-kit
+permalink: /links/patater-gui-kit/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://patater.com/gui-kit

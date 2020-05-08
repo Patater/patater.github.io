@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/neoflash-competition-2005
 title: NeoFlash Competition 2005
 tags: link neoflash homebrew
-permalink: /links/neoflash-competition-2005
+permalink: /links/neoflash-competition-2005/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://www.neoflash.com/compos/compo-05-08.html

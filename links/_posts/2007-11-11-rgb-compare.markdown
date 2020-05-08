@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/rgb-compare
 title: RGBCompare
 tags: link patater software-tools
-permalink: /links/rgb-compare
+permalink: /links/rgb-compare/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://patater.com/rgb-compare

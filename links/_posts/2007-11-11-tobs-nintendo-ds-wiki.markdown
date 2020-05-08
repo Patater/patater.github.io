@@ -3,7 +3,7 @@ layout: link
 id: tag:www.patater.com,2007-11-11:/links/tobs-nintendo-ds-wiki
 title: Tob's Nintendo DS Wiki
 tags: link technical-reference
-permalink: /links/tobs-nintendo-ds-wiki
+permalink: /links/tobs-nintendo-ds-wiki/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
 uri: http://tobw.net/dswiki/index.php?title=Main_Page
