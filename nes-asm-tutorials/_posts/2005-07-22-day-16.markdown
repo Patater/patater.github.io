@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-16
-permalink: /nes-asm-tutorials/day-16
+id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-16/
+permalink: /nes-asm-tutorials/day-16/
 title: Day 16 - Bit Masking/Toggling
 author: Mike Huber
 date: 2005-07-22 00:15:00
@@ -178,5 +178,5 @@ is fun! Have fun!</p>
 anything wrong, please tell me (via email).</p>
 
 <div class="series-navigation">
-<a href="/nes-asm-tutorials">Intro</a> - <a href="/nes-asm-tutorials/day-17">Day 17</a>
+<a href="/nes-asm-tutorials">Intro</a> - <a href="/nes-asm-tutorials/day-17/">Day 17</a>
 </div>

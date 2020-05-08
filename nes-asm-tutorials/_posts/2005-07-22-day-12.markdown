@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-12
-permalink: /nes-asm-tutorials/day-12
+id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-12/
+permalink: /nes-asm-tutorials/day-12/
 title: Day 12 - VBlank and Interrupts
 author: Mike Huber
 date: 2005-07-22 00:11:00
@@ -77,5 +77,5 @@ Control ports!  (it's bit 7 of one of them, I think).</p>
 </p>
 
 <div class="series-navigation">
-<a href="/nes-asm-tutorials">Intro</a> - <a href="/nes-asm-tutorials/day-13">Day 13</a>
+<a href="/nes-asm-tutorials">Intro</a> - <a href="/nes-asm-tutorials/day-13/">Day 13</a>
 </div>

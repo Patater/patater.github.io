@@ -1,23 +1,26 @@
 ---
 layout: post
 published: true
-permalink: /pokia
+permalink: /pokia/
+id: tag:www.patater.com,2012-10-20:/pokia/
 title: Pokia
 author: Jaeden Amero
 date: 2012-10-20 03:32:52
 updated: 2012-10-20 03:38:13
 sitemappriority: 0.5
-tags: project nokia music composer pokia ringtones
+tags: project blarg nokia music composer pokia ringtones
 description: Ever spend like 10 minutes entering a ring tone into your phone just to press play and hear it sound like garbage? I've got just the tool for you, baby.
 thumb: /images/pokia-thumb.png
 language: en
+graphic: /images/pokia.png
+graphicalt: Composing music with Pokia
 ---
-![Composing music with Pokia](/images/pokia.png)
-
 <a href="/pokia/pokia.html"><img src="/images/pokia-sideways.png" alt="A sideways Pokia" width="100%"/></a>
 
-<h2>Play with the Pokia</a>
+<h2>Play with the Pokia</h2>
 <p>First off, <a href="/pokia/pokia.html">go play with it</a>. You'll need <a href="http://www.google.com/chrome">Google Chrome</a>. I think you might enjoy composing a song or two.</p>
+
+<!--break-->
 
 <p>Now that you are back, I can tell you a story all about how I made this thing.</p>
 

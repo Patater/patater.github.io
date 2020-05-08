@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-23
-permalink: /nes-asm-tutorials/day-23
+id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-23/
+permalink: /nes-asm-tutorials/day-23/
 title: Day 23 - Attributes
 author: Mike Huber
 date: 2005-07-22 00:22:00
@@ -83,5 +83,5 @@ Sprite Attribute RAM:
 <p>
 
 <div class="series-navigation">
-<a href="/nes-asm-tutorials">Intro</a> - <a href="/nes-asm-tutorials/day-24">Day 24</a>
+<a href="/nes-asm-tutorials">Intro</a> - <a href="/nes-asm-tutorials/day-24/">Day 24</a>
 </div>

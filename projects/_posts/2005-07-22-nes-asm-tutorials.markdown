@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials
-permalink: /nes-asm-tutorials
+id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/
+permalink: /nes-asm-tutorials/
 title: NES ASM Tutorials
 tags: project nes asm tutorial
 author: Mike Huber

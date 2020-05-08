@@ -1,19 +1,22 @@
 ---
 layout: post
 published: true
-permalink: /boost-on-the-nintendo-ds
-id: tag:www.patater.com,2007-11-12:/boost-on-the-nintendo-ds
+permalink: /boost-on-the-nintendo-ds/
+id: tag:www.patater.com,2007-11-12:/boost-on-the-nintendo-ds/
 title: Boost on the Nintendo DS
 author: Jaeden Amero
 date: 2007-11-12 23:00:43
 updated: 2010-12-19 03:36:44
 sitemappriority: 0.5
-tags: project blarg nds nintendo-ds howto boost c++
+tags: project nds nintendo-ds howto boost c++
 description: Ever wonder how to get boost working on your Nintendo DS? Here's how.
 language: en
+download: /projects/boost-1.45.0_devkitarm-r32.zip
+filetype: zip
+downloadstring: Boost for Nintendo DS Precompiled
+graphic: /images/boost-nds.png
+graphicalt: A rocket boosting
 ---
-![A rocket boosting](/images/boost-nds.png)
-
 <h2>About</h2>
 <p>The following guide will help you to compile Boost for the Nintendo DS using
 devkitARM on Linux or Mac OS X (using the bash shell).  Many Boost libraries
@@ -68,8 +71,3 @@ different for you.</p>
 ...skipped 165 targets...
 ...updated 8369 targets...
 </code>
-
-<div>
-<h2>Download</h2>
-<a href="/projects/boost-1.45.0_devkitarm-r32.zip">Boost for Nintendo DS Precompiled</a>
-</div>

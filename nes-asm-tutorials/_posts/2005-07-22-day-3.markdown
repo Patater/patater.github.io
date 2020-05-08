@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-3
-permalink: /nes-asm-tutorials/day-3
+id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-3/
+permalink: /nes-asm-tutorials/day-3/
 title: Day 3 - About NES Programming
 author: Mike Huber
 date: 2005-07-22 00:02:00
@@ -158,5 +158,5 @@ the palette. Until then, good-night (I'm sleepy :) ).</p>
 </p>
 
 <div class="series-navigation">
-<a href="/nes-asm-tutorials">Intro</a> - <a href="/nes-asm-tutorials/day-4">Day 4</a>
+<a href="/nes-asm-tutorials">Intro</a> - <a href="/nes-asm-tutorials/day-4/">Day 4</a>
 </div>

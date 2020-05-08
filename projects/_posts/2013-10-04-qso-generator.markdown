@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-permalink: /qso-generator
-id: tag:www.patater.com,2013-10-04:/qso-generator
+permalink: /qso-generator/
+id: tag:www.patater.com,2013-10-04:/qso-generator/
 title: A Random QSO Generator
 shorttitle: QSO Generator
 author: Jaeden Amero
@@ -13,12 +13,16 @@ tags: project blarg lisp programming qso morse-code markov-chains
 description: Existing Koch-method Morse code training software waits until all symbols are learned before giving a Morse code student practice with Morse code conversations (known QSOs in amateur radio parlance). The point of this program is to generate random QSOs given a subset of symbols, so that the student can gain practice with the QSO format even before they know all the Morse code symbols.
 featured: true
 language: en
+graphic: /projects/qso-generator.png
+graphicalt: A screenshot of qso-generator.rkt running the sample programs
+download: https://github.com/Patater/qso-generator/archive/master.zip
+downloadstring: Download QSO Generator from GitHub
+filetype: zip
 ---
-![A screenshot of qso-generator.rkt running the sample
-programs](/projects/qso-generator.png)
-
 <h3>Purpose</h3>
 <p>Existing Koch-method Morse code training software waits until all symbols are learned before giving a Morse code student practice with Morse code conversations (known QSOs in amateur radio parlance). The point of this program is to generate random QSOs given a subset of symbols, so that the student can gain practice with the QSO format even before they know all the Morse code symbols.</p>
+
+<!--break-->
 
 <h3>Function</h3>
 <p>Using functions from this program, we can generate random callsigns; word-level similar texts; letter-level similar texts; texts that resemble the original, but are created with a subset of the original alphabet; and random QSOs given partial alphabets.</p>
@@ -134,9 +138,3 @@ The generated text sounds like somebody schizophrenic with very short term memor
 
 <h2>Source Code</h2>
 <a href="https://github.com/Patater/qso-generator">Grab the source code from GitHub</a>
-
-<div>
-<h2>Download</h2>
-<a href="https://github.com/Patater/qso-generator/archive/master.zip">Download
-QSO Generator from GitHub</a>
-</div>

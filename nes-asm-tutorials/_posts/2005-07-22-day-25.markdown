@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-25
-permalink: /nes-asm-tutorials/day-25
+id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-25/
+permalink: /nes-asm-tutorials/day-25/
 title: Day 25 - Other Instructions
 author: Mike Huber
 date: 2005-07-22 00:24:00
@@ -22,57 +22,57 @@ yet or explained in detail.</p>
 <h3>Addressing Modes</h3>
 <p>I ought to go over the addressing modes, so we are clear on how those work...</p>
 <dl>
-    <dt>Implied</dt>
-    <dd>The address mode is implied (like NOP, there isn't an address mode or
-    asl (asl a, sometimes) where A is used without it being mentioned in the
-    instruction.</dd>
+<dt>Implied</dt>
+<dd>The address mode is implied (like NOP, there isn't an address mode or
+asl (asl a, sometimes) where A is used without it being mentioned in the
+instruction.</dd>
 
-    <dt>Immediate</dt>
-    <dd>Example: lda #$3. Loads A with 3. Simple. You should know immediate mode...</dd>
+<dt>Immediate</dt>
+<dd>Example: lda #$3. Loads A with 3. Simple. You should know immediate mode...</dd>
 
-    <dt>ZP</dt>
-    <dd>Things like "lda $88" are zero page, called zero page because the
-    addresses are $0000-$00FF (the high byte is the page). It is faster
-    (slightly) and uses less PRG space (1 byte for ZP addresses) to use Zero
-    Page instead of the Absolute address (which would add another zero
-    byte.)</dd>
+<dt>ZP</dt>
+<dd>Things like "lda $88" are zero page, called zero page because the
+addresses are $0000-$00FF (the high byte is the page). It is faster
+(slightly) and uses less PRG space (1 byte for ZP addresses) to use Zero
+Page instead of the Absolute address (which would add another zero
+byte.)</dd>
 
-    <dt>Absolute</dt>
-    <dd>Example: lda $0332. Use absolute addressing when reading memory that isn't in page zero.</dd>
+<dt>Absolute</dt>
+<dd>Example: lda $0332. Use absolute addressing when reading memory that isn't in page zero.</dd>
 
-    <dt>ZP Indexed</dt>
-    <dd>Things like "lda $10,X" or "lda $B,Y" are indexed, meaning that A is
-    loaded with the byte at the address (Must be a zero page address (1 byte))
-    + either X or Y, so if you do "lda $10,X" when X is 5, A will be loaded
-    with the byte at zero page address $15. Note that if you do "lda $FF,Y" (Y
-    or X doesn't matter, except that fewer instructions can use Y as an index),
-    when Y is 5, you don't get the byte from $0104, you get it from $04 (zero
-    page indexed wraps).</dd>
+<dt>ZP Indexed</dt>
+<dd>Things like "lda $10,X" or "lda $B,Y" are indexed, meaning that A is
+loaded with the byte at the address (Must be a zero page address (1 byte))
++ either X or Y, so if you do "lda $10,X" when X is 5, A will be loaded
+with the byte at zero page address $15. Note that if you do "lda $FF,Y" (Y
+or X doesn't matter, except that fewer instructions can use Y as an index),
+when Y is 5, you don't get the byte from $0104, you get it from $04 (zero
+page indexed wraps).</dd>
 
-    <dt>Absolute Indexed</dt>
-    <dd>Pretty much the same as ZP Indexed, except there's no wrapping and the
-    address can be 2 bytes (i.e. a full absolute address). Not sure what
-    exactly happens if you have an index and an address of $FFFF. Would be neat
-    if doing lda $FFFF,X with X swapping in another bank of RAM from
-    $0200-$07FF. EMS on the NES!!!</dd>
+<dt>Absolute Indexed</dt>
+<dd>Pretty much the same as ZP Indexed, except there's no wrapping and the
+address can be 2 bytes (i.e. a full absolute address). Not sure what
+exactly happens if you have an index and an address of $FFFF. Would be neat
+if doing lda $FFFF,X with X swapping in another bank of RAM from
+$0200-$07FF. EMS on the NES!!!</dd>
 
-    <dt>Pre Indirect</dt>
-    <dd>Example: lda ($10,X). A 1-byte ZP address is given. X is added to the
-    ZP Address (wrapping applies).  The final ZP address is used to get an
-    absolute address from memory. That absolute address is then used to load a
-    byte into A.</dt>
+<dt>Pre Indirect</dt>
+<dd>Example: lda ($10,X). A 1-byte ZP address is given. X is added to the
+ZP Address (wrapping applies).  The final ZP address is used to get an
+absolute address from memory. That absolute address is then used to load a
+byte into A.</dt>
 
-    <dt>Post Indirect</dt>
-    <dd>Example: lda ($10),Y. A 1-byte ZP address is given. The final ZP
-    address is used to get an absolute address from memory. Y is added to the
-    absolute address. That absolute address is then used to load a byte into
-    A.</dd>
+<dt>Post Indirect</dt>
+<dd>Example: lda ($10),Y. A 1-byte ZP address is given. The final ZP
+address is used to get an absolute address from memory. Y is added to the
+absolute address. That absolute address is then used to load a byte into
+A.</dd>
 
-    <dt>Indirect</dt>
-    <dd>This addressing mode is unique to the JMP instruction. Example JMP
-    (label2). It's just like the indexed (Pre/Post) indirect modes, except that
-    there's no index, and the ZP address from the indexed indirect modes is now
-    an Absolute Address.</dd>
+<dt>Indirect</dt>
+<dd>This addressing mode is unique to the JMP instruction. Example JMP
+(label2). It's just like the indexed (Pre/Post) indirect modes, except that
+there's no index, and the ZP address from the indexed indirect modes is now
+an Absolute Address.</dd>
 </dl>
 
 <h3>The BIT Instruction</h3>

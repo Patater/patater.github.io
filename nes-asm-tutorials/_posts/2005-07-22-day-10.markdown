@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-10
-permalink: /nes-asm-tutorials/day-10
+id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-10/
+permalink: /nes-asm-tutorials/day-10/
 title: Day 10 - Sprite DMA
 author: Mike Huber
 date: 2005-07-22 00:09:00
@@ -136,5 +136,5 @@ capture VBlank tomorrow. On to interrupts...</p>
 </p>
 
 <div class="series-navigation">
-<a href="/nes-asm-tutorials">Intro</a> - <a href="/nes-asm-tutorials/day-11">Day 11</a>
+<a href="/nes-asm-tutorials">Intro</a> - <a href="/nes-asm-tutorials/day-11/">Day 11</a>
 </div>

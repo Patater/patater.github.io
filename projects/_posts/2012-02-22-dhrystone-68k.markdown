@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-permalink: /dhrystone-68k
-id: tag:www.patater.com,2010-12-14:/minimal-mario
+permalink: /dhrystone-68k/
+id: tag:www.patater.com,2012-02-22:/dhrystone-68k/
 title: Dhrystone for 68k Macintosh
 author: Jaeden Amero
 date: 2012-02-22 06:34:22
@@ -13,12 +13,17 @@ description: Benchmark the integer performance of your amazingly powerful Macint
 thumb: /images/dhrystone-68k-icon.png
 featured: true
 language: en
+download: /projects/dhrystone-68k.sit
+downloadstring: Download Dhrystone for 68k Macintosh
+filetype: sit
+graphic: /images/dhrystone-68k-icon.png
+graphicalt: Dhrystone 68k Icon
 ---
-![Dhrystone 68k Icon](/images/dhrystone-68k-icon.png)
-
 <p>Some guy named Landon Rodgers asked me to build the Dhrystone benchmarker for 68k Macintosh, so I did. I built it with THINK C 5, using 4-byte ints (instead of the default 2-byte ones), and without global optimizations. I had to modify the source a little bit to get it to build and run properly. (The source code and project file is included in the download.)</p>
 
 <img src="/images/dhrystone-68k-runs.png" alt="Dhrystone running on a 68k Macintosh with 40000 runs entered" />
+
+<!--break-->
 
 <p>When the application starts, it will ask you to enter a number of runs. You should select a fairly large value here. The faster the computer you have, the larger this value should be. The more accurate measurement you want, the larger this value should be. On a Macintosh Plus, it doesn't take too long to get through 20000 runs. On a faster computer, that same number of runs would happen too quickly relative to the resolution of the system clock, so a larger value should be used. The application will tell you when you have selected too small of a value.</p>
 
@@ -28,9 +33,4 @@ language: en
 
 <p>I hope you find this program to be fun, if not somewhat useful.</p>
 
-<p>The source code license of Dhrystone 68k is the same as Dhrystone C 2.1, which I was told is in the public domain.</p>""",
-
-<div>
-<h2>Download</h2>
-<a href="/projects/dhrystone-68k.sit">Download Dhrystone for 68k Macintosh</a>
-</div>
+<p>The source code license of Dhrystone 68k is the same as Dhrystone C 2.1, which I was told is in the public domain.</p>

@@ -1,21 +1,24 @@
 ---
 layout: post
 published: true
-permalink: /homebrew-harvest-2006
-id: tag:www.patater.com,2007-11-13:/homebrew-harvest-2006
+permalink: /homebrew-harvest-2006/
+id: tag:www.patater.com,2007-11-13:/homebrew-harvest-2006/
 title: Thanksgiving Harvest Homebrew Competition 2006
 shorttitle: Homebrew Harvest 2006
 author: Jaeden Amero
 date: 2007-11-13 19:18:42
 updated: 2010-12-19 03:36:44
-sitemappriority: 0.7
+sitemappriority: 0.5
 tags: project nds nintendo nintendo-ds gba compo homebrew
 description: A harvest season themed competition
 featured: true
 language: en
+download: /projects/harvest2006.zip
+downloadstring: Thanksgiving Harvest Homebrew Competition 2006 Collection
+filetype: zip
+graphic: /images/turkey.png
+graphicalt: A hand turkey
 ---
-![A hand turkey](/images/turkey.png)
-
 <h2>The Theme</h2>
 <p>The theme of the Thanksgiving Harvest Homebrew Competition is
 simple: Harvest Season and Thanksgiving. Any game or demo that has a
@@ -87,8 +90,3 @@ find one. The small map didn't work for me at all.</p>
 <p>This was our only tech demo entry. It demonstrates the use of the
 console supplied by libnds by printing "Happy Thanksgiving!". How
 exciting! Happy Thanksgiving to you too.</p>
-
-<div>
-<h2>Download</h2>
-<a href="/projects/harvest2006.zip">Thanksgiving Harvest Homebrew Competition 2006 Collection</a>
-</div>

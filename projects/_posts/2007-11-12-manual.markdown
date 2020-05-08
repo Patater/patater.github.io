@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-permalink: /manual
-id: tag:www.patater.com,2007-11-12:/manual
+permalink: /manual/
+id: tag:www.patater.com,2007-11-12:/manual/
 title: Introduction to Nintendo DS Programming
 shorttitle: Intro to Nintendo DS Manual
 author: Jaeden Amero
@@ -13,9 +13,13 @@ tags: project nds nintendo nintendo-ds tutorial manual
 description: An up and coming manual produced by yours truly, Patater
 featured: true
 language: en
+thumb: /images/thumb-manual.png
+graphic: /images/rocket-code.png
+graphicalt: Orange Spaceship flying over code
+download: /projects/manual.zip
+downloadstring: Download the Manual with Source Code
+filetype: zip
 ---
-![Orange Spaceship flying over code](/images/rocket-code.png)
-
 <p>This is the modest and lowly Introduction to Nintendo DS manual, the
 supreme source for beginner knowledge on programming the Nintendo
 DS.</p>
@@ -51,7 +55,7 @@ href="http://forum.gbadev.org/viewforum.php?f=24">Visit the forum.</a>
 
 <h2>Licensing</h2>
 <p>
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Introduction to Nintendo DS Programming</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://patater.com/contact" property="cc:attributionName" rel="cc:attributionURL">Jaeden Amero</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://patater.com/manual" rel="dct:source">http://patater.com/manual</a>.</p>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="/images/cc-by-sa-88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Introduction to Nintendo DS Programming</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://patater.com/contact" property="cc:attributionName" rel="cc:attributionURL">Jaeden Amero</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://patater.com/manual" rel="dct:source">http://patater.com/manual</a>.</p>
 
 <h2>Read Online</h2>
 <p>Read <a href="/files/projects/manual/manual.html">Introduction to Nintendo DS Programming</a> online.
@@ -59,9 +63,3 @@ href="http://forum.gbadev.org/viewforum.php?f=24">Visit the forum.</a>
 
 <h2>Visit Us on GitHub</h2>
 <p>We could use your help in making the manual better. Patches are welcome. <a href="https://github.com/Patater/manual">Check us out at GitHub.</a></p>
-
-<div>
-<h2>Download</h2>
-<a href="/projects/manual.zip">Download the Manual
-with Source Code</a>
-</div>

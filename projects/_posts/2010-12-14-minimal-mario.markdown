@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-permalink: /minimal-mario
-id: tag:www.patater.com,2010-12-14:/minimal-mario
+permalink: /minimal-mario/
+id: tag:www.patater.com,2010-12-14:/minimal-mario/
 title: Minimal Mario
 author: Jaeden Amero
 date: 2007-11-13 19:40:39
@@ -12,10 +12,12 @@ tags: project nes mario demake
 description: A simple color profiler for PC designed to help create Nintendo DS programs with colors consistent on both PC and Nintendo DS.
 thumb: /images/thumb-minimal.png
 language: en
+download: /projects/minimal-mario.ips
+downloadstring: Minimal Mario IPS Patch
+graphic: /images/minimal-mario-2up.png
+graphicalt: A screen capture of Mario standing next to a Goomba in World 1-1, rendered minimalistically
+filetype: ips
 ---
-![A screen capture of Mario standing next to a Goomba in World 1-1, rendered
-minimalistically](/images/minimal-mario-2up.png)
-
 <p>Inspired by the work of Calen Henry, I set out to do my first NES ROM hack:
 a playable version of Minimal Mario. The end result is awesome, and
 playable.</p>
@@ -52,9 +54,3 @@ src="https://www.youtube.com/embed/VSlL4n1dlJA" frameborder="0"> </iframe>
 <p>A fellow named Billy, who found that the springboard wasn't very minimal in
 my original patch, has uploaded a video of a play-through to YouTube. Be sure
 to watch it in all its glory in super low resolution 240p!</p>
-
-<div>
-<h2>Download</h2>
-<a href="/projects/minimal-mario.ips">Minimal Mario
-IPS Patch</a>
-</div>

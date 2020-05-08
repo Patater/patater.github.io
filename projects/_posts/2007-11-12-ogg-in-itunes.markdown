@@ -1,17 +1,19 @@
 ---
 layout: post
 published: true
-permalink: /ogg-in-itunes
-id: tag:www.patater.com,2007-11-12:/ogg-in-itunes
+permalink: /ogg-in-itunes/
+id: tag:www.patater.com,2007-11-12:/ogg-in-itunes/
 title: Ogg in iTunes
 author: Jaeden Amero
 date: 2007-11-12 22:04:35
 updated: 2010-12-19 03:36:44
 sitemappriority: 0.5
-tags: project blarg pc mac howto itunes ogg
-description: Ever spend like 10 minutes entering a ring tone into your phone just to press play and hear it sound like garbage? I've got just the tool for you, baby.
+tags: project pc mac howto itunes ogg
 thumb: /images/thumb-hungry.png
 language: en
+download: http://www.xiph.org/quicktime/download.html
+downloadstring: Ogg in iTunes QuickTime Plugin
+filetype: dmg
 ---
 <h2>About</h2>
 <p>
@@ -41,6 +43,3 @@ href="https://trac.xiph.org/ticket/759">xiph metadata support
 ticket</a>.
 </p>
 <div>
-<h2>Download</h2>
-<a href="http://www.xiph.org/quicktime/download.html">Ogg in iTunes QuickTime Plugin</a>
-</div>

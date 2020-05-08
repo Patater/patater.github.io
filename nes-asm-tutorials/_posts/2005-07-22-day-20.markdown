@@ -1,8 +1,8 @@
 ---
 layout: post
 published: true
-id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-20
-permalink: /nes-asm-tutorials/day-20
+id: tag:www.patater.com,2005-07-22:/nes-asm-tutorials/day-20/
+permalink: /nes-asm-tutorials/day-20/
 title: Day 20 - Using SRAM
 author: Mike Huber
 date: 2005-07-22 00:19:00
@@ -25,29 +25,29 @@ email me the meaning of all the numbers that you can pass to .inesmir (although
 I didn't have a chance to email him back :( ):</p>
 
 <dl>
-<dt>0</dt<dd>= H (Horizontal Mirroring ONLY)</dd>
-<dt>1</dt<dd>= V (Vertical Mirroring ONLY)</dd>
-<dt>2</dt<dd>= H + Bat. (Horiztonal Mirroring + Battery ON)</dd>
-<dt>3</dt<dd>= V + Bat. (Vertical Mirroring + Battery ON)</dd>
-<dt>4</dt<dd>= H + Train. (Horizontal Mirroring + Trainer ON)</dd>
-<dt>5</dt<dd>= V + Train. (Vertical Mirroring + Trainer ON)</dd>
-<dt>6</dt<dd>= H + Bat. + Train. (Horizontal Mirroring + Battery and Trainer
+<dt>0</dt><dd>= H (Horizontal Mirroring ONLY)</dd>
+<dt>1</dt><dd>= V (Vertical Mirroring ONLY)</dd>
+<dt>2</dt><dd>= H + Bat. (Horiztonal Mirroring + Battery ON)</dd>
+<dt>3</dt><dd>= V + Bat. (Vertical Mirroring + Battery ON)</dd>
+<dt>4</dt><dd>= H + Train. (Horizontal Mirroring + Trainer ON)</dd>
+<dt>5</dt><dd>= V + Train. (Vertical Mirroring + Trainer ON)</dd>
+<dt>6</dt><dd>= H + Bat. + Train. (Horizontal Mirroring + Battery and Trainer
 ON)</dd>
-<dt>7</dt<dd>= V + Bat. + Train. (Vertical Mirroring + Battery and Trainer
+<dt>7</dt><dd>= V + Bat. + Train. (Vertical Mirroring + Battery and Trainer
 ON)</dd>
-<dt>8</dt<dd>= H + 4scr. (Horizontal Mirroring + 4 Screen VRAM ON)</dd>
-<dt>9</dt<dd>= V + 4scr. (Vertical Mirroring + 4 Screen VRAM ON)</dd>
-<dt>A</dt<dd>= H + Bat. + 4scr. (Horizontal Mirroring + Battery and 4 Screen
+<dt>8</dt><dd>= H + 4scr. (Horizontal Mirroring + 4 Screen VRAM ON)</dd>
+<dt>9</dt><dd>= V + 4scr. (Vertical Mirroring + 4 Screen VRAM ON)</dd>
+<dt>A</dt><dd>= H + Bat. + 4scr. (Horizontal Mirroring + Battery and 4 Screen
 VRAM ON)</dd>
-<dt>B</dt<dd>= V + Bat. + 4scr. (Vertical Mirroring + Battery and 4 Screen VRAM
+<dt>B</dt><dd>= V + Bat. + 4scr. (Vertical Mirroring + Battery and 4 Screen VRAM
 ON)</dd>
-<dt>C</dt<dd>= H + 4scr. + Train. (Horizontal Mirroring + 4 Screen VRAM and
+<dt>C</dt><dd>= H + 4scr. + Train. (Horizontal Mirroring + 4 Screen VRAM and
 Trainer ON)</dd>
-<dt>D</dt<dd>= V + 4scr. + Train. (Vertical Mirroring + 4 Screen VRAM and
+<dt>D</dt><dd>= V + 4scr. + Train. (Vertical Mirroring + 4 Screen VRAM and
 Trainer ON)</dd>
-<dt>E</dt<dd>= H + Bat. + 4scr. + Train. (Horizontal Mirroring + Battery, 4
+<dt>E</dt><dd>= H + Bat. + 4scr. + Train. (Horizontal Mirroring + Battery, 4
 Screen VRAM, and Trainer ON)</dd>
-<dt>F</dt<dd>= V + Bat. + 4scr. + Train. (Vertical Mirroring + Battery, 4
+<dt>F</dt><dd>= V + Bat. + 4scr. + Train. (Vertical Mirroring + Battery, 4
 Screen VRAM, and Trainer ON)</dd>
 </dl>
 
@@ -104,5 +104,5 @@ I would assume the .SAV file is just an exact copy of $6000-$8000.</p>
 </p>
 
 <div class="series-navigation">
-<a href="/nes-asm-tutorials">Intro</a> - <a href="/nes-asm-tutorials/day-21">Day 21</a>
+<a href="/nes-asm-tutorials">Intro</a> - <a href="/nes-asm-tutorials/day-21/">Day 21</a>
 </div>
