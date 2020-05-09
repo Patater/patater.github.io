@@ -1,5 +1,12 @@
 /* This is the overworld theme to Patater dot com */
 
+/* Fix a common border issue */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   color: #777;
   background-color: #F4F4F4;
