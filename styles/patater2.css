@@ -154,6 +154,14 @@ img {
   text-transform: uppercase;
 }
 
+code {
+  width: 100vh;
+}
+
+pre {
+  width: 100vh;
+}
+
 .qr-code .black {
   border-top-color: #000;
   background: #000 none repeat scroll 0% 0%;

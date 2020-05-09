@@ -91,17 +91,17 @@ The generated text sounds like somebody schizophrenic with very short term memor
 
 <p>Generate new, 20-word long, text in the style of the included QSO corpus, using a typical word-level Markov-chain (size 2).</p>
 
-<pre>(display (string-join (generate-similar-corpus 2 (string-split (file->string
-"corpora/qso.txt") " ") 20) " "))</pre>
+<code>(display (string-join (generate-similar-corpus 2 (string-split (file->string
+"corpora/qso.txt") " ") 20) " "))</code>
 <br/>
 <p>Generate new text in the style of three different texts using a typical word-level Markov-chain (size 2).</p>
-<pre>(display (string-join (generate-similar-corpus 2 (string-split (string-append
+<code>(display (string-join (generate-similar-corpus 2 (string-split (string-append
 (file->string "corpora/navy-seal-copypasta.txt") (file->string
 "corpora/dont-copy-that-floppy.txt") (file->string "corpora/bel-air.txt")) " ")
-200) " "))</pre>
+200) " "))</code>
 <br/>
 <p>Generate a line that is similar to any line from a text file, but without using the letter E or e, using hierarchical Markov chains.</p>
-<pre>
+<code>
 (display (generate-random-text
  (build-hierarchical-markov-chain-from-file "corpora/king-lear.txt")
  '(#\A #\B #\C #\D #\F #\G #\H #\I #\J #\K #\L #\M #\N #\O #\P #\Q #\R #\S #\T
@@ -109,27 +109,29 @@ The generated text sounds like somebody schizophrenic with very short term memor
  #\o #\p #\q #\r #\s #\t #\u #\v #\w #\x #\y #\z #\. #\, #\' #\; #\? #\!
  #\space)
  200
- ))</pre>
+ ))</code>
 <br/>
 <p>Aside from all those other fun things, here's the main point of this program. Generate a random QSO-like message with a few differently sized alphabets. The alphabets are in N1IRZ's learning order.</p>
 
-<pre>(display (generate-random-qso '(#\K #\M)))</pre><br/>
+<code>(display (generate-random-qso '(#\K #\M)))</code><br/>
 
-<pre>(display (generate-random-qso '(#\K #\M #\R #\S #\U #\A #\P #\T #\L #\O)))</pre><br/>
+<code>(display (generate-random-qso '(#\K #\M #\R #\S #\U #\A #\P #\T #\L
+#\O)))</code><br/>
 
-<pre>(display (generate-random-qso '(#\K #\M #\R #\S #\U #\A #\P #\T #\L #\O #\W #\I
-#\. #\N #\J #\E #\F #\0 #\Y #\V)))</pre><br/>
+<code>(display (generate-random-qso '(#\K #\M #\R #\S #\U #\A #\P #\T #\L #\O #\W #\I
+#\. #\N #\J #\E #\F #\0 #\Y #\V)))</code><br/>
 
-<pre>(display (generate-random-qso '(#\K #\M #\R #\S #\U #\A #\P #\T #\L #\O #\W #\I
-#\. #\N #\J #\E #\F #\0 #\Y #\V #\, #\G #\5 #\/ #\Q #\9 #\Z #\H #\3 #\8)))</pre><br/>
+<code>(display (generate-random-qso '(#\K #\M #\R #\S #\U #\A #\P #\T #\L #\O #\W #\I
+#\. #\N #\J #\E #\F #\0 #\Y #\V #\, #\G #\5 #\/ #\Q #\9 #\Z #\H #\3
+#\8)))</code><br/>
 
-<pre>(display (generate-random-qso '(#\K #\M #\R #\S #\U #\A #\P #\T #\L #\O #\W #\I
+<code>(display (generate-random-qso '(#\K #\M #\R #\S #\U #\A #\P #\T #\L #\O #\W #\I
 #\. #\N #\J #\E #\F #\0 #\Y #\V #\, #\G #\5 #\/ #\Q #\9 #\Z #\H #\3 #\8 #\B #\?
-#\4 #\2 #\7 #\C #\1 #\D #\6 #\X)))</pre><br/>
+#\4 #\2 #\7 #\C #\1 #\D #\6 #\X)))</code><br/>
 
-<pre>(display (generate-random-qso '(#\K #\M #\R #\S #\U #\A #\P #\T #\L #\O #\W #\I
+<code>(display (generate-random-qso '(#\K #\M #\R #\S #\U #\A #\P #\T #\L #\O #\W #\I
 #\. #\N #\J #\E #\F #\0 #\Y #\V #\, #\G #\5 #\/ #\Q #\9 #\Z #\H #\3 #\8 #\B #\?
-#\4 #\2 #\7 #\C #\1 #\D #\6 #\X #\# #\@ #\! #\$)))</pre><br/>
+#\4 #\2 #\7 #\C #\1 #\D #\6 #\X #\# #\@ #\! #\$)))</code><br/>
 
 <h3>Thanks</h3>
 <p>Thanks to Lisp In Summer Projects of the LispNYC for getting me off my butt and finally taking the time to learn a Lispy language.</p>
