@@ -1,15 +1,16 @@
 ---
-layout: post
+layout: default
 published: true
 id: tag:www.patater.com,2010-11-19:/donate/
 title: Donate
 author: Jaeden Amero
 date: 2010-11-19 18:33:42
-updated: 2010-12-19 03:36:44
+updated: 2020-05-09 19:12:11
 sitemappriority: 0.5
 language: en
 ---
-<p>Please donate me bitcoins.</p>
+<h1>{{ page.title}}</h1>
+<p>If you appreciate someone, tell them with bitcoin.</p>
 <div class="qr-code-wrapper">
 <div class="qrcode" data-size="3" data-level="l" data-css-size="170">
 <table class="qr-code"><tbody>
@@ -920,3 +921,4 @@ language: en
 </a>
 </p>
 </div>
+<p class="right">Thank you!</p>
