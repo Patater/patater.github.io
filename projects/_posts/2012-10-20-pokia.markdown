@@ -16,10 +16,10 @@ graphic: /images/pokia.png
 graphicalt: Composing music with Pokia
 graphichref: /pokia/pokia.html
 ---
-<a href="/pokia/pokia.html"><img src="/images/pokia-sideways.png" alt="A sideways Pokia" width="100%"/></a>
-
 <h2>Play with the Pokia</h2>
-<p>First off, <a href="/pokia/pokia.html">go play with it</a>. You'll need <a href="http://www.google.com/chrome">Google Chrome</a>. I think you might enjoy composing a song or two.</p>
+<p>First off, <a href="/pokia/pokia.html">go play with it</a>. You'll need <a
+href="https://caniuse.com/#feat=audio-api">a browser with Web Audio</a>. I
+think you might enjoy composing a song or two.</p>
 
 <!--break-->
 
@@ -39,7 +39,7 @@ graphichref: /pokia/pokia.html
 <h3>How does it sound like a real Nokia?</h3>
 <p>Short answer: by using Web Audio's wave table synthesizer. A longer answer is to follow.</p>
 
-<img src="/images/pokia-spectrogram.png" width="100%"/>
+<img src="/images/pokia-spectrogram.png" />
 
 <p>I looked at a spectrogram of some recordings I made of my Nokia 1100b playing back the chromatic scale. I didn't see much of interest in the frequency domain, so I had a look in the time domain. Each note looked like a damped sine wave. After trying to take the Fourier transform of an equation for a damped sine wave and failing (as I've been away from math for too long), I just used <a href="http://www.spectraplus.com/">SpectraPLUS</a> to take an FFT of a single note. I then popped those coefficients into a <a href="http://www.w3.org/TR/webaudio/#dfn-setWaveTable">Web Audio oscillator's wave table</a> and bam, a nice Nokia sound.</p>
 
