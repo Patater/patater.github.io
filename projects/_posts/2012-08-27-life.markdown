@@ -26,8 +26,8 @@ graphichref: /life.html
 
 <!--break-->
 
-<image src="/images/life-2up.png" alt="A squiggle
-and some life drawn in Conway's Game of Life"/>
+<a href="/life.html"><image src="/images/life-2up.png" alt="A squiggle and some
+life drawn in Conway's Game of Life" /></a>
 
 <h3>Motivation</h3>
 <p>I am very interested in simple systems that exhibit complexity, and Conway's
@@ -61,8 +61,8 @@ WebGL to be very well suited for what I wanted to make: it provides access to
 the GPU in a platform agnostic way.</a>
 
 <p>I grabbed <a href="http://ricardocabello.com/blog/post/714">a WebGL example
-from mr.doob</a>.  Thank you, mr.doob. His example contained a bit of
-boilerplate to get me started. I then set out to write my first GLSL compute 
+from mr.doob</a>. Thank you, mr.doob. His example contained a bit of
+boilerplate to get me started. I then set out to write my first GLSL compute
 shader.</p>
 
 
@@ -83,7 +83,7 @@ ready and sample it in order to generate pretty pictures.</p>
 
 <h3>How to Play</h3>
 <p>How you play is up to you. I've given you the game world and a 2x2 mouse
-cursor.  You can draw stuff in the box. That is all. Enjoy!</p>
+cursor. You can draw stuff in the box. That is all. Enjoy!</p>
 
 <p>I've also given you the source code, so you can hack around with it and make
 something interesting. Use it for whatever you want, but be nice.</p>
