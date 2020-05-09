@@ -6,29 +6,28 @@ description: Patater's Awesome Book Collection
 
 <div>
 <h1>Patater's Awesome Book Collection</h1>
-<p>Every book here is on my real physical bookshelf. I've collected them over
-my entire life. Clicking on a title will provide information on why I have or
-like a particular book.</p>
+<p>Every book here is or was on my real physical bookshelf. I've collected them
+over my entire life. Clicking on a title will provide information on why I have
+or like a particular book.</p>
 </div>
 
-<div class="books">
-  <h2>The Books</h2>
-  <ul>
+<section class="books">
+  <h2 class="section">The Books</h2>
+  <div class="entries">
 {% assign sorted = site.tags.book | sort: 'title' %}
 {% for book in sorted %}
 {% assign image_found = false %}
-    <li>
-        <a class="nounderline" href="{{ book.url }}">
+    <a class="entry" href="{{ book.url }}">
 {% if book.isbn %}{% for file in site.static_files %}{% if file.name contains book.isbn and file.name contains '-M' %}{% assign image_found = true %}
-        <img src="{{ file.path }}" alt="Book Cover - {{ book.title }}" width="100">
+        <img src="{{ file.path }}" alt="Book Cover - {{ book.title }}" />
 {% endif %}{% endfor %}{% else %}{% assign image_found = false %}{% endif %}
 {% if image_found == false %}
-        <img src="/images/cover-na.png" alt="Book Cover - {{ book.title }}" width="100">
+        <img src="/images/cover-na.png" alt="Book Cover - {{ book.title }}" />
 {% endif %}
-        <br/>
-        <span class="underline">{{ book.title }}</span>
-        </a>
-    </li>
+      <div class="entry-proper">
+        <h3>{{ book.title }}</h3>
+      </div>
+    </a>
 {% endfor %}
-  </ul>
-</div>
+  </div>
+</section>
