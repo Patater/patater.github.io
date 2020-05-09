@@ -28,7 +28,6 @@ body {
     /* background-color: rgba(255, 0, 0, 0.3); */
     }
 .content-wrapper {
-    float: left;
     width: 560px;
     padding: 0 0 140px 40px;
     /* background-color: rgba(0, 200, 254, 0.5); */
@@ -84,7 +83,6 @@ h5 a {
     text-decoration: none;
     }
 li h5 {
-    float: left;
     margin: -20px 24px 0 0;
     }
 
@@ -211,7 +209,7 @@ a:visited { color: inherit; }
 .comment-divider { padding: 20px 0 40px 0; }
 .twitter-share-button { padding: 0 6px 0 0; }
 .comments h2 { display: inline; text-transform: uppercase; }
-.comment img { float: left; padding-right: 15px; }
+.comment img { padding-right: 15px; }
 .comment { min-height: 80px; }
 
 /* BOOKS BOOKS BOOKS BOOKS BOOKS BOOKS BOOKS BOOKS BOOKS */
@@ -241,10 +239,8 @@ a:visited { color: inherit; }
     font: 19px 'BlenderBold';
     color: #BADB3B;
     text-transform: uppercase;
-    float: left;
     }
 .date {
-    float: left;
     color: #777;
     padding-left: 10px;
     }
@@ -255,10 +251,8 @@ a:visited { color: inherit; }
     }
 
 .FL {
-    float: left;
     }
 .FL-40 {
-    float: left;
     padding-left: 40px;
     }
 
@@ -291,7 +285,6 @@ a:visited { color: inherit; }
 .popular-slot {
     /*background-color: black;*/
     display: inline;
-    float: left;
     width: 180px;
     height: auto;
     }
@@ -376,12 +369,10 @@ a:visited { color: inherit; }
     background-position: bottom left;
     }
 .mash-text {
-    float: left;
     text-transform: uppercase;
     margin-left: 340px;
     }
 .mash-text li {
-    float: left;
     margin: 70px 24px 0 0;
     }
 
