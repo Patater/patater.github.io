@@ -6,8 +6,9 @@ tags: link ds-news-sites
 permalink: /links/toudy/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
+updated: 2020-05-09 17:18:12
 uri: http://www.toudy.com/
 ---
 Another French news site. I'm haven't been following this place much at all, so
-if you can give me some information of how reliable the news from here is, <a
-href="/contact">let me know</a>.
+if you can give me some information of how reliable the news from here is, let
+me know.

@@ -9,4 +9,4 @@ updated: 2010-12-19 03:36:44
 uri: http://users.belgacom.net/bn967347/
 ---
 Yet another method of running homebrew on the DS. May or may not require
-FlashMe (anybody care to <a href="/contact">enlighten me</a>?).
+FlashMe (anybody care to enlighten me?).

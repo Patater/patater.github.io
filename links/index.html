@@ -71,15 +71,21 @@ have any suggestions, dead links to report, additions or whatnot, feel free to
 
 <div>
 {% for tag in page.possibletags %}
-<a name="{{ tag.tag }}"></a>
-<h3>{{ tag.name }}</h3>
-<div class="linkzors">
-{% for link in sorted %}{% if link.tags contains tag.tag %}
-<div class="{% cycle 'odd', 'even' %}">
-<h1 class="entry-proper"><a href="{{ link.uri }}">{{ link.title }}</a></h1>
-{{ link.content }}
-</div>
-{% endif %}{% endfor %}
-</div>
+<a id="{{ tag.tag }}"></a>
+<section class="linkzors">
+  <h3 class="section">{{tag.name}}</h3>
+  <div class="entries">
+  {% for link in sorted %}{% if link.tags contains tag.tag %}
+    <a class="entry" href="{{ link.uri }}">
+      <div class="entry-proper">
+        <h4>{{ link.title }}</h4>
+  {% if link.content %}
+        {{ link.content }}
+  {% endif %}
+      </div>
+    </a>
+  {% endif %}{% endfor %}
+  </div>
+</section>
 {% endfor %}
 </div>
