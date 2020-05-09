@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 published: true
 id: tag:www.patater.com,2007-11-11:/about/
 title: "About"
@@ -11,6 +11,8 @@ language: en
 graphic: /images/favicon.ico
 graphicalt: Patater.com Favicon
 ---
+<h1>{{ page.title}}</h1>
+
 Find out what my current projects are, look at pictures of me on my travels,
 read my travel logs, try to figure out my resume, point and laugh, and more,
 only at Patater, the one official Jaeden Amero web site on all the internets.
