@@ -4,7 +4,8 @@ layout: default
 <div>
 <h1>{{ page.title}}</h1>
 <p class="minimeta">
-Published: {{ page.date | date: "%Y-%m-%d" }}, Updated: {{ page.updated | date:"%Y-%m-%d" }}<br/>
+Published: {{ page.date | date: "%Y-%m-%d" }}<br/>
+Updated: {{ page.updated | date:"%Y-%m-%d" }}<br/>
 {% if page.author %}Author: {{ page.author }}{% endif %}
 </p>
 </div>
