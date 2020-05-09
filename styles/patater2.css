@@ -142,6 +142,11 @@ img {
   background-size: 100% auto;
 }
 
+.entry-proper p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .entries a:link {
   text-decoration: none;
   color: inherit;
