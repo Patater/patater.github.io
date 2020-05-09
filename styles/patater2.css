@@ -47,15 +47,15 @@ nav {
   margin-right: auto;
 }
 
-nav a:link {
+a:link {
   color: inherit;
 }
 
-nav a:visited {
+a:visited {
   color: inherit;
 }
 
-nav a:hover {
+a:hover {
   color: inherit;
   background-color: #DEF3A8;
 }
