@@ -3,6 +3,9 @@
 body {
   color: #777;
   background-color: #F4F4F4;
+  font-family: Verdana, Arial, sans-serif;
+  color: #777;
+  padding: 0 0 20px 0;
 }
 
 .header {
@@ -55,12 +58,6 @@ img {
 }
 
 /*
-.header a:active {
-  color: inherit;
-}
-*/
-
-/*
 .logo:before {
   content: "Patater";
   text-transform: uppercase;
@@ -71,34 +68,76 @@ img {
 .logo {
   width: 80px;
   height: 80px;
-  background-image: url('/images/patater264.png');
+  background-image: url('/images/patater.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left top;
+  margin-left: 20px;
 }
 
 .content {
-  padding: 0 40px 0 40px;
+  padding: 8px 8px 8px 8px;
 }
 
 .entries {
-  columns: 240px 2;
-  padding-bottom: 20px;
-}
-
-.entry-proper {
-  font: 34px 'BlenderThin', Helvetica, Arial, sans-serif;
-}
-
-.popular-projects {
   display: flex;
   flex-flow: row wrap;
   /*justify-content: center;*/
-  max-width: 720px;
-  padding-bottom: 10px;
+  max-width: 400px;
   margin-bottom: 30px;
-  /*border-bottom: 4px solid #BADB3B;*/
   border-bottom: 4px solid #839929;
+  color: #F4F4F4;
+}
+
+.entry {
+  background-color: #999559;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.entry img {
+  border: none;
+  padding: 0 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 1px solid #F4F4F4;
+  height: 180px;
+  object-fit: cover;
+  object-position: left top;
+  width: 100%;
+}
+
+.entry-proper {
+  padding: 8px 16px 8px 16px;
+  background-image: url('/images/russetted-dark.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 100% auto;
+}
+
+.entries a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.entries a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.entries a:hover {
+  text-decoration: none;
+  background-color: #B3AE68;
+  color: inherit;
+}
+
+.entries a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 .section {
@@ -106,61 +145,6 @@ img {
   /*color: #BADB3B;*/
   color: #839929;
   text-transform: uppercase;
-}
-
-.date {
-  color: #777;
-  padding-left: 10px;
-}
-
-.popular-projects a:link {
-  text-decoration: none;
-}
-
-.popular-projects a:visited {
-  text-decoration: none;
-}
-
-.popular-projects a:hover {
-  text-decoration: none;
-}
-
-.popular-projects a:active {
-  text-decoration: none;
-}
-
-.popular-slot {
-  width: 180px;
-  margin: 8px 8px 8px 8px;
-  padding: 0;
-  outline: 0;
-}
-
-.title-slot {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  display: table;
-  width: 180px;
-  height: 56px;
-  background-color: #E0DA82;
-  /* darker brown #999559 */
-  /* #9e8c39 */
-  background-image: url('/images/freckles1.png');
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  border-bottom: 1px solid #F4F4F4;
-}
-
-.title-text {
-  color: #9E8C3D;
-  font: 18px 'BlenderBold', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  padding: 0 8px 0 8px;
 }
 
 .qr-code .black {

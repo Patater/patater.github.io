@@ -13,52 +13,57 @@ description: Patater is my outlet for my free and open works.
 
 {% assign projects_by_prio = site.tags.project | sort: 'date' | reverse | sort: 'sitemappriority' | reverse %}
 {% if projects_by_prio %}
-    <section>
-    <h3 class="section">Popular Projects</h3>
-    <div class="popular-projects">
+  <section>
+  <h2 class="section">Popular Projects</h2>
+  <div class="entries">
 {% for project in projects_by_prio limit: 4 %}
-    <a href="{{ project.url }}">
-      <div class="popular-slot">
-        <div class="title-slot">
-  {% if project.short_title %}
-        <h5 class="title-text">{{ project.short_title }}</h5>
-  {% else %}
-        <h5 class="title-text">{{ project.title }}</h5>
-  {% endif %}
-        </div>
+    <a class="entry" href="{{ project.url }}">
   {% if project.thumb %}
-        <img src="{{ project.thumb }}" width="180" height="100" alt="{{ project.graphicalt }}">
+      <img src="{{ project.thumb }}" alt="{{ project.graphicalt }}">
   {% elsif project.graphic %}
-        <img src="{{ project.graphic }}" width="180" height="100" alt="{{ project.graphicalt }}">
+      <img src="{{ project.graphic }}" alt="{{ project.graphicalt }}">
   {% else %}
-        <img src="/images/thumb-face.png" width="180" height="100" alt="Potato Face - Non-project Image">
+      <img src="/images/thumb-face.png" alt="Potato Face - Non-project Image">
+  {% endif %}
+      <div class="entry-proper">
+  {% if project.short_title %}
+        <h3>{{ project.short_title }}</h3>
+  {% else %}
+        <h3>{{ project.title }}</h3>
   {% endif %}
       </div>
     </a>
 {% endfor %}
-    </div>
-    </section>
+  </div>
+  </section>
 {% endif %}
 
 {% assign stuff = stuff | uniq | sort: 'date' | reverse %}
   <section>
-  <h3 class="section">Recent</h3>
+  <h2 class="section">Latest Blargs</h2>
   <div class="entries">
 {% for post in stuff limit: 4 %}
-{% if forloop.first %}
-    <div class="entry">
-        <h3 class="entry-proper"><a href={{ post.url }}>{{ post.title }}</a></h1>
-        <h4 class="section date">{{ post.date | date:"%Y-%m-%d" }}</h2>
-        <div>
-        {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-        </div>
-    </div>
-{% else %}
-    <div class="entry">
-        <div class="entry-proper FL entrysub-title"><a href={{ post.url }}>{{ post.title }}</a></div>
-        <div>{{ post.date | date:"%Y-%m-%d" }}</div>
-    </div>
-{% endif %}
+    <a class="entry" href="{{ post.url }}">
+  {% if post.thumb %}
+      <img src="{{ post.thumb }}" alt="{{ post.graphicalt }}">
+  {% elsif post.graphic %}
+      <img src="{{ post.graphic }}" alt="{{ post.graphicalt }}">
+  {% else %}
+      <img src="/images/thumb-face.png" alt="Potato Face - Non-project Image">
+  {% endif %}
+      <div class="entry-proper">
+        <h3>{{ post.title }}</h3>
+        <h4 class="date">{{ post.date | date:"%Y-%m-%d" }}</h4>
+  {% if post.description %}
+        <p>{{ post.description }}</p>
+  {% endif %}
+      </div>
+    </a>
 {% endfor %}
+  <a class="entry" href="/blarg/">
+      <div class="entry-proper">
+      <h3>Older Blargs</h3>
+      </div>
+  </a>
   </div>
   </section>
