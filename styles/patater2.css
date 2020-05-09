@@ -39,6 +39,7 @@ nav {
   font: 19px 'BlenderBook', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #000910;
+  line-height: 2;
   margin-left: 8px;
 }
 
@@ -189,6 +190,11 @@ pre {
   align-items: center;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 2;
 }
 
 .mash-text {
