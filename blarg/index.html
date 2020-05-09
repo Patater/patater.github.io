@@ -11,11 +11,13 @@ title: Blarg
   {% if post.author %}Author: {{ post.author }}{% endif %}
   </p>
   <div>
+  <a href="{{ post.url }}">
   {% if post.thumb %}
   <img src="{{ post.thumb }}" alt="{{ post.thumbalt }}" />
   {% elsif post.graphic %}
-  <img src="{{ post.graphic }}" alt="{{ post.graphicalt }}" width="160" />
+  <img src="{{ post.graphic }}" alt="{{ post.graphicalt }}" />
   {% endif %}
+  </a>
 
   {% assign body = post.content | markdownify | split:'<!--break-->' | first %}
 
