@@ -2,25 +2,30 @@
 layout: default
 title: Projects
 ---
-<div class="projectors">
+<section class="projectors">
+  <h2 class="section">Projects</h2>
 {% assign sorted = site.tags.project | sort: 'title' %}
-    <ul>
+  <div class="entries">
 {% for project in sorted %}
-        <li class="{% cycle 'odd', 'even' %}"><h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
-            <table class="minimeta">
-            <tr>
-            <td>REVISION</td>
-            {% if project.download %}
-            <td class="PL30"><a href="{{ project.download }}">DOWNLOAD&gt; {{ project.filetype | upcase }}</a></td>
-            {% else %}
-            <td class="PL30">NO DOWNLOAD</td>
-            {% endif %}
-            </tr>
-            <tr>
-            <td>{{ project.updated | date: "%Y-%m-%d" }}</td>
-            </tr>
-            </table>
-        </li>
+    <a class="entry" href="{{ project.url }}">
+  {% if project.thumb %}
+      <img src="{{ project.thumb }}" alt="{{ project.graphicalt }}">
+  {% elsif project.graphic %}
+      <img src="{{ project.graphic }}" alt="{{ project.graphicalt }}">
+  {% else %}
+      <img src="/images/thumb-face.png" alt="Potato Face - Non-project Image">
+  {% endif %}
+      <div class="entry-proper">
+  {% if project.short_title %}
+        <h3>{{ project.short_title }}</h3>
+  {% else %}
+        <h3>{{ project.title }}</h3>
+  {% endif %}
+  {% if project.description %}
+        <p>{{ project.description }}</p>
+  {% endif %}
+      </div>
+    </a>
 {% endfor %}
-    </ul>
-</div>
+  </div>
+</section>
