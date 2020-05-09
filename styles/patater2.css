@@ -12,7 +12,8 @@ body {
   background-color: #F4F4F4;
   font-family: Verdana, Arial, sans-serif;
   color: #777;
-  padding: 0 0 20px 0;
+  padding: 0 0 0 0;
+  margin: 0 8px 0 8px;
 }
 
 .header {
@@ -26,21 +27,24 @@ body {
 }
 
 nav {
-  margin-left: auto;
   font: 19px 'BlenderBook', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #000910;
 }
 
-.header a:link {
+.header nav {
+  margin-right: auto;
+}
+
+nav a:link {
   color: inherit;
 }
 
-.header a:visited {
+nav a:visited {
   color: inherit;
 }
 
-.header a:hover {
+nav a:hover {
   color: inherit;
   background-color: #DEF3A8;
 }
@@ -160,6 +164,23 @@ code {
 
 pre {
   width: 100vh;
+}
+
+.mash-footer {
+  background-image: url('/images/patater-mash.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  height: 200px;
+  width: 100%;
+  padding: 0 20px 0 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.mash-text {
+  margin-left: auto;
 }
 
 .qr-code .black {
