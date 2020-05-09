@@ -11,7 +11,13 @@ Published: {{ page.date | date: "%Y-%m-%d" }}, Updated: {{ page.updated | date:"
 
 <div class="post">
 {% if page.graphic %}
-<p><img src="{{ page.graphic }}" alt="{{ page.graphicalt }}" /></p>
+  {% if page.graphichref %}
+<a href="{{ page.graphichref }}">
+  {% endif %}
+<p><img class="post-graphic" src="{{ page.graphic }}" alt="{{ page.graphicalt }}" /></p>
+  {% if page.graphichref %}
+</a>
+  {% endif %}
 {% endif %}
 {{ content }}
 </div>

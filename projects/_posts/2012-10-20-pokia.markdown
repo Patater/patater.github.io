@@ -14,6 +14,7 @@ thumb: /images/pokia-thumb.png
 language: en
 graphic: /images/pokia.png
 graphicalt: Composing music with Pokia
+graphichref: /pokia/pokia.html
 ---
 <a href="/pokia/pokia.html"><img src="/images/pokia-sideways.png" alt="A sideways Pokia" width="100%"/></a>
 

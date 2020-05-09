@@ -19,6 +19,7 @@ downloadstring: Life's Source Code
 filetype: bz2
 graphicalt: Conway's Game of Life Rendered with the GPU
 graphic: /images/life.png
+graphichref: /life.html
 ---
 <h2>Play</h2>
 <p><a href="/life.html">Conway's Game of Life with WebGL</a></p>
