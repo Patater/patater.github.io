@@ -11,9 +11,11 @@ categories: 68k-adventures
 tags: 68k-adventures 68k 68000 mac macintosh lc
 description: This was the first Macintosh I restored since high school.
 language: en
+thumb: /files/pictures/thumb/lciii.jpg
+graphic: /files/pictures/lciii.jpg
+graphicalt: /files/pictures/lciii.jpg
+graphichref: /files/pictures/lciii.jpg
 ---
-<a href="/files/pictures/lciii.jpg"><img src="/files/pictures/thumb/lciii.jpg" alt="The Macintosh LC III with a 24 inch LCD monitor on top of it" /></a>
-
 <p>Here is my latest restoration, my first one in a while. It turned out to be a pretty easy one. The computer was missing a hard drive and only had on-board memory. I couldn't find my floppy disk stash, so I recovered the computer without any floppy disks; I was very happy to have an AppleCD 600e drive to help out. The LC III now has 36 MB RAM and a 40MB SCSI HD with System 7.5.3. Don't you wish modern computers had as much RAM as hard disk space? Well, maybe you don't care about modern computers at all.</p>
 
 <p>I'd like to put a IIe card into the LC III, but I haven't found any for sale that come with the cable.<p>
