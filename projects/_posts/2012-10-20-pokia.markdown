@@ -6,7 +6,7 @@ id: tag:www.patater.com,2012-10-20:/pokia/
 title: Pokia
 author: Jaeden Amero
 date: 2012-10-20 03:32:52
-updated: 2012-10-20 03:38:13
+updated: 2020-05-09 10:39:40
 sitemappriority: 0.5
 tags: project blarg nokia music composer pokia ringtones
 description: Ever spend like 10 minutes entering a ring tone into your phone just to press play and hear it sound like garbage? I've got just the tool for you, baby.
@@ -49,7 +49,9 @@ graphichref: /pokia/pokia.html
 <h3>This Sucks</h3>
 <p>If you didn't notice, it does have some limitations, unfortunately. On a real phone, you'd have to navigate some menus to change the tempo or even to play the song. I wanted to have a simpler interface, so some sacrifice was thought necessary. <a href="/contact">Feel free to complain about it.</a></p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TAT9bC4YIWs" frameborder="0" allowfullscreen></iframe>
+<div class="iframe-wrapper">
+<iframe src="https://www.youtube.com/embed/TAT9bC4YIWs" frameborder="0" allowfullscreen></iframe>
+</div>
 
 <h2>Play</h2>
 <a href="/pokia/pokia.html">Play with the Pokia</a>

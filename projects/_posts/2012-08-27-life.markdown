@@ -7,7 +7,7 @@ title: Conway's Game of Life on the GPU
 shorttitle: GPU Life
 author: Jaeden Amero
 date: 2012-08-27 02:21:30
-updated: 2012-08-27 02:21:30
+updated: 2020-05-09 10:56:49
 sitemappriority: 0.65
 tags: project blarg life gpu webgl web gpgpu conway
 description: John Horton Conway devised this game in 1970. He played with it using chalkboards, checkers, or poker chips. Little did he know that we'd now be playing with it on our GPUs inside of hypertext browsers.
@@ -77,7 +77,9 @@ neighbors of all the cells) and write to the other, current state, texture; the 
 double buffered. Our rendering fragment shader will take whatever texture is
 ready and sample it in order to generate pretty pictures.</p>
 
-<iframe width="480" height="360" src="https://www.youtube.com/embed/hTaAgUB7i44" frameborder="0" allowfullscreen></iframe>
+<div class="iframe-wrapper">
+<iframe src="https://www.youtube.com/embed/hTaAgUB7i44" frameborder="0" allowfullscreen></iframe>
+</div>
 
 <h3>How to Play</h3>
 <p>How you play is up to you. I've given you the game world and a 2x2 mouse

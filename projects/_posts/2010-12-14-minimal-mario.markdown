@@ -6,7 +6,7 @@ id: tag:www.patater.com,2010-12-14:/minimal-mario/
 title: Minimal Mario
 author: Jaeden Amero
 date: 2007-11-13 19:40:39
-updated: 2011-04-03 03:39:44
+updated: 2020-05-09 11:11:11
 sitemappriority: 0.7
 tags: project nes mario demake
 description: A simple color profiler for PC designed to help create Nintendo DS programs with colors consistent on both PC and Nintendo DS.
@@ -49,8 +49,10 @@ player game, press start. To start a two player game, press select, then start.
 This is exactly the same as the normal Super Mario Bros. game.</p>
 
 <h2>Watch a Playthrough</h2>
-<iframe class="youtube-player" type="text/html" width="640" height="385"
+<div class="iframe-wrapper">
+<iframe class="youtube-player" type="text/html"
 src="https://www.youtube.com/embed/VSlL4n1dlJA" frameborder="0"> </iframe>
+</div>
 <p>A fellow named Billy, who found that the springboard wasn't very minimal in
 my original patch, has uploaded a video of a play-through to YouTube. Be sure
 to watch it in all its glory in super low resolution 240p!</p>
