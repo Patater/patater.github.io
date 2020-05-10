@@ -158,6 +158,7 @@ img {
 .entry-proper p {
   text-align: justify;
   text-justify: inter-word;
+  hyphens: auto;
 }
 
 .entries a:link {
