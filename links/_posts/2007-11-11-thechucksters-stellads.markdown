@@ -10,6 +10,6 @@ uri: http://thechuckster.homelinux.com/stellads/
 ---
 TheChuckster returns with what might turn into an incredible project. This time
 around, he brings us an Atari 2600 emulator, complete with a 6502 core written
-in C++ ported from Stella (http://stella.sourceforge.net/). He promises that
-this project may spawn an Apple II emulator. We'll see what comes of that. If
-you have any news regarding an Apple II emulator, please contact me.
+in C++ ported from Stella (stella.sourceforge.net). He promises that this
+project may spawn an Apple II emulator. We'll see what comes of that. If you
+have any news regarding an Apple II emulator, please contact me.

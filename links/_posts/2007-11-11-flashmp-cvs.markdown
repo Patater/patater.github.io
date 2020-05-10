@@ -6,6 +6,6 @@ tags: link flash-carts
 permalink: /links/flashmp-cvs/
 date: 2007-11-11 23:41:13
 updated: 2010-12-19 03:36:44
-uri:
+uri: http://cvs.sourceforge.net/viewcvs.py/devkitpro/projects/nds/bootstrap/flashmp/
 ---
-  http://cvs.sourceforge.net/viewcvs.py/devkitpro/projects/nds/bootstrap/flashmp/
+The CVS code repository for FlashMP
