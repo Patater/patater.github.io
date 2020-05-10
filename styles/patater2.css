@@ -211,11 +211,6 @@ pre {
   justify-content: flex-end;
 }
 
-ul {
-  list-style-type: none;
-  line-height: 2;
-}
-
 .mash-text {
   color: #888;
   margin-left: auto;
