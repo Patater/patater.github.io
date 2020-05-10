@@ -11,7 +11,10 @@ updated: 2020-05-10 07:33:53
 ---
 <div class="warning">
 <h2>Webmaster's Note</h2>
-<p>This tutorial sucks. Don't read it. <a href="http://www.nintendoage.com/forum/messageview.cfm?catid=22&threadid=7155">Please read a real tutorial like Nerdy Nights, instead.</a> This tutorial is hosted for archival purposes and shouldn't be trusted for anything.</p>
+<p>This tutorial sucks. Don't read it. <a
+href="https://nerdy-nights.nes.science/">Please read a real tutorial like Nerdy
+Nights, instead.</a> This tutorial is hosted for archival purposes and
+shouldn't be trusted for anything.</p>
 </div>
 
 <p>This tutorial is about coding for the Nintendo Entertainment System
