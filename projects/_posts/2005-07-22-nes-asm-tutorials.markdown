@@ -7,7 +7,7 @@ title: NES ASM Tutorials
 tags: project nes asm tutorial
 author: Mike Huber
 date: 2005-07-22 00:00:00
-updated: 2010-12-19 03:36:44
+updated: 2020-05-10 07:33:53
 ---
 <div class="warning">
 <h2>Webmaster's Note</h2>
@@ -26,9 +26,30 @@ understanding the basics.</p>
 
 <p>NOTE: Info on my age WAS accurate at time of writting in 2002.</p>
 
-<ul class="posts">
+<section class="posts">
 {% assign sorted = site.tags.nes-asm-tutorials | sort: 'date', 'last' %}
+  <div class="entries">
 {% for post in sorted %}
-  <li><span>{{ post.date | date: "%Y-%b-%d" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <a class="entry" href="{{ post.url }}">
+  {% if post.thumb %}
+      <img src="{{ post.thumb }}" alt="{{ post.graphicalt }}">
+  {% elsif post.graphic %}
+      <img src="{{ post.graphic }}" alt="{{ post.graphicalt }}">
+  {% else %}
+      <img src="/images/thumb-face.png" alt="Potato Face - Non-project Image">
+  {% endif %}
+      <div class="entry-proper">
+  {% if post.short_title %}
+        <h3>{{ post.short_title }}</h3>
+  {% else %}
+        <h3>{{ post.title }}</h3>
+  {% endif %}
+        <h4 class="date">{{ post.date | date:"%Y-%m-%d" }}</h4>
+  {% if post.description %}
+        <p>{{ post.description }}</p>
+  {% endif %}
+      </div>
+    </a>
 {% endfor %}
-</ul>
+  </div>
+</section>
