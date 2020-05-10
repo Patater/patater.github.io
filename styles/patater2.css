@@ -185,9 +185,9 @@ pre {
 }
 
 .mash-footer {
-  height: 200px;
+  min-height: 200px;
   width: 100%;
-  max-width: 480px;
+  /*max-width: 480px;*/
   background-image: url('/images/patater-mash.svg');
   background-repeat: no-repeat;
   background-position: bottom center;
