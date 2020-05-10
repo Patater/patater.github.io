@@ -37,6 +37,7 @@ project in this series. I'll document some of my past projects, too.</p>
   {% else %}
         <h3>{{ post.title }}</h3>
   {% endif %}
+        <h4 class="date">{{ post.date | date:"%Y-%m-%d" }}</h4>
   {% if post.description %}
         <p>{{ post.description }}</p>
   {% endif %}
