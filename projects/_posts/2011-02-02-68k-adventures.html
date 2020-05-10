@@ -1,0 +1,47 @@
+---
+layout: post
+published: true
+id: tag:www.patater.com,2011-02-02:/68k-adventures/
+permalink: /68k-adventures/
+title: 68K Adventures
+tags: project blarg nes asm tutorial
+author: Jaeden Amero
+description: Come check out what I've done with some crazy old junk!
+date: 2011-02-02 03:34:24
+updated: 2020-05-10 06:48:32
+graphic: /images/simasimacse30-420.jpg
+graphicalt: Simasimac SE/30
+---
+<p>I've had this habit of fixing up old Macintosh computers. Whenever I
+resurrect a dead mac, or upgrade one to be super awesome, I'll document the
+project in this series. I'll document some of my past projects, too.</p>
+
+<!--break-->
+
+<section class="posts">
+  <h2 class="section">Work Log</h2>
+{% assign sorted = site.tags['68k-adventures'] | sort: 'date' %}
+  <div class="entries">
+{% for post in sorted %}
+    <a class="entry" href="{{ post.url }}">
+  {% if post.thumb %}
+      <img src="{{ post.thumb }}" alt="{{ post.graphicalt }}">
+  {% elsif post.graphic %}
+      <img src="{{ post.graphic }}" alt="{{ post.graphicalt }}">
+  {% else %}
+      <img src="/images/thumb-face.png" alt="Potato Face - Non-project Image">
+  {% endif %}
+      <div class="entry-proper">
+  {% if post.short_title %}
+        <h3>{{ post.short_title }}</h3>
+  {% else %}
+        <h3>{{ post.title }}</h3>
+  {% endif %}
+  {% if post.description %}
+        <p>{{ post.description }}</p>
+  {% endif %}
+      </div>
+    </a>
+{% endfor %}
+  </div>
+</section>
