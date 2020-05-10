@@ -19,8 +19,8 @@ project in this series. I'll document some of my past projects, too.</p>
 <!--break-->
 
 <section class="posts">
-  <h2 class="section">Work Log</h2>
-{% assign sorted = site.tags['68k-adventures'] | sort: 'date' %}
+  <h2 class="section">Adventure Log</h2>
+{% assign sorted = site.tags['68k-adventures'] | sort: 'date' | reverse %}
   <div class="entries">
 {% for post in sorted %}
     <a class="entry" href="{{ post.url }}">
