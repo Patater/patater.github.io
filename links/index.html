@@ -61,15 +61,15 @@ have any suggestions, dead links to report, additions or whatnot, feel free to
 
 {% assign sorted = site.tags.link | sort: 'title' %}
 
-<div>
-<ul class="link-categories">
+<h2 class="section">Tags</h3>
+<nav class="link-categories">
 {% for tag in page.possibletags %}
-<li><a href="#{{ tag.tag }}">{{ tag.name }}</a></li>
+  <a href="#{{ tag.tag }}">{{ tag.name }}</a>
 {% endfor %}
-</ul>
-</div>
+</nav>
 
 <div>
+<h2 class="section">Links</h3>
 {% for tag in page.possibletags %}
 <a id="{{ tag.tag }}"></a>
 <section class="linkzors">
