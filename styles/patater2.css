@@ -106,17 +106,18 @@ img {
   display: flex;
   flex-flow: row wrap;
   /*justify-content: center;*/
-  max-width: 400px;
   margin-bottom: 30px;
   border-bottom: 4px solid #839929;
   color: #F4F4F4;
 }
 
 .entry {
+  max-width: 400px;
   background-color: #999559;
   padding: 0;
+  margin-top: 0;
   margin-left: 0;
-  margin-right: 0;
+  margin-right: 16px;
   margin-bottom: 16px;
   border-radius: 8px;
   width: 100%;
@@ -186,6 +187,7 @@ pre {
 .mash-footer {
   height: 200px;
   width: 100%;
+  max-width: 480px;
   background-image: url('/images/patater-mash.svg');
   background-repeat: no-repeat;
   background-position: bottom center;
