@@ -91,13 +91,18 @@ img {
   height: 100%;
 }
 
-/*
-.logo:before {
-  content: "Patater";
-  text-transform: uppercase;
-  color: #000910;
+.banner {
+  height: 80px;
+  width: 200px;
+  display: inline-block;
+  float: right; /* bleh. lern2grid, man. */
+  background-image: url('/images/patater-mast.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  margin-right: 86px;
+  margin-top: 20px;
 }
-*/
 
 .logo {
   width: 80px;
@@ -106,7 +111,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left top;
-  margin-left: 20px;
+  margin-left: 210px;
 }
 
 .content {
