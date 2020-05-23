@@ -262,3 +262,10 @@ pre {
   width: 5px;
   height: 5px;
 }
+
+@media (min-width: 1003px) {
+  .site {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
