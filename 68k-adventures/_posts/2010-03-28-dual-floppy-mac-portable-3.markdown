@@ -5,7 +5,7 @@ permalink: /dual-floppy-mac-portable-3/
 title: Building a Dual Floppy Mac Portable - Part 3
 author: Jaeden Amero
 date: 2010-03-28 04:18:27
-updated: 2011-02-04 04:22:27
+updated: 2021-09-12 19:42:58
 sitemappriority: 0.5
 categories: 68k-adventures
 tags: 68k-adventures 68k 68000 mac macintosh macintosh-portable dual floppy
@@ -20,7 +20,7 @@ language: en
 
 <br />
 
-<a href="/files/pictures/macportable_df-dual_bracketed_floppy_side.jpg" class="postlink"><img src="/files/pictures/thumb/macportable_df-dual_bracketed_floppy_side.jpg" alt="Dual Bracketed Floppy Site" /></a>
+<a href="/files/pictures/macportable_df-dual_bracketed_floppy_side.jpg" class="postlink"><img src="/files/pictures/thumb/macportable_df-dual_bracketed_floppy_side.jpg" alt="Dual Bracketed Floppy Side" /></a>
 
 <p>So most of my problems were solved by this guy. There are some amazing people out there that the English speaking world just doesn't know about due to all of our search queries being in English. All we ever see of the Internet is the English stuff, but the Internet is truly global. I need to send this guy a big thank you after the project is done (so that I can send him pictures of it completed).</p>
 
