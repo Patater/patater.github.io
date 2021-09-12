@@ -7,7 +7,7 @@ liquid:
   error_mode: strict
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 encoding: utf-8
 permalink: pretty
 relative_permalinks: false
