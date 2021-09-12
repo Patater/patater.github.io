@@ -11,6 +11,8 @@ layout: default
 <a href="http://openlibrary.org/isbn/{{ page.isbn }}">
 {% elsif page.olid %}
 <a href="http://openlibrary.org/works/{{ page.olid }}/">
+{% else %}
+<a href="https://openlibrary.org/search?q={{ page.title | url_encode }}&mode=everything">
 {% endif %}
 {% assign image_found = false %}
 {% if page.isbn %}
