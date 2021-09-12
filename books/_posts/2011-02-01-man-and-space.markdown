@@ -5,6 +5,7 @@ permalink: /books/man-and-space/
 date: 2011-02-01 00:51:49
 updated: 2011-02-01 00:51:49
 asin: B0006CL6Z0
+olid: OL5921170M
 tags: book
 ---
 I found this book in the waste bin at college. It is a nice old picture book

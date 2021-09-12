@@ -5,6 +5,7 @@ permalink: /books/physics-for-scientists-and-engineers-vol-1/
 date: 2011-02-01 02:26:04
 updated: 2011-02-01 02:26:04
 asin: 053404736X
+isbn: 9780534047368
 tags: book physics textbook
 ---
 This was the textbook for my introductory college physics course. It is very

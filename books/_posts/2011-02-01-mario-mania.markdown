@@ -5,6 +5,7 @@ permalink: /books/mario-mania/
 date: 2011-02-01 00:53:27
 updated: 2011-02-01 00:53:27
 asin: B000BPL42C
+iid: 8748367
 tags: book mario nintendo
 ---
 This was the most beat up magazine at my local library growing up. Hundreds of

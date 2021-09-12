@@ -7,11 +7,26 @@ layout: default
 </div>
 
 <div class="book">
+{% if page.isbn %}
 <a href="http://openlibrary.org/isbn/{{ page.isbn }}">
+{% elsif page.olid %}
+<a href="http://openlibrary.org/works/{{ page.olid }}/">
+{% endif %}
 {% assign image_found = false %}
-{% if page.isbn %}{% for file in site.static_files %}{% if file.name contains page.isbn and file.name contains '-L' %}{% assign image_found = true %}
+{% if page.isbn %}
+{% for file in site.static_files %}{% if file.name contains page.isbn and file.name contains '-L' %}{% assign image_found = true %}
   <img src="{{ file.path }}" alt="Book Cover - {{ page.title }}"/>
-{% endif %}{% endfor %}{% else %}{% assign image_found = false %}{% endif %}
+{% endif %}{% endfor %}
+{% elsif page.iid and image_found == false %}
+{% for file in site.static_files %}{% if file.name contains page.iid and file.name contains '-L' %}{% assign image_found = true %}
+  <img src="{{ file.path }}" alt="Book Cover - {{ page.title }}"/>
+{% endif %}{% endfor %}
+{% elsif page.olid and image_found == false %}
+{% for file in site.static_files %}{% if file.name contains page.olid and file.name contains '-L' %}{% assign image_found = true %}
+  <img src="{{ file.path }}" alt="Book Cover - {{ page.title }}"/>
+{% endif %}{% endfor %}
+{% else %}
+{% assign image_found = false %}{% endif %}
 {% if image_found == false %}
   <img src="/images/cover-na.png" alt="Book Cover - {{ page.title }}">
 {% endif %}

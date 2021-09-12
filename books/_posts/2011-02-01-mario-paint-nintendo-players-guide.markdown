@@ -5,6 +5,8 @@ permalink: /books/mario-paint-nintendo-players-guide/
 date: 2011-02-01 00:58:15
 updated: 2011-02-01 00:58:15
 asin: B000FEHTA0
+olid: OL20079414W
+iid: 8750892
 tags: book
 ---
 I had been thinking about getting this guide for a while, when all of a sudden

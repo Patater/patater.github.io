@@ -18,9 +18,21 @@ or like a particular book.</p>
 {% for book in sorted %}
 {% assign image_found = false %}
     <a class="entry" href="{{ book.url }}">
-{% if book.isbn %}{% for file in site.static_files %}{% if file.name contains book.isbn and file.name contains '-M' %}{% assign image_found = true %}
+{% if book.isbn %}
+{% for file in site.static_files %}{% if file.name contains book.isbn and file.name contains '-M' %}{% assign image_found = true %}
         <img src="{{ file.path }}" alt="Book Cover - {{ book.title }}" />
-{% endif %}{% endfor %}{% else %}{% assign image_found = false %}{% endif %}
+{% endif %}{% endfor %}
+{% elsif book.iid and image_found == false %}
+{% for file in site.static_files %}{% if file.name contains book.iid and file.name contains '-M' %}{% assign image_found = true %}
+        <img src="{{ file.path }}" alt="Book Cover - {{ book.title }}"/>
+{% endif %}{% endfor %}
+{% elsif book.olid and image_found == false %}
+{% for file in site.static_files %}{% if file.name contains book.olid and file.name contains '-M' %}{% assign image_found = true %}
+        <img src="{{ file.path }}" alt="Book Cover - {{ book.title }}"/>
+{% endif %}{% endfor %}
+{% else %}
+{% assign image_found = false %}
+{% endif %}
 {% if image_found == false %}
         <img src="/images/cover-na.png" alt="Book Cover - {{ book.title }}" />
 {% endif %}
