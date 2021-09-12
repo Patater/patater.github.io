@@ -14,7 +14,11 @@ relative_permalinks: false
 plugins:
   - jekyll-sitemap
 
-exclude: ['Gemfile', 'Gemfile.lock', 'README', 'Makefile']
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - README
 
 defaults:
   -
