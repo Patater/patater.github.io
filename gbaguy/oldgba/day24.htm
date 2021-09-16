@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>GBA ASM - Day 24</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 24 - Compiling With C</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>Compiling With C?</b></h2>
+<p style="color: green;"><pre><b>
+	Yep, today we will use <u>both</u> ASM and C++ functions in seperate files and compile
+them both.
+	
+<h3 align="center" style="color: LightCoral;"><b>The C++ File</b></h3>
+	In test.cpp :
+
+/* CODE START */
+#include "C:\devkitadv\include\gba.h"
+
+extern "C" {
+void SetThePixel(); /* ASM function uses C conventions */
+}
+
+int main() {
+	REG_DISPCNT = 0x403; /* mode 3 */
+	SetThePixel(); /* our ASM function */
+	while((*KEYS)&KEY_START);  /* Wait for start key */
+	REG_DISPCNT = 0; /* no mode (dot will disappear) */
+	while(1);
+	return 0;
+}
+/* CODE END */
+
+<h3 align="center" style="color: LightCoral;"><b>The ASM File</b></h3>
+	In test.S :
+
+@-- CODE START --@
+	.global SetThePixel
+SetThePixel:
+	ldr r1,=0x6000200 
+	ldr r2,=0x00FF    
+	str r2,[r1]      @ red dot somewhere on the screen
+	bx lr  @return;
+@-- CODE END --@
+
+Note: Put a new line at the end of both of the files.
+Note2: Having the char '\' in a comment assembles, but the ROM doesn't run then, wierd...
+
+<h3 align="center" style="color: LightCoral;"><b>Compiling</b></h3>
+Assuming both code files are in the same dir and C:\devkitadv\bin\ is in your path.
+To compile:
+
+	gcc test.S test.cpp
+	objcopy -O binary a.out test.gba
+
+Then run TEST.GBA to make sure it works.
+
+<h3 align="center" style="color: LightCoral;"><b>Day In Review</b></h3>
+
+	References:
+		<a href="http://forum.gbadev.org/viewtopic.php?t=1740">GBADev.ORG Forum Post on this topic</a>
+		<a href="http://sources.redhat.com/ml/crossgcc/1998-q2/msg00123.html">Link</a> from that post about why
+		the "extern "C"" is needed.
+
+	Hope you liked it!,
+		- GBAGuy
+
+<center><a href="gbaasm.htm">Intro</a> - Day 25</center>
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>

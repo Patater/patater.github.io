@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>GBA ASM - Day 11</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 11 - Variables And Work RAM</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>Why?</b></h2>
+<p style="color: green;"><pre><b>
+	
+	Originally, Day 11 was going to be about playing a wav with direct sound. 
+I then realized one important thing that I have been leaving out of every piece of
+code I've written so far. I've used them for ages, but I never wrote anything on how
+to use them. This is the story of that mysterious area of memory that everyone's 
+wondering about Work RAM @ 0x3000000 . We use this space for little (32bits actually)
+variables, they're not exactly variables, but this is as close to variables as we're
+going to get as Assembly Language Programers.
+
+<h2 align="center" style="color: LightCoral;"><b>How This Is Done.</b></h2>
+
+        First things first though. If you've programmed with C or QBasic or anything, you
+know that variables have types. Well, I'm going to burst your bubble now. Our variables are
+always a 32bit number (not always actually, they could be byte sized or 16bits, more later).
+That's right, no type, consider it almost like a CPU register except that I takes 2 lines
+of code to access most of the time.
+
+	To declare a variable, it goes like this:
+
+<i>variable_name</i> @DCD <i>initial_value</i>
+
+	So if I wanted to create a variable called num1 with
+and initial value of 0x0000F6A2, I'd go like tis:
+
+	num1 @DCD 0x0000F6A2
+
+Neat, isn't it?
+
+<h2 align="center" style="color: LightCoral;"><b>A Few Problems</b></h2>
+
+	If you're really crafty, maybe you noticed the two problems with the way we
+declare variables in the previous section. They are:
+
+	1.  The variable is in ROM right now.
+	2.  Declaring a variable in ROM will cause
+		the CPU to execute the bytes defined
+		in it's initialization.
+
+	I have a confession to make. I've really aready told you this, but here's me
+outright saying it: Our variables are nothing more than labeling an address in memory
+possibly letting Goldroad give it an initial value. I just really want to get the point
+across. Pretend I'm a hypnotist: <sub>U</sub> - <sup>N</sup> - <sub>D</sub> - <sup>E</sup> - <sub>R</sub> - <sup>S</sup> - <sub>T</sub> - <sup>A</sup> - <sub>N</sub> - <sup>D</sup>.
+
+Hehehe. Guess I got a little silly there. Anyway, getting rid of these two highly related
+problems is as easy as adding two lines of Goldroad Instructions. Goldroad instructions
+are words that start in '@'. The lines of code we add to this are:
+
+@textarea 0x3000000 and @endarea.
+
+So now we have this:
+
+@textarea 0x3000000
+num1 @DCD 0
+@endarea
+
+Notice that this time I initialized the memory location (our variable) to zero (0).
+I like to put all my variables in the same @textarea block as if you use another like so:
+
+<i>In addition to the last code.</i>
+
+@textarea 0x3000000
+num2 @DCD 0x9
+@endarea
+
+Note that now you'll have two variables that are EXACTLY THE SAME as they are both located
+at the same point in memory. Modify one and try to access the other and you'll find that it's
+value has changed, they are both aliases to the same point in memory. I don't know if Goldroad
+gives this an error or not or if it actually works and Goldroad advances the memory so that
+they both don't alias the same memory location. So bottom line:
+PUT ALL YOUR "VARIABLES" IN THE SAME @TEXTAREA BLOCK!
+
+<h2 align="center" style="color: LightCoral;"><b>Setting A WRAM Variable's Value</b></h2>
+
+	Now that we've declared it, we really ought to set it's value. So here's what we
+need to do line-by-line to set a WRAM variable's value:
+Assume the variable's name is num1.
+Also assume that r1 has the value we want to set num1 with.
+
+ldr r0,=num1     ; get's the address of num1 in r0.
+str r1,[r0]    ; puts the value in r1 into memory at the address in r0.
+; remember that our variables are actually aliases for memory addresses.
+
+That's it. Setting is rather short. Getting is a bit longer.
+So much for line-by-line. I didn't remember that the code is short. :)
+
+<h2 align="center" style="color: LightCoral;"><b>Getting A WRAM Variable's Value</b></h2>
+
+	Getting, well, how 'bout I just do it and explain it with comments?
+
+Here it is:
+
+ldr r0,=num1    ; get's the address of num1 in r0
+ldr r1,[r0]     ; loads r1 with the value at the memory address 
+; in r0, in this case r0 has the address of our variable in WRAM
+; so boom r1 has num1's value in it.
+
+Notice that that last line of code is the EXACT opposite of the SToRe instruction as that
+if we went: str r1,[r0] , we'd be putting r1 into memory at r0. Instead of <i>taking</i>
+the value of memory at r0 and putting it into r1. So you see they are reverse instructions.
+
+That's really all you need to know about this. Not that hard, but important.
+If you need more help with this, ask me and I'll update this tutorial with
+a simple (really simple small demo) to help illustrate.
+	
+<h2 align="center" style="color: LightCoral;"><b>This Day In Review</b></h2>
+
+	I'm sorry if you expected to be able to copy 'n paste some code to get some
+cool output or something. But it seemed to me that using Work RAM is rather important
+especially in a large game or something where even having 13 CPU registers becomes not
+enough.
+
+	That's all for today, hope you likey.
+
+	-Mike H a.k.a GbaGuy
+
+	"I'll cut you in for a piece of the action."
+	- Kirk to a gangster. "A Piece of The Action"
+	- Star Trek The Original Series
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day12.htm">Day 12</a></center>
+
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>

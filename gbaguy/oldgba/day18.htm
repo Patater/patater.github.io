@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>GBA ASM - Day 18</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 18 - About The BIOS</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>BIOS?</b></h2>
+<p style="color: green;"><pre><b>
+	
+	Yes, BIOS. BIOS stands for Basic Input Output System, I don't know why they
+called what the GBA has a BIOS, it doesn't do any real screen I/O. The GBA BIOS is more
+like a small utility library with several useful functions that can be called.
+
+<h2 align="center" style="color: LightCoral;"><b>What the BIOS Has.</b></h2>
+
+The BIOS has several functions that we are interested in, they are:
+
+	Sqrt - Square Root Function, puts Square Root of r0 in r0.
+	Div - Divide Function, divides r0 by r1 and puts the answer in r0.
+		Also returns other things in r1 and r2, we'll get to those in Day 20.
+	SoftReset - I suppose we could try doing this one tomorrow, maybe.
+
+To call a BIOS function, you just fill certain CPU registers and then call the
+function with an instruction that we'll discuss tomorrow.
+
+<h2 align="center" style="color: LightCoral;"><b>Where is the BIOS?</b></h2>
+
+	The BIOS starts at 0x0000000 in memory and goes until 0x1000000 (I think).
+The BIOS also contains several decompression routines and some kind of routines
+to set rotation/scaling properties for both sprites and BGs.
+
+<h2 align="center" style="color: LightCoral;"><b>Day In Review</b></h2>
+
+	That's it for today, tomorrow we'll actually call a function.
+
+	Until Then,
+		-Mike H a.k.a GbaGuy
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day19.htm">Day 19</a></center>
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>

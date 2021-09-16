@@ -1,0 +1,304 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0046)http://www.icarusindie.com/kezz/java/Swing.htm -->
+<!-- saved from url=(0022)http://internet.e-mail --><HTML><HEAD><TITLE>Programing With Swing</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<STYLE>BODY {
+	FONT-SIZE: 13px; COLOR: white; BACKGROUND-COLOR: black
+}
+H4 {
+	COLOR: lavender
+}
+H2 {
+	COLOR: pink
+}
+H1 {
+	COLOR: skyblue
+}
+TD {
+	BACKGROUND-COLOR: green
+}
+TABLE {
+	BACKGROUND-COLOR: orange
+}
+CODE {
+	COLOR: black; BACKGROUND-COLOR: silver
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2800.1141" name=GENERATOR></HEAD>
+<BODY>
+<H1 align=center>Programing With Swing</H1>
+<H4 align=center>Originally by: Mike Huber a.k.a vbnetmike, gbaguy</H4><PRE><H2 align=center>Intro</H2>
+<P>
+	Swing or otherwise known as the Java Foundation Classes, is a group of GUI classes 
+very similar to the AWT (Abstract Window Toolkit). What makes it different however is that
+while every AWT component has it's native counterpart, Swing components don't and are totally
+made up of Java code. This is what makes AWT component a "heavyweight" and a Swing/JFC
+component "lightweight". If you've ever tried to create a Windows program you know how hard it
+can be to make a nice looking window without having messy and long code. Swing provides for 
+almost everything you'd want for your windows. So having talked a little about Swing, let's get
+coding! 
+</P>
+
+
+<H2 align=center>Your Relationship With JFrame</H2>
+<P>
+	Remember to import these three packages when working with Swing:
+<CODE>
+javax.swing.*   
+java.awt.*      
+java.awt.event.*
+</CODE>
+	A JFrame object is the physical window that you'll be working with in the Swing API.
+Making a window appear on the screen is easy enough. Here's the code:
+
+<CODE>JFrame frame = new JFrame("Title Bar Text");        
+frame.setSize(256,256);                             
+frame.pack();                                       
+frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+frame.show();                                       </CODE>
+
+I think that code is relatively simple, all it does is create a new JFrame with a size of
+256x256, tell Java to exit when the JFrame is closed and shows the window.
+</P>
+
+<H2 align=center>JFrames are always a (J)Pane!</H2>
+<P>
+	You probably want to get started putting components on your brand-new form. Maybe
+you've even figured out how to and you've discovered that is not what you bargained for. Well,
+what you don't know is that you need to add a JPanel to the JFrame's contentpane before adding
+components to the JPanel. Here's what the code looks like:
+<CODE>
+JFrame frame = new JFrame("Title Bar Text");        
+JPanel panel = new JPanel();                        
+frame.setSize(256,256);                             
+frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+frame.getContentPane().add(panel);                  
+frame.pack();                                       
+frame.show();                                       
+</CODE>
+	Now we are getting somewhere... You probably have already ran this code, so you've
+discovered that it doesn't look any different than the last example, and that's because JPanels
+are just containers for components, the different types of panes are added to the JFrame's
+contentpane and then components are added to the JPanel. Other than Layout objects which I tell
+you about later, that's all there is for your basic <B>JPanel</B>.
+</P>
+
+<H2 align=center>JButton, JButton, Who has the JButton?</H2>
+<P>
+	Here's where the fun comes in, yep, we are going to add
+a component, a JButton. You know what a button is right? One of those funky little rectangles 
+that you click on and they go down and then pop back up again. Enough talk, you're probably
+crapping your-self in anticipation, so here we go!
+
+<CODE>
+JFrame frame = new JFrame("Title Bar Text");        
+JPanel panel = new JPanel();                        
+JButton button1 = new JButton("Button Text");       
+frame.setSize(256,256);                             
+frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+frame.getContentPane().add(panel);                  
+panel.add(button1);                                 
+frame.pack();                                       
+frame.show();                                       
+</CODE>
+	And there it is ladies and gentleman, two count 'em 2
+new lines of code to create and add a JButton to our JPanel. Notice that when we added the 
+panel, we want to add it to the JFrame's contentpane and when we want to add the JButton, we
+just plain add() it to the JPanel. This isn't exactly rocket science, if rocket science is
+what you want, go <A href="http://www.nasa.gov/">HERE</A>.
+</P>
+
+<H2 align=center>JLabel that, would ya?</H2>
+<P>
+	Alright, now that you know how to add components to 
+the JPanel, I'm just going to tell you how to use the constructor method. I goes like this:
+<CODE>
+JLabel label1 = new JLabel("Label Text");
+</CODE>
+	If you don't understand that, then you shouldn't be
+reading this, go read up on classes and constructor methods. After you create the JLabel, 
+just add it to the JPanel like we did for JButton.
+</P>
+
+<H2 align=center>Component Layout</H2>
+<P>
+	You may wonder what purpose having to add components to a JPanel serves.
+JPanels provide the means to layout your components. You choose the layout manager in the
+constructor for the JPanel. The most common Layouts are:
+
+<CENTER><TABLE border=1><TT><FONT size=4>Component Layout Managers</FONT></TT>
+<TBODY><TR><TD><B>FlowLayout</B></TD><TD><B>BorderLayout</B></TD></TR><TR><TD><B>BoxLayout</B></TD><TD><B>(One that i can't remember)</B></TD></TR><TR><TD><B>GridLayout</B></TD><TD><B>GridBagLayout</B></TD></TR></TBODY></TABLE></CENTER>
+
+	The following does not describe the full use of all the layout managers
+and should not be considered the final word on layout managers. I only describe the first
+two (2) which are the easiest to use.
+
+The code needed to use a layout manager is like so:
+<CODE>
+JPanel pane = new JPanel( new BorderLayout() );
+</CODE>
+and then to add a control to the JPanel:
+<CODE>
+pane.add(button1, BorderLayout.CENTER);  // possibilities are: NORTH, EAST, WEST, CENTER, SOUTH
+</CODE>
+
+And that is how to use BorderLayout. To use FlowLayout is easy as it is the default and you
+have been using it without even realizing it when we were learning to add components.
+
+<CENTER>To learn how to use the other layout managers go get the great book:
+Java Foundation Classes In A Nutshell</CENTER><P></P><H2 align=center>Hey, My JFrame Just Gave Birth! (MDI Apps)</H2>
+<P>
+	MDI apps or Multiple Document Interface is a common thing to see in todays programs.
+For instance in Microsoft Word, every new document you make is shown as a small window inside
+the big one. That is MDI. To use MDI in a Swing program you must use a JDesktopPane in place of
+the usual JPanel on your JFrame. To make the actual small windows use JInternalFrame(s). A
+JInternalFrame is used just like a JFrame with a few differences of how you create it. Other
+than creating the JInternalFrame, you still add a JPanel to its contentpane and add components
+to the JPanel. How 'bout we take a look at the code to add the JDesktopPane to the JFrame ?
+
+Here's the code:
+<CODE>
+JFrame frame = new JFrame("MDI App With Swing");
+JDesktopPane desktop = new JDesktopPane();      
+frame.setSize(560,560);                         
+frame.getContentPane().add(desktop);            
+frame.pack();                                   
+frame.show();                                   
+</CODE>
+That's easy enough, how 'bout adding that JInternalFrame ?
+Here it is:
+<CODE>
+JFrame frame = new JFrame("MDI App With Swing");                               
+JDesktopPane desktop = new JDesktopPane();                                     
+JInternalFrame intframe = new JInternalFrame("Title Text",true,true,true,true);
+frame.setSize(560,560);                                                        
+intframe.setSize(256,256);                                                     
+frame.getContentPane().add(desktop);                                           
+desktop.add(intframe);                                                         
+intframe.pack();                                                               
+intframe.show();                                                               
+frame.pack();                                                                  
+frame.show();                                                                  
+</CODE>
+
+	Looking at this code you are probably thinking, "Hey what is those extra
+trues for when intframe is made?", to answer your question: those trues tell Java that we want
+the window to be able to be resized, maximized, minimized and closed. So far so good ,but now
+we need to add a JPanel and a JButton to that JInternalFrame. How is this done? Answer: Just 
+like usual, just add the JPanel to the JInternalFrame's contentpane and then add a JButton to
+the JPanel. Wanna see the code? yes?
+
+Here it is:
+<CODE>
+JFrame frame = new JFrame("MDI App With Swing");                               
+JDesktopPane desktop = new JDesktopPane();                                     
+JInternalFrame intframe = new JInternalFrame("Title Text",true,true,true,true);
+JPanel pane = new JPanel();                                                    
+JButton button1 = new JButton("Button Text");                                  
+frame.setSize(560,560);                                                        
+intframe.setSize(256,256);                                                     
+intframe.getContentPane().add(pane);                                           
+pane.add(button1);                                                             
+frame.getContentPane().add(desktop);                                           
+desktop.add(intframe);                                                         
+frame.pack();                                                                  
+frame.show();                                                                  
+intframe.pack();                                                               
+intframe.show();                                                               
+</CODE>
+	Yep, we're getting into longer and longer code samples now. But, if
+you look the code is still just as hard as when we started. It hasn't gotten much harder!
+</P>
+
+<H2 align=center>GUI Look And Feel</H2>
+<P>
+	Look And Feel is very important, it defines how components look and
+act (feel) . For instance, what you've been seeing when you have been putting components
+on a JPanel is the Java Look And Feel. The JButtons don't look normal, do they? Nope. Just like
+how Windows program looks different from a Java or Mac program, that's look and feel. A Java 
+program typically can have one of the 5 or so possible LAFs(Look And Feels) :
+<LIST bulleted="true">
+<LI>Use the current OS's Look and Feel.
+<LI>Use the Java (a.k.a Metal) Look and Feel.
+<LI>Use the Motif (UNIX) Look and Feel.
+<LI>Use the Windows LAF (ONLY ON WINDOWS).
+<LI>Use the Mac LAF (ONLY ON MAC).
+</LIST>
+
+	To set the look and feel BEFORE constructing any components, use the UIManager class.
+It contains the setLookAndFeel(String classname) method that (as shown) takes a string that
+is the class name of the LAF that you want to use for your program.
+
+Here's the code to use the Motif LAF:
+<CODE>
+Try {                                                                 
+UIManager.setLookAndFeel("com.sun.java.swing.motif.MotifLookAndFeel");
+}                                                                     
+catch(ClassNotFoundException e) {}                                    
+</CODE>
+Here's the code to use the current OS's LAF:
+<CODE>
+Try {                                                               
+UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+}                                                                   
+catch(ClassNotFoundException e) {}                                  
+</CODE>
+
+The Windows LAF Class Name is com.sun.java.swing.windows.WindowsLookAndFeel
+The Mac LAF Class Name is com.sun.java.swing.mac.MacLookAndFeel
+The Java LAF Class Name is com.sun.java.swing.plaf.metal.MetalLookAndFeel
+To use the Java LAF (even though it IS the default) use 
+the method UIManager.getCrossPlatformLookAndFeelClassName()
+
+	That's it for Look and Feel. If you manage to find other LAFs on the web. They are used
+in the same way, just find out its class name!<P></P><H2 align=center>Listening For Action</H2>
+<P>
+	To Listen for an action like a mouse click or key press you use a Listener class.
+There are several different types of Listener classes and this tutorial only talks about 1
+of them. To find out about the rest, consult a Swing Reference book like the one suggested
+earlier. I like to use my Listeners as internal classes, so if you don't like that, TOO BAD!
+
+	We will be using ActionListener to learn how to use Listener objects. 
+ActionListener listens for a mouse click over a component. We will use it with a JButton to 
+do something when the JButton is clicked.
+
+Here's the code to get a JFrame with a JPanel and a JButton:
+<CODE>
+JFrame frame = new JFrame("ActionListener Test");   
+JPanel panel = new JPanel();                        
+JButton button1 = new JButton("Click Me!");         
+frame.setSize(256,256);                             
+frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+frame.getContentPane().add(panel);                  
+panel.add(button1);                                 
+frame.pack();                                       
+frame.show();                                       
+</CODE>
+Now we want to add a new ActionListener to JButton button1 :
+<CODE>
+button1.addActionListener(new ActionListener() {
+public void actionPerformed(ActionEvent e1) {   
+// CODE TO RUN WHEN BUTTON CLICKED GOES HERE    
+}});                                            
+</CODE>
+	I realize that is probably a little simplistic, but we want to keep things
+simplistic, don't we? Of course we do! So all this code does is make an internal class of
+an ActionListener with it's method actionPerformed(ActionEvent e1) that runs when the
+ActionListener detects (hears?) an action such as our button being clicked.
+That's the basics of Action Listening, for more, go buy a good book. Get off the computer!
+Go do something, ride your bicycle, or something! A book is better for your eyes anyway than
+the RF Radiation coming from this screen!
+
+whew, there's my rant for this section.
+</P>
+</LI></PRE>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</BODY></HTML>

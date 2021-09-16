@@ -1,0 +1,227 @@
+<HTML>
+<head>
+<title>GBA ASM - Day 6</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 6 - Simple Sound Effects</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>About GBA Sound Channels</b></h2>
+<p style="color: green;"><pre><b>
+	
+	The GBA has 6 sound channels altogether. Today we will learn only about the
+first 4 (1-4) channels that are the same ones used by the internal GBC on the GBA. The
+other 2 channels are direct sound channels capable of playing converted wav files, we 
+will not cover these today. NOTE: direct sound refers only to the adopted/semi-official
+name of the GBA's sound channels 5&6 and is NO reference to DirectSound which is part
+of MicroSoft's great multimedia DirectX Multimedia Library for Windows. 
+
+So we can take advantage of some of my own coded macros and the sound defines,
+please download <a href="sound.h">sound.h</a>, now.
+
+	Today, we learn what it takes to get something out of the speakers (not much).
+The steps required to get something out of sound channels 1  or 2 or 3 are:
+
+<ol>Steps for Sound Generation
+<li>Enable the entire sound circut. (I provide SoundOn macro)</li>
+
+<li>Enable the sound channel that you want.
+(I provide macro Sx_Enable, where 'x' is channel you want enabled.)</li>
+
+<li>Load the REG_SOUNDxCNT_L with correct value. (gotta do yourself :-))</li>
+
+<li>Load the REG_SOUNDxCNT_H with correct value. (gotta do yourself) </li>
+
+<li>Load the REG_SOUNDxCNT_X with correct value. (you) </li>
+</ol>
+
+That's it, and believe me, it's not a whole lot; but it is sorta confusing.
+
+<h2 align="center" style="color: LightCoral;"><b>Channel 1</b></h2>
+
+
+First, I'll give you a working program that generates a sound through Sound 1.
+Then I'll teach from the code.
+
+;-- CONVERTED TO ASM BY HAND FROM BELOGIC.COM WITH MODIFICATIONS --;
+@include screen.h  ; \
+@include sound.h   ;  - I just include a bunch for the heck of it, but make sure
+@include keypad.h  ; /                     sound.h is included.
+@textarea
+
+SoundOn    ; Step 1: My macro that turns the sound circut on in REG_SOUNDCNT_X
+       ; note no 'x' for sound channel number. REG_SOUNDCNT_X controls entire circut.
+
+
+S1_Enable     ; Step 2: My macro to enable Sound Channel 1. S2_Enable is channel 2... to 4.
+
+ldr r1,=REG_SOUND1CNT_L   ; in these two lines I do steps 3&4 at once. since these
+ldr r0,=0xf7800056     ; registers are 16bit, we can do both at once.
+str r0,[r1]         ; store data for steps 3&4.
+
+ldr r1,=REG_SOUND1CNT_X    ; Step 5: Load the register.  
+ldr r0,=0x8400    ; This register has something to do with choosing
+str r0,[r1]  ;between the different stuff a channel can do such as Square wave or
+; envelope functions setting REG_SOUNDxCNT_X again will cause the sound to be played
+; again. 
+
+infin  ;  \
+         ; - our typical infinite loop.
+b infin ; /
+;-- STOP COPYING HERE --;
+
+I've just done some checking on the sound registers at <a href="http://www.belogic.com/">BeLogic.Com</a> and
+I never realized this. Based on the register list at BeLogic, sound channels 2 and 4 don't
+have a REG_SOUNDxCNT_X register and their REG_SOUNDxCNT_H and REG_SOUNDxCNT_L registers are
+16bits too, but are separated in memory by 2 bytes to we can write to them easy and we don't
+have to do Steps 3&4 at once and can do separate loads for the CNT_L and CNT_H regs.
+
+Appearantly, Channel 3 is a sampled sound player, so I won't talk any more about 3.
+
+Channel 1 as you can tell is a very nice sweep (envelope) sound generator. As I don't actually
+understand the equations used at BeLogic, I can't (at all) explain them. What I have done
+to get a sound, is mess with the values used until I either get a good enough effect or
+I have to look at BeLogic for the bit layouts (and I still might not get it).
+
+<h2 align="center" style="color: LightCoral;"><b>Channel 2</b></h2>
+
+
+Channels 2 is the same as channel 1, but only can do square waves so we don't need a 
+REG_SOUND2CNT_X register. Here's the same code modified to put a sound out on Channel 2:
+
+;-- CONVERTED TO ASM BY HAND FROM BELOGIC.COM WITH MODIFICATIONS --;
+@include screen.h  ; \
+@include sound.h   ;  - I just include a bunch for the heck of it, but make sure
+@include keypad.h  ; /                     sound.h is included.
+@textarea
+
+SoundOn    ; Step 1: My macro that turns the sound circut on in REG_SOUNDCNT_X
+       ; note no 'x' for sound channel number. REG_SOUNDCNT_X controls entire circut.
+
+
+S2_Enable     ; Step 2: My macro to enable Sound Channel 2. 
+
+ldr r1,=REG_SOUND2CNT_L   ; Step 3: with channel 2 we don't need to bunch up steps 3&4.
+ldr r0,=0xff80     ; registers are still 16bit, but we have breathing room in memory.
+str r0,[r1]         ; store data for step 3.
+
+ldr r1,=REG_SOUND2CNT_H   ; Step 4:   
+ldr r0,=0xf400    ; I'd imagine that to replay a sound on Channel 2, you'd need to
+str r0,[r1]  ; set this register again or if that doesn't work, both L and H.
+
+; No Step 5 needed in Channel 2 because there isn't a REG_SOUND2CNT_X register.
+; Channel 2 (and 4) doesn't present the problem we had with chan#1, because the designers
+; of the memory system were nice enough to give us two(2) extra bytes so we can do
+; our famous 32bit SToRes.
+
+infin  ;  \
+         ; - our typical infinite loop.
+b infin ; /
+;-- STOP COPYING HERE --;
+
+With channels 2 & 4, the REG_SOUNDxCNT_L and REG_SOUNDxCNT_H registers don't
+seem to be actually 32bits, they just are separated in memory by two(2) bytes making them
+writable with our 32bit store operations. Please note, however, that channel 3, even though
+we don't use it here DOES have the same problem as chan#1.
+
+<h2 align="center" style="color: LightCoral;"><b>Channel 4</b></h2>
+
+
+Now to get something from Channel 4. Channel 4 is a pseudo-random noise generator.
+For the code, we just replace all the '2's in the register names with 4 and we're good
+to go:
+
+;-- CONVERTED FROM PREVIOUS EXAMPLE, CHANGED AS DESCRIBED ABOVE --;
+;-- CODE SHOULD WORK AS FAR AS I CAN TELL, BUT I CAN'T GET IT TO. --;
+
+@include screen.h  ; \
+@include sound.h   ;  - I just include a bunch for the heck of it, but make sure
+@include keypad.h  ; /                     sound.h is included.
+@textarea
+
+SoundOn    ; Step 1: My macro that turns the sound circut on in REG_SOUNDCNT_X
+       ; note no 'x' for sound channel number. REG_SOUNDCNT_X controls entire circut.
+
+
+S4_Enable     ; Step 2: My macro to enable Sound Channel 4. 
+
+ldr r1,=REG_SOUND4CNT_L   ; Step 3: with channel 4 we don't need to bunch up steps 3&4.
+ldr r0,=0xf700     ; registers are still 16bit, but we have breathing room in memory.
+str r0,[r1]         ; store data for step 3.
+
+ldr r1,=REG_SOUND4CNT_H   ; Step 4:   
+ldr r0,=0x8400    ; I'd imagine that to replay a sound on Channel 4, you'd need to
+str r0,[r1]  ; set this register again or if that doesn't work, both L and H.
+
+; No Step 5 needed in Channel 4 because there isn't a REG_SOUND2CNT_X register.
+; Channel 4 (and 2) doesn't present the problem we had with chan#1, because the designers
+; of the memory system were nice enough to give us two(2) extra bytes so we can do
+; our famous 32bit SToRes.
+
+infin  ;  \
+         ; - our typical infinite loop.
+b infin ; /
+;-- STOP COPYING HERE --;
+
+I don't know why this code won't work. I tried compiling the C code on BeLogic but that
+didn't work either.
+
+UPDATE: As of Thanksgiving 2002, the code works.
+
+<h2 align="center" style="color: LightCoral;"><b>Review And About Day 6</b></h2>
+
+	<h4 align="center" style="color: Blue;"><b>Review</b></h4>
+
+		Notice that I didn't explain what every bit in every register does. I
+	(like I said) don't understand the equations and definitely don't actually 
+	understand even half of the content at BeLogic.com. To get more effects, mess
+	with the values of the registers, it's the only way if you don't look at the
+	bit layouts at BeLogic.com. I just told you everything (maybe more) that I know
+	about sound on the GBA, now go code a bouncing ball demo (up and down) :) .
+
+	<h4 align="center" style="color: Blue;"><b>About Day 6</b></h4>
+
+		With this Day 6, I expect maybe a few more corrections than usual. Please
+	give feedback on how you liked this.
+
+		I would of put this off for a few weeks 'cause I do have my life every
+	once in a while. So expect a month sometimes when I get caught up in other stuff
+	and my mind isn't on the GBA. Please don't ask me to rush a Day out as that could
+	(and WOULD) be detrimental on it's quality. I do however enjoy FRIENDLY emails about
+	the most recent day and how the code ran and the day's quality. I WANT YOUR FEEDBACK!
+	I'm not saying "don't email me"! I'm actually saying "I don't get enough email"!
+	But what I want is the friendly advice and feedback that I've been getting. Please
+	just don't email me to rant on why the next day isn't out yet.
+
+		To sum up, I don't mind what you email me as long as it is legal and friendly.
+
+
+	Thank you,
+
+	- Mike H a.k.a GbaGuy	
+
+<hr>
+
+- Something is only impossible until it's possible.
+- Jean-Luc Picard, Capt. , USS Enterprise 
+
+I know I used that one before, but it seems especially applicable to sound programming.
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day7.htm">Day 7</a></center>
+
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</HTML>
+

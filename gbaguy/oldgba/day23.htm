@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>GBA ASM - Day 23</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 23 - Using AS</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>AS?</b></h2>
+<p style="color: green;"><pre><b>
+	It seems that the Goldroad Assember isn't being updated anymore, so this would be a good
+time to talk about using the GNU Assember (AS) instead. 
+	
+<h3 align="center" style="color: LightCoral;"><b>Basic ASM Syntax</b></h3>
+	As far as I know, the basic syntax of AS is the same, there aren't any differences in how
+the instructions look such as:
+
+	ldr r1,=0x4000000  ; same as before
+
+<h3 align="center" style="color: LightCoral;"><b>Defines and The Preprocessor</b></h3>
+	One of the main differences are the defines and defining data, to define 
+your data use EQU like this:
+
+.equ var, 0x2000000 ; bytes 0-3, (32bits per variable)
+.equ another, 0x2000004 ; bytes 4-7
+
+or
+
+.equ REG_DISPCNT, 0x4000000
+
+You might want to go through and convert your headers. However, there is another option.
+You can use GCC to assemble your .S files (another assembly extension), if you do this:
+
+	gcc -c test.S
+	objcopy -O binary test.o test.gba
+
+You will be able to use #define, so you can might be able to replace '@' with '#' and be
+able to use your headers in a snap. (Note that macros are probably different so you might have
+to remove them, I'll talk about macros later.)
+
+<h3 align="center" style="color: LightCoral;"><b>Day 1 with GNU</b></h3>
+Here's a white dot code ready to be assembled by GCC:
+
+@-- CODE START --;
+@ comments start with a @ now.
+#define REG_DISPCNT 0x4000000
+
+.text @ the text section
+start:
+	ldr r1,=0x403 @Mode 3 , BG2 enabled
+	ldr r2,=REG_DISPCNT
+	str r1,[r2]
+
+	ldr r1,=0xFFFF @White, (I know it's really 0x7FFF, but who cares..)
+	ldr r2,=0x6000200  @somewhere on the screen
+	str r1,[r2]
+
+infin:
+	b infin
+@-- CODE END --;
+
+To assemble, put into test.S on your desktop, I'll assume C:\devkitadv\ is the right directory:
+open a DOS window:
+
+	set path=C:\devkitadv\bin\
+	cd PATH_TO_YOUR_DESKTOP_HERE
+	gcc -c test.S
+	objcopy -O binary test.o test.gba
+
+I hope you have no problems getting the file to assemble, GNU programs tend to have loads of freaky
+quirks..
+
+<h3 align="center" style="color: LightCoral;"><b>Day In Review</b></h3>
+
+	Eventually, I hope to get to link an ASM file with a C/C++ file.	
+
+	Happy Coding!,
+		- GBAGuy
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day24.htm">Day 24</a></center>
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>

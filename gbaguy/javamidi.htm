@@ -1,0 +1,142 @@
+<HTML>
+<head>
+<title>A (Simple) Tutorial On Java Midi Synthesis</title>
+<style>
+code {
+Background-color: silver;
+}
+</style>
+</head>
+<h1 align='CENTER'>Midi Synthesis</h1>
+<body bgcolor='lavender'>
+<h2 align='center'>About Java's Sound Stuff</h2>
+<p><pre>	Java's Midi package is <b>javax.sound.midi</b>, unlike some
+of the other media packages like the Java3D one, <b>javax.media.j3d</b>, it isn't
+under the <b>javax.media</b> namespace. This tutorial is specific to Midi Synthesis,
+so if you just want to know how to play a WAV File, this ain't for you. If in fact
+you just want to play a file, goto <a href="http://java.sun.com/">Java's Site</a> and look for the info, it is there.
+Anyway, Java makes it rather easy compared to some other languages to do Midi Synthesis.
+The code to make a simple sound when a Swing JButton is pressed is about oh, 12-15 lines.
+That's about the size of an equally simple <b>Java3D</b> program. Also, most of those lines
+just set-up the synthesizer and midi channels and instruments. 
+But enough blabbing, let's see some code!
+</pre></p>
+
+<h2 align='CENTER'>The Synthesizer Object</h2>
+
+<h3 align='CENTER'>EACH LINE(S) OF CODE IS EXPLAINED MORE/LESS BENEATH THE CODE</h3>
+
+<p><pre>	The Synthesizer Object is a public interface which means that it can't
+be instanced with the <b>new</b> keyword. I put the code in the <b>main</b> method so
+you can copy/paste it into what ever file/class name ya want.
+To get the Synthesizer and open it, you have to use a few lines  of code like this:
+<pre></p>
+<code>public static void main(String[] args) {        
+Synthesizer synth = MidiSystem.getSynthesizer();
+synth.open();                                   </code>
+</pre>
+MidiSystem is one of those "Don't need to instance it" objects, and here I use MidiSystem
+to get a fully working (almost) synthesizer. After we get the Synthesizer we need to open,
+why? I dunno, but you have to or it won't work!
+
+Next, we get an array of MidiChannels which is what we'll actually use later to make a sound.
+
+<code>final MidiChannel[] mc = syn.getChannels();</code>
+
+I declare <b>mc</b> as <b>final</b> because we need to be able to access it without problems
+in the <b>JButton's ActionListener</b> later. So far this is straight forward and I think it
+doesn't get much harder than a bunch of method calls with several objects and interfaces.
+
+Now, we want an array of <b>Instrument</b>s to choose from. To do this we have to get a
+Soundbank object, I just use the default one with this line o' code:
+
+<code>Instrument[] instr = syn.getDefaultSoundbank().getInstruments();</code>
+
+Instruments are used to choose what instrument the sound is played with.
+
+<code>syn.loadInstrument(instr[90]);</code>
+
+Here I load into our Synthesizer, an arbitrary instrument from the <b>Instrument array</b>
+that we just made.
+
+<h2 align='CENTER'>The Swing Window</h2>
+<p>
+	In this section we construct a simple <b>Swing JFrame</b> with a single <b>JButton</b>
+on it. Simple stuff so far, eh?
+</p>
+
+Now, for the <b>Swing</b> window, I'm just going to give you the 8 line chunk of code
+that creates a <b>JFrame</b> and puts a <b>JButton</b> inside. This tutorial will <b><u>NOT</b></u>
+explain how to make <b>JFC/Swing</b> GUI applications, I'm only 15 and I know Swing fairly well, I'm
+sure you can too.
+
+Here it is:
+
+<code>
+JFrame frame = new JFrame("Sound1");                
+JPanel pane = new JPanel();                         
+JButton button1 = new JButton("Click me!");            
+frame.getContentPane().add(pane);                   
+pane.add(button1);                                     
+frame.pack();                                       
+frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+frame.show();                                       
+</code>
+
+That makes the window and shows it.
+That also is the end of this section.
+
+
+<h2 align='CENTER'>Making a Sound</h2>
+
+<p>In this section we make an <b>ActionListener</b> for our <b>JButton</b> and put
+inside <B><U>ONE (1)</B></U> line of code to make a sound.
+
+Here's the start of the <b>JButton's ActionListener</b> as usual this is pretty
+straight forward:
+
+<code>
+button1.addActionListener(new ActionListener() {
+public void actionPerformed(ActionEvent e) {    
+</code>
+
+Now, ladies and gentleman the code you've all been waiting for:
+
+<code>mc[5].noteOn(60,600);</code>
+
+That makes the sound in an arbitrary MidiChannel that I picked (THE STANDARD AMOUNT OF
+MIDI CHANNELS IS 16 SO YA KNOW!) I don't know the difference of the Midi Channels.
+To make the sound we just turn on a note with the <b>noteOn</b> method. The 60 is
+the note number (middle C) and 600 is how hard we hit the piano key or plucked the
+instrument's string (you get the idea).
+
+THERE IS A noteOff METHOD BUT AS FAR AS I CAN TELL THE SOUND DIES OFF ALL BY ITSELF!!!
+
+
+Here's some finish up code:
+<code>
+}});    // END OF THE ACTION LISTENER
+}       // END OF THE MAIN METHOD    
+</code>
+Isn't that neet?
+
+Here's some thing to try:
+<list buttetted="true">
+<li>Change the Instrument number.</li>
+<li>Change the Midi Channel number.</li>
+<li>Check the <b><a href='http://java.sun.com/products/java-media/sound/doc-midi.html'>javax.sound.midi</a></b> Docs</li>
+</list>
+
+I hope you have fun, NOTE: If you like this let me know and I'll learn somemore to teach ya!
+
+</pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+
+</body></HTML>

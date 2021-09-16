@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>GBA ASM - Day 21</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 21 - LDRH And STRH</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>Say What?</b></h2>
+<p style="color: green;"><pre><b>
+	Today, we're going to take a look at 2 instructions that for some reason
+I had forgot about. Infact, I had been writting some fairly inefficient code because
+of that. These instructions are ldrh and strh.
+
+	What these instructions do is load/store a Half word (notice the capital 'H'),
+which is two bytes (assuming 32bit 'words'). They work just like the normal STR and
+LDR instructions except they only work with the lower 16bits of the register(s) you
+use with them. Appearantly this should help with those mem. registers that are only
+16bits long...
+
+	I was on the GBADev Forum recently asking if anyone could help with a macro
+that I was having trouble with. It was supposed to set the tile number of a sprite
+into OAM. But for some reason it kept overwritting the X value of the sprite instead.
+
+	So this very clever and intelligent person (not me, believe it or not) gave
+me a piece of code using LDRH and STRH that was short and worked beautifully. I had
+totally forgotten that these 2 instructions existed. So, in order to hopefully remind
+you about these magical instruments of data moving power, I am going to explain that
+macro to you. This macro "SetNumber" has been added to sprites.h. I suggest you either
+<a href="sprites.h">download</a> it now, or just add the macro to the file when we
+get to it.
+	
+<h2 align="center" style="color: LightCoral;"><b>Us Getting To It</b></h2>
+	Guess what? We got to it. Yep. We're here. Short one today. Anyway, here's
+the macro:
+
+	@macro SetNumber sprite, number
+		ldr r3,=(OAM+(sprite*8))+6  ; load r3 with the address of the sprite's tile number.
+		ldr r4,=number  ; Then load the number into the lower bits (just a regular load).
+		strh r4,[r3]  ; And store the lower 16bits into place.
+	@endm
+
+I realize that only demonstrates the STRH instruction, to load something with LDRH
+looks like:
+
+	ldrh r3,[r1]  ; note that we take the 16bits at address in r1 and put that into r3.
+
+Just like old times except 16bits.
+
+<h2 align="center" style="color: LightCoral;"><b>Day In Review</b></h2>
+
+	Many thanks to the person on the GBADev Forum who reminded me of these 
+instructions.
+
+	These instructions are extremely useful in creating more efficient code.
+Use them well.
+
+	Happy Coding,
+		- GbaGuy
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day22.htm">Day 22</a></center>
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>

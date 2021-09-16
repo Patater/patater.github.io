@@ -1,0 +1,233 @@
+<html>
+<head>
+<title>GBA ASM - Day 7</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 7 - All About Macros</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>Why Use Macros?</b></h2>
+<p style="color: green;"><pre><b>
+
+	Macros for people who don't know (you probably do, but anyway...), are lumps
+of code that you create an alias for. This makes your asm coding life easier as you don't
+have to remember that (maybe long) piece of code that you always endup using. To call a
+macro, type the macro name followed by a space followed by any parameters separated by
+commas. When the assembler encounters a macro, it simply replaces the macro call with
+the lump of code defined in the macro, pluging in the parameters if necessary. Here's
+a sample macro call for a macro we'll make shortly:
+
+LoadRegRGB r0, 255, 0 , 0
+
+that's it! Macros are great for decreasing the amount you have to type and increasing the
+readability (high-level lookingness) of your asm code.
+
+<h2 align="center" style="color: LightCoral;"><b>Your Basic Macro</b></h2>
+
+
+Macros are defined like the following: (sorta macro template)
+
+	@macro <i>macro_name</i> <i>arg1</i>, <i>arg2</i> ;macro can have as many args as you want, even none!
+		
+		;;; code goes here ;;;
+
+	@endm      ; end of macro
+
+In case you didn't get that, here's a useless macro to load r0 with 5:
+
+	@macro MakeR0Equal5
+
+		ldr r0,=5
+
+	@endm
+
+That macro is totally useless. Note, please, that the indentation is for readability
+and is not required. 
+
+	Now, I bet you're wondering how to put args (parameters) into a macro and have
+them be used in the code. Here's a slightly more useful version of the macro above:
+
+	@macro LoadReg Register, Num
+
+		ldr Register,=Num
+
+	@endm
+
+If you used this in an actual code file (DON'T, THIS MACRO IS USELESS, EXCEPT TO LEARN FROM!),
+you would either put the macro in a header file or put it at the beginning of the code file.
+I'll show you what it looks like to call this macro and then explain how the assembler
+processes it. Me calling this macro to load r4 with 52 looks like this:
+
+	LoadReg r4, 52
+
+That's how it would look in the source code. When the assembler comes across the call to
+this macro, it first gathers the parameters and then does some replacing:
+
+	- Register is replaced with r4
+	- Num is replaced with 52
+
+After all the parameters are replaced with the actual call's values, the macro call itself
+is replaced with the code from the macro. So after the call is processed:
+
+	LoadReg r4, 52
+
+The assembler takes this and removes it. In it's place we end up with:
+
+	ldr r4,=52
+
+Note that the parameters could be anything from a number to a register to a meaningless
+group of symbols that would give this error when assembled:
+
+Say I tried to go:
+
+	LoadReg $(#(*@*#_@, 52
+
+So this is assembled to:
+
+	ldr $(#(*@*#_@,=52
+
+And I get a few errors from Goldroad:
+
+error : line 0 : syntax error
+ldr $(
+error : line 0 : syntax error
+ldr $( (
+error : line 0 : in expression - missing right parenthesis
+ldr $( (*
+error : line 0 : load out of range (max 0xffc b)
+ldr $( (*
+error : line 0 : syntax error
+ldr $( (*
+
+assembled with 5 errors
+
+Now we'll go about making some much more usefull macros.
+
+<h2 align="center" style="color: LightCoral;"><b>More Useful Macros</b></h2>
+
+	Now I bet you've been wondering how to come up with RGB values (actually BGR
+on the GBA). Now here we'll make a macro to load a register with an RGB value. So.
+How many args (parameters) do we need? Go figure the number... ... ...
+
+	So what's your answer? Well, I don't know what you came up with, but I came
+up with 4. 1st the register, 2nd red amount, 3rd green amount, 4th blue amount. For thos
+of you who don't know, on the GBA, RGB values are defined as the following:
+
+<PRE>F E D C  B A 9 8  7 6 5 4  3 2 1 0
+<FONT COLOR="#BBBBBB">X</FONT> <FONT COLOR="#0000DD">B B B  B B</FONT> <FONT COLOR="#008800">G G  G G G</FONT> <FONT
+COLOR="#DD0000">R  R R R R</FONT></PRE>
+<PRE>0-4 <FONT COLOR="#DD0000">(R)</FONT> = Red
+5-9 <FONT COLOR="#008800">(G)</FONT> = Green
+A-F <FONT COLOR="#0000DD">(B)</FONT> = Blue</PRE>
+<i><u>Diagram Ripped From CowBite Spec</i></u>
+
+Note that each color value has 5bits, with the 16th bit unused. So we need to shift the
+bits of our RGB values. To get the amount to shift by I just used the typical RGB macro
+content from C code. Here goes:
+
+	@macro LoadRegRGB Register, Red, Green, Blue
+
+		ldr Register,=((Red)+(Green<<5)+(Blue<<10))
+
+	@endm
+
+Isn't that cool? Call it like this to load r3 with a red pixel:
+
+LoadRegRGB r3, 255, 0 , 0
+
+And the assember will take that as:
+
+ldr r3,=((255)+(0<<5)+(0<<10))
+
+Note that you should get that the assembler does parameter replacing by now so I'm
+not going to type what the Goldroad will take it as anymore (I'm hungry and my fingers
+hurt and I'm freezing). 
+
+Now that we understand macros, let's make a macro so we can move the sprites we made
+in Day 5!
+
+<h2 align="center" style="color: LightCoral;"><b>A Move Sprite Macro</b></h2>
+
+
+	Alright, we need a sprite number (0-127, If you remember. Even if you don't, 
+it's still 0-127 :) ). We also need the new x position and the new y position. That
+makes 3 args, I believe. 
+
+	The sprite number we will multiply by 8 to get to the beginning (Attribute0)
+of the sprites entries in OAM. 8 is the length (in bytes) of a sprites entries (Attribute0-
+Attribute3). Will then load a register with the contents of Attributes0&1 (attributes are
+16bit and our stores are 32bit, we have no choice). We will then shift the register so
+that we have only Attribute 0 in the low (16) bits. Then, we'll BIT AND the register with
+0xFF00 to clear the old y position and then BIT OR in our new y position. Because we do
+32bit load/store's we have to load 2 registers with Attribute0&1; we can't do it one at
+a time because when we store Attribute 0, we'll end up zero out Attribute 1. So at the 
+same time as all that, we BIT AND the register that has Attribute 1 in it (after some shifting)
+with 0xFE00. Then we BIT OR in our new x position and shift the register that has Attribute 0
+left 16bits, add the two registers together and write it back to memory. 
+
+Wow that's a huge paragraph! I hope you got that. Maybe you did or didn't care, maybe you just
+want a MoveSprite macro. Fine. I don't care. Here's my implementation:
+
+	@macro MoveSprite Sprite, X, Y
+
+		ldr r2,=(OAM+(Sprite*8))  ;get the starting point of sprite's OAM Atts.
+		ldr r3,[r2]           ; load r3 with attributes 0&1.
+		mov r3,r3, lsr#16     ; shift so we only have att#0 in r3.
+		ldr r4,[r2]           ; load r4 with attributes 0&1.
+		mov r4,r4, lsl#16     ; shift so we only have att#1 in r4.
+		mov r4,r4, lsr#16     ; get r4's value in the lower bits.
+		and r3,r3,#0xFF00     ; clear the old y value.
+		and r4,r4,#0xFE00    ; clear the old x value.
+		orr r3,r3,#X       ; set new y value.
+		orr r4,r4,#Y       ; set new x value.
+		mov r3,r3, lsl#16  ; get ready to add them.
+		orr r4,r4,r3       ; add them together so we have both in r4.
+		str r4,[r2]        ; store in OAM. we're done! :)
+
+	@endm
+
+LSR (Logical Shift Right) and LSL (Logical Shift Left) are options, not instructions. So
+that means they have to be attached to other instructions to work. They can be attached
+on the end of MOV (Can any others take LSx ?).
+		
+Did you like that macro? I you don't understand what's mean't by a shift, <a href="mailto:vbnetprogramer@hotmail.com">EMail Me</a>.
+I recommend you redownload <a href="sprites.h">sprites.h</a>, because
+I've added this macro to it.
+
+<h2 align="center" style="color: LightCoral;"><b>A Move Sprite Macro</b></h2>
+
+
+<h4 align="center" style="color: Blue;"><b>Review</b></h4>
+
+	Even though sometimes making them can be hard (MoveSprite macro took me 4 hours),
+using them always makes the work worth while because once they're created you can
+use them as much as you want. You can't tell me macros aren't usefull, if you do I'll
+ask you if you want to type those 13 lines of code every time you want to move a sprite
+or would you rather go "MoveSprite 0, 35, 50" just once?
+
+	This is probably the Day most likely to be updated other than typos and code errors,
+because if I come up with a new macro, it'll probably be added to this tutorial.
+
+Hope you liked this!
+
+
+- Mike H / GbaGuy
+
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day8.htm">Day 8</a></center>
+
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>

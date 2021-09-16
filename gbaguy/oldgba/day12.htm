@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>GBA ASM - Day 12</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 12 - The BL Instruction</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>What Are We Doing Today?</b></h2>
+<p style="color: green;"><pre><b>
+	Today will cover subroutines (a.k.a functions), using the BL instruction. This
+is so simple I wonder why I never explained it...
+
+<h2 align="center" style="color: LightCoral;"><b>The BL Instruction</b></h2>
+
+	The BL instruction stands for Branch with Link. This means that it does the
+same thing as a normal B instruction, except that it puts a value in r14 for you. r14
+is also known as lr. You can use either name, they mean the same thing and Goldroad 
+doesn't care which you choose. If I've never mentioned it before, r15 is also known as
+pc. 
+
+	The r15 (a.k.a pc) register -- as you should know from Day 2 -- you shouldn't
+mess with as it contains the address in memory of the next instruction to be executed.
+That's why it is sometimes called pc (Program Counter). If you messed with r15, you 
+would actually be branching to somewhere in memory. We only mess with r15 to return
+from one of our "functions", more on this later.
+
+<h2 align="center" style="color: LightCoral;"><b>That Value In r14...</b></h2>
+
+	I said in the previous section that the BL instruction puts a value into
+r14. This value is the return address. More specifically this return address is 
+the address of the instruction after the BL instruction we used to branch to our
+function. Unlike the Intel x86 chips, there isn't any RET instruction. We have to
+copy our return address in r14 into r15. The easy way to do this is:
+
+	mov r15,r14
+
+That is our return instruction. You could also use LDR, but I think I read somewhere
+that MOV is faster when it comes to copying values between CPU registers. 
+
+	When that line executes, the CPU will return back to the instruction that comes
+after the BL instruction that you used to branch to the function.
+
+<h2 align="center" style="color: LightCoral;"><b>A (Very) Small Example</b></h2>
+
+	Alright, just a really small useless example to prove that this works.
+Here goes:
+
+;;--- CODE START ---;;
+@include screen.h ; screen.h has the basic stuff you'll need
+; even for the simplest demo.
+
+ldr r1,=REG_DISPCNT
+ldr r2,=(MODE_3|BG2_ENABLE) ; 3 lines to set screen mode
+str r2,[r1] 
+
+bl DrawDot   ; branch with link to the label DrawDot
+
+infin     ; after DrawDot returns, the infinite loop
+b infin   ; will start.
+;;--- STOP COPYING ---;;
+
+Here's our DrawDot routine:
+
+;;--- CODE CONTINUE ---;;
+DrawDot  ; a label called DrawDot
+
+ldr r1,=VRAM+0x2410 ; these 3 lines,
+ldr r2,=0x45678912  ; set 2 pixels on the screen.
+str r2,[r1]
+
+mov r15,r14 ; returns to the main program.
+;;--- CODE STOP ---;;
+
+Note that you don't want to mess with r14 inside a function, or you'll
+loose your return address. Also, NEVER mess with r15, unless you're returning from
+a "function".
+
+<h2 align="center" style="color: LightCoral;"><b>Day In Review</b></h2>
+
+	I don't know why I didn't explain this sooner as it is so easy to
+do. Sorry if you were expecting something a littler more "cool". There's 
+nothing else to say really. Have a good time coding.
+
+	Until Next-Time,
+		-Mike H a.k.a GbaGuy
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day13.htm">Day 13</a></center>
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>

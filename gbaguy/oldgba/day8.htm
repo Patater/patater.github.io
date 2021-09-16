@@ -1,0 +1,273 @@
+<html>
+<head>
+<title>GBA ASM - Day 8</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 8 - Loading Data With DMA</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>Why use DMA in the First Place?</b></h2>
+<p style="color: green;"><pre><b>
+	
+	DMA (Direct Memory Access) is a relatively fast way to load memory with data. So
+far in this tutorial, we have been just using a typical data loading loop. The advantages
+of using DMA over a typical loading loop are:
+
+<ol><u>Advantages of DMA over a Typical Loading Loop:</u>
+<li>DMA is supposedly faster.</li>
+<li>For some reason I get a slightly smaller binary when I've used DMA.</li>
+<li>We don't have to bother with a loop anymore.</li>
+<li>Using DMA to load data is simpler than a loop.</li>
+<li>It takes just two(2) R0-R12 (usable) registers to put the
+necessary info in the three(3) DMA registers. 3 load and stores
+times 2 lines of code each = 6 lines of code for a DMA loading.
+this is more than a loading loop I believe, but it's easier.</li>
+<li>There probably are more but I can't think of anymore.</li>
+</ol>
+
+So why not use DMA? First, we'll see what the different options are and
+what their uses are.
+
+<h2 align="center" style="color: LightCoral;"><b>About DMA Options</b></h2>
+
+	Right now we (more like I) are going to list the available options for DMA.
+DMA has 4 channels(0-3) 0 is special, don't use it for now. 1-3 are available for your
+use. Channels 1 and 2 are can also be used with direct sound. There really isn't any 
+major difference between channels 1-3 other than they have different priorities. 
+Priorities are necessary as DMA DOES halt the CPU until it's finished.
+DMA has a whole slew of options including:
+
+		1 - Load memory in 32Bit or 16Bit chunks (16Bit is default).
+		2 - When to start the DMA loading (called a 'transfer')
+			I. Right away (DMA_TIMEING_IMMEDIATE).
+		       II. At the next HBlank (DMA_TIMEING_HBLANK).
+		      III. At the next VBlank (DMA_TIMEING_VBLANK).
+		       IV. On Channel 3 only, there's an option that
+				 allows for streaming video
+				according to ThePernProject.Com.
+		3 - Wether to increment, decrement, or keep 
+			fixed, the Source Address Register
+		4 - Wether to increment, decrement, or keep
+			fixed, the Destination Address Register
+
+That's alot! But right now, we're going to only load data, such as: sprite data, pallete data
+and a Mode 3 picture on the screen. So we are only going to start the transfer right away,
+and have DMA increment both the Source and the Destination Address Registers. We will use
+32bit chunk transfers with sprites and sprite pallete, but we'll use 16bit chunks when we
+do a Mode 3 picture.
+
+<h2 align="center" style="color: LightCoral;"><b>The DMA Registers</b></h2>
+
+	There are 3 DMA Registers for every channel (actually 4, but 2 are 16bit):
+
+		- REG_DMAxSAD : Takes the address of the source data.
+
+		- REG_DMAxDAD : Takes the address of the destination.
+
+		- REG_DMAxCNT : Takes amount of data, and the options listed
+					 in the above section.
+
+	How there are 3 steps to a DMA transfer to load data like we're going to:
+
+		<ol><u>Steps to Accomplish a DMA Transfer:</u>
+		<li>Put the Source Address of the data in REG_DMAxSAD.</li>
+		<li>Put the Destination Address in REG_DMAxDAD.
+			Destination is where you want data to end up.</li>
+		<li>Put the amount of data to transfer and transfer
+			options in REG_DMAxCNT.</li></ol>
+
+Note that the lower-case 'x' in the register names is to be replaced with the DMA channel
+number. Now that you know the steps, let's apply them.
+
+<h2 align="center" style="color: LightCoral;"><b>Loading a Mode 3 Picture With DMA</b></h2>
+
+Please download <a href="dma.h">dma.h</a>, now.
+
+	We will now load a Mode 3 Picture with DMA. Because we are using DMA, we won't
+need a loop and we will only need two(2) registers. Please convert a picture called
+"pic.bmp", like we did in Day 3, and name the resulting file "pic.asm" (don't type the
+quotes!:) ). Now instead of just modifying the old code file, we'll just build up
+another one. Here's the start of it: (It just includes everything and sets the screen
+mode to 3)
+
+;;--- CODE START ---;;
+
+@include screen.h   ; include screen header stuff
+@include dma.h      ; include DMA header stuff
+b start           ; jump over data
+@include pic.asm   
+start
+
+ldr r1,=REG_DISPCNT  ; make r1 pointer to screen control register
+ldr r0,=(MODE_3|BG2_ENABLE)  ; load r0 with values to set Mode 3 and enable Background 2
+str r0,[r1]              ; set control register by storing values in memory
+
+;;--- STOP COPYING ---;;
+
+	Now the label in your pic.asm will be the .bmp file's name plus "Bitmap", so if
+you had renamed the bmp to "pic.bmp" before conversion you'd get pic.asm, and inside a 
+label would be called picBitmap, which will be our Source Address when we do the transfer
+VRAM or otherwise known as the screen will be our Destination Address. We will start the
+transfer immediately (right away) and transfer in 16bit chunks. We will use DMA channel
+number 3, since it is officially the general purpose channel.
+
+;;--- CODE CONTINUE ---;;
+
+ldr r1,=picBitmap     ; \
+ldr r0,=REG_DMA3SAD   ; - set the source address in channel 3's source address register
+str r1,[r0]           ; /
+
+ldr r1,=VRAM          ; \
+ldr r0,=REG_DMA3DAD   ; - set the destination address in channel 3's dest. address register
+str r1,[r0]           ; /
+
+ldr r1,=(38400|DMA_16NOW)  ; \
+ldr r0,=REG_DMA3CNT       ;  - give the control register the amount of times to copy chunks
+; the screen is 240x160=38400, we transfer in 16bit chunks so we don't have to half that 
+; number.
+str r1,[r0]      ; - DMA transfer starts now, transfers 38400 chunks of 16bit data and 
+; the program doesn't actually continue until the DMA is done. But this is pretty fast.
+
+infinite
+b infinite
+
+;;--- STOP COPYING ---;;
+;;--- END OF SOURCE FILE ---;;
+
+Wasn't that simple!?! I always thought that DMA was some hard thing to do, but it is actually
+just loading 3 registers and then it goes and does it's thing! DMA is cool. :) :P
+
+<h2 align="center" style="color: LightCoral;"><b>Redoing Day 5 Loads With DMA</b></h2>
+
+	If you remember in Day 5, we had two(2) loading loops which are excellent canidates
+to be replaced with a DMA transfer. One of the loading loops was for the pallete and the
+other was for the actual sprite bitmap. These are excellent canidates because we have all
+the info we need for a DMA transfer: Source (sprite bitmap or pallete data), Destination
+(character memory or Object Pallete Memory), and number of times to access memory. For the
+pallete, number of times to access memory is 128 because there are 256 entries in the pallete
+and we'll transfer in 32bit chunks this time. For the sprite bitmap, we access memory 128 times
+because, oh heck I don't really know! We do it 128 times in Day 5 with 32 bit load/stores so
+if we are still transfering in 32bits, we'll still access memory the same amount of times.
+
+	This time I won't build up another source file, because that would make this Day
+way too large (file size wize :) ). Instead, I'll give you a snippet that needs to be replaced,
+and what you need to replace it with. Here's the original pallete loading code:
+
+;;--- REPLACE THIS IN YOUR DAY 5 CODE WITH THE NEXT SNIPPET ---;;
+
+ldr r1,=OBJPAL     ; make r1 pointer to sprite pallete (0x500200)
+ldr r2,=128            ; 128 is number of times to access pallete
+ldr r3,=pallete        ;   pallete is defined in the sprit.asm that we converted.
+
+palloop:        ; This loop is a typical example of a loading code chunk
+ldr r7,[r3]+4!  ;  it takes 4 bytes from pallete (r3) into r7 and then
+str r7,[r1]+4!  ;  stores the 4 bytes into sprite pallete mem. each time write-backing to add 4
+subs r2,r2,1    ;  onto each pointer. the SUBS line subtracts 1 from the number of times to
+bne palloop  ; access sprite pallete mem. and makes the status flags represent EQual status
+
+; if r2 = 0   (r2==0, for you C people).  that BNE statement only loops if the status
+;is Not Equal so the loop actually stop when we are done.
+
+;;--- STOP COPYING ---;;
+
+Replace the above with this:
+
+;;--- CODE START ---;;
+
+ldr r1,=pallete       ; \
+ldr r2,=REG_DMA3SAD   ;  -give source address in DMA Source Address register
+str r1,[r2]           ; /
+
+ldr r1,=OBJPAL        ; \
+ldr r2,=REG_DMA3DAD   ;  -give destination address in DMA Destination Address register
+str r1,[r2]           ; /
+
+ldr r1,=(128|DMA_32NOW) ; \
+ldr r2,=REG_DMA3CNT     ;  - tell control register amount of data to transfer and
+str r1,[r2]             ; to transfer in 32bit or 16bit chunks (we use 32bit chunks here)
+
+;;--- STOP COPYING ---;;
+
+Alright, now replace the following:
+
+;;--- REPLACE THIS IN YOUR DAY 5 CODE WITH THE NEXT SNIPPET ---;;
+
+ldr r1,=CHARMEM   ; see the description below this code section
+ldr r2,=128
+ldr r3,=obj0
+
+sprloop:
+ldr r7,[r3]+4!
+str r7,[r1]+4!
+subs r2,r2,1
+bne sprloop
+
+;;--- STOP COPYING ---;;
+
+Please note that I leave the comments in the Day 5 code that needs replacement, strictly
+for reference to make it easier to find in your Day 5 source code.
+
+Replace the above with:
+
+;;--- CODE START ---;;
+
+ldr r1,=obj0       ; \
+ldr r2,=REG_DMA3SAD   ;  -give source address in DMA Source Address register
+str r1,[r2]           ; /
+
+ldr r1,=CHARMEM        ; \
+ldr r2,=REG_DMA3DAD   ;  -give destination address in DMA Destination Address register
+str r1,[r2]           ; /
+
+ldr r1,=(128|DMA_32NOW) ; \
+ldr r2,=REG_DMA3CNT     ;  - tell control register amount of data to transfer and
+str r1,[r2]             ; to transfer in 32bit or 16bit chunks (we use 32bit chunks here)
+
+;;--- STOP COPYING ---;;
+
+Note that it's the exact same code except for changing the size (same here but usually
+different for different things), destination, and source of the data.
+
+If you assemble and run the sprite code from Day 5 with these replacements, it should
+look EXACTLY the same, maybe even load faster. You may notice that your binary is 
+slightly smaller than the binary from the non-DMA code.
+
+<h2 align="center" style="color: LightCoral;"><b>This Day In Review</b></h2>
+
+	When I set out to learn DMA, I thought it would be hard. Boy was I wrong! DMA is
+so cool. Just set three registers and off it goes, no messy loading code, wasting like 5
+of your R0-R12 registers. No loop either. There are probably reasons not to use DMA, but
+for what we've used it for, there's probably no reason not to. Now that we know the basics
+of DMA, maybe sometime in Days 9-12 one of those we'll get around to playing a wav file.
+
+	What I really want to do is backgrounds, and I usually have to understand how to
+do something like sprites or backgrounds in C, before I can apply it to 32bit load/stores
+and Assembly Language. And I have to admit that I don't know anything about backgrounds
+as I haven't been able to fully understand Dovoto's (ThePernProject.com) tutorial the last
+20 times I read the section on backgrounds.
+
+	I hope you liked Day 7 and Day 8 as I did them this weekend because I got bored and
+needed to learn something new.
+
+- Mike H a.k.a GbaGuy
+
+- "Hope people like my writings!"
+- Me, reflecting on this weekend on Sunday at 5:30 PM
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day9.htm">Day 9</a></center>
+
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>

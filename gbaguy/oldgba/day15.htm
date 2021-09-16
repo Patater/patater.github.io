@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>GBA ASM - Day 15</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 15 - Background Scrolling</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>What BG Effects?</b></h2>
+<p style="color: green;"><pre><b>
+	OK, now to BG scrolling. You might wonder why I didn't put this in Day 14. The
+reason is that I though Day 14 would be easier to understand if I didn't give so much
+at one time. The <i>real</i> reason is that I half forgot to/half was to lazy to put
+this in Day 14. So here it is.
+
+<h2 align="center" style="color: LightCoral;"><b>How?</b></h2>
+
+	For Text Backgrounds, which we have not discussed, you just put the amount
+you want to scroll by in REG_BGxHOFS (horizontal) and REG_BGxVOFS (vertical) (x is 
+the background number).
+
+	For Rotation Backgrounds, REG_BGnX and REG_BGnY (n is BG number) are the
+registers that we want to mess around with. Since they are each 32bits (unlike the
+2 mentioned in the previous paragraph, which are 16bits), we can set each one nice
+and separately.
+
+	Just put the values in the registers, and ka poof! The BG Scrolls!
+
+Sample code:
+
+	ldr r0,=REG_BG2X
+	ldr r1,=1000  ; I'm not sure how much this would scroll by.
+	str r1,[r0]
+
+	ldr r3,=REG_BG2Y
+	ldr r1,=1000
+	str r1,[r3]
+
+Simple right?
+
+<h2 align="center" style="color: LightCoral;"><b>Day In Review</b></h2>
+
+	Hope you have fun scrolling your BGs!
+
+	May Your Programs Run Without Bugs,
+		-Mike H a.k.a GbaGuy
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day16.htm">Day 16</a></center>
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>

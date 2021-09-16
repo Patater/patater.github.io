@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>GBA ASM - Day 20!</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 20 - Using Divide And Sqrt</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>Divide</b></h2>
+<p style="color: green;"><pre><b>
+	
+	Let's get straight to the point shall we? Here's some commented code:
+
+	lda r0,=20  ; r0 = 20
+	lda r1,=5   ; r1 = 5
+	swi 0x60000  ; r0 = r0/r1
+		     ; Also:
+		     ; r1 = r0 Mod (%) r1
+		     ; r2 = Abs(r0/r1)
+
+Here's a small code file, assemble and run it:
+
+;;--- CODE START ---;;
+
+; we don't need any headers since we aren't going
+; to make any pretty output or use any defines
+
+@textarea 0x3000000
+g @dcd 0  ; a 32bit "variable" called g.
+@endarea
+
+lda r0,=20  ; these lines of
+lda r1,=5   ; code divide 20
+swi 0x60000 ; by 5.
+
+lda r3,=g  ; load r3 with address of g.
+sta r0,[r3] ; store result of division (should be 4
+	   ; in g which is at 0x3000000.
+
+infin  ; infinite loop
+b infin 
+
+;;--- END OF CODE ---;;
+
+Assemble and Run in VisualBoy Advance. Open the Memory Viewer and goto "0x3000000 - IRAM".
+You should see a '4' in the first 32bits at 0x3000000. 20/5 = 4, happy now?
+
+<h2 align="center" style="color: LightCoral;"><b>Sqrt</b></h2>
+
+	Sqrt stands for SQuare RooT if you didn't know, ;). Sqrt is function number
+8. So to modify the previous code file to use Square Root, do three things:
+
+	1) Change it so it load r0 with 81.
+	2) Either comment "lda r1,=5" out or leave it, it doesn't matter as
+		r1 isn't used as input to Square Root.
+	3) Change "swi 0x60000" to "swi 0x80000"
+
+Test it using the same method that I described ealier.
+
+<h2 align="center" style="color: LightCoral;"><b>Day In Review</b></h2>
+
+	Using Divide and Sqrt are rather important as there isn't any actual Divide
+or Sqrt instruction.
+
+	Go Code!,
+		-Mike H a.k.a GbaGuy
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day21.htm">Day 21</a></center>
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>

@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>GBA ASM - Day 14</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 14 - Background Effects!</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>What BG Effects?</b></h2>
+<p style="color: green;"><pre><b>
+	Well, like yesterday, we will cover the following: Mosaic, and rotation and 
+scaling. With rotation, however, I don't cover SIN() and COS(), so we'll just discuss
+where and what to put in the rotational/scaling data and leave you to figure the rest out.
+
+<h2 align="center" style="color: LightCoral;"><b>Mosaic</b></h2>
+
+	The Mosaic Register is at 0x400004C. The register is 16bits, 
+bits#0-3 are vertical mosaic and
+bits#7-4 are horizontal mosaic. Mosaic, if you didn't know already, makes your background
+look blocky. The other bits are for the sprites. Other than setting REG_MOSAIC, we
+also need to tell the BG's CNT register that we want to MOSAIC (bit#6).
+Here's some code assuming you already have a BG displayed:
+
+;set the mosaic register
+ldr r4,=REG_MOSAIC
+ldr r3,=0x0012  ; 1 for horizontal, 2 for vertical, none for sprites.
+str r3,[r4]   ; store it.
+
+ldr r2,=REG_BG2CNT  ; BG 2 , if you're using a different BG, change the number!
+ldr r3,[r2] ; load r3 from memory, [] in a load statement mean "from memory".
+; the above will load r3 with Attribute 0 and Attribute 1. both because CPU registers are 32bit
+; and OAM attributes are 16bit.
+eor r3,r3,BG_MOSAIC_ENABLE   ; XORs r3 with BG_MOSAIC_ENABLE and puts the value in r3.
+; EOR and XOR are the same, just remember that the asm instruction is called EOR.
+str r3,[r2]  ; store the modified Control values back.
+
+And boom! You get a MOSAICaded background.
+
+<sup>*</sup>I think it's obvious that this is Day 13, just edited to work with BGs.<sup>*</sup>
+
+<h2 align="center" style="color: LightCoral;"><b>Rotation (Insert triumphant melody here!)</b></h2>
+
+	I hope you've atleast read Day 4 of the C tutorial at <a href="http://www.thepernproject.com/">ThePernProject.COM</a>
+because if you haven't, this is going to be aLOT harder. Go read it now.
+...
+...
+Go read it again. :)
+...
+...
+	Think you understand? If you don't it's ok, because I'm going to try to
+explain it anyway.
+
+	Even though there are 4 registers, we are just going to stuff them and only store
+into PA and PC. We just need to store the rotation values and boom, the BG rotates. Note
+that the BG rotates sometimes out of sight so if you have a 
+mostly black BG, you might loose sight of it.
+
+(Note that I explain only Rotation Backgrounds (obviously).)
+
+REG_BGxPA needs to be the COSine of the angle.
+REG_BGxPB needs to be the SINe of the angle.
+REG_BGxPC needs to be the NEGATIVE SINe of the angle.
+REG_BGxPD needs to be the COSine of the angle.
+
+Notice that the basic equation is the same as for sprites.
+There's more, as in setting the center of rotation and scaling, this (if I figure it out)
+will be written about in Day 14.5 or otherwise known as Day 14 - Night-Time.
+
+<h2 align="center" style="color: LightCoral;"><b>Let's Get Coding!</b></h2>
+
+	We will base this code on Day 9's code. So if you don't have it, go through
+Day 9 again. It always helps reading something more than once anyway. So insert
+this code between the last line of code and the label 'infin' or whatever I used that
+time as the infinite loop label:
+
+;;--- CODE START ---;;
+ldr r1,=70&lt;&lt;16|70
+ldr r2,=REG_BG2PA         ; this will put 70 into both PA and PB.
+str r1,[r2]
+
+ldr r1,=70&lt;&lt;16  ;
+ldr r3,=0             ; this code 
+sub r3,r3,70          ; does stuffing of r3 with PC AND PD
+mov r3,r3,lsl 16      ; r3 is a neg. num. so we need to get it
+mov r3,r3,lsr 16      ; in the lowbits of the register (70 is in
+orr r3,r3,r1          ; the highbits. OR together and store in PC
+ldr r2,=REG_BG2PC     ; because they're all 16bits, this will spill into PD.
+str r3,[r2]
+;;--- CODE STOP/STOP COPYING ---;;
+
+This is pretty much the same as sprites except we don't need to tell REG_BGxCNT that
+we want rotation, we just give values and it rotates.
+
+Insert, assemble and run! I hope you get it. I think we'll discuss bit masking/toggling
+tomorrow, then scrolling BGs.
+
+<h2 align="center" style="color: LightCoral;"><b>Day In Review</b></h2>
+
+	If the code doesn't work, please tell me. I don't think I fully tested
+some of the stuff. Hope you like! :). Also, if anyone has info on why my rotates
+always scale by 4 (I didn't want them too!), I'd appreciate it if you told me why
+they do that.
+
+	Happy coding!,
+		-Mike H a.k.a GbaGuy
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day15.htm">Day 15</a></center>
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>GBA ASM - Day 22</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 22 - Saving And 0xE000000</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>Intro</b></h2>
+<p style="color: green;"><pre><b>
+	Well... I figured I might as well do something about this as many people
+have been asking the question around the 'net. Today we are going to see how to
+put something into the save memory of the cart.
+	
+<h2 align="center" style="color: LightCoral;"><b>The LDRB/STRB Instructions</b></h2>
+	These instructions load or store a byte to/from memory and are needed to
+be able to read/write from save ram (SRAM). They work just like any other loads
+or stores. 
+
+	Save RAM is at 0xE000000. All you have to do is write to any address from
+0xE000000 to 0xE00FFFF (which is 64kb of save memory) with the STRB instruction.
+To read from SRAM, use the LDRB instruction. simple!
+
+Reading the first byte of SRAM:
+
+	ldr r1,=0xE000000
+	<u>ldrb</u> r1,[r1]
+
+Writting the first byte of SRAM:
+
+	ldr r1,=0xE000000
+	ldr r2,=0xFF  ; we are going to write 0xFF to SRAM
+	; note that we still, most likely, will use a normal LDR to load the register
+	; with a number
+	<u>strb</u> r2,[r1]
+
+Hope that helps anyone having trouble with SRAM.
+Which I hope isn't the case as it is very easy to use. (thanks N!)
+
+<h2 align="center" style="color: LightCoral;"><b>Day In Review</b></h2>
+
+	If anyone would like to write something, let me know via email.
+
+	With saving as easy as it is, it's surprising that a lot of games
+still use a password system...	
+
+	Greetings,
+		- Mike H
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day23.htm">Day 23</a></center>
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>

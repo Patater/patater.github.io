@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>GBA ASM - Day 4</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 4</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>A Few Things About MOV and LDR Instructions</b></h2>
+<p style="color: green;"><pre><b>
+	This section is devoted to the people who still wonder about the difference between the
+MOV and LDR Instructions. They both have the same purpose, to move data, ok? The difference is
+that the MOV instruction is mainly used to copy the contents of one register to another like 
+so:
+
+mov r0,r1
+
+		If r1 = 100 then now r0 = 100 also, got it?
+
+	With MOV, you can MOVe numbers into registers, but the numbers must fit into 8 bits (1 
+byte). just use MOV for copying registers around and LDR for LoaDing Registers which works like
+so.
+
+ldr r0,=0x06000000
+	
+		LDR loads a register with a number of 32bits (4 bytes) at most. 
+
+	So to wrap up this small section, I'll say "LDR is used to load registers, MOV is used
+to copy a register to a register.
+
+
+
+
+<h2 align="center" style="color: LightCoral;"><b>About the GBA's Keypad</b></h2>	<h4 align="center" style="color: green;"><b>Ok, I admit it, the GBA has no actual Keypad!</b></h4>
+
+	The GBA has 10 keys, UP, DOWN, LEFT, RIGHT, A, B, START, SELECT, L, and R. When you
+press a key, the corresponding bit (1 binary digit) goes clear (0 or off). The keypad register
+is at 0x04000130. In Keypad.h which you can get <a href="keypad.h">here</a>, (Keypad.h is the 
+same as the one from <a href="http://www.thepernproject.com">ThePernProject</a> converted to asm), there
+are the following defines:
+
+KEY_A 1
+KEY_B 2
+KEY_SELECT 4
+KEY_START 8
+KEY_RIGHT 16
+KEY_LEFT 32
+KEY_UP 64
+KEY_DOWN 128
+KEY_R 256
+KEY_L 512
+KEYS 0x04000130
+
+	To check to see if a key is down you do the following:
+
+ldr r3,=KEYS     ; These 2 lines LoaD Register r4 with
+ldr r4,[r3]      ; the contents of the Keys memory.
+ands r4,r4,#KEY_A  ; This line does an AND operation with the keys register and the A Key.
+; note that the AND instruction has the 'S' suffix that will set the condition to the result
+; of the operation.
+
+	If the A key is down the condition will be EQual so any instruction after that with
+the EQ (EQual) suffix will be executed ONLY is the A key is down. I think it's obvious on how
+to test for the other keys, so I won't show you.
+
+So now a small demo about keypressing (if you think about that, it sounds like perverted 
+or something :)) Here goes:
+
+;;--- CODE START ---;;
+@include screen.h     ; include our screen defines
+@include keypad.h     ; just make sure it's in Goldroad's folder, include our keypad defines.
+@textarea
+
+ldr r4,=REG_DISPCNT
+ldr r5,=(MODE_3|BG2_ENABLE)
+str r5,[r4]
+
+; Our usual routine of setting up Screen Mode 3.
+
+ldr r7,=VRAM+2410
+
+; make r7 a pointer to screen memory at coordinates at 10,10.
+
+start   ; a label called start, you should be able to tell what labels are now, so this is
+; the last time I'm pointing it out.
+
+ldr r8,=KEYS    ; load r8 with address of keys register
+ldr r6,[r8]   ; get value of key register
+ands r6,r6,#KEY_UP   ; bit and the key register value and the key value
+; status now should be EQual if key is down. Not Equal if key not down.
+
+ldr r6,=0x00FF00FF  ; loads two (2) red pixels into r6
+ldrne r6,=0x00000000  ;if the condition wasn't actually EQual, put two(2) black pixels into r6.
+
+str r6,[r7]      ; put the pixels that are in r6 into r7 (r7 has vram at 10,10)
+b start     ; jump (branch) back up to start
+;;---STOP COPYING ---;;
+
+Assemble that file!
+
+NOTE : Now, to actually get output from this thing, you have to hold the key down.
+
+
+Even though that was sort, checking for keypresses is important and deserves it's day.
+Get that?
+
+Day 5 may be a little while in the making because it will be about sprites.
+
+
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day5.htm">Day 5</a></center>
+
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>

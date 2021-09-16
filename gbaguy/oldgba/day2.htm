@@ -1,0 +1,165 @@
+<HTML>
+<head>
+<title>GBA ASM - Day 2</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 2</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>A (Some) Little Stuff About ARM Assembly</b></h2>
+<p style="color: green;"><pre><b>
+	ARM is the company who makes the GBA's CPU (processor). To get technical the GBA's 
+processor is a ARM7TDMI. ARM processors (unlike Intel processors that are CISC) are RISC.
+RISC stands for Reduced Instruction Set Computers (CISC is Complex . . .). Although there 
+are not many instructions (a good thing), ARM (maybe most RISC I donno) instructions have
+many different uses and combinations which makes RISC processors as powerful as they are.
+
+	<h4 style="color: Coral;"><b>     Registers</b></h4>
+
+	I don't know about other ARM processors, but the one in the GBA has 16 registers
+and unlike Intel (and other) processors, all registers can be (most of the time) freely
+messed with. The registers are:
+
+r0,r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12,r13,r14,r15
+
+Wow! that's alot! An explanation is in order:
+
+r0 : Yours to mess with!
+
+r1 : ditto
+
+r2 to r12 : ditto
+
+r13 : On some ARM systems, r13 is the Stack Pointer, (SP for ya Intel folks). As I'm not
+too sure about r13's role in the GBA, I'll just say this, try not to mess with it while 
+you do stack stuff.
+
+r14 : Contains the return address for subroutine calls, if you don't make any, then this
+is yours to mess with freely as well.
+
+r15 : Program Counter & Flags, like the IP (Instruction Pointer in Intel), it's unlike the 
+Intel IP register in that you have free access to it like any other register, but be warned 
+messing with it WILL make your code jump to another place in memory and mess up the flag 
+settings.
+
+Let's do the math, hmm... 16 total minus 3 (at most), gives us 13 registers. Yep, ain't that
+cool? 13 registers. Calm down (are you hyperventalating at the thought, I know I am :-)).
+
+	Now, you still may be wondering exactly what registers are. Registers are special
+places in memory that are actually internal to the processor and have no actual memory 
+address, they are just known by thier names. The registers are 32bits wide, so they can
+hold 32bit numbers. Almost everything in any assembly language uses registers, so get to
+know them like you know your mama (And while you're at it, give 'er a hug too :-))
+
+
+
+
+	<h4 style="color: Coral;"><b>     ARM Assembly Instructions</b></h4>
+
+
+	First, I am going to start off by saying that I think that whoever though up the
+ARM assembly language is a genius. 
+
+	Second, I'd like to introduce my good friend CMP. Say hi to CMP and maybe, just
+maybe, he'll be your new best friend. CMP stands for CoMPare, CMP can compare a register
+and a number, register and a register, or register and memory. Now, after comparing, CMP
+sets what is called the status flags, which tell you the result of the comparation (is 
+that a word?). As you may recall, the register r15 contains the flags. The flags tell the
+result of an instruction, the CMP instruction just is specialy made to set the flags and 
+do nothing else. The sort of things that the flags represent is shown below:
+<//--The flags are:
+N  Negative        Set if result is negative
+Z  Zero            Set if result is zero
+C  Carry           Set if carry occurs
+O  Overflow        Set if overflow occurs
+I  IRQ             Interrupt disable
+F  FIQ             Fast Interrupt disable--//>
+<a name="#suffixes">The</a> states they can store are:
+
+EQ EQual
+NE Not Equal
+VS oVerflow Set
+VC oVerflow Clear
+HI HIgher
+LS Lower or the Same
+PL PLus
+MI MInus
+CS Carry Set
+CC Carry Clear
+GE Greater than or Equal
+GT Greater Than
+LE Less than or Equal
+LT Less Than
+Z is Zero
+NZ is not Zero
+
+These states become very important throughout ARM asm.
+
+<h3 align="center">NOTE: Flags are just where the conditions (EQual, Less 
+Than, etc) are stored. Other than that, they aren't too important.</h3>
+
+
+	<h4 style="color: Coral;"><b>     The Conditional Suffixes</b></h4>
+
+
+	You have already seen the B (Branch) instruction. The B instruction
+just takes a label and goes right to it with what's called an Unconditional Jump (like GoTo
+in BASIC or JMP in Intel asm). Unlike Intel (and CISC processors) the B instruction
+just takes a suffix of the state of the flags to check for and if the flags don't 
+represent the desired state, the Branch doesn't happen and the code continues as if
+nothing happened. The suffixes of the flag states (and what they mean) are listed <a href="#suffixes">above</a>.
+So if you wanted to check to see if register r0 was equal to register r4 and then branch
+to a label called label34, the code would be like this:
+
+CMP r0, r4     ; Comments in assembly are marked by semi-colons (;)
+BEQ label34    ; B is branch and EQ is translated as "If EQual to"
+
+NOTE : With the Goldroad Assembler, labels need no colon(:), and must be by themselves on a
+line.
+NOTE II : The capitalization of CMP and BEQ is not necessary and is just so you can see better.
+
+	Now, you know that you can Branch on the state of the flags, but what you don't know is 
+that you can do anything depending on the state of the flags, just put the suffix on 
+whatever instruction you want!
+
+	Also, you don't have to use CMP to set the state of the flags, if you want an 
+instruction like SUB (Subtract) to set the flags, add the suffix 'S' to the instruction
+(stands for Set flags). This is usefull if you don't want to Set the flags with an extra
+CMP instruction, so to set the flags and Branch if the result is zero would be like this:
+
+SUBS r0,r1,0x0FF   ; Sets the state of the flags to the resulting state of the instruction. 
+ldrZ r0,=0x0FFFF   ; Will only Load Register r0 with 0x0FFFF if the state of the flags 
+indicates a Zero result.
+
+
+
+	<h4 style="color: Coral;"><b>     Review</b></h4>
+
+
+	Today, we learned (more) about the registers. We also learned about the flexability
+of ARM instructions to execute depending on the state of the flags. We learn't alot today.
+
+Today, we learn't about ARM assembly. Tomorrow, we use it to put a picture on the GBA screen.
+
+- Something is only impossible until it's possible.
+- Jean-Luc Picard, Capt. , USS Enterprise 
+
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day3.htm">Day 3</a></center>
+
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</HTML>
+

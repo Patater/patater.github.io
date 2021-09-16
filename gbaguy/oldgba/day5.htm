@@ -1,0 +1,241 @@
+<html>
+<head>
+<title>GBA ASM - Day 5</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 5</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>Intro</b></h2>
+<p style="color: green;"><pre><b>
+	This day is about sprites, more specifically the most important part: GETTING ONE ON
+THE SCREEN. That's right, all we do today is get a 32x32 16 color sprite onto the screen. I'm
+sorry this took so long, but 2 things happened: 1. I got too lazy to do anything on the GBA.
+2. Java3D rules...
+
+	Anyway, let's just find out how to get a sprite on the screen then we'll worry about
+other stuff, k?
+
+
+<h2 align="center" style="color: LightCoral;"><b>Image Conversion</b></h2>	
+
+	Just like when we put an image on the screen, we need to convert the image to something
+Goldroad can handle. This time around we'll be using GIFs2SPRITEs.exe , which can convert 
+multiple GIF files to C code. Now, how is Goldroad supposed to handle a C code file? Let's play
+Short Answer/Long Answer! Short Answer: It can't. Long Answer: I had to make a program in
+VB to convert the output of GIFs2SPRITEs.exe into Goldroad ASM @DCW statements. You can
+get GIFs2SPRITEs.exe <a href="gifs2sprites.zip">here.</a> It is zipped just so ya know... Alright you might want to put that
+in a "tools" folder in Goldroad's folder which I recommend be "C:\gbaasm". Anyway, here's
+my program: <a href="ctoasm.zip">CtoASM.exe</a>.
+
+	Now, draw a 32x32 picture in MSPaint, save it as a GIF file called sprit.gif in
+Goldroad's "tools" folder. Now open up a DOS Prompt and go like this:
+
+> cd <i>Full directory path to the folder that contains sprit.gif and gifs2sprites.exe</i>
+
+* that ">" symbol represents the prompt, don't type that! Make sure to hit enter after you
+* finish typing!
+
+> gifs2sprites 16 sprit.h sprit.gif
+
+> ctoasm
+
+	Notice that ctoasm is a Windows program. Use the (upper) Browse button to find and pick
+the sprit.h C header file that GIFs2SPRITEs made. Use the other (lower) Browse button and get
+to sprit.gif and gifs2sprites 's folder. Notice this is a Save Dialog, so just type "sprit.asm"
+into the Dialog and hit ENTER. Now, hopefully, you got the path of sprit.h into the top box,
+and the path of a soon to be created sprit.asm in the lower box. Hit the GO button. Say OK to
+the warning that this may take a while.
+
+	Now hopefully (I hope for alotta things), you'll have a sprit.asm file. I realize
+that my program isn't efficient, but it has worked ok so far as I have tested it. 
+
+
+<h2 align="center" style="color: LightCoral;"><b>OAM (Object Attribute Memory)</b></h2>
+
+	If you've programed the GBA in C before, you maybe know that OAM is where you tell
+the GBA all about your sprite, such as: Size, Shape, Colors  (16/256), X position, Y position,
+tile/char number. OAM is located at 0x7000000. There are 128 (0-127) available OAM entries, so
+the GBA can keep track of 128 sprites in OAM.
+
+	Remember though that you are still limited by available character (sprite picture)
+memory. Each sprites OAM entry is 8 bytes long, with 4 (0-3) Attributes that are 2 bytes
+long (8 / 4 = 2). The Attributes are as follows:
+
+*NOTE: Just the important parts are listed. Goto <a href="http://www.thepernproject.com/">The Pern Project</a> for a complete listing.
+
+Attribute 0 :
+Shape  |  Color Depth  | Y Position
+Square |   COLOR_16    | (vertical position on the screen)
+Tall   |   COLOR_32    |      
+Wide   |   
+
+Attribute 1 :
+Size      |  X Position 
+Size_8    | (horizontal position on the screen)
+Size_16   |
+Size_32   |
+
+Attribute 2 :
+Character Number a.k.a The number of the 8x8 tile in sprite picture memory that the sprite
+starts on.
+
+Attribute 3 :
+I believe #3 is for rotation stuff. So it won't be talked about here.
+
+Let's start putting together a code file!
+Download <a href="sprites.h">sprites.h</a> for the sprite defines.
+
+;;-- CODE START --;;
+
+@include screen.h
+@include sprites.h
+b start                           ; jump over data (remember: running data as code is BAD)
+@include sprit.asm   ; this is that converted sprite picture
+start:                           ;  I've started putting colons on labels again as I realized
+;that it looks better that way and Goldroad DOES allow it.
+
+Init_Sprites     ; A macro in sprites.h that inits all sprites' x positions to 300, so we
+;don't get a random data 8x8 sprite at 0,0
+
+ldr r1,=REG_DISPCNT   ; make r1 a pointer to screen controller register
+ldr r2,=(MODE_0|BG2_ENABLE|OBJ_ENABLE|OBJ_MAP_1D)
+str r2,[r1]    ;  set up the screen in mode 0 , with backgroud 2 and sprites (OBJs) enabled
+;, and 1d sprite maping  (who the hell would want to nest loops in ASM if we don't have to!)
+
+;;-- STOP COPYING --!!
+
+	I'm gonna explain that part, then I'll show the rest. If you think the comments
+explain it fine (I know I do), then just read this anyway :). First, we include all our files
+then we call a macro to initialize the sprites (that I generously coded for you). Then we
+put the screen in Mode 0, which you may find unusual as most programing tutors that
+I've seen use Mode 3 or 4. I use Mode 0 here because it's a tiled mode, a bitmap mode like
+3 or 4 would cut into our sprite picture memory (0x6010000) and use half of it for the
+screen or the back buffer. 
+
+	Along with setting Mode 0, we enable sprites and a background and we set
+sprite loading to 1D. If we had set it to 2D we would need to keep track of x and y when
+we load in the sprite picture. And like the comment says: Who the hell would want to
+code nested loops in ASM if you don't have to! The next part of code follows:
+
+;;-- CODE CONTINUE --!!
+
+ldr r0,=OAM             ; make r0 a pointer to OAM (0x7000000)
+ldr r1,=(SQUARE|COLOR_16|10)|((SIZE_32|10)&lt;&lt;16)             
+; in the above, we jam all of Attributes 0 and 1 into r1, more explanation later.
+str r1,[r0]+4!   ; put Attributes 0 and 1 into OAM, and increase pointer in OAM to Attribute 2
+ldr r1,=0       ; Attribute 2 is tile number, and out sprite starts at the first one: 0
+str r1,[r0]        ; put it in OAM. if you wanted to do another sprite, you would need a "+4!"
+; to get the OAM pointer (r0) past Attribute 2 and past rotation stuff in Attribute 3 and to
+; the start of the next sprite's OAM entry
+
+;;-- STOP COPYING --!!
+
+	Now this requires some explaination, mainly the second line that goes like this:
+ldr r1,=(SQUARE|COLOR_16|10)|((SIZE_32|10)&lt;&lt;16)             
+
+Notice that since each Attribute is 2 bytes long, we can fill a 32-bit register with 2
+attributes. So, the first 3 things | (OR'ed) together is Attribute 0 and the second 2
+is Attribute 1. Attribute 1 is shifted left to be in the first 16-bits (2 bytes) of the
+register. I realize it sorta looks backwards because the code looks like it puts
+Attribute 1 before 0, but the truth is that figuring out OAM was the last thing
+that kept me from writting this! At first I thought that the first 3 things ORed
+should be in the first 2 bytes. That didn't work so I changed it to the current 
+code that you see above and it worked. 
+
+"don't fix what ain't broken"
+
+
+<h2 align="center" style="color: LightCoral;"><b>Obj Pallete (Sprite's Colors)</b></h2>
+
+	There are 2 palletes, one for backgrounds (planned for a day < 10) and one for
+sprites at 0x500200. The pallete is were the sprites colors go, other than that, I should say
+that in C you use a FOR loop that runs 256 times using a 16-bit pointer. In ASM, all pointers
+are ALWAYS 32-bits. So we load double the data at once, accessing memory half as much (128
+times). Here's the code to load the pallete from our converted GIF file.
+<code>
+;;-- CODE CONTINUE --!!
+
+ldr r1,=OBJPAL     ; make r1 pointer to sprite pallete (0x500200)
+ldr r2,=128            ; 128 is number of times to access pallete
+ldr r3,=pallete        ;   pallete is defined in the sprit.asm that we converted.
+
+palloop:        ; This loop is a typical example of a loading code chunk
+ldr r7,[r3]+4!  ;  it takes 4 bytes from pallete (r3) into r7 and then
+str r7,[r1]+4!  ;  stores the 4 bytes into sprite pallete mem. each time write-backing to add 4
+subs r2,r2,1    ;  onto each pointer. the SUBS line subtracts 1 from the number of times to
+bne palloop  ; access sprite pallete mem. and makes the status flags represent EQual status
+
+; if r2 = 0   (r2==0, for you C people).  that BNE statement only loops if the status
+;is Not Equal so the loop actually stop when we are done.
+
+;;-- STOP COPYING --!!
+</code>
+	I think that time the code and comments really comment for themselves so
+onto the next section.
+
+
+<h2 align="center" style="color: LightCoral;"><b>CHARMEM (Sprite Picture Memory)</b></h2>
+
+	The Sprite Picture Memory is at 0x6010000. If we were in a bitmaped screen mode such
+as 3 or 4 (is 5 bitmapped?), then we would have to start at tile 512 instead of 0 (does anyone
+know where exactly that puts us for sprites in a bitmapped mode?). That's why
+we are in Mode 0. 
+
+;;-- CODE CONTINUE --!!
+
+ldr r1,=CHARMEM   ; see the description below this code section
+ldr r2,=128
+ldr r3,=obj0
+
+sprloop:
+ldr r7,[r3]+4!
+str r7,[r1]+4!
+subs r2,r2,1
+bne sprloop
+
+;;-- STOP COPYING --!!
+
+This does the exact same loading chunk code except with different pointers that load in the
+sprite to CHARMEM (sprite picture memory at 0x6010000) and obj0 is our converted sprite
+in sprit.asm.<!--, you can download my sprit.asm that I used to test the code <a href="sprit.asm">here.</a>-->
+
+<h2 align="center" style="color: LightCoral;"><b>The End Of The Code And This Day</b></h2>
+
+	The end of the code make an infinite loop and that's it.
+
+;;-- CODE CONTINUE --!!
+
+infiniteloop
+b infiniteloop
+
+;;-- END OF CODE --!!
+
+	That ends our code and this day unless I figure out how to move and rotate and stuff
+to sprites which will probably be moving sprites first 'cause I have NO idea on how to Cos()
+and Sin() in ASM. So all I can say about Day 6 is, I FEEL MUSICAL OR MOVICAL (moving sprites, 
+movical, I seem to have invented like 10 words in like 5 days). Farewell, 
+tallyho, and goodnight. (or something like that)
+
+"Someone needs a hug..."
+- Ryan Stiles, "Whose line is it anyway?"
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day6.htm">Day 6</a></center>
+
+I realize that really sucked for the 4 weeks I told people that it was in the works, but was
+really just putting it off to do other programming things including a Java tutor.
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>

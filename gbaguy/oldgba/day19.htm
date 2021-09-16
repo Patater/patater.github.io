@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>GBA ASM - Day 19</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 19 - The SWI Instruction</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>What?!?</b></h2>
+<p style="color: green;"><pre><b>
+	
+	You may be wondering why I didn't tell about SWI yesterday, I've done it this
+way just mainly to have a logical one sub-topic at a time approach. SWI stands for
+SoftWare Interrupt (I think) and is used to call BIOS functions.
+
+<h2 align="center" style="color: LightCoral;"><b>How to use SWI</b></h2>
+
+SWI is used by ... oh, heck here's the syntax:
+
+	swi 0x60000  ; will call Divide
+
+Divide is SWI #6, to call a function, make it's number hex and put 4 zeros after it,
+I don't know what the zeros have to do with it, but it won't work without the zeros.
+
+You might be wondering how I knew Divide was #6, go <a href="http://www.cs.rit.edu/~tjh8300/CowBite/CowBiteSpec.htm">here</a> and
+look under "BIOS". 
+
+<h2 align="center" style="color: LightCoral;"><b>Calling SoftReset</b></h2>
+
+	What SoftReset does is, well... reset the GBA, starting code at 0x8000000 (ROM)
+or 0x2000000 (RAM, some people move their code to here on startup) depending on some
+memory register, it's 0 by default and 0 means 0x8000000 so we don't have any problems
+here. Let's call it! :
+
+	swi 0x00000  ; SoftReset is #0 , and then 4 zeros after it.
+
+Easy ain't it!?
+	
+<h2 align="center" style="color: LightCoral;"><b>Day In Review</b></h2>
+
+	Tomorrow I'll prove that this does work by calling Divide and putting
+the value in Work RAM so you can use Memory Viewer in VisualBoy Advance to verify
+the correct answer.
+
+	Hope you're excited, I sure am!,
+		-Mike H a.k.a GbaGuy
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day20.htm">Day 20</a></center>
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>

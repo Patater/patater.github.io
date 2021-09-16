@@ -1,0 +1,175 @@
+<HTML>
+<head>
+<title>GBA ASM - Day 3</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 3</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>About the ADD and SUB Instructions</b></h2>
+<p style="color: green;"><pre><b>
+	First of all, the ADD and SUB instructions stand for addition and subtraction (duh!).
+They both can take the "Set flags" suffix S to make ADDS and SUBS, this is especially useful
+to check to see if the result of the subtraction was zero (0). 
+
+	Both instructions take 3 operands (parameters):
+
+
+	ADD r0, r1, 1
+
+		r0 = r1 + 1   
+
+	The ADD instruction takes the last two(2) parameters,
+adds them, and puts them in the first parameter.
+
+NOTE: I think the first two parameters <U>MUST</U> be registers, but I'm not sure.
+
+
+	SUB r0, r1, 2
+
+		r0 = r1 - 2
+
+	The SUB instruction takes the last parameter, subtracts it from the second
+and puts the result in the first operand.
+
+Now, that you understand ADD and SUB, let's put a picture on the GBA's screen.
+
+
+
+
+<h2 align="center" style="color: LightCoral;"><b>The Tool To Use</b></h2>
+
+
+	I used the tool called Bimbo to export a 240 by 160 picture to asm format.
+Download it from the gfx tools section at <a href="http://www.gbadev.org/">GBADev.Org</a>. Now go into Microsoft Paint
+and draw a 240 by 160 picture and save it as a 256 color Bitmap. Run Bimbo and hit the Open Button. Make 
+sure the settings are like this:
+
+	DON'T TOUCH THE SETTINGS!
+
+NOTE: sorry 'bout da yellin', just want you to have the easiest time possible with this.
+
+	Hit the Export Button. When you save it, save it as Assembler Source. Now here's where it get's 
+interesting. Bimbo doesn't put the '@' (at symbol) before the directives in the code it makes, so we have
+to open up our favorite ascii (plain text) editor and replace DCW with @DCW. To make it go quickly just 
+hit the Replace All button.
+
+		Alright now let's get coding on our little problem of putting a picture on the screen:
+
+	First, however, a little thought: rename your asm file that has the pic in it to pic.asm and 
+open it up in notepad again and change the thing that says <i>name of file here</i>Bitmap to picBitmap, k?
+
+	Now here's the start of the code:
+
+	; --Start Copying Here--
+
+	@include screen.h      ; include the helping hand stuff from screen.h
+	b start                ; jump over your bitmap data (don't want the GBA executing Data :-) get it?
+	@include pic.asm       ; include your bitmap data
+	start	               ; label called start
+	@textarea	       ; code starts after this thing
+
+	; Set up the screen just like Day 1, Mode 3 with Background 2 enabled
+
+
+	ldr r1,=REG_DISPCNT            ; just like day 1, you should get this.
+	ldr r0,=(MODE_3|BG2_ENABLE)
+	str r0,[r1]		
+
+	; Prepare for putting picture in VRAM (screen memory)
+
+	ldr r0,=VRAM      ; make r0 a pointer to screen memory VRAM is 0x06000000.
+	ldr r1,=picBitmap  ; make r1 a pointer to your bitmap data
+	ldr r3,=19200      ; we want to access screen memory 19200 times. 
+		          ; the screen is 16bit color in Mode 3, 240x160 pixels = 38400
+		          ; 19200 is because of 2 pixels at a time we'll copy because 32bit store
+		          ; instruction
+
+	label1           ; a label called label1
+	ldr r2,[r1]+4!   ; loads r2 with the next two(2) pixels from the bitmap data (pointed to by r1).
+	str r2,[r0]+4!   ; stores r2 (has 2 pixels in it) into VRAM.
+	subs r3,r3,1     ; subtracts 1 from the amount of time we want to access screen memory (VRAM).
+	                ; notice the S suffix on the SUB instruction, we set the state of the flags here.
+	bne label1     ; this branch instruction checks to see if the state of the flags represents a zero
+			 ; result. If the number of times we want to access vram isn't zero(0) then keep 
+			 ; doing it.
+
+	infin         ; label called infin
+	b infin	      ; branch to infin
+
+	; the previous 2 lines are an infinite loop. :-) while(1) {} 
+
+	; save this file as picscrn.asm
+	;--Stop Copying Here--
+
+	
+	Now that you've seen the code. Let's assemble it!
+
+	Put pic.asm and screen.h and picscrn.asm in Goldroad's folder. Try dragging picscrn.asm onto
+Goldroad.exe first, if that doesn't create a .GBA file then open a DOS prompt and Change Directory to
+Goldroad's folder (cd command) and type : 
+
+Goldroad picscrn.asm   <i>and hit enter</i>
+
+	An emulator should be in goldroad's folder too, so if it's Visualboyadvance type:
+	
+Visualboyadvance picscrn.gba
+
+	Look at your perty pic on the emulator.
+
+	Congratu . . . Not quite yet, there's still some things from that program that need explanation.
+
+ 
+These 2 lines:
+
+	ldr r2,[r1]+4!  
+	str r2,[r0]+4! 
+
+	You probably are wondering what the +4! is for, right? Well I didn't know either until I did some
+research. The Exclamation Point '!' indicates what's called a "write-back", so the line: ldr r2,[r1]+4!, 
+really means: 
+
+	Load register r2 with the stuff pointed to by r1 and then, after that's done, add 4 to r1. To do
+the write-back before r1 gets loaded into r2, would be like this: 
+
+ldr r2,[r1+4]!
+
+	   * The +4 INSIDE the braces '[]' means "add 4 to r1 BEFORE doing instruction"
+
+	     * The Exclamation Point '!' goes on the END OF THE ENTIRE INSTRUCTION, and indicates a 
+	        write-back.
+	
+
+	The reason for doing a write-back of +4 is that 32bits (32bit load and stores) is 4 bytes so to get to the next location
+in the bitmap data and in screen memory (VRAM). It's 4 bytes because we load pixels 2 at time and each pixel is 2 bytes (2*2=4). 
+And remember that the reason we do 2 pixels at a time is that 4 bytes is 32bits and the store and load instructions are 32bits.
+
+
+	Wow! That was some hard work! Congratulations! You've passed the rigorous Day 3!
+
+I'm not sure what Day 4 will be yet, either detecting keypresses or a discussion about the GBA's BIOS.
+
+-Hope you had fun.
+
+- Mike H / gbaguy
+
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day4.htm">Day 4</a></center>
+
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+
+</HTML>
+

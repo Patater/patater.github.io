@@ -1,0 +1,281 @@
+<html>
+<head>
+<title>GBA ASM - Day 13</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 13 - Sprite Effects!</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>What Sprite Effects Exactly?</b></h2>
+<p style="color: green;"><pre><b>
+	Well, since you asked so nicely, we will cover the following: Vertical and 
+Horizontal Flip, Mosaic, and rotation and scaling. With rotation, however, I don't
+cover SIN() and COS(), so we'll just discuss where and what to put in the
+rotational/scaling data and leave you to figure the rest out. I may discuss making
+a table of the values for the rotation array, but this is alittle out of the current
+topic.
+
+<h2 align="center" style="color: LightCoral;"><b>Flip Flags</b></h2>
+
+	This is so simple, I'm not even going to give a full code file example.
+The Vertical Flip Flag is bit#12 (starting from #0 on right) in Attribute 0. So
+for our flipping pleasure, the defines in <b>sprites.h</b>, which you should have
+already, that we care about here are:
+
+-VERTICAL_FLIP
+-HORIZONTAL_FLIP
+
+The Horizontal Flip Flag is bit#13 in Attribute 0. To toggle the flip flag, you
+want to grab the first 32bits of a sprite's OAM Entry into a register and EORing
+(same as XOR) the register with either VERTICAL_FLIP or HORIZONTAL_FLIP. Alright,
+some code:
+
+ldr r2,=OAM
+ldr r3,[r2] ; load r3 from memory, [] in a load statement mean "from memory".
+; the above will load r3 with Attribute 0 and Attribute 1. both because CPU registers are 32bit
+; and OAM attributes are 16bit.
+eor r3,r3,VERTICAL_FLIP   ; XORs r3 with VERTICAL_FLIP and puts the value in r3.
+; EOR and XOR are the same, just remember that the asm instruction is called EOR.
+str r3,[r2]  ; store the modified Attributes back to OAM.
+
+That code toggles the Vertical Flip Flag, if you wanted to toggle the Horizontal Flip...
+well... I hope you get the idea.
+
+<h2 align="center" style="color: LightCoral;"><b>Mosaic</b></h2>
+
+	The Mosaic Register is at 0x400004C, please redownload <a href="screen.h">screen.h</a>
+for the new functionality. The register is 16bits, bits#15-12 are vertical mosaic and
+bits#11-8 are horizontal mosaic. Mosaic, if you didn't know already, makes your sprite
+look blocky. The other bits are for the background. Other than setting REG_MOSAIC, we
+also need to set the Mosaic Flag in Attribute 0. Toggle it by replacing VERTICAL FLIP,
+with MOSAIC in the previous code. Note that you can OR them together with the | (pipe)
+symbol. Here's the previous example modified:
+
+;set the mosaic register
+ldr r4,=REG_MOSAIC
+ldr r3,=0x1200  ; 1 for horizontal, 2 for vertical, none for background.
+str r3,[r4]   ; store it.
+
+ldr r2,=OAM
+ldr r3,[r2] ; load r3 from memory, [] in a load statement mean "from memory".
+; the above will load r3 with Attribute 0 and Attribute 1. both because CPU registers are 32bit
+; and OAM attributes are 16bit.
+eor r3,r3,MOSAIC   ; XORs r3 with MOSAIC and puts the value in r3.
+; EOR and XOR are the same, just remember that the asm instruction is called EOR.
+str r3,[r2]  ; store the modified Attributes back to OAM.
+
+And boom! You get a MOSAICaded sprite.
+
+<h2 align="center" style="color: LightCoral;"><b>Rotation (Insert triumphant melody here!)</b></h2>
+
+	I hope you've atleast read Day 3 of the C tutorial at <a href="http://www.thepernproject.com/">ThePernProject.COM</a>
+because if you haven't, this is going to be aLOT harder. Go read it now.
+...
+...
+Go read it again. :)
+...
+...
+	Think you understand? If you don't it's ok, because I'm going to try to
+explain it anyway.
+
+	To start out, there's something called Rotation Data. Now in Rotation Data
+there are 4 16bit "spots" in each entry in Rotation Data memory. Got that? Good.
+
+	Rotation Data is in OAM. What, you ask, isn't the sprite attributes in OAM? And
+I answer: yes. Remember what happened to Attribute 3? We never used any Attribute 3's.
+Well here's a little hint: Rotation Data is the Attribute 3s throughout OAM. Just to
+clarify, Attribute 3 has nothing to do with an individual sprite. Here's a little diagram
+mapping OAM to Rotation Data Entries and the pa,pb,pc,pd that ThePernProject Day 3 talks
+about:
+
+	Sprite 0 Att#0
+	Sprite 0 Att#1
+	Sprite 0 Att#2
+	Sprite 0 Att#3 - Rotation Data Entry #0 - 16bit "spot"#1 - pa
+	Sprite 1 Att#0 
+	Sprite 1 Att#1
+	Sprite 1 Att#2
+	Sprite 1 Att#3 - Rotation Data Entry #0 - 16bit "spot"#2 - pb
+	Sprite 2 Att#0
+	Sprite 2 Att#1
+	Sprite 2 Att#2
+	Sprite 2 Att#3 - Rotation Data Entry #0 - 16bit "spot"#3 - pc
+	Sprite 3 Att#0
+	Sprite 3 Att#1
+	Sprite 3 Att#2
+	Sprite 3 Att#3 - Rotation Data Entry #0 - 16bit "spot"#4 - pd
+
+	Sprite 4 Att#0
+	Sprite 4 Att#1
+	Sprite 4 Att#2
+	Sprite 4 Att#3 - Rotation Data Entry #1 - 16bit "spot"#1 - pa
+	Sprite 5 Att#0 
+	Sprite 5 Att#1
+	Sprite 5 Att#2
+	Sprite 5 Att#3 - Rotation Data Entry #1 - 16bit "spot"#2 - pb
+	Sprite 6 Att#0
+	Sprite 6 Att#1
+	Sprite 6 Att#2
+	Sprite 6 Att#3 - Rotation Data Entry #1 - 16bit "spot"#3 - pc
+	Sprite 7 Att#0
+	Sprite 7 Att#1
+	Sprite 7 Att#2
+	Sprite 7 Att#3 - Rotation Data Entry #1 - 16bit "spot"#4 - pd
+	---- Continues in shown pattern throughout OAM ----
+
+I realize that the diagram is big, but I hope it illustrates well the layout of
+Rotation Data. Note that any sprite can use any Rotation Data Entry. There are
+32 Rotation Data Entries, so 32 sprites can be rotated/scaled.
+
+	So just what do we put in each 16bit "spot" (pa,pb,pc,pd) in the Rotation
+Data? Well, ThePernProject gives us some very nice equations just to make it hard
+for us to do the calculations in assembly (kidding!...), they are:
+
+spot 1 - pa needs to be the COSine of the angle.
+spot 2 - pb needs to be the SINe of the angle.
+spot 3 - pc needs to be the NEGATIVE SINe of the angle.
+spot 4 - pd needs to be the COSine of the angle.
+
+There is another part to it, but that's for scaling which we'll cover another day.
+
+Notice that spot 3 needs to be the negative sine of the angle, this is what makes rotation
+so hard (for me anyway). Because to effectively set Rotation Data Spots, we need to grab
+Attributes 2 and 3 of some sprite. Clear Attribute 3 (by ANDing), the Rotation Data Spot. And set the
+new value (by ORing). Remember, these are 16bit numbers, so if we just set Attribute 3 with the right
+value, we would accidentally zero out Attribute 2.
+
+	To help us out I've make several (alot actually) new defines in <a href="sprites.h">sprites.h</a>, so
+I suggest you download this new one. The defines are for the Rotation data (obviously) and
+look like PA_0, PB_0, PC_0, PD_0. Replace the '0' with the number of the rotation data entry
+that you want to use. Keep in mind that as of 10/26/2002, I've only finished doing defines
+up to (and including) PD_19.
+
+	Also, to make this easier as we just want to learn how to rotate sprites, we won't
+guard against zeroing out Attribute 2, I'll have to write a day on masking bytes. Instead,
+we'll just use sprite #0 and rotation data entry #0. This way we can zero out Attribute 2
+because Attribute 2 will actually supposed to be 0.
+
+<h2 align="center" style="color: LightCoral;"><b>Let's Get Coding!</b></h2>
+
+	I hope you still have your sprit.asm from Day 5, also keep it because we most
+likely will use it alot from now on.
+Let's see some code!
+
+;;--- CODE START ---;;
+@include screen.h  ; we need this.
+@include dma.h   ; the DMA stuff.
+@include keypad.h 
+@include sprites.h
+
+b start
+@include sprit.asm 
+start
+
+ldr r1,=REG_DISPCNT
+ldr r2,=(MODE_1|BG2_ENABLE|OBJ_ENABLE|OBJ_MAP_1D)
+str r2,[r1]
+
+ldr r1,=REG_DMA3SAD
+ldr r2,=pallete
+str r2,[r1]
+ldr r1,=REG_DMA3DAD
+ldr r2,=OBJPAL
+str r2,[r1]
+ldr r1,=REG_DMA3CNT
+ldr r2,=(128|DMA_32NOW)
+str r2,[r1]
+
+ldr r1,=REG_DMA3SAD
+ldr r2,=obj
+str r2,[r1]
+ldr r1,=REG_DMA3DAD
+ldr r2,=CHARMEM
+str r2,[r1]
+ldr r1,=REG_DMA3CNT
+ldr r2,=(512|DMA_32NOW)
+str r2,[r1]
+;;--- STOP COPYING ---;;
+
+You should be able to understand what is going on up there by now, if I get enough
+email of people saying that they don't, maybe I'll add comments.
+
+;;--- CODE CONTINUE ---;;
+ldr r1,=OAM
+ldr r2,=((SQUARE|COLOR_256|30))|((SIZE_32|<i>(0&lt;&lt;9)</i>|10)&lt;&lt;16)
+str r2,[r1]
+;;--- STOP COPYING ---;;
+
+Here notice the new part italicaded. The number of the rotation data gets shifted over 9
+to get it in the right spot. We are using rotation data entry #0.
+
+;;--- CODE CONTINUE ---;;
+ldr r1,=PA_0    ; store will be in PA
+ldr r2,=70&lt;&lt;16  ; COS(45 degrees) = 0.70, in first byte of part of register that
+str r2,[r1]     ; Working with fixed point numbers in rotation data.
+
+ldr r1,=PB_0    ; store will be in PB
+ldr r2,=70&lt;&lt;16  ; SIN(45 degrees) = 0.70 also. same as the other one.
+str r2,[r1]     
+
+ldr r1,=PC_0    ; store will be in PC
+ldr r2,=0       ; Negative SIN(45 degrees) = -0.70
+sub r2,r2,70    ; subtract 70 from 0 to get a negative and
+mov r2,r2,lsl 16   ; shift to get just the important 16bits.
+str r2,[r1]
+
+ldr r1,=PD_0    ; store will be in PD
+ldr r2,=70&lt;&lt;16  ; COS(45 degrees) = 0.70 again, there's two COSes.
+str r2,[r1]  ; store to attributes#2&3 of sprite 3.
+;;--- STOP COPYING ---;;
+
+	Note that we are working with 16bit fixed numbers, so we need those 3
+shifts by 16 not only to get it in the right part of the register that'll end up
+in the right part of memory, we do it also because the 70 is 0.70 and needs to be
+in the decimal (fraction) part of the number.
+
+;;--- CODE CONTINUE ---;;
+infin
+
+ldr r1,=KEYS           ; first 3 lines check if A is down.
+ldr r1,[r1]            ; these lines toggle rotation and the size 
+ands r1,r1,#KEY_A      ; double flag.
+ldreq r1,=OAM          ; hit A quickly (just once) to toggle the two flags.
+ldreq r2,[r1]          ; get attributes 0&1 of our sprite.
+eoreq r2,r2,#(ROTATION_FLAG|SIZE_DOUBLE)  ; toggle the flag bits with XOR (eor is the instruction for XORing)
+streq r2,[r1]
+; note that the last 4 lines only run if A is down.
+
+b infin
+;;--- END OF SOURCE FILE/ STOP COPYING ---;;
+
+Assemble and run! I hope you get it. I'm not sure why the sprite also scales by
+like 4. I ran ThePernProject's C code and got the same result, maybe the well known
+equations are incorrect?
+
+<h2 align="center" style="color: LightCoral;"><b>Day In Review</b></h2>
+
+	I'm glad I got this done, it was fun. Oooh <sub>1</sub><sup>3</sup> is 
+lucky now, what do ya know? Hehe. See ya.
+
+	Have fun!,
+		-Mike H a.k.a GbaGuy
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day14.htm">Day 14</a></center>
+
+"Time for a Spot commercial... WOOF!... Thank you, Spot!"
+-My dad.
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>

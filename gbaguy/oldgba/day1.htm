@@ -1,0 +1,200 @@
+<html>
+<head>
+<title>GBA ASM - Day 1</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 1</h1>
+<pre>
+
+
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>Figuring out the Assembler</b></h2>
+<p style="color: green;"><pre><b>
+	If you didn't read the intro before you got here, you may be wondering if
+we are going to use the assembler that came with GCC. Short answer: NO. Long answer:
+we are going to use the Goldroad Assembler that you can get at <a href="http://www.goldroad.co.uk/">GoldRoad</a>
+The assember version that I have and use is 1.6F. You should download the most recent version
+of the assembler and unzip it to a path with no spaces in it. Having no spaces in a path
+always makes things easier.
+
+	Alrighty, you got the assembler unzipped where you want it. Now, I have a little 
+file to make everything a little easier. It's the screenmode.h file from the Pern Tutorial
+converted by hand (by ME) to Goldroad Assembler syntax. Get it <a href="screen.h">here</a>.
+Put it in the same directory as Goldroad.exe. 
+
+	Now, you will want to try it out. But first, we need an emulator. Go and get
+VisualboyAdvance, because I know for sure it'll work from the commandline.
+To try it out, copy the following into a file called first.asm in the same folder as 
+the assembler.
+
+;start copying here
+
+@include screen.h
+@textarea
+
+ldr r1,=REG_DISPCNT
+
+ldr r2,=(BG2_ENABLE|MODE_3)
+
+str r2,[r1]
+
+ldr r1,=0x0FF
+
+ldr r2,=vram+2410
+
+str r1,[r2]
+
+label1
+
+B label1
+
+@pool
+@endarea
+
+;stop copying here
+
+The alternative in C is approximatly:
+
+int main()
+{
+SetMode(MODE_3|BG2_ENABLE);
+vram[2410] = 0x0FF;
+while(1)
+{}
+}
+
+However, as you probably know, the compiled C code will be HUGE. Only assember
+coding will let you have small binaries. Let's run through this line by line:
+
+@include screen.h
+
+This line acts just like the #include statement in C.
+
+@textarea
+
+This line just defines where the code starts.
+
+ldr r1,=REG_DISPCNT
+
+Oh, gee wiz, our first actual assembly(asm from now on) statement. Here I go.
+
+	In ARM (gba's processor) asm there are 16 registers r0-r15. r15 is like 
+the IP (Instruction Pointer) in the Intel processors, LEAVE IT ALONE! I tend to
+work with just the first 10, r0-r9. If you know Intel or x86 assembly, then you
+ALMOST know the MOV and LDR statements. These instructions let you move 32bit 
+numbers around. The last number/register gets moved into the first number/register.
+The MOV statement only works in special cases. We will only concern ourselves with 
+the LDR statement which stands for LoaD Register. It loads the specified register 
+with the other register, memory, or number specified. Let's get back to our line o 
+code:
+
+ldr r1,=REG_DISPCNT
+
+ * Is the LDR instruction.
+
+    * Is the first <i>operand</i> or parameter specified. In our case the register r1.
+ 
+         * REG_DISPCNT is defined in screen.h and is the screen control memory location.
+		The '=' sign isn't always necessary but it we'll always use it.
+
+NOTE: Follow the stars upward to find the part they are pointing to.
+
+ldr r2,=(BG2_ENABLE|MODE_3)
+
+This is the same as the last line, but this time it ORs two(2) values together ('|' operator)
+to get the result. BG2_ENABLE and MODE_3 are defined in screen.h and when ORed together make
+0x0403. This value is put into the r2 register.
+
+str r2,[r1]
+
+Wow, our second type of instruction, the STR instruction puts the first register specified
+into the memory location specified by the second operand. STR stand for STore Register.
+In this case, our program has r1 pointing to REG_DISPCNT and r2 has the value 0x0403 in it.
+Remember the [] blocky braces around the second one [] is sorta like telling that the register
+is a pointer. Guess what? Those last 3 instructions do what SetMode(MODE_3|BG2_ENABLE) in C
+did for us. The screen is enabled now in bitmap mode number three (3).
+
+ldr r1,=0x0FF
+
+You should get this now, this moves (loads) r1 with 0x0FF (255).
+
+ldr r2,=vram+2410
+
+You should get this too, except for something which I'm going to explain. First of all
+just so you know, vram is also defined in screen.h and it the memory that you'll want to
+write to, to get stuff on the screen. vram is defined as the location 0x06000000.
+Now, our instruction adds 2,410 onto vram when loading it into r2. Why? because to put a
+color value into vram you have to define x and y values, right? So here's the formula 
+for Mode 3:
+
+	y * 240 + x
+
+So adding this to vram gives an x,y location of 10,10. and further more, that 0x0FF we 
+put into r1 earlier is going to be our color value of a bright red when we put a dot on
+the screen.
+
+str r1,[r2]
+
+Here it is again, except this time we are putting the value of r1 into the memory location
+pointed to be r2, in this case r2 should point to screen coordinates 10,10 and r1 is bright
+red. So storing bright red into screen memory at 10,10 while the screen is on will...
+I'll let you see the result later. But for now, more code.
+
+label1
+
+Defines a label that you can jump back to like a goto statement in BASIC.
+
+b label1
+
+Equivalent to Goto label1 in BASIC. These 2 lines make an infinite loop.
+The B statement is like the Jxxx statement of x86 assembly, it branches depending
+of the results of other operations, more on this later.
+
+@pool
+
+Gives the assembler a safe place to put some of the numbers we've defined
+and used. ABSOLUTELY NECESSARY.
+
+@endarea
+
+Tells the assembler that the code section is over.
+
+HEY, we just finished our first GBA assembly program!
+
+
+<h3 align="center" style="color: LightCoral;"><b>Assembling our file</b></h3>
+
+	I'm assuming you are working in Windows, oh and some advice, GET XP!
+Now, use the Run option from the Start menu. Type cmd and hit enter. If you don't
+have atleast NT or 2000 you will have to type command. Now, a DOS window should pop
+up. Type the following:
+
+cd <i>directory path to goldroad.exe</i>   <i>and hit enter</i>
+
+goldroad first.asm   <I>and hit enter</I>
+
+If you see any error messages, try again, check to see you copied correctly.
+
+If you see "Assembled successfully" or something close to that, Congrats!
+
+If everything went as planned, there should be a first.gba file in goldroad's folder.
+
+Now, it might just be easier to . . . yeah, copy an emulator (visualboy advance) into
+goldroad's folder and drag first.gba onto it to start it up. After, it starts a bright
+red dot should appear somewhere near 10,10. Congratulations! You have passed Day 1.
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day2.htm">Day 2</a></center>
+
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>

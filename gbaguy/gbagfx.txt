@@ -1,0 +1,145 @@
+			GameBoy Advance:
+			
+		       Common Gfx Formats
+	
+			And how to hack them :)
+
+		Assumptions:
+	
+	1. You've done GBA programing in C. |Not entirely necessary, but a +|
+	2. You want to hack/translate a GBA ROM.
+	3. You know basic things like nibbles, bytes, words,
+16bit, 8bit, what bpp is, etc...
+	4. You like reading the kind of background info that makes this
+file as big as it is. :-)
+	5. You want to get on with it.
+
+
+
+
+
+
+		How GBA Gfx ends up on the GBA LCD (da screen:)).
+
+	GBA graphics are always a picture whether it be a sprite, one of the 
+four (4) backgrounds, or just a picture stored in the rom to be copied to 
+the screen memory. To get a picture onto the screen there are three (3) good ways:
+
+		1. Copy the picture into VRAM at 0x6000000. 
+
+	This requires a pallete of 256 colors to be loaded at 0x5000000. If you were
+to look at some C code exported by one of those *FormatHere*TOc converters, there 
+would be a palette array, and a data or bitmap or whatever array. When the palette is
+loaded and then the data is loaded, the picture appears on the screen because the 
+data refers to the palette entries for its colors. 
+
+		2. The picture 2 hack is a sprite.
+
+	To getta sprite on the screen requires putting attributes about it into 
+the OAM memory (Object[sprite] Attribute Memory, got it?) at 0x7000000. After putting
+the attributes into OAM, then putting the sprite picture into the character memory at
+0x601000. After that, set the x and y attributes to visible values, and the sprite 
+appears.
+
+		3. The picture is a background.
+
+	Some backgrounds are just pictures, but actually using the available
+backgrounds gives you special features, such as rotation and zoom. To make a
+background requires putting the tile data into what in other modes would be 
+the VRAM or screen memory, 0x6000000. Then, putting the map data into another part
+of the range of memory 0x6000000 - 0x600FFFF. 
+
+
+
+
+		Q:   Alright, so now how am I 'posed to hack this, dude?
+
+	No matter what the picture is that you want to hack is (background, sprite,
+picture), it'll be in the ROM, right? . . . Right! Now, if you have hacked graphics
+before, you are probably wondering what format GBA graphics are in, what tools are
+necessary, etc. First, the point of this document (and the shortest part :-))
+
+			Possible GBA graphics formats and how to hack them.
+
+	You may be familiar with hacking GB graphics with its 4bpp format graphics.
+And when I tell you that the GBA's most common graphics are in 4bpp format, you'll 
+probably run to you're ol' best friend Tile Layer Pro. Wow, Gee wiz, you can't find
+or clearly see any graphics in GB mode! Why? Because there's alot more to it than just
+the Bits Per Pixel (bpp). With GB the Bits were in planes making a different color or
+value pixel depending on how the bits are arranged (See Bitplane and console graphics
+format docs at www.RomHacking.org and at ZD). With the GBA being TOTALLY color, there
+is no reason for bit planes. Now, to get the real graphics, just take the number of
+bits from the BPP number like so
+
+	4bpp to get the number of bits :    4 <-- bpp
+
+	So with 4bpp it 'quals 4 bits, same with 8bpp = 8 bits, got it? . . . Good.
+
+and it's so simple! Grab the right number of bits and there it is! The color value for
+your pixel. So, you think it's "Example Time", eh? OK
+
+	'Example in VB.NET UNTESTED CODE OFF THE TOP OR THE SIDE OF MY HEAD
+	'I chose VB because everyone will understand it, and it's just so cool.
+	'and I did make my gfx viewer in VB :-)
+
+	Dim rom() as Byte
+	
+	'load rom with the rom file here - IOSTREAM.READ incase anyone actually cares
+
+	Dim k as Byte
+	Dim s as String
+
+	k = rom(2) 
+
+	s = Hex(k) ' Hex returns a String
+
+	'if we just plotted a pixel now using the byte var. k for a color value
+	'it would be 8bpp
+	'so we want 4bpp so we get a string of the hex value for the byte
+	'now, since we'll get 2 pixels from one byte (8/2=4) , we just separate the
+	'hex digits and use each digit for 1 pixel
+
+	If k <= 15 then
+	
+	'if k is less than 15, then the first digit should be a 0. plot the dot.
+
+        SetPixel(x,y,0)
+
+	'0 is usually black
+
+	k = val("&H" & mid(s,2,1)) ' get string hex digit into a numerical variable
+
+	SetPixel(x+1,y,k) ' You might want to make a function to implement a palette
+
+	Else      ' if the k is more than 15, there'll be 2 hex digits, get and plotem
+
+	SetPixel(x,y,val("&H" & mid(s,1,1)))
+
+	SetPixel(x+1,y,val("&H" & mid(s,2,1)))
+
+	End If
+
+	'End Example Sample
+
+It's so easy, the number of bits is just like saying 4bpp is 16bit color 
+and 8bpp is 256bit color. 
+
+
+
+
+
+
+	Good Lord, man, what about all that palette talk in the beginning?
+
+
+	The Palette isn't necessary unless you want to get technical.
+	If anyone finds any info on this let me know.
+
+
+by gbaguy
+
+Thanks to:
+www.thepernproject.com
+www.romhacking.org
+www.zophar.net
+www.gbadev.org

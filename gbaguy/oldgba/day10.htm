@@ -1,0 +1,259 @@
+<html>
+<head>
+<title>GBA ASM - Day 10</title>
+</head>
+<body bgcolor="lavender">
+<h1 align="center" style="color: LightCoral; width: 100%; filter:shadow()">Day 10 - Interrupts And Timers</h1>
+<pre>
+
+	
+
+</pre>
+<h2 align="center" style="color: LightCoral;"><b>About Today</b></h2>
+<p style="color: green;"><pre><b>
+	
+	Today we will learn about Interrupts and Timers. I'm not sure what usefullness
+interrupts could have on the GBA other than having a VBlank or HBlank routine so that's
+what the code for interrupts will demonstrate. Timers, atleast from what I can tell, have
+several uses including, well, timing. :) . The one thing that I can think of off the top
+of my head that would use DMA, Timers, and Interrupts is direct sound (i.e. playing a WAV
+file). Playing A WAV With Direct Sound will probably be Day 11 and that's as far ahead as
+I have planned right now. Two more things:
+
+To all the people who gave great suggestions: Thanks.
+To all the people who sent me junk mail: Screw you.
+
+Unfortunately, I did get more junk mail than I did get suggestions.
+
+<h2 align="center" style="color: LightCoral;"><b>About Interrupts</b></h2>
+
+	Interrupts are exactly what you think they are (maybe :) ). They interrupt
+the GBA's little ARM7 CPU and make it branch off to another part of your program to
+do something and then when that's done, continue with what it was doing before the
+interrupt happened. You may think that this would destroy the registers as the main
+program could get interrupted at any time you have Interrupts Enabled, but this actually
+can't happen as when an interrupt is encountered, the CPU branches first into the BIOS
+and the BIOS saves the register values BEFORE branching to the Interrupt Handler. When
+the interrupt is finished, the register values are restored. (Note that I've been talking
+about the CPU registers r0-whatever).
+
+	To tell the GBA we want an Interrupt to happen, we need to do a couple of things.
+They are:
+
+<ol><u>Steps To Handle An Interrupt:</u>
+<li>Enable Interrupts in REG_IME, I've make a macro to
+do that. It's in interrupts.h that you can download later.</li>
+<li>Tell the REG_IE register, what interrupts we want to handle.</li>
+<li>Give the REG_INTADDR the address of your Interrupt Handler.</li>
+<li>Enable the interrupt again in some register, with the register
+used here depending on what interrupt you want to use.</li>
+<li>That's it, when the Interrupt happens, the GBA will automatically jump 
+to your code!</li></ol>
+
+<h2 align="center" style="color: LightCoral;"><b>Let's Code An Interrupt</b></h2>
+
+Download the interrupt header file, <a href="interrupt.h">interrupt.h</a>, now.
+
+Why don't you go convert a bitmap to assembly like we've done before. Remember
+to replace "DCW" with "@DCW". Open it up and make the label inside be picBitmap.
+We will display this picture when the interrupt happens.
+Here goes:
+
+;;--- CODE START ---;;
+@include screen.h  ; almost always want this one.
+@include interrupt.h ; our interrupt stuff.
+@include dma.h  ; the DrawMode3Pic macro uses DMA.
+
+b start
+@include pic.asm  ; include the picture here. remember to jump over it.
+start
+
+;set the screen mode and enable background 2
+ldr r1,=REG_DISPCNT
+ldr r2,=(MODE_3|BG2_ENABLE)
+str r2,[r1]       
+
+Interrupts_Enable  ; macro by me that sets Interrupt Master Enable (REG_IME)
+; this allows interrupts to happen at all.
+
+ldr r1,=REG_IE 
+ldr r2,=INT_VBLANK  ; these 3 line tell Interrupt Enable that we will
+str r2,[r1]     ; be handling VBlank interrupt.
+
+addr r1,inthandler   ; these 3 tell the REG_INTADDR register the address
+ldr r2,=REG_INTADDR  ; of our interrupt handler. the ADDR is an assembler
+str r1,[r2]   ; specialty that puts the address of a label into a CPU register
+; we take that and load that address into memory register REG_INTADDR
+;;--- STOP COPYING ---;;
+
+	Now the next memory register we need to load depends on what interrupt you want
+to handle, we are going to handle the VBlank interrupt, so we need to tell the display
+(the screen) to generate an interrupt on VBlank. We do this in the REG_DISPSTAT register.
+Here goes:
+
+;;--- CODE CONTINUE ---;;
+ldr r1,=REG_DISPSTAT
+ldr r2,=STAT_VBLANK
+str r2,[r1]
+
+infin
+b infin
+;;--- STOP COPYING ---;;
+
+	That's all of the main program, note that we AREN'T done. We still need to code 
+the interrupt handler. Seeing and testing some code will help you understand more than
+I can explain so here goes again:
+
+;;--- CODE CONTINUE ---;;
+inthandler   ; label to mark the address of the start
+; of our interrupt handling code
+
+DrawMode3Pic picBitmap    ; pass the label of the picture to the drawing macro
+; note that this macro uses DMA to do it's job so including dma.h is required
+
+ldr r9,=INT_VBLANK      ; note that you need to pass a register to ReturnFromHandler
+ReturnFromHandler r9   ; you tell the GBA that the interrupt is handled.
+; Also note that you need to use atleast r4 with this macro
+; as CPU registers r0-r3 are used inside of it.
+
+bx lr ; this returns from the interrupt, it's basically a branch to the address in r13
+; so don't worry about it. You probably should put that in ReturnFromHandler.
+;;--- STOP COPYING/CODE FINISHED ---;;
+
+	Now we're done with Interrupts, when you run the program the picture will be displayed.
+Nothing special. But when we learn how to use Work RAM for actual variables. You will see
+how important Interrupts and VBlank inparticular can be. There are some things that are
+best done during VBlank so having an interrupt that happens at VBlank seems to be a very
+important thing. Note that other things can create interrupts, we just scratch the surface
+here. Now on to Timers!
+
+<h2 align="center" style="color: LightCoral;"><b>About Timers</b></h2>
+
+	I think the word Timers is actually a little misleading as they are more counters
+than timers. However, they do open up the possibility of keeping time. I'm not sure what
+I'm going to do for our sample code for Timers as I can't think of anything to do with them
+other than direct sound which will be Day 11. Please also remember that even though we use
+Timer #3 here, that there are 4 timers, (0-3) replace the 3 in our macro names to use that
+timer instead of 3.
+
+	Why don't you download <a href="timer.h">timer.h</a>, now so you have it when we
+get to coding.
+
+<h2 align="center" style="color: LightCoral;"><b>Coding For Timers</b></h2>
+
+	Before we get started, a few things. Timers can have 1 of 4 different frequencies
+or how fast they count. Timers count from 0 to 65535. One time from 0 - 65535 is called an
+overflow and Timers can be set to generate an interrupt on overflow, we will not do that
+here, but be aware that it can happen. The different frequencies are:
+
+<ol><u>Timers Frequencies:</u>
+<li>System Frequency. 15 cycles</li>
+<li>64 times system frequency.</li>
+<li>256 times system frequency (almost a second, Ooooh).</li>
+<li>1024 times system frequency.</li>
+</ol>
+
+	I suppose that the 3rd one would be the best to keep time with. So we'll just
+code a macro to WaitSeconds. This shouldn't be too hard. I already have coded it and 
+it IS in timer.h, but I recommend you walk through the creation process with me now. :)
+
+	To get a timer to run, you need to load REG_TMxCNT with the frequency and enable
+it. Do it with the EnableTMx (x=timer #) like this:
+
+ldr r10,=TIME_FREQUENCY_256
+EnableTM3 r10
+
+	Note that we can't pass a define to a macro due to limitations of Goldroad. So
+you need to load a CPU register over r3 with the define and pass the register.
+
+Now we can get started on that WaitSeconds macro. Well, here's one time when we 
+NEED a loop and can't use DMA. Let's go:
+
+PLEASE HELP, I CAN'T GET THIS TO WORK!
+
+;;--- CODE START---;;
+@macro WaitSeconds3 Number, arglabel
+
+ldr r2,=Number  ; Number will be replaced by the actual number when you call the macro
+arglabel   ; you need to pass a second thing to this macro to make the labels for the loops
+;;--- CODE PAUSE, EXPLANATION BELOW ---;;
+
+Here we start the macro and load r2 with the number of seconds and create a label
+for the main loop. Some more coming:
+
+;;--- CODE CONTINUE ---;;
+ldr r1,=REG_TM3D   ; compare the contents
+ldrh r3,[r1]     ; of the timer with 0 and if it isn't 0
+ldr r4,=0   ; try again by branching back to arglabel
+cmp r3,r4    
+bne arglabel
+;;--- CODE PAUSE, EXPLANATION BELOW ---;;
+
+Here we check to see if the actual timer has overflowed to 0. If not we goto arglabel.
+Note that if we had enabled the timer with a frequency of 256 times the System Frequency
+, we would only have to let the timer overflow the number of times equal to the number 
+of seconds we want to wait. Let's finish:
+
+;;--- CODE CONTINUE ---;;
+subs r2,r2,#1
+bne arglabel
+
+@endm
+;;--- CODE STOP ---;;
+
+	That was fun, now I hope you still have that picture you converted for the Interrupt
+part of today, because now we'll code a little program to wait 30 seconds before showing the
+picture. Let get started:
+
+;;--- CODE START ---;;
+@include screen.h  ; we need this.
+@include dma.h   ; the picture drawing macro requires this
+@include timer.h ; the timer stuff.
+
+b start
+@include pic.asm  ; include the picture data and jump over it.
+start
+
+ldr r1,=REG_DISPCNT         ; set the screen
+ldr r2,=(MODE_3|BG2_ENABLE)  ; mode to
+str r2,[r1]                  ; 3.
+
+ldr r10,=TIME_FREQUENCY_256
+EnableTM0 r10
+
+WaitSeconds0 30, waitlabel1  ; wait for 30 seconds and use waitlabel1 for 
+; the label inside the macro
+
+DrawMode3Pic meBitmap  ; draw the picture to the screen
+
+infin
+b infin  ; an infinite loop
+;;--- CODE STOP/ STOP COPYING ---;;
+
+	I know that that was short, but hey that's pretty much all there is to it!
+Assemble and run. Wait 30 seconds (more or less) for the output.
+
+It's actually less than 30 seconds still, I guess my code still sucks...
+
+<h2 align="center" style="color: LightCoral;"><b>This Day In Review</b></h2>
+
+	I hope you liked this. It took a fair amount of effort on my part to
+get this day out. Sorry the timer code doesn't work well. :(
+
+	Happy coding,
+		Mike H aka GBAGuy
+
+<center><a href="gbaasm.htm">Intro</a> - <a href="day11.htm">Day 11</a></center>
+
+
+</b></pre></p>
+<!--Patater Footer-->
+<center>
+<font size="-1">Patater GBAGuy Mirror<br/><a href="/contact">Contact</a><br/>
+</font>
+</center>
+<br/>
+<br/>
+<!-- End Patater Footer-->
+</body>
+</html>
