@@ -16,7 +16,7 @@ language: en
 thumb: /images/thumb-manual.png
 graphic: /images/rocket-code.png
 graphicalt: Orange Spaceship flying over code
-download: /projects/manual.zip
+download: https://github.com/Patater/manual/zipball/master/
 downloadstring: Download the Manual with Source Code
 filetype: zip
 ---
